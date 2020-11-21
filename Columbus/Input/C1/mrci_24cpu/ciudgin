@@ -1,9 +1,9 @@
 &input
     UPDATE_MODE = 10
-    NROOT = 3
-    NITER = 300
-    RTOLCI = 1e-5,1e-5,1e-5
-    NVCIMN = 9
+    NROOT = 4
+    NITER = 400
+    RTOLCI = 1e-5,1e-5,1e-5,1e-5
+    NVCIMN = 10
     NVCIMX = 16
     IVMODE = 3
     NBKITR = 1
