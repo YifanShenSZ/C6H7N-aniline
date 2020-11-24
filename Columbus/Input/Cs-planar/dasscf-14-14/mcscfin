@@ -14,6 +14,7 @@
     NAVST(1) = 2,
     WAVST(1,1)=1 ,
     WAVST(1,2)=1 ,
-    NAVST(2) = 1,
+    NAVST(2) = 2,
+    WAVST(2,1)=1 ,
     WAVST(2,1)=1 ,
 &end

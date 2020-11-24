@@ -18,5 +18,5 @@
     NAVST(3) = 1,
     WAVST(3,1)=1 ,
     NAVST(4) = 1,
-    WAVST(4,1)=0 ,
+    WAVST(4,1)=1 ,
 &end
