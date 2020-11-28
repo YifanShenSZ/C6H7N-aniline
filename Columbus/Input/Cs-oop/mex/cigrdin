@@ -1,10 +1,10 @@
- &input 
- nmiter= 100, print=0, fresdd=1, 
- fresaa=1, fresvv=1, 
- mdir=0, 
- cdir=1, 
- rtol=1e-6, dtol=1e-6,
- wndtol=1e-7,wnatol=1e-7,wnvtol=1e-7 
- nadcalc=1
- samcflag=0
+ &input
+ nadcalc=3,
+ print=0, fresdd=1,
+ fresaa=1, fresvv=1,
+ mdir=0,cdir=1,
+ nmiter=200,nvrsmx=200,rtol=1e-10,dtol=1e-10,
+ wndtol=1e-9,wnatol=1e-9,wnvtol=1e-9,
+ ftol=1e-11
+  samcflag=0
  &end
