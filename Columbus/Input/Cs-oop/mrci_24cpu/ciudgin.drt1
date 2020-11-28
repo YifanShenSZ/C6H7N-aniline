@@ -2,7 +2,7 @@
     UPDATE_MODE = 10
     NROOT = 2
     NITER = 200
-    RTOLCI = 1e-2,1e-5,
+    RTOLCI = 1e-5,1e-5,
     NVCIMN = 6
     NVCIMX = 16
     IVMODE = 3
