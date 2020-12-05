@@ -38,8 +38,13 @@ Rydberg state minimum (min-B1, C2v, planar)
 
 Dissociation saddle point (sad-B1, Cs, planar)
 
+pipi* state minimum (min-B2, Cs, NH2 slightly out of benzene plane)
+
+pipi* state saddle point (sad-B2, C2v, planar)
+
+2nd Rydberg state minimum (min-A2, C2v, planar)
+
 2,3 conical intersection (mex-B1-B2, Cs, NH2 out of benzene plane)
 
 1,2 conical intersection (mex-A1-B1, Cs, planar)
 
-pipi* state does not have a minimum
