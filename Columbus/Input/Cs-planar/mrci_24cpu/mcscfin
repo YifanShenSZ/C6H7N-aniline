@@ -16,5 +16,5 @@
     WAVST(1,2)=1 ,
     NAVST(2) = 2,
     WAVST(2,1)=1 ,
-    WAVST(2,1)=1 ,
+    WAVST(2,2)=1 ,
 &end
