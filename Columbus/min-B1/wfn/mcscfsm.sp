@@ -1,4 +1,4 @@
- total ao core energy =  271.004199497
+ total ao core energy =  272.731435801
  MCSCF calculation performed for  1 DRT.
 
  DRT  first state   no.of aver. states   weights
@@ -21,16 +21,16 @@
  iter     emc (average)    demc       wnorm      knorm      apxde  qcoupl
 
  final mcscf convergence values:
-    1   -285.6870840370  2.857E+02  7.232E-09  1.755E-09  1.148E-15  F   *converged*     
+    1   -285.7297661462  2.857E+02  8.424E-09  2.555E-09 -1.494E-16  F   *converged*     
 
 
 
 
    ---------Individual total energies for all states:----------
-   DRT #1 state # 1 wt 0.250 total energy=     -285.854696156, rel. (eV)=   0.000000
-   DRT #1 state # 2 wt 0.250 total energy=     -285.682801663, rel. (eV)=   4.677489
-   DRT #1 state # 3 wt 0.250 total energy=     -285.621710971, rel. (eV)=   6.339852
-   DRT #1 state # 4 wt 0.250 total energy=     -285.589127357, rel. (eV)=   7.226498
+   DRT #1 state # 1 wt 0.250 total energy=     -285.898000210, rel. (eV)=   0.000000
+   DRT #1 state # 2 wt 0.250 total energy=     -285.715241069, rel. (eV)=   4.973131
+   DRT #1 state # 3 wt 0.250 total energy=     -285.673468908, rel. (eV)=   6.109810
+   DRT #1 state # 4 wt 0.250 total energy=     -285.632354397, rel. (eV)=   7.228593
    ------------------------------------------------------------
 
 
