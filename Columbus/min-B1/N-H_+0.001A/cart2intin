@@ -1,0 +1,7 @@
+ &input
+ calctype='cart2int',
+ intgradout=1,
+ gradfl='cartgrd',
+ forceinau=0,
+ intgradfl='intgrd',
+/&end
