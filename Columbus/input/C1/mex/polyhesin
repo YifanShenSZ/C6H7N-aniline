@@ -1,0 +1,13 @@
+ &NACINT
+ maxit=200,
+ newton=1,
+ iheseq1=-1,
+ methodn=99*-1
+ ihess=0,
+ ipflg=3,
+ accel=1,
+ scale=0.1,
+ kscale=0,
+ /end
+ &GEOMCON
+ /end
