@@ -21,7 +21,7 @@
  iter     emc (average)    demc       wnorm      knorm      apxde  qcoupl
 
  final mcscf convergence values:
-    1   -285.6721225600  2.857E+02  7.886E-09  2.194E-09  1.840E-15  F   *converged*     
+    1   -285.6721225600  2.857E+02  7.886E-09  2.195E-09 -1.148E-16  F   *converged*     
 
 
 
