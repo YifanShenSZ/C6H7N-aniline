@@ -38,8 +38,8 @@
     21    0.500000       bending     1     2     3          # A' from B2, 11
          -0.500000       bending     1     2     4
     22    1.000000    stretching     1     8                # A'
-    23    1.000000       bending     8     1     2          # A'
-    24    1.000000    stretching     1     9                # A'
+    23    1.000000    stretching     1     9                # A'
+    24    1.000000       bending     8     1     2          # A'
     25    1.000000       bending     9     1     2          # A'
     26    0.500000       torsion     3     5     7     6    # A" from B1, 1
          -0.500000       torsion     4     6     7     5
