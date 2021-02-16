@@ -6,9 +6,11 @@ This path is accessed by going along the h direction at mex-A1-B1, where the ele
 Most data points along this path have their A1 state energy minimized with N-H bond length constrained. The exceptions are noticed.
 
 ## Issue
-The points starting from 1.6 A are so hard to optimize, since the rasscf often converge to wrong local minimum
+The points starting from 1.5 A are so hard to optimize, since the rasscf often converge to wrong local minimum
 
-1.6 is the most pain in the ass. The local minimum there is just inevitable
+At 1.5 A an intruder state jumps in and out, so it cannot be fully optimized. I can at best
+ optimize the C-C-N-H1 and the C-C-N-H2 dihedral angles
 
-1.7 can be done with the out of benzene plane angle of the 2nd H constrained to 0, although the true minimum should have it slightly above 0. The remaining force is 0.008, so be it
+1.6 A and 1.7 A can be done with constraint C-C-N-H2 = 0, although the true minimum should have it slightly above 0. The remaining force is 0.008, so be it
 
+Starting from 1.8 A I have run out of tricks. I have no choice but to end with 1.79 A, which is merely a stretched version of 1.7 A with no optimization
