@@ -1,18 +1,13 @@
- Trust region warning: step length has converged, but residual has not met accur
- acy goal
- Final residual =   1.310914061381166E-012
- Failed BFGS: curvature condition is violated
- y . s = -5.856805143881396E-004
 Critics: a critical geometry searcher
 Yifan Shen 2021
 
 Echo of user command line input:
 /home/yshen/Software/Mine/diabatz/tools/critics/v0/critics.exe -j min -f default -i opt.IntCoordDef -t 2 -a default Hd.IntCoordDef SAS.in Hd.in Hd.net 11.in 12.in 13.in 22.in 23.in 33.in -g min-B2.xyz -c 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36
 
-Wed Apr  7 21:38:41 2021
+Wed Apr  7 22:49:19 2021
 
 Job type: min
 The target electronic state is 2
 
-Wed Apr  7 21:43:27 2021
+Wed Apr  7 22:49:31 2021
 Mission success

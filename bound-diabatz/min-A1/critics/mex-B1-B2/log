@@ -1,70 +1,14 @@
- Trust region warning: step length has converged, but residual has not met accur
- acy goal
- Final residual =   5.578359790884211E-011
- Trust region warning: step length has converged, but residual has not met accur
- acy goal
- Final residual =   2.739652764592565E-012
- Trust region warning: step length has converged, but residual has not met accur
- acy goal
- Final residual =   1.845963488707484E-012
- Trust region warning: step length has converged, but residual has not met accur
- acy goal
- Final residual =   5.302566358476056E-012
- Trust region warning: step length has converged, but residual has not met accur
- acy goal
- Final residual =   3.141556745139048E-012
- Trust region warning: step length has converged, but residual has not met accur
- acy goal
- Final residual =   4.526005903420642E-012
- Trust region warning: step length has converged, but residual has not met accur
- acy goal
- Final residual =   3.960795281057909E-012
- Trust region warning: step length has converged, but residual has not met accur
- acy goal
- Final residual =   1.356927985549363E-012
- Trust region warning: step length has converged, but residual has not met accur
- acy goal
- Final residual =   3.607382082948046E-012
- Trust region warning: step length has converged, but residual has not met accur
- acy goal
- Final residual =   1.081997091413040E-012
- Trust region warning: step length has converged, but residual has not met accur
- acy goal
- Final residual =   2.072063627638482E-012
- Trust region warning: step length has converged, but residual has not met accur
- acy goal
- Final residual =   1.970617606390194E-012
- Trust region warning: step length has converged, but residual has not met accur
- acy goal
- Final residual =   5.698536009363178E-012
- Trust region warning: step length has converged, but residual has not met accur
- acy goal
- Final residual =   7.913947909421507E-012
- Trust region warning: step length has converged, but residual has not met accur
- acy goal
- Final residual =   2.708243522944103E-012
- Trust region warning: step length has converged, but residual has not met accur
- acy goal
- Final residual =   2.708243522944103E-012
- Trust region warning: step length has converged, but residual has not met accur
- acy goal
- Final residual =   1.729756989070744E-012
- Trust region warning: step length has converged, but residual has not met accur
- acy goal
- Final residual =   1.058759983960542E-012
- Failed BFGS: max iteration exceeded!
- Final ||gradient|| =   9.408004244429466E-002
 Critics: a critical geometry searcher
 Yifan Shen 2021
 
 Echo of user command line input:
 /home/yshen/Software/Mine/diabatz/tools/critics/v0/critics.exe -j mex -f default -i opt.IntCoordDef -t 1 -a default Hd.IntCoordDef SAS.in Hd.in Hd.net 11.in 12.in 13.in 22.in 23.in 33.in -g mex-B1-B2.xyz -c 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36
 
-Wed Apr  7 21:38:29 2021
+Wed Apr  7 22:48:59 2021
 
 Job type: mex
 The target electronic state is 1
 
 
-Wed Apr  7 21:59:54 2021
+Wed Apr  7 23:21:44 2021
 Mission success
