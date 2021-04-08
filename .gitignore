@@ -1,3 +1,6 @@
 Manuscript*/
 Reference/
 Idea
+
+build/
+*.exe

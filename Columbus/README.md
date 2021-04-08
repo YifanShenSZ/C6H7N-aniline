@@ -1,5 +1,5 @@
-# C6H7N-aniline
-Project on aniline photodissociation. The symmetry labeling is based on the G4 CNPI group (isomorphic to C2v point group)
+# Columbus
+Electronic structure computation for aniline photodissociation. The symmetry labeling is based on the G4 CNPI group (isomorphic to C2v point group)
 
 Basis set:
 | atom |               basis                 |
