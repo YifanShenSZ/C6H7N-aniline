@@ -1,13 +1,7 @@
 Internal coordinate origin file:
     min-B1.xyz
 Internal coordinates who are scaled by others: (self, scalor, alpha)
-    22    13    1.000000
-    23    14    1.000000
-    33    13    1.000000
-    34    14    1.000000
 Internal coordinates who are scaled by themselves:
-    13
-    14
 Coordinates of irreducible 1: (number, coefficient, index of internal coordinate)
      1    1.000000     1
           1.000000     2
