@@ -1,0 +1,6 @@
+min-B1
+sad-B2
+min-A2
+min-B1_min-B2
+min-B2
+min-A1

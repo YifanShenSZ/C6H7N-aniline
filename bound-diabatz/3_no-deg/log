@@ -1,0 +1,40 @@
+Diabatz version 0
+Yifan Shen 2021
+
+Echo of user command line input:
+/home/yshen/Software/Mine/diabatz/v0/diabatz.exe -f default -i IntCoordDef -s SAS.in -n Hd.in -l 11.in 12.in 13.in 22.in 23.in 33.in -d no-deg_list.txt -z -285.9453200579 -c Hd.net -r 0.1 -p prior_1-1.txt prior_1-2.txt prior_1-3.txt prior_2-2.txt prior_2-3.txt prior_3-3.txt
+
+Thu Apr  8 20:53:38 2021
+
+The data set will be read from: 
+    min-B1/, sad-B2/, min-A2/, min-B1_min-B2/, min-B2/, min-A1/, 
+There are 269 data points in adiabatic representation
+          0 data points in composite representation
+
+Got regularization strength, enable regularization
+
+maximum ground state energy = 0.0254527
+maximum ||ground state energy gradient||_infinity = 0.0795752
+so set gradient / energy scaling to 3.1264
+
+The data set corresponds to 30501 least square equations
+There are 1171 parameters to train
+
+The number of threads = 4
+Each thread owns 67 data points in adiabatic representation
+                 0 data points in composite representation
+The last thread owns 68 data points in adiabatic representation
+                     0 data points in composite representation
+Thread 0 starts with Jacobian row 0
+Thread 1 starts with Jacobian row 5601
+Thread 2 starts with Jacobian row 11552
+Thread 3 starts with Jacobian row 19873
+
+The initial residue = 0.231809
+ Trust region warning: step length has converged, but residual has not met accur
+ acy goal
+ Final residual =   9.383513472005230E-002
+The final residue = 0.0755455
+
+Thu Apr  8 20:55:00 2021
+Mission success
