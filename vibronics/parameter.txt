@@ -1,0 +1,7 @@
+top=0.99,
+bottom=0.135,
+left=0.08,
+right=0.78,
+hspace=0.2,
+wspace=0.2
+width * height = 1041 * 643 (pixel)
