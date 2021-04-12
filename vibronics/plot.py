@@ -7,14 +7,14 @@ import matplotlib.pyplot as plt
 # E0 =   final-state electronic energy
 #    - initial-state electronic energy
 #    - initial-state zero-point harmonic vibrational energy
-E0 = -309.5035931453 / 4.556335830019422e-6 \
-   - -309.5447910990 / 4.556335830019422e-6 \
-   - 36526.4
+E0 = -285.9453200579 / 4.556335830019422e-6 \
+   - -286.1075216397 / 4.556335830019422e-6 \
+   - 26586.7
 
-xleft  = 1.16
-xright = 1.98
+xleft  = 4
+xright = 7
 
-xlabel = "Electron binding energy (eV)"
+xlabel = "wavelength (nm)"
 ylabel = "Intensity"
 
 axis_thick_ness = 2
@@ -38,9 +38,13 @@ def parse_args() -> argparse.Namespace:
 
     parser.add_argument("irred1", type=Path, help="irreducible 1 spectrum")
     parser.add_argument("irred2", type=Path, help="irreducible 2 spectrum")
+    parser.add_argument("irred3", type=Path, help="irreducible 3 spectrum")
+    parser.add_argument("irred4", type=Path, help="irreducible 4 spectrum")
 
     parser.add_argument("-z1","--zero1", type=float, default=0.0, help="zero point of irreducible 1 in cm^-1")
     parser.add_argument("-z2","--zero2", type=float, default=0.0, help="zero point of irreducible 2 in cm^-1")
+    parser.add_argument("-z3","--zero3", type=float, default=0.0, help="zero point of irreducible 3 in cm^-1")
+    parser.add_argument("-z4","--zero4", type=float, default=0.0, help="zero point of irreducible 4 in cm^-1")
     parser.add_argument("-k","--kernel", type=str, default="Gaussian", help="convolution kernel (default = Gaussian)")
     parser.add_argument("-w","--width", type=float, default=0.01, help="convolution width (default = 0.01 eV)")
 
@@ -70,7 +74,7 @@ def Lorentzian(x:float, miu:float, sigma:float) -> float:
     return y
 
 def convolve(x:numpy.ndarray, y:numpy.ndarray, sigma:float, kernel:str) -> (numpy.ndarray, numpy.ndarray):
-    X = numpy.linspace(xleft, xright, 1000)
+    X = numpy.linspace(numpy.amin(x), numpy.amax(x), 1000)
     Y = numpy.zeros(X.shape)
     if kernel == "Gaussian":
         F = Gaussian
@@ -89,20 +93,28 @@ if __name__ == "__main__":
 
     x1, y1 = read_2vectors(args.irred1)
     x2, y2 = read_2vectors(args.irred2)
+    x3, y3 = read_2vectors(args.irred2)
+    x4, y4 = read_2vectors(args.irred2)
 
     x1 += args.zero1 + E0
     x2 += args.zero2 + E0
+    x3 += args.zero3 + E0
+    x4 += args.zero4 + E0
     x1 /= 8065.54429
     x2 /= 8065.54429
+    x3 /= 8065.54429
+    x4 /= 8065.54429
 
-    x_total = numpy.concatenate((x1, x2))
-    y_total = numpy.concatenate((y1, y2))
-    X, Y = convolve(x_total, y_total, args.width, args.kernel)
+    x_total = numpy.concatenate((x1, x2, x3, x4))
+    y_total = numpy.concatenate((y1, y2, y3, y4))
+    #X, Y = convolve(x_total, y_total, args.width, args.kernel)
 
-    scale = max(numpy.amax(y1), numpy.amax(y2))
+    scale = max(numpy.amax(y1), numpy.amax(y2), numpy.amax(y3), numpy.amax(y4))
     y1 /= scale
     y2 /= scale
-    Y /= numpy.amax(Y)
+    y3 /= scale
+    y4 /= scale
+    #Y /= numpy.amax(Y)
 
     x1_sig = []
     y1_sig = []
@@ -116,13 +128,27 @@ if __name__ == "__main__":
         if y2[i] > 1e-6:
             x2_sig.append(x2[i])
             y2_sig.append(y2[i])
+    x3_sig = []
+    y3_sig = []
+    for i in range(x3.shape[0]):
+        if y3[i] > 1e-6:
+            x3_sig.append(x3[i])
+            y3_sig.append(y3[i])
+    x4_sig = []
+    y4_sig = []
+    for i in range(x4.shape[0]):
+        if y4[i] > 1e-6:
+            x4_sig.append(x4[i])
+            y4_sig.append(y4[i])
 
     # discrete spectral lines
     zero = numpy.zeros(len(x1_sig))
-    plt.vlines(x1_sig, zero, y1_sig, color="red" , label="A'")
-    plt.vlines(x2_sig, zero, y2_sig, color="blue", label="A\"")
+    plt.vlines(x1_sig, zero, y1_sig, color="black" , label="A1")
+    plt.vlines(x2_sig, zero, y2_sig, color="red", label="B1")
+    plt.vlines(x3_sig, zero, y4_sig, color="green", label="B2")
+    plt.vlines(x3_sig, zero, y4_sig, color="blue", label="A2")
     # continuous convolution line
-    plt.plot(X, Y, color="black", label="convolution")
+    #plt.plot(X, Y, color="black", label="convolution")
 
     plt.xlim(xleft, xright)
     plt.xlabel(xlabel, fontsize=label_font_size, fontweight=label_font_weight)
