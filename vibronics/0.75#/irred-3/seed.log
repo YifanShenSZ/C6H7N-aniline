@@ -1,0 +1,182 @@
+Generate Lanczos seed vector
+Yifan Shen 2021
+
+Echo of user command line input:
+/home-4/yshen57@jhu.edu/Software/Mine/vibronics/tools/seed/seed.exe -w wfn-3.in -v vibration1.in vibration2.in vibration3.in vibration4.in -i initial-freq-1.in initial-freq-2.in -f final-freq-1.in final-freq-2.in final-freq-3.in final-freq-4.in -t transformation-matrix.in -s shift-vector.in -d 0.034856 0.652287 0
+
+Mon Apr 12 18:31:03 2021
+
+Number of irreducible representations: 4
+Point group product table:
+    1    2    3    4
+    2    1    4    3
+    3    4    1    2
+    4    3    2    1
+Number of normal modes:
+    irreducible 0: 13
+    irreducible 1: 7
+    irreducible 2: 12
+    irreducible 3: 4
+Number of electronic states = 3
+Vibrational irreducible:
+    state 1: 4
+    state 2: 1
+    state 3: 2
+Number of segmentations = 24
+Segment 1 owns:
+Electronic state 1: [0, 5760)
+Electronic state 2: [0, 5760)
+Electronic state 3: [0, 5760)
+Segment 2 owns:
+Electronic state 1: [5760, 11520)
+Electronic state 2: [5760, 11520)
+Electronic state 3: [5760, 11520)
+Segment 3 owns:
+Electronic state 1: [11520, 17280)
+Electronic state 2: [11520, 17280)
+Electronic state 3: [11520, 17280)
+Segment 4 owns:
+Electronic state 1: [17280, 23040)
+Electronic state 2: [17280, 23040)
+Electronic state 3: [17280, 23040)
+Segment 5 owns:
+Electronic state 1: [23040, 28800)
+Electronic state 2: [23040, 28800)
+Electronic state 3: [23040, 28800)
+Segment 6 owns:
+Electronic state 1: [28800, 34560)
+Electronic state 2: [28800, 34560)
+Electronic state 3: [28800, 34560)
+Segment 7 owns:
+Electronic state 1: [34560, 40320)
+Electronic state 2: [34560, 40320)
+Electronic state 3: [34560, 40320)
+Segment 8 owns:
+Electronic state 1: [40320, 46080)
+Electronic state 2: [40320, 46080)
+Electronic state 3: [40320, 46080)
+Segment 9 owns:
+Electronic state 1: [46080, 51840)
+Electronic state 2: [46080, 51840)
+Electronic state 3: [46080, 51840)
+Segment 10 owns:
+Electronic state 1: [51840, 57600)
+Electronic state 2: [51840, 57600)
+Electronic state 3: [51840, 57600)
+Segment 11 owns:
+Electronic state 1: [57600, 63360)
+Electronic state 2: [57600, 63360)
+Electronic state 3: [57600, 63360)
+Segment 12 owns:
+Electronic state 1: [63360, 69120)
+Electronic state 2: [63360, 69120)
+Electronic state 3: [63360, 69120)
+Segment 13 owns:
+Electronic state 1: [69120, 74880)
+Electronic state 2: [69120, 74880)
+Electronic state 3: [69120, 74880)
+Segment 14 owns:
+Electronic state 1: [74880, 80640)
+Electronic state 2: [74880, 80640)
+Electronic state 3: [74880, 80640)
+Segment 15 owns:
+Electronic state 1: [80640, 86400)
+Electronic state 2: [80640, 86400)
+Electronic state 3: [80640, 86400)
+Segment 16 owns:
+Electronic state 1: [86400, 92160)
+Electronic state 2: [86400, 92160)
+Electronic state 3: [86400, 92160)
+Segment 17 owns:
+Electronic state 1: [92160, 97920)
+Electronic state 2: [92160, 97920)
+Electronic state 3: [92160, 97920)
+Segment 18 owns:
+Electronic state 1: [97920, 103680)
+Electronic state 2: [97920, 103680)
+Electronic state 3: [97920, 103680)
+Segment 19 owns:
+Electronic state 1: [103680, 109440)
+Electronic state 2: [103680, 109440)
+Electronic state 3: [103680, 109440)
+Segment 20 owns:
+Electronic state 1: [109440, 115200)
+Electronic state 2: [109440, 115200)
+Electronic state 3: [109440, 115200)
+Segment 21 owns:
+Electronic state 1: [115200, 120960)
+Electronic state 2: [115200, 120960)
+Electronic state 3: [115200, 120960)
+Segment 22 owns:
+Electronic state 1: [120960, 126720)
+Electronic state 2: [120960, 126720)
+Electronic state 3: [120960, 126720)
+Segment 23 owns:
+Electronic state 1: [126720, 132480)
+Electronic state 2: [126720, 132480)
+Electronic state 3: [126720, 132480)
+Segment 24 owns:
+Electronic state 1: [132480, 138240)
+Electronic state 2: [132480, 138240)
+Electronic state 3: [132480, 138240)
+Vibrational basis functions of irreducible 1:
+Highest phonons among the vibrational basis functions:
+3, 0, 4, 0, 0, 1, 1, 0, 2, 0, 0, 0, 1, 
+0, 0, 8, 1, 1, 0, 0, 
+0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 
+1, 1, 1, 1, 
+Vibrational basis functions of irreducible 2:
+Highest phonons among the vibrational basis functions:
+3, 0, 4, 0, 0, 1, 1, 0, 2, 0, 0, 0, 1, 
+0, 0, 8, 1, 1, 0, 0, 
+0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 
+1, 1, 1, 1, 
+Vibrational basis functions of irreducible 3:
+Highest phonons among the vibrational basis functions:
+3, 0, 4, 0, 0, 1, 1, 0, 2, 0, 0, 0, 1, 
+0, 0, 8, 1, 1, 0, 0, 
+0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 
+1, 1, 1, 1, 
+Vibrational basis functions of irreducible 4:
+Highest phonons among the vibrational basis functions:
+3, 0, 4, 0, 0, 1, 1, 0, 2, 0, 0, 0, 1, 
+0, 0, 8, 1, 1, 0, 0, 
+0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 
+1, 1, 1, 1, 
+
+Read initial-state harmonic frequencies from:
+    initial-freq-1.in
+    initial-freq-2.in
+Read final-state harmonic frequencies from:
+    final-freq-1.in
+    final-freq-2.in
+    final-freq-3.in
+    final-freq-4.in
+
+The 10 most contributing vibrational basis functions are:
+No. 1. overlap = 0.128194, phonons are:
+    0    0    1    0    0    0    0    0    0    0    0    0    0    0    0    4    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+No. 2. overlap = 0.120786, phonons are:
+    1    0    1    0    0    0    0    0    0    0    0    0    0    0    0    3    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+No. 3. overlap = 0.114657, phonons are:
+    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    2    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+No. 4. overlap = 0.112715, phonons are:
+    1    0    0    0    0    0    0    0    0    0    0    0    0    0    0    3    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+No. 5. overlap = 0.110085, phonons are:
+    0    0    1    0    0    0    0    0    0    0    0    0    0    0    0    2    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+No. 6. overlap = 0.104454, phonons are:
+    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    4    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+No. 7. overlap = 0.0997941, phonons are:
+    0    0    2    0    0    0    0    0    0    0    0    0    0    0    0    4    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+No. 8. overlap = 0.0861363, phonons are:
+    1    0    1    0    0    0    0    0    0    0    0    0    0    0    0    5    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+No. 9. overlap = 0.0818958, phonons are:
+    1    0    2    0    0    0    0    0    0    0    0    0    0    0    0    3    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+No. 10. overlap = 0.0779829, phonons are:
+    1    0    2    0    0    0    0    0    0    0    0    0    0    0    0    5    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+
+Norm of the seed vector = 0.413005
+The seed vector can be found in seed-*-*.wfn
+
+Mon Apr 12 18:31:32 2021
+Mission success
