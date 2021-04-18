@@ -11,10 +11,10 @@ E0 = -285.9453200579 / 4.556335830019422e-6 \
    - -286.1075216397 / 4.556335830019422e-6 \
    - 26586.7
 
-xleft  = 4
-xright = 7
+xleft  = 4.3
+xright = 6.2
 
-xlabel = "wavelength (nm)"
+xlabel = "excitation energy (eV)"
 ylabel = "Intensity"
 
 axis_thick_ness = 2
@@ -45,6 +45,10 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("-z2","--zero2", type=float, default=0.0, help="zero point of irreducible 2 in cm^-1")
     parser.add_argument("-z3","--zero3", type=float, default=0.0, help="zero point of irreducible 3 in cm^-1")
     parser.add_argument("-z4","--zero4", type=float, default=0.0, help="zero point of irreducible 4 in cm^-1")
+    parser.add_argument("-n1","--norm1", type=float, default=1.0, help="norm of irreducible 1 seed vector")
+    parser.add_argument("-n2","--norm2", type=float, default=1.0, help="norm of irreducible 2 seed vector")
+    parser.add_argument("-n3","--norm3", type=float, default=1.0, help="norm of irreducible 3 seed vector")
+    parser.add_argument("-n4","--norm4", type=float, default=1.0, help="norm of irreducible 4 seed vector")
     parser.add_argument("-k","--kernel", type=str, default="Gaussian", help="convolution kernel (default = Gaussian)")
     parser.add_argument("-w","--width", type=float, default=0.01, help="convolution width (default = 0.01 eV)")
 
@@ -105,16 +109,21 @@ if __name__ == "__main__":
     x3 /= 8065.54429
     x4 /= 8065.54429
 
+    y1 *= args.norm1
+    y2 *= args.norm2
+    y3 *= args.norm3
+    y4 *= args.norm4
+
     x_total = numpy.concatenate((x1, x2, x3, x4))
     y_total = numpy.concatenate((y1, y2, y3, y4))
-    #X, Y = convolve(x_total, y_total, args.width, args.kernel)
+    X, Y = convolve(x_total, y_total, args.width, args.kernel)
 
     scale = max(numpy.amax(y1), numpy.amax(y2), numpy.amax(y3), numpy.amax(y4))
     y1 /= scale
     y2 /= scale
     y3 /= scale
     y4 /= scale
-    #Y /= numpy.amax(Y)
+    Y /= numpy.amax(Y)
 
     x1_sig = []
     y1_sig = []
@@ -145,10 +154,10 @@ if __name__ == "__main__":
     zero = numpy.zeros(len(x1_sig))
     plt.vlines(x1_sig, zero, y1_sig, color="black" , label="A1")
     plt.vlines(x2_sig, zero, y2_sig, color="red", label="B1")
-    plt.vlines(x3_sig, zero, y4_sig, color="green", label="B2")
-    plt.vlines(x3_sig, zero, y4_sig, color="blue", label="A2")
+    plt.vlines(x3_sig, zero, y3_sig, color="green", label="B2")
+    plt.vlines(x4_sig, zero, y4_sig, color="blue", label="A2")
     # continuous convolution line
-    #plt.plot(X, Y, color="black", label="convolution")
+    plt.plot(X, Y, color="black", label="convolution")
 
     plt.xlim(xleft, xright)
     plt.xlabel(xlabel, fontsize=label_font_size, fontweight=label_font_weight)
