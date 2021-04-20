@@ -12,7 +12,7 @@ E0 = -285.9453200579 / 4.556335830019422e-6 \
    - 26586.7
 
 xleft  = 4.3
-xright = 6.2
+xright = 7.2
 
 xlabel = "excitation energy (eV)"
 ylabel = "Intensity"
@@ -97,8 +97,8 @@ if __name__ == "__main__":
 
     x1, y1 = read_2vectors(args.irred1)
     x2, y2 = read_2vectors(args.irred2)
-    x3, y3 = read_2vectors(args.irred2)
-    x4, y4 = read_2vectors(args.irred2)
+    x3, y3 = read_2vectors(args.irred3)
+    x4, y4 = read_2vectors(args.irred4)
 
     x1 += args.zero1 + E0
     x2 += args.zero2 + E0
@@ -109,10 +109,10 @@ if __name__ == "__main__":
     x3 /= 8065.54429
     x4 /= 8065.54429
 
-    y1 *= args.norm1
-    y2 *= args.norm2
-    y3 *= args.norm3
-    y4 *= args.norm4
+    y1 *= args.norm1 * args.norm1
+    y2 *= args.norm2 * args.norm2
+    y3 *= args.norm3 * args.norm3
+    y4 *= args.norm4 * args.norm4
 
     x_total = numpy.concatenate((x1, x2, x3, x4))
     y_total = numpy.concatenate((y1, y2, y3, y4))
