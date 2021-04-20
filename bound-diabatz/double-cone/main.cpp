@@ -46,21 +46,19 @@ int main(size_t argc, const char ** argv) {
     at::Tensor g = q_mex.clone();
     g.slice(0, 0, 13).fill_(0.0);
 
-    at::Tensor h = tchem::utility::read_vector("h.int"); h /= h.norm();
+    at::Tensor h = tchem::utility::read_vector("h.int");
 
     at::Tensor q0 = q_mex.clone();
     q0 -= g;
     at::Tensor r0 = int2cart(q0, r_min, intcoordset);
 
-    std::ofstream ofs_g, ofs_h, ofs_m, ofs_l, ofs_u;
-    ofs_g.open("g-mesh.txt");
-    ofs_h.open("h-mesh.txt");
+    std::ofstream ofs_m, ofs_l, ofs_u;
     ofs_m.open("gh-mesh.txt");
     ofs_l.open("lower.txt");
     ofs_u.open("upper.txt");
 
     int64_t Ng = 15, Nh = 10;
-    double dg = 0.1, dh = 0.08;
+    double dg = 0.1, dh = 2.0;
     std::vector<double> gmesh, hmesh, lower, upper;
     for (int64_t i = -Ng; i <= Ng; i++)
     for (int64_t j = -Nh; j <= Nh; j++) {
@@ -70,15 +68,12 @@ int main(size_t argc, const char ** argv) {
         std::tie(Hd, dHd) = Hdkernel.compute_Hd_dHd(r);
         at::Tensor energy, states;
         std::tie(energy, states) = Hd.symeig();
-        ofs_g << i * dg << '\n';
-        ofs_h << j * dh << '\n';
-        ofs_m << i * dg << "    " << j * dh << '\n';
-        ofs_l << energy[0].item<double>() << '\n';
-        ofs_u << energy[1].item<double>() << '\n';
+        ofs_m << std::setw(25) << std::scientific << std::setprecision(15) << i * dg
+              << std::setw(25) << std::scientific << std::setprecision(15) << j * dh << '\n';
+        ofs_l << std::setw(25) << std::scientific << std::setprecision(15) << energy[0].item<double>() << '\n';
+        ofs_u << std::setw(25) << std::scientific << std::setprecision(15) << energy[1].item<double>() << '\n';
     }
 
-    ofs_g.close();
-    ofs_h.close();
     ofs_m.close();
     ofs_l.close();
     ofs_u.close();

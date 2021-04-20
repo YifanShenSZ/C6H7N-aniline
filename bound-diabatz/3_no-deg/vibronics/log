@@ -7867,14 +7867,16 @@ Yifan Shen 2021
 Echo of user command line input:
 /home/yshen/Software/Mine/diabatz/tools/v0/vibronics/vibronics.exe -f default -i IntCoordDef -s SAS.in -n 4_Hd.in -c 4.net -l 4_11.in 4_12.in 4_13.in 4_22.in 4_23.in 4_33.in -m mass.txt --init_geom min-A1.xyz --final_geom surface-min-B1.xyz --init_hess min-A1_hessian --contour 0.85 --init_CNPI2point 1 1 2 2
 
-Sat Apr 10 20:01:15 2021
+Tue Apr 20 11:45:48 2021
 
 The final-state equilibirum geometry is a minimum, using
     Hessian = ▽▽Hd[0][0]
+
 Initial-state zero-point harmonic vibrational energy = 26586.7 cm^-1
 The initial-state normal modes can be visualized by init-*.log
 Final-state zero-point harmonic vibrational energy = 26121.7 cm^-1
 The final-state normal modes can be visualized by final-*.log
+The transformation matrix from internal coordiante to final-state normal coordinate can be found in Linv*.txt
 
 The transformation matrix from final-state to initial-state normal modes can be found in transformation-matrix.txt
 The shift vector from final-state to initial-state normal modes can be found in shift-vector.txt
@@ -7888,5 +7890,5 @@ Hd22 expanded in final-state normal modes can be found in Hd_2-2.txt
 Hd23 expanded in final-state normal modes can be found in Hd_2-3.txt
 Hd33 expanded in final-state normal modes can be found in Hd_3-3.txt
 
-Sat Apr 10 20:02:20 2021
+Tue Apr 20 11:46:44 2021
 Mission success
