@@ -1,0 +1,10 @@
+#!/bin/bash -l
+#SBATCH --job-name=0.85
+#SBATCH --time=72:00:00
+#SBATCH --partition=lrgmem
+#SBATCH --nodes=1
+#SBATCH --ntasks-per-node=48
+
+module load intel/2020
+
+~/Software/Mine/vibronics/tools/plot2D/plot2D.exe -w wfn-3.in -v vibration1.in vibration2.in vibration3.in vibration4.in -f final-freq-1.in final-freq-2.in final-freq-3.in final-freq-4.in -p wfn2121 --format default -i IntCoordDef -s SAS.in -l Linv-1.txt Linv-2.txt Linv-3.txt Linv-4.txt -g mex-B1-B2-flat.xyz -x B1.int -y h.int -1 15 0.1 -2 10 2 > plot2D.log
