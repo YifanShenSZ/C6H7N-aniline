@@ -1,0 +1,57 @@
+Diabatz version 0
+Yifan Shen 2021
+
+Echo of user command line input:
+/home-4/yshen57@jhu.edu/Software/Mine/diabatz/v0/diabatz.exe -f default -i IntCoordDef -s SAS.in -n Hd.in -l 11.in 12.in 13.in 14.in 22.in 23.in 24.in 33.in 34.in 44.in -d C2v_list.txt -z -286.1075216397 -g 0.013003140199998597 0.1622015817999909 0.19160296519999065 0.24159386550002182 -m 100
+
+Mon May  3 16:41:32 2021
+
+The data set will be read from: 
+    sad-A1/, min-B1/, sad-B2/, min-A2/, 
+There are 200 data points in adiabatic representation
+          0 data points in composite representation
+
+maximum ground state energy = 0.0142374
+maximum ||ground state energy gradient||_infinity = 0.0887975
+so set gradient / energy scaling to 6.23693
+
+The data set corresponds to 28696 least square equations
+There are 15070 parameters to train
+
+The number of threads = 24
+Each thread owns 8 data points in adiabatic representation
+                 0 data points in composite representation
+The last thread owns 16 data points in adiabatic representation
+                     0 data points in composite representation
+Thread 0 starts with Jacobian row 0
+Thread 1 starts with Jacobian row 816
+Thread 2 starts with Jacobian row 1632
+Thread 3 starts with Jacobian row 2448
+Thread 4 starts with Jacobian row 3694
+Thread 5 starts with Jacobian row 5258
+Thread 6 starts with Jacobian row 6810
+Thread 7 starts with Jacobian row 7786
+Thread 8 starts with Jacobian row 8602
+Thread 9 starts with Jacobian row 9418
+Thread 10 starts with Jacobian row 10492
+Thread 11 starts with Jacobian row 12036
+Thread 12 starts with Jacobian row 13620
+Thread 13 starts with Jacobian row 14756
+Thread 14 starts with Jacobian row 15572
+Thread 15 starts with Jacobian row 16388
+Thread 16 starts with Jacobian row 17290
+Thread 17 starts with Jacobian row 18814
+Thread 18 starts with Jacobian row 20398
+Thread 19 starts with Jacobian row 21726
+Thread 20 starts with Jacobian row 22542
+Thread 21 starts with Jacobian row 23358
+Thread 22 starts with Jacobian row 24174
+Thread 23 starts with Jacobian row 25592
+
+The initial residue = 4.98931
+ Failed trust region: max iteration exceeded!
+ Final residual =   2.435058708058671E-002
+The final residue = 0.0243506
+
+Mon May  3 18:56:08 2021
+Mission success
