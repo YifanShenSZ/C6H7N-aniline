@@ -1,0 +1,8 @@
+#!/bin/bash -l
+#SBATCH --job-name=diabatz
+#SBATCH --time=72:00:00
+#SBATCH --partition=skylake
+#SBATCH --nodes=1
+#SBATCH --ntasks-per-node=24
+
+~/Software/Mine/diabatz/v0/diabatz.exe -f default -i IntCoordDef -s SAS.in -n Hd.in -l 11.in 12.in 13.in 14.in 22.in 23.in 24.in 33.in 34.in 44.in -d start-disso_list.txt -z -286.1075216397 -c Hd.net -m 100 > log
