@@ -1,0 +1,28 @@
+terminate called after throwing an instance of 'c10::Error'
+  what():  cholesky_cpu: U(33,33) is zero, singular U.
+Exception raised from singleCheckErrors at ../aten/src/ATen/native/LinearAlgebraUtils.h:141 (most recent call first):
+frame #0: c10::Error::Error(c10::SourceLocation, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) + 0x69 (0x15430674bb89 in /home/yshen/Software/Programming/libtorch-cuda10.1-1.7.1/lib/libc10.so)
+frame #1: <unknown function> + 0xcb1c28 (0x1542f69f2c28 in /home/yshen/Software/Programming/libtorch-cuda10.1-1.7.1/lib/libtorch_cpu.so)
+frame #2: at::native::_cholesky_helper_cpu(at::Tensor const&, bool) + 0x4d8 (0x1542f6a00b58 in /home/yshen/Software/Programming/libtorch-cuda10.1-1.7.1/lib/libtorch_cpu.so)
+frame #3: <unknown function> + 0x1333a70 (0x1542f7074a70 in /home/yshen/Software/Programming/libtorch-cuda10.1-1.7.1/lib/libtorch_cpu.so)
+frame #4: <unknown function> + 0xb75d07 (0x1542f68b6d07 in /home/yshen/Software/Programming/libtorch-cuda10.1-1.7.1/lib/libtorch_cpu.so)
+frame #5: at::Tensor c10::Dispatcher::callWithDispatchKey<at::Tensor, at::Tensor const&, bool>(c10::TypedOperatorHandle<at::Tensor (at::Tensor const&, bool)> const&, c10::DispatchKey, at::Tensor const&, bool) const + 0x1df (0x1542f721548f in /home/yshen/Software/Programming/libtorch-cuda10.1-1.7.1/lib/libtorch_cpu.so)
+frame #6: at::_cholesky_helper(at::Tensor const&, bool) + 0xb4 (0x1542f70f5e84 in /home/yshen/Software/Programming/libtorch-cuda10.1-1.7.1/lib/libtorch_cpu.so)
+frame #7: at::native::cholesky(at::Tensor const&, bool) + 0x53 (0x1542f69f4333 in /home/yshen/Software/Programming/libtorch-cuda10.1-1.7.1/lib/libtorch_cpu.so)
+frame #8: <unknown function> + 0x15ad4dc (0x1542f72ee4dc in /home/yshen/Software/Programming/libtorch-cuda10.1-1.7.1/lib/libtorch_cpu.so)
+frame #9: <unknown function> + 0xb75d07 (0x1542f68b6d07 in /home/yshen/Software/Programming/libtorch-cuda10.1-1.7.1/lib/libtorch_cpu.so)
+frame #10: at::Tensor c10::Dispatcher::callWithDispatchKey<at::Tensor, at::Tensor const&, bool>(c10::TypedOperatorHandle<at::Tensor (at::Tensor const&, bool)> const&, c10::DispatchKey, at::Tensor const&, bool) const + 0x1df (0x1542f721548f in /home/yshen/Software/Programming/libtorch-cuda10.1-1.7.1/lib/libtorch_cpu.so)
+frame #11: at::cholesky(at::Tensor const&, bool) + 0xb4 (0x1542f70f5704 in /home/yshen/Software/Programming/libtorch-cuda10.1-1.7.1/lib/libtorch_cpu.so)
+frame #12: <unknown function> + 0x29c9459 (0x1542f870a459 in /home/yshen/Software/Programming/libtorch-cuda10.1-1.7.1/lib/libtorch_cpu.so)
+frame #13: <unknown function> + 0xb75d07 (0x1542f68b6d07 in /home/yshen/Software/Programming/libtorch-cuda10.1-1.7.1/lib/libtorch_cpu.so)
+frame #14: at::Tensor c10::Dispatcher::callWithDispatchKey<at::Tensor, at::Tensor const&, bool>(c10::TypedOperatorHandle<at::Tensor (at::Tensor const&, bool)> const&, c10::DispatchKey, at::Tensor const&, bool) const + 0x1df (0x1542f721548f in /home/yshen/Software/Programming/libtorch-cuda10.1-1.7.1/lib/libtorch_cpu.so)
+frame #15: at::Tensor::cholesky(bool) const + 0xb4 (0x1542f73aa204 in /home/yshen/Software/Programming/libtorch-cuda10.1-1.7.1/lib/libtorch_cpu.so)
+frame #16: tchem::IC::IntCoordSet::gradient_cart2int(at::Tensor const&, at::Tensor const&) const + 0x2ea (0x4cbf1a in /home/yshen/Software/Mine/diabatz/tools/critics/v0/critics.exe)
+frame #17: /home/yshen/Software/Mine/diabatz/tools/critics/v0/critics.exe() [0x45022b]
+frame #18: strong_wolfe_ + 0x232a (0x4802ea in /home/yshen/Software/Mine/diabatz/tools/critics/v0/critics.exe)
+frame #19: bfgs_ + 0x2fbe (0x473f2e in /home/yshen/Software/Mine/diabatz/tools/critics/v0/critics.exe)
+frame #20: search_minimum(at::Tensor const&) + 0x14e (0x44e39e in /home/yshen/Software/Mine/diabatz/tools/critics/v0/critics.exe)
+frame #21: main + 0x916 (0x45b446 in /home/yshen/Software/Mine/diabatz/tools/critics/v0/critics.exe)
+frame #22: __libc_start_main + 0xe7 (0x1542f53d0bf7 in /lib/x86_64-linux-gnu/libc.so.6)
+frame #23: _start + 0x2a (0x445e2a in /home/yshen/Software/Mine/diabatz/tools/critics/v0/critics.exe)
+
