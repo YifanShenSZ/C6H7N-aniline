@@ -1,24 +1,22 @@
  Trust region warning: step length has converged, but residual has not met accur
  acy goal
- Final residual =   1.604335897360466E-012
+ Final residual =   1.165603628350484E-012
  Trust region warning: step length has converged, but residual has not met accur
  acy goal
- Final residual =   1.108644499876668E-012
+ Final residual =   1.613484806424490E-012
  Trust region warning: step length has converged, but residual has not met accur
  acy goal
- Final residual =   1.980290178520097E-012
+ Final residual =   4.321261456666173E-003
  Trust region warning: step length has converged, but residual has not met accur
  acy goal
- Final residual =   1.753792370929844E-012
- Trust region warning: step length has converged, but residual has not met accur
- acy goal
- Final residual =   1.819124654131987E-012
- Trust region warning: step length has converged, but residual has not met accur
- acy goal
- Final residual =   1.046136161690384E-012
- Trust region warning: step length has converged, but residual has not met accur
- acy goal
- Final residual =   1.239011499372630E-012
- Trust region warning: step length has converged, but residual has not met accur
- acy goal
- Final residual =   1.345917649064550E-003
+ Final residual =   1.695537560262016E-002
+Critics: a critical geometry searcher
+Yifan Shen 2021
+
+Echo of user command line input:
+/home-4/yshen57@jhu.edu/Software/Mine/diabatz/tools/critics/v0/critics.exe -j min -f default -i opt.IntCoordDef -t 1 -a default IntCoordDef SAS.in Hd.in Hd.net 11.in 12.in 13.in 14.in 22.in 23.in 24.in 33.in 34.in 44.in -g min-A1.xyz
+
+Mon May 31 11:47:17 2021
+
+Job type: min
+The target electronic state is 1

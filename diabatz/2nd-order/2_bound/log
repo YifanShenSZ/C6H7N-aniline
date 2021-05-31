@@ -2,9 +2,9 @@ Diabatz version 0
 Yifan Shen 2021
 
 Echo of user command line input:
-/home-4/yshen57@jhu.edu/Software/Mine/diabatz/v0/diabatz.exe -f default -i IntCoordDef -s SAS.in -n Hd.in -l 11.in 12.in 13.in 14.in 22.in 23.in 24.in 33.in 34.in 44.in -d bound_list.txt -z -286.1075216397 -c Hd.net -m 100
+/home-4/yshen57@jhu.edu/Software/Mine/diabatz/v0/diabatz.exe -f default -i IntCoordDef -s SAS.in -n Hd.in -l 11.in 12.in 13.in 14.in 22.in 23.in 24.in 33.in 34.in 44.in -d bound_list.txt -z -286.1075216397 -c Hd.net
 
-Mon May  3 22:50:44 2021
+Fri May 28 23:34:25 2021
 
 The data set will be read from: 
     sad-A1/, min-B1/, sad-B2/, min-A2/, linear_path/min-B1_min-B2/, 
@@ -14,12 +14,12 @@ There are 319 data points in adiabatic representation
 
 maximum ground state energy = 0.0142374
 maximum ||ground state energy gradient||_infinity = 0.0887975
-so set gradient / energy scaling to 6.23693
-
-The data set corresponds to 56700 least square equations
-There are 15070 parameters to train
+so we suggest to set gradient / energy scaling to around 6.23693
 
 The number of threads = 24
+
+Optimizer is trust region
+
 Each thread owns 13 data points in adiabatic representation
                  0 data points in composite representation
 The last thread owns 20 data points in adiabatic representation
@@ -49,10 +49,13 @@ Thread 21 starts with Jacobian row 45236
 Thread 22 starts with Jacobian row 47680
 Thread 23 starts with Jacobian row 50124
 
-The initial residue = 1.5266
- Failed trust region: max iteration exceeded!
- Final residual =   5.550562884578394E-002
-The final residue = 0.0555056
+The data set corresponds to 56700 least square equations
+There are 15070 parameters to train
 
-Tue May  4 01:33:53 2021
+The initial residue = 1.69825
+ Failed trust region: max iteration exceeded!
+ Final residual =   5.619249942947842E-002
+The final residue = 0.0561925
+
+Sat May 29 02:07:33 2021
 Mission success
