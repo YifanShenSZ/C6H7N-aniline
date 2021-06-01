@@ -4,7 +4,7 @@ Yifan Shen 2021
 Echo of user command line input:
 /home-4/yshen57@jhu.edu/Software/Mine/diabatz/v0/diabatz.exe -f default -i IntCoordDef -s SAS.in -n Hd.in -l 11.in 12.in 13.in 14.in 22.in 23.in 24.in 33.in 34.in 44.in -d C2v_list.txt -z -286.1075216397 --energy_weight 0.015 --gradient_weight 0.02 -g 0.013003140199998597 0.1622015817999909 0.19160296519999065 0.24159386550002182
 
-Mon May 31 21:38:48 2021
+Mon May 31 21:16:46 2021
 
 The data set will be read from: 
     sad-A1/, min-B1/, sad-B2/, min-A2/, 
@@ -52,12 +52,12 @@ Thread 22 starts with Jacobian row 24174
 Thread 23 starts with Jacobian row 25592
 
 The data set corresponds to 28696 least square equations
-There are 15070 parameters to train
+There are 16042 parameters to train
 
-The initial residue = 1.12481
+The initial residue = 1.31828
  Failed trust region: max iteration exceeded!
- Final residual =   1.304589901192901E-002
-The final residue = 0.0130459
+ Final residual =   1.300440142298830E-002
+The final residue = 0.0130044
 
-Tue Jun  1 00:08:58 2021
+Mon May 31 23:35:37 2021
 Mission success

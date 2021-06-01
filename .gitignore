@@ -1,12 +1,11 @@
 Manuscript*/
 Reference/
-Idea
-
-BAK
 
 # Analysis script executables
 build/
 *.exe
+
+slurm-*
 
 # Large *vibronics* intermediate files
 vibration*.in

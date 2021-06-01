@@ -2,9 +2,9 @@ Diabatz version 0
 Yifan Shen 2021
 
 Echo of user command line input:
-/home-4/yshen57@jhu.edu/Software/Mine/diabatz/v0/diabatz.exe -f default -i IntCoordDef -s SAS.in -n Hd.in -l 11.in 12.in 13.in 14.in 22.in 23.in 24.in 33.in 34.in 44.in -d start-disso_list.txt -z -286.1075216397 --energy_weight 0.015 --gradient_weight 0.02 -c Hd.net
+/home-4/yshen57@jhu.edu/Software/Mine/diabatz/v0/diabatz.exe -f default -i IntCoordDef -s SAS.in -n Hd.in -l 11.in 12.in 13.in 14.in 22.in 23.in 24.in 33.in 34.in 44.in -d start-disso_list.txt -z -286.1075216397 -c Hd.net -m 100
 
-Tue Jun  1 10:55:11 2021
+Sat May 29 15:15:06 2021
 
 The data set will be read from: 
     sad-A1/, min-B1/, sad-B2/, min-A2/, linear_path/min-B1_min-B2/, 
@@ -16,9 +16,6 @@ There are 921 data points in adiabatic representation
 maximum ground state energy = 0.0828175
 maximum ||ground state energy gradient||_infinity = 0.125353
 so we suggest to set gradient / energy scaling to around 1.51361
-
-According to user defined energy threshold and gradient threshold,
-set gradient / energy scaling to 1.33333
 
 The number of threads = 24
 
@@ -56,4 +53,10 @@ Thread 23 starts with Jacobian row 216390
 The data set corresponds to 233498 least square equations
 There are 15070 parameters to train
 
-The initial residue = 3.63313
+The initial residue = 10.108
+ Failed trust region: max iteration exceeded!
+ Final residual =    1.28382672733141     
+The final residue = 1.28383
+
+Sat May 29 23:07:37 2021
+Mission success
