@@ -1,0 +1,18 @@
+Number of electronic states:
+    4
+Symmetry (irreducible) of matrix elements:
+    1    2    3    4
+    2    1    4    3
+    3    4    1    2
+    4    3    2    1
+Dimensions of each network: (O11, O12, ..., O1N, O22, ...)
+  220    9    4    2    1
+  146    8    3    1
+  196    8    3    1
+  140    8    3    1
+  220    9    4    2    1
+  140    8    3    1
+  196    8    3    1
+  220    9    4    2    1
+  146    8    3    1
+  220    9    4    2    1
