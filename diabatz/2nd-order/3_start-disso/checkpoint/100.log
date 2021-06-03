@@ -57,3 +57,9 @@ The data set corresponds to 233498 least square equations
 There are 15070 parameters to train
 
 The initial residue = 3.63313
+ Failed trust region: max iteration exceeded!
+ Final residual =   0.860014846092796     
+The final residue = 0.860015
+
+Tue Jun  1 22:42:04 2021
+Mission success

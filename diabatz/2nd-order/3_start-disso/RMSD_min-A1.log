@@ -4,25 +4,25 @@ Yifan Shen 2021
 Echo of user command line input:
 /home-4/yshen57@jhu.edu/Software/Mine/diabatz/tools/RMSD/v0/RMSD.exe -d default IntCoordDef SAS.in Hd.in Hd.net 11.in 12.in 13.in 14.in 22.in 23.in 24.in 33.in 34.in 44.in -s min-A1/ -z -286.1075216397
 
-Sun May 30 12:52:38 2021
+Wed Jun  2 15:38:44 2021
 
 Root mean square deviation of energy:
-State 1 = 0.000125791
-State 2 = 0.000573813
-State 3 = 0.000157638
-State 4 = 0.00026542
+State 1 = 0.000285427
+State 2 = 0.00573061
+State 3 = 0.00449318
+State 4 = 0.0220956
 Root mean square deviation of energy gradient:
-State 1 = 0.000242234
-State 2 = 0.00052559
-State 3 = 0.000397471
-State 4 = 0.000418867
+State 1 = 0.00031001
+State 2 = 0.0128088
+State 3 = 0.00652419
+State 4 = 0.00223403
 Root mean square deviation of interstate coupling:
-State 1-2 = 0.00162219
-State 1-3 = 0.00107133
-State 1-4 = 0.00203315
-State 2-3 = 0.00194732
-State 2-4 = 0.000867973
-State 3-4 = 0.000992016
+State 1-2 = 0.00305166
+State 1-3 = 0.00463673
+State 1-4 = 0.00659607
+State 2-3 = 0.00136862
+State 2-4 = 0.00154947
+State 3-4 = 0.00274578
 
-Sun May 30 12:52:55 2021
+Wed Jun  2 15:39:00 2021
 Mission success
