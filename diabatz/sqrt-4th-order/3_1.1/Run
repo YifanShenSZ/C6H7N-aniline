@@ -1,0 +1,8 @@
+#!/bin/bash -l
+#SBATCH --job-name=sqrt-4
+#SBATCH --time=72:00:00
+#SBATCH --partition=lrgmem
+#SBATCH --nodes=1
+#SBATCH --ntasks-per-node=48
+
+~/Software/Mine/diabatz/v0/diabatz.exe -f default -i IntCoordDef -s SAS.in -n Hd.in -l 11.in 12.in 13.in 14.in 22.in 23.in 24.in 33.in 34.in 44.in -d 1.1_list.txt -z -286.1075216397 --energy_weight 0.015 --gradient_weight 0.02 -c prior.net > log
