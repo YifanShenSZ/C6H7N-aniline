@@ -1,11 +1,11 @@
-Manuscript*/
-Reference/
-
-# Analysis script executables
+# Executables
 build/
 *.exe
 
-slurm-*
+# Documents
+Manuscript*/
+Reference/
+*.xlsx
 
 # Large *vibronics* intermediate files
 vibration*.in
