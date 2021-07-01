@@ -1,0 +1,12 @@
+Vibronics version 0
+Yifan Shen 2021
+
+Echo of user command line input:
+/home-4/yshen57@jhu.edu/Software/Mine/vibronics/tools/eig/eig.exe -a alpha.txt -b beta.txt
+
+Tue Jun 29 17:15:24 2021
+
+The energy levels and spectral intensities can be found in spectrum.txt
+
+Tue Jun 29 17:20:37 2021
+Mission success
