@@ -177,3 +177,7 @@ if __name__ == "__main__":
     plt.legend(loc=legend_location, frameon=False, fontsize=legend_font_size)
     
     plt.show()
+
+    with open("envelope.txt", 'w') as f:
+        for i in range(X.shape[0]):
+            print("%25.15f%25.15f"%(X[i], Y[i]), file=f)
