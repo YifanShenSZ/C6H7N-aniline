@@ -50,7 +50,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("-n3","--norm3", type=float, default=1.0, help="norm of irreducible 3 seed vector")
     parser.add_argument("-n4","--norm4", type=float, default=1.0, help="norm of irreducible 4 seed vector")
     parser.add_argument("-k","--kernel", type=str, default="Gaussian", help="convolution kernel (default = Gaussian)")
-    parser.add_argument("-w","--width", type=float, default=0.01, help="convolution width (default = 0.01 eV)")
+    parser.add_argument("-w","--width", type=float, default=0.006, help="convolution width (default = 0.006 eV)")
 
     args = parser.parse_args()
     return args
