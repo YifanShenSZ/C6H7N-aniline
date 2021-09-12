@@ -1,0 +1,18 @@
+#!/bin/bash -l
+#SBATCH --job-name=0.90-14
+#SBATCH --time=48:00:00
+#SBATCH --qos=bigmem
+#SBATCH --constraint=amd
+#SBATCH --nodes=1
+#SBATCH --ntasks-per-node=32
+#SBATCH --cpus-per-task=2
+
+# qos: `shared` is for partial usage of a node
+#      `bigmem` is to use an entire node
+# amd-bigmem allocates memory according to the number of cpus: 1 cpu = 64 GB
+
+~/Software/Mine/vibronics/tools/seed/seed.exe -w wfn-1.in -v vibration1.in vibration2.in vibration3.in vibration4.in -i initial-freq-1.in initial-freq-2.in -f final-freq-1.in final-freq-2.in final-freq-3.in final-freq-4.in -t transformation-matrix.in -s shift-vector.in -d 0.034856 0.652287 0  > seed.log
+
+~/Software/Mine/vibronics/v1/vibronics.exe -w wfn-1.in -v vibration1.in vibration2.in vibration3.in vibration4.in -H Hd_1-1.in Hd_1-2.in Hd_1-3.in Hd_2-2.in Hd_2-3.in Hd_3-3.in -f final-freq-1.in final-freq-2.in final-freq-3.in final-freq-4.in -p seed -m 10000 > Lanczos.log
+
+~/Software/Mine/vibronics/tools/eig/eig.exe -a alpha.txt -b beta.txt > eig.log

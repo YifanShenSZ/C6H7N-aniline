@@ -1,0 +1,342 @@
+Generate Lanczos seed vector
+Yifan Shen 2021
+
+Echo of user command line input:
+/global/homes/y/yifnshen/Software/Mine/vibronics/tools/seed/seed.exe -w wfn-1.in -v vibration1.in vibration2.in vibration3.in vibration4.in -i initial-freq-1.in initial-freq-2.in -f final-freq-1.in final-freq-2.in final-freq-3.in final-freq-4.in -t transformation-matrix.in -s shift-vector.in -d 0.034856 0.652287 0
+
+Fri Sep 10 11:46:52 2021
+
+Number of irreducible representations: 4
+Point group product table:
+    1    2    3    4
+    2    1    4    3
+    3    4    1    2
+    4    3    2    1
+Number of normal modes:
+    irreducible 0: 13
+    irreducible 1: 7
+    irreducible 2: 12
+    irreducible 3: 4
+Number of electronic states = 3
+Vibrational irreducible:
+    state 1: 2
+    state 2: 3
+    state 3: 4
+Number of segmentations = 64
+Segment 1 owns:
+Electronic state 1: [0, 74250)
+Electronic state 2: [0, 33750)
+Electronic state 3: [0, 33750)
+Segment 2 owns:
+Electronic state 1: [74250, 148500)
+Electronic state 2: [33750, 67500)
+Electronic state 3: [33750, 67500)
+Segment 3 owns:
+Electronic state 1: [148500, 222750)
+Electronic state 2: [67500, 101250)
+Electronic state 3: [67500, 101250)
+Segment 4 owns:
+Electronic state 1: [222750, 297000)
+Electronic state 2: [101250, 135000)
+Electronic state 3: [101250, 135000)
+Segment 5 owns:
+Electronic state 1: [297000, 371250)
+Electronic state 2: [135000, 168750)
+Electronic state 3: [135000, 168750)
+Segment 6 owns:
+Electronic state 1: [371250, 445500)
+Electronic state 2: [168750, 202500)
+Electronic state 3: [168750, 202500)
+Segment 7 owns:
+Electronic state 1: [445500, 519750)
+Electronic state 2: [202500, 236250)
+Electronic state 3: [202500, 236250)
+Segment 8 owns:
+Electronic state 1: [519750, 594000)
+Electronic state 2: [236250, 270000)
+Electronic state 3: [236250, 270000)
+Segment 9 owns:
+Electronic state 1: [594000, 668250)
+Electronic state 2: [270000, 303750)
+Electronic state 3: [270000, 303750)
+Segment 10 owns:
+Electronic state 1: [668250, 742500)
+Electronic state 2: [303750, 337500)
+Electronic state 3: [303750, 337500)
+Segment 11 owns:
+Electronic state 1: [742500, 816750)
+Electronic state 2: [337500, 371250)
+Electronic state 3: [337500, 371250)
+Segment 12 owns:
+Electronic state 1: [816750, 891000)
+Electronic state 2: [371250, 405000)
+Electronic state 3: [371250, 405000)
+Segment 13 owns:
+Electronic state 1: [891000, 965250)
+Electronic state 2: [405000, 438750)
+Electronic state 3: [405000, 438750)
+Segment 14 owns:
+Electronic state 1: [965250, 1039500)
+Electronic state 2: [438750, 472500)
+Electronic state 3: [438750, 472500)
+Segment 15 owns:
+Electronic state 1: [1039500, 1113750)
+Electronic state 2: [472500, 506250)
+Electronic state 3: [472500, 506250)
+Segment 16 owns:
+Electronic state 1: [1113750, 1188000)
+Electronic state 2: [506250, 540000)
+Electronic state 3: [506250, 540000)
+Segment 17 owns:
+Electronic state 1: [1188000, 1262250)
+Electronic state 2: [540000, 573750)
+Electronic state 3: [540000, 573750)
+Segment 18 owns:
+Electronic state 1: [1262250, 1336500)
+Electronic state 2: [573750, 607500)
+Electronic state 3: [573750, 607500)
+Segment 19 owns:
+Electronic state 1: [1336500, 1410750)
+Electronic state 2: [607500, 641250)
+Electronic state 3: [607500, 641250)
+Segment 20 owns:
+Electronic state 1: [1410750, 1485000)
+Electronic state 2: [641250, 675000)
+Electronic state 3: [641250, 675000)
+Segment 21 owns:
+Electronic state 1: [1485000, 1559250)
+Electronic state 2: [675000, 708750)
+Electronic state 3: [675000, 708750)
+Segment 22 owns:
+Electronic state 1: [1559250, 1633500)
+Electronic state 2: [708750, 742500)
+Electronic state 3: [708750, 742500)
+Segment 23 owns:
+Electronic state 1: [1633500, 1707750)
+Electronic state 2: [742500, 776250)
+Electronic state 3: [742500, 776250)
+Segment 24 owns:
+Electronic state 1: [1707750, 1782000)
+Electronic state 2: [776250, 810000)
+Electronic state 3: [776250, 810000)
+Segment 25 owns:
+Electronic state 1: [1782000, 1856250)
+Electronic state 2: [810000, 843750)
+Electronic state 3: [810000, 843750)
+Segment 26 owns:
+Electronic state 1: [1856250, 1930500)
+Electronic state 2: [843750, 877500)
+Electronic state 3: [843750, 877500)
+Segment 27 owns:
+Electronic state 1: [1930500, 2004750)
+Electronic state 2: [877500, 911250)
+Electronic state 3: [877500, 911250)
+Segment 28 owns:
+Electronic state 1: [2004750, 2079000)
+Electronic state 2: [911250, 945000)
+Electronic state 3: [911250, 945000)
+Segment 29 owns:
+Electronic state 1: [2079000, 2153250)
+Electronic state 2: [945000, 978750)
+Electronic state 3: [945000, 978750)
+Segment 30 owns:
+Electronic state 1: [2153250, 2227500)
+Electronic state 2: [978750, 1012500)
+Electronic state 3: [978750, 1012500)
+Segment 31 owns:
+Electronic state 1: [2227500, 2301750)
+Electronic state 2: [1012500, 1046250)
+Electronic state 3: [1012500, 1046250)
+Segment 32 owns:
+Electronic state 1: [2301750, 2376000)
+Electronic state 2: [1046250, 1080000)
+Electronic state 3: [1046250, 1080000)
+Segment 33 owns:
+Electronic state 1: [2376000, 2450250)
+Electronic state 2: [1080000, 1113750)
+Electronic state 3: [1080000, 1113750)
+Segment 34 owns:
+Electronic state 1: [2450250, 2524500)
+Electronic state 2: [1113750, 1147500)
+Electronic state 3: [1113750, 1147500)
+Segment 35 owns:
+Electronic state 1: [2524500, 2598750)
+Electronic state 2: [1147500, 1181250)
+Electronic state 3: [1147500, 1181250)
+Segment 36 owns:
+Electronic state 1: [2598750, 2673000)
+Electronic state 2: [1181250, 1215000)
+Electronic state 3: [1181250, 1215000)
+Segment 37 owns:
+Electronic state 1: [2673000, 2747250)
+Electronic state 2: [1215000, 1248750)
+Electronic state 3: [1215000, 1248750)
+Segment 38 owns:
+Electronic state 1: [2747250, 2821500)
+Electronic state 2: [1248750, 1282500)
+Electronic state 3: [1248750, 1282500)
+Segment 39 owns:
+Electronic state 1: [2821500, 2895750)
+Electronic state 2: [1282500, 1316250)
+Electronic state 3: [1282500, 1316250)
+Segment 40 owns:
+Electronic state 1: [2895750, 2970000)
+Electronic state 2: [1316250, 1350000)
+Electronic state 3: [1316250, 1350000)
+Segment 41 owns:
+Electronic state 1: [2970000, 3044250)
+Electronic state 2: [1350000, 1383750)
+Electronic state 3: [1350000, 1383750)
+Segment 42 owns:
+Electronic state 1: [3044250, 3118500)
+Electronic state 2: [1383750, 1417500)
+Electronic state 3: [1383750, 1417500)
+Segment 43 owns:
+Electronic state 1: [3118500, 3192750)
+Electronic state 2: [1417500, 1451250)
+Electronic state 3: [1417500, 1451250)
+Segment 44 owns:
+Electronic state 1: [3192750, 3267000)
+Electronic state 2: [1451250, 1485000)
+Electronic state 3: [1451250, 1485000)
+Segment 45 owns:
+Electronic state 1: [3267000, 3341250)
+Electronic state 2: [1485000, 1518750)
+Electronic state 3: [1485000, 1518750)
+Segment 46 owns:
+Electronic state 1: [3341250, 3415500)
+Electronic state 2: [1518750, 1552500)
+Electronic state 3: [1518750, 1552500)
+Segment 47 owns:
+Electronic state 1: [3415500, 3489750)
+Electronic state 2: [1552500, 1586250)
+Electronic state 3: [1552500, 1586250)
+Segment 48 owns:
+Electronic state 1: [3489750, 3564000)
+Electronic state 2: [1586250, 1620000)
+Electronic state 3: [1586250, 1620000)
+Segment 49 owns:
+Electronic state 1: [3564000, 3638250)
+Electronic state 2: [1620000, 1653750)
+Electronic state 3: [1620000, 1653750)
+Segment 50 owns:
+Electronic state 1: [3638250, 3712500)
+Electronic state 2: [1653750, 1687500)
+Electronic state 3: [1653750, 1687500)
+Segment 51 owns:
+Electronic state 1: [3712500, 3786750)
+Electronic state 2: [1687500, 1721250)
+Electronic state 3: [1687500, 1721250)
+Segment 52 owns:
+Electronic state 1: [3786750, 3861000)
+Electronic state 2: [1721250, 1755000)
+Electronic state 3: [1721250, 1755000)
+Segment 53 owns:
+Electronic state 1: [3861000, 3935250)
+Electronic state 2: [1755000, 1788750)
+Electronic state 3: [1755000, 1788750)
+Segment 54 owns:
+Electronic state 1: [3935250, 4009500)
+Electronic state 2: [1788750, 1822500)
+Electronic state 3: [1788750, 1822500)
+Segment 55 owns:
+Electronic state 1: [4009500, 4083750)
+Electronic state 2: [1822500, 1856250)
+Electronic state 3: [1822500, 1856250)
+Segment 56 owns:
+Electronic state 1: [4083750, 4158000)
+Electronic state 2: [1856250, 1890000)
+Electronic state 3: [1856250, 1890000)
+Segment 57 owns:
+Electronic state 1: [4158000, 4232250)
+Electronic state 2: [1890000, 1923750)
+Electronic state 3: [1890000, 1923750)
+Segment 58 owns:
+Electronic state 1: [4232250, 4306500)
+Electronic state 2: [1923750, 1957500)
+Electronic state 3: [1923750, 1957500)
+Segment 59 owns:
+Electronic state 1: [4306500, 4380750)
+Electronic state 2: [1957500, 1991250)
+Electronic state 3: [1957500, 1991250)
+Segment 60 owns:
+Electronic state 1: [4380750, 4455000)
+Electronic state 2: [1991250, 2025000)
+Electronic state 3: [1991250, 2025000)
+Segment 61 owns:
+Electronic state 1: [4455000, 4529250)
+Electronic state 2: [2025000, 2058750)
+Electronic state 3: [2025000, 2058750)
+Segment 62 owns:
+Electronic state 1: [4529250, 4603500)
+Electronic state 2: [2058750, 2092500)
+Electronic state 3: [2058750, 2092500)
+Segment 63 owns:
+Electronic state 1: [4603500, 4677750)
+Electronic state 2: [2092500, 2126250)
+Electronic state 3: [2092500, 2126250)
+Segment 64 owns:
+Electronic state 1: [4677750, 4752000)
+Electronic state 2: [2126250, 2160000)
+Electronic state 3: [2126250, 2160000)
+Vibrational basis functions of irreducible 1:
+Highest phonons among the vibrational basis functions:
+4, 1, 4, 1, 1, 2, 1, 1, 2, 0, 0, 0, 0, 
+0, 1, 14, 1, 1, 0, 0, 
+0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 
+1, 1, 1, 1, 
+Vibrational basis functions of irreducible 2:
+Highest phonons among the vibrational basis functions:
+4, 1, 4, 1, 1, 2, 1, 1, 2, 0, 0, 0, 0, 
+0, 1, 14, 1, 1, 0, 0, 
+0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 
+1, 1, 1, 1, 
+Vibrational basis functions of irreducible 3:
+Highest phonons among the vibrational basis functions:
+4, 1, 4, 1, 1, 2, 1, 1, 2, 0, 0, 0, 0, 
+0, 1, 14, 1, 1, 0, 0, 
+0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 
+1, 1, 1, 1, 
+Vibrational basis functions of irreducible 4:
+Highest phonons among the vibrational basis functions:
+4, 1, 4, 1, 1, 2, 1, 1, 2, 0, 0, 0, 0, 
+0, 1, 14, 1, 1, 0, 0, 
+0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 
+1, 1, 1, 1, 
+
+Read initial-state harmonic frequencies from:
+    initial-freq-1.in
+    initial-freq-2.in
+Read final-state harmonic frequencies from:
+    final-freq-1.in
+    final-freq-2.in
+    final-freq-3.in
+    final-freq-4.in
+
+The 10 most contributing vibrational basis functions are:
+No. 1. overlap = 0.128194, phonons are:
+    0    0    1    0    0    0    0    0    0    0    0    0    0    0    0    4    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+No. 2. overlap = 0.120786, phonons are:
+    1    0    1    0    0    0    0    0    0    0    0    0    0    0    0    3    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+No. 3. overlap = 0.114657, phonons are:
+    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    2    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+No. 4. overlap = 0.112715, phonons are:
+    1    0    0    0    0    0    0    0    0    0    0    0    0    0    0    3    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+No. 5. overlap = 0.110085, phonons are:
+    0    0    1    0    0    0    0    0    0    0    0    0    0    0    0    2    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+No. 6. overlap = 0.104454, phonons are:
+    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    4    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+No. 7. overlap = 0.0997941, phonons are:
+    0    0    2    0    0    0    0    0    0    0    0    0    0    0    0    4    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+No. 8. overlap = 0.0861363, phonons are:
+    1    0    1    0    0    0    0    0    0    0    0    0    0    0    0    5    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+No. 9. overlap = 0.0818958, phonons are:
+    1    0    2    0    0    0    0    0    0    0    0    0    0    0    0    3    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+No. 10. overlap = 0.0779829, phonons are:
+    1    0    2    0    0    0    0    0    0    0    0    0    0    0    0    5    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0    0
+
+Norm of the seed vector = 0.0226281
+The seed vector can be found in seed-*-*.wfn
+
+Fri Sep 10 12:08:33 2021
+Mission success
