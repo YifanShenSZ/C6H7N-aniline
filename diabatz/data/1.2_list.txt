@@ -7,5 +7,7 @@ min-B2
 min-A1
 fast/1.1
 slow/1.1
+linear_path/1.1-fast-slow
 fast/1.2
 slow/1.2
+linear_path/1.2-fast-slow
