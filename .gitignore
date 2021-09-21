@@ -2,12 +2,14 @@
 build/
 *.exe
 
-# Documents
-Manuscript*/
-Reference/
-*.xlsx
+# slurm output
+slurm*
 
 # Large *vibronics* intermediate files
 vibration*.in
 *.wfn
-slurm*
+
+# Documents
+Manuscript*/
+Reference/
+*.xlsx
