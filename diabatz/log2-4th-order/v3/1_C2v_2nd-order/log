@@ -1,0 +1,71 @@
+Diabatz version 0
+Yifan Shen 2021
+
+Echo of user command line input:
+/global/homes/y/yifnshen/Software/Mine/diabatz/v0/diabatz.exe -f default -i IntCoordDef -s SAS.in -n Hd.in -l 11.in 12.in 13.in 14.in 22.in 23.in 24.in 33.in 34.in 44.in -d C2v_list.txt -z -286.1075216397 --energy_weight 0.015 --gradient_weight 0.02 -g 0.013003140199998597 0.1622015817999909 0.19160296519999065 0.24159386550002182
+
+Sat Sep 25 00:27:53 2021
+
+The data set will be read from: 
+    sad-A1/, min-B1/, sad-B2/, min-A2/, 
+There are 200 data points in adiabatic representation
+          0 data points in composite representation
+
+maximum ground state energy = 0.0142374
+maximum ||ground state energy gradient||_infinity = 0.0887975
+so we suggest to set gradient / energy scaling to around 6.23693
+
+According to user defined energy threshold and gradient threshold,
+set gradient / energy scaling to 1.33333
+
+The number of threads = 32
+
+Optimizer is trust region
+
+Each thread owns 6 data points in adiabatic representation
+                 0 data points in composite representation
+The last thread owns 14 data points in adiabatic representation
+                     0 data points in composite representation
+Thread 0 starts with Jacobian row 0
+Thread 1 starts with Jacobian row 612
+Thread 2 starts with Jacobian row 1224
+Thread 3 starts with Jacobian row 1836
+Thread 4 starts with Jacobian row 2448
+Thread 5 starts with Jacobian row 3318
+Thread 6 starts with Jacobian row 4466
+Thread 7 starts with Jacobian row 5654
+Thread 8 starts with Jacobian row 6810
+Thread 9 starts with Jacobian row 7582
+Thread 10 starts with Jacobian row 8194
+Thread 11 starts with Jacobian row 8806
+Thread 12 starts with Jacobian row 9418
+Thread 13 starts with Jacobian row 10116
+Thread 14 starts with Jacobian row 11244
+Thread 15 starts with Jacobian row 12432
+Thread 16 starts with Jacobian row 13620
+Thread 17 starts with Jacobian row 14552
+Thread 18 starts with Jacobian row 15164
+Thread 19 starts with Jacobian row 15776
+Thread 20 starts with Jacobian row 16388
+Thread 21 starts with Jacobian row 17000
+Thread 22 starts with Jacobian row 18042
+Thread 23 starts with Jacobian row 19210
+Thread 24 starts with Jacobian row 20398
+Thread 25 starts with Jacobian row 21522
+Thread 26 starts with Jacobian row 22134
+Thread 27 starts with Jacobian row 22746
+Thread 28 starts with Jacobian row 23358
+Thread 29 starts with Jacobian row 23970
+Thread 30 starts with Jacobian row 24840
+Thread 31 starts with Jacobian row 25988
+
+The data set corresponds to 28696 least square equations
+There are 16042 parameters to train
+
+The initial residue = 2.00858
+ Failed trust region: max iteration exceeded!
+ Final residual =   1.217440171587162E-002
+The final residue = 0.0121744
+
+Sat Sep 25 02:11:51 2021
+Mission success

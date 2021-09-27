@@ -9,6 +9,9 @@ slurm*
 vibration*.in
 *.wfn
 
+# Back up
+BAK/
+
 # Documents
 Manuscript*/
 Reference/
