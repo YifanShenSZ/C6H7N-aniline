@@ -1,5 +1,0 @@
-transposed transformation matrix
-    1.700406299981813e+00
-   -1.074147465752406e-01
-bias
-    2.063949215057618e-02
