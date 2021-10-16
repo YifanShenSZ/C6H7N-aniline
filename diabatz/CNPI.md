@@ -1,4 +1,4 @@
-# CNPI Symmetry
+# CNPI symmetry
 Although the electronic structure is rationalized at G4 level since the highest point group aniline can carry is C2v, for fitting purpose we have to extend to G8
 
 The G4 group is {E, P(8,9)(3,4)(5,6)(10,11)(12,13), I, PI}, namely, permute NH2 hydrogens and benzene atoms simutaneously
@@ -61,10 +61,10 @@ Wild NH2 rotation
 | G8 | C2v-oop | C2 |
 |----|---------|----|
 |  1 |    A1   |  A |
-|  2 |    B2   |  B |
+|  2 |    B1   |  B |
 |  3 |    B2   |  B |
 |  4 |    A2   |  A |
 |  5 |    A2   |  A |
-|  6 |    B1   |  B |
+|  6 |    B2   |  B |
 |  7 |    B1   |  B |
 |  8 |    A1   |  A |
