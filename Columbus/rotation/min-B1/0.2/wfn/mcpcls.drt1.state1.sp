@@ -25,7 +25,7 @@
    ******  File header section  ******
 
  Headers form the restart file:
-    Hermit Integral Program : SIFS version  nid00568          14:00:59.509 07-Oct-21
+    Hermit Integral Program : SIFS version  compute0054       19:18:49.485 16-Oct-21
      title                                                                          
 
 
@@ -63,7 +63,7 @@
 
  mcscf energy=  -285.7291942419    nuclear repulsion=   272.7161176685
  demc=           285.7291942419    wnorm=                 0.0000000020
- knorm=            0.0000000009    apxde=                -0.0000000000
+ knorm=            0.0000000009    apxde=                 0.0000000000
 
 
  MCSCF calculation performmed for   1 symmetry.

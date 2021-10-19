@@ -25,7 +25,7 @@
    ******  File header section  ******
 
  Headers form the restart file:
-    Hermit Integral Program : SIFS version  nid00568          14:00:59.509 07-Oct-21
+    Hermit Integral Program : SIFS version  compute0054       19:18:49.485 16-Oct-21
      title                                                                          
 
 
@@ -63,7 +63,7 @@
 
  mcscf energy=  -285.7291942419    nuclear repulsion=   272.7161176685
  demc=           285.7291942419    wnorm=                 0.0000000020
- knorm=            0.0000000009    apxde=                -0.0000000000
+ knorm=            0.0000000009    apxde=                 0.0000000000
 
 
  MCSCF calculation performmed for   1 symmetry.
@@ -188,7 +188,7 @@ In the DRT No.: 1 there are  4 states.
      17 -0.0031765779  0.0000100906  33333300120000
      41 -0.0031455533  0.0000098945  33333130000200
     480 -0.0030408545  0.0000092468  33133310200020
-    101  0.0027911375  0.0000077904  33333030120000
+    101  0.0027911376  0.0000077904  33333030120000
     807 -0.0026623119  0.0000070879  31331330202000
       2  0.0026420599  0.0000069805  33333312000000
     762  0.0026262038  0.0000068969  31333130022000
