@@ -31,3 +31,5 @@ Most data points along this path have their B1 state energy minimized with N-H b
 
 ## Issue
 The points between 2 A and 3 A are so hard to optimize, since the rasscf often converge to wrong local minimum, which cannot be avoided by Cs symmetry since the local minimum also has Cs symmetry
+
+At 1.6 A and 1.7 A and mex-A1-B1, a higher dissociative state intrudes the B2 state. Fortunately, they do not mix, so we can collect 5-state data then remove the intruder later on

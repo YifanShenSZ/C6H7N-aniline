@@ -10,4 +10,15 @@ harmonic region:
 * fast/1.1
 * slow/1.1
 * linear_path/1.1-fast-slow
-
+* A1-rotation/0.1
+* A1-rotation/0.2
+* A1-rotation/0.3
+* A1-rotation/0.4
+* A1-rotation/0.5
+* A1-rotation/0.6
+* B1-rotation/0.1
+* B1-rotation/0.2
+* B1-rotation/0.3
+* B1-rotation/0.4
+* B1-rotation/0.5
+* B1-rotation/0.6

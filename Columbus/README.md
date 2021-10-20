@@ -48,3 +48,9 @@ pipi* state saddle point (sad-B2, C2v, planar)
 
 1,2 conical intersection (mex-A1-B1, Cs, planar)
 
+## Important path
+fast dissociation path
+
+slow dissociation (rebound) path
+
+NH2 rotation in bound region
