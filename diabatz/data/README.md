@@ -31,19 +31,19 @@ need 4th-order NH2 hydrogen coordinates:
 * everything left
 
 ## data set partition
-`C2v_list.txt`:
+Use harmonic input layer for `C2v_list.txt`:
 * sad-A1
 * min-B1
 * sad-B2
 * min-A2
 
-`bound_list.txt`:
+Use 4th-order C out of NH2 plane input layer for `bound_list.txt`:
 * `C2v_list.txt`
 * linear_path/min-B1_min-B2
 * min-B2
 * min-A1
 
-`pre-4th_list.txt`:
+Use same input layer for `pre-4th_list.txt`:
 * `bound_list.txt`
 * fast/1.1
 * slow/1.1
@@ -61,7 +61,8 @@ need 4th-order NH2 hydrogen coordinates:
 * A1-rotation/0.6
 * B1-rotation/0.6
 
-`4th_list.txt`:
+Use 4th-order NH2 input layer for `4th_list.txt`:
+* `pre-4th_list.txt`
 * fast/1.2
 * slow/1.2
 * linear_path/1.2-fast-slow
@@ -101,12 +102,3 @@ need 4th-order NH2 hydrogen coordinates:
 loops around fast and slow are stored in fast-loop/ and slow-loop/. I am not sure when to use them yet
 
 other data are not included for now because their electronic structures are flawed
-
-## training set growth
-Use harmonic input layer for `C2v_list.txt`
-
-Use 4th-order C out of NH2 plane input layer for `bound_list.txt`
-
-Use same input layer for `pre-4th_list.txt`
-
-Use 4th-order NH2 input layer for `4th_list.txt`

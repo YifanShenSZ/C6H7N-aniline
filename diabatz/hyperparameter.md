@@ -7,12 +7,9 @@ Energy weight decrease threshold:
 * `--energy_weight 0.2`
 
 Gradient decrease threshold:
-* maximum ground state energy = 0.25 at dissociation asymptote
+* maximum ground state energy of interest = 0.16 at mex-A1-B1
 * maximum ||ground state energy gradient||_infinity = 0.125353
-* So given `--energy_weight 0.2`, `--gradient_weight` should be around 0.1
-* However, I think I should emphasize more on gradient: RASSCF data overestimates the excitation energy, which means I may shift the energy after the fit, so no need to fit energy too accurately
-* In addition, the NH2 rotation who easily gives me imaginary frequency, has only 0.005 gradient at each minimum. I should amplify it (equivalently, reduce others)
-* `--gradient_weight 0.01`
+* So given `--energy_weight 0 0.16 0.162201582 0.02 0.181441193 0.081 0.227543914 0.035`, which on average cares about energy below 0.074, `--gradient_weight` should be 0.058
 
 # Symmetry adapted and scaled internal coordinate hyperparameter
 Morse fit on fast dissociation path gives:
