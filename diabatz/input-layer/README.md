@@ -1,7 +1,6 @@
 # Polynomial for input layer
 Basic polynomial:
-* 2nd-order everything
-* additional 3rd-order irreducible 3 terms from irreducibles 1 x 2 x 5
+* equivalent to C2v-planar quadratic polynomial
 
 4th-order C out of NH2 plane:
 * basic polynomial
