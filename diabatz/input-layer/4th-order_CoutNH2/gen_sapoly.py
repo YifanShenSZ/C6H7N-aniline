@@ -125,7 +125,6 @@ if __name__ == "__main__":
         with open(str(irred + 1) + ".in", 'w') as f:
             for order in range(len(terms)):
                 for polynomial in terms[order][irred]:
-                    print('%5d'%order_list[order], file=f, end='')
                     for nomial in polynomial:
                         print('%5d,%-5d' % (nomial[0]+1, nomial[1]), file=f, end='')
                     print(file=f)
