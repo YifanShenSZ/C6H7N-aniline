@@ -8,17 +8,17 @@
          -0.500000    stretching     6    13
      5    0.500000    stretching     3    10                # B2, 5
          -0.500000    stretching     4    11
-     6    0.500000       bending     7     5     3          # B2, 7
+     6    0.500000       bending     7     5     3          # B2, 6
          -0.500000       bending     7     6     4
-     7    0.500000       bending    14     7     5          # B2, 8
+     7    0.500000       bending    14     7     5          # B2, 7
          -0.500000       bending    14     7     6
-     8    0.500000       bending    12     5     7          # B2, 9
+     8    0.500000       bending    12     5     7          # B2, 8
          -0.500000       bending    13     6     7
-     9    0.500000       bending    10     3     5          # B2, 10
+     9    0.500000       bending    10     3     5          # B2, 9
          -0.500000       bending    11     4     6
-    10    0.500000       bending     1     2     3          # B2, 11
+    10    0.500000       bending     1     2     3          # B2, 10
          -0.500000       bending     1     2     4
-    11    0.500000       torsion     8     1     2     3
-          0.500000       torsion     8     1     2     4
-         -0.500000       torsion     9     1     2     3
-         -0.500000       torsion     9     1     2     4
+    11    0.500000    costorsion     8     1     2     3    # B2, 11
+         -0.500000    costorsion     8     1     2     4
+          0.500000    costorsion     9     1     2     3
+         -0.500000    costorsion     9     1     2     4
