@@ -10,6 +10,10 @@ Each point has B1 state energy optimized with internal coordinate 36 fixed; 2.2 
 ## Issue
 1.9 and 2.0 and 2.1 cannot be optimized since the B2 state crosses the B1 state, so they are just the linear interpolation between 1.8 and 2.2
 
-A higher A1 pi->pi* state mixes with the A2 state (possibly an avoided crossing). Let the A2 configuration threshold be 0.8, then the mixture is intolerable in [0.7, 1.2]. In addition, an n->pi* state intrudes at 1.9 and 2.2. Usable A2 state data are:
+A higher A1 pi->pi* state mixes with the A2 state (possibly an avoided crossing). Let the A2 configuration threshold be 0.8, then the mixture is intolerable in [0.7, 1.2]. In addition, a B2 n->pi* state intrudes at 1.9 and 2.2 (luckily it will not mix with the A2 state). Usable A2 state data are:
 * in [0.1, 0.6], A2 state is the 4th state
 * in [1.3, 1.8] U [2.0, 2.2], A2 state is the 5th state
+
+However, the B2 n->pi* intruder does mix with the B1 state. Let the B1 configuration threshold be 0.8, then the mixture is intolerable in [1.9, 2.1]. Usable B1 state data are:
+* in [0.1, 1.8], B1 state is the 2nd state
+* at 2.2, B1 state is the 3rd state
