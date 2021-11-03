@@ -9,20 +9,19 @@ def parse_args() -> argparse.Namespace:
     args = parser.parse_args()
     return args
 
+# assume less than 100 irreducibles and less than 100 coordinates per irreducible
 def hash(line: str) -> int:
     strs = line.split()
-    # hash order
-    hash = int(strs[0])
-    # remove order and comment
-    i = 1
+    # remove comment
+    i = 0
     while i < strs.__len__():
-        if strs[i] == '#':
-            break
+        if strs[i] == '#': break
         i += 1
-    strs = strs[1 : i]
+    strs = strs[: i]
     # sort coordinates so that all permutations become the same
     strs.sort()
     # hash coordinates
+    hash = 0
     weight = 100
     for irred_index in strs:
         irred, index = irred_index.split(',')
