@@ -1,4 +1,6 @@
 # NH2 rotation
+For the impatient: the final input layer is `global_Cs-C1-Cs/`
+
 C2v-planar region and C2v-perpendicular region each requires the respective 2nd-order point group symmetry adapted polynomial. NH2 rotation connects these 2 regions, so its global description would require both polynomials
 
 We represent NH2 by the bijection plane of the two hydrogens, so the NH2 rotation angle `theta = 0.5 * (torsion-8-1-2-3 + torsion-9-1-2-4)`
