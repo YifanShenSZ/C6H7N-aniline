@@ -13,3 +13,7 @@ This is the slow dissociation path from min-A1. C-C-N-H torsion angles contribut
 essential_Cs:
 * rotation + 2nd-order N-H for A1 and B2 + 4th-order N-H for B1 and A2
 * describes the fast dissociation path from min-B1
+
+more_Cs:
+* rotation + 4th-order N-H for A1 and B2 + 6th-order N-H for B1 and A2
+* describes the fast dissociation path from min-B1
