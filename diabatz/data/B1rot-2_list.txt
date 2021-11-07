@@ -1,6 +1,0 @@
-B1-rotation/0.1
-B1-rotation/0.2
-B1-rotation/0.3
-B1-rotation/0.4
-B1-rotation/0.5
-B1-rotation/0.6
