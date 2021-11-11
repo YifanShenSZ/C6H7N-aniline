@@ -20,3 +20,6 @@ essential_C1:
 
 2nd-order_NH-angles:
 * essential_C1 + NAC coupled with N-H bond length + 2nd-order N-H angles coupled with N-H bond length
+
+4th-order_NH-angles:
+* 2nd-order_NH-angles + 4th-order NH2 rotation coupled with N-H bond length
