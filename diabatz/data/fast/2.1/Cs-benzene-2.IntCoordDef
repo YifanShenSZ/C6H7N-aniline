@@ -1,0 +1,20 @@
+     1    0.500000       torsion     3     5     7     6    # B1, 1
+         -0.500000       torsion     4     6     7     5
+     2    1.000000    OutOfPlane    14     7     6     5    # B1, 2
+     3    0.500000    OutOfPlane    12     5     7     3    # B1, 3
+         -0.500000    OutOfPlane    13     6     7     4
+     4    0.500000    OutOfPlane    10     3     5     7    # B1, 4
+         -0.500000    OutOfPlane    11     4     6     7
+     5    0.500000       torsion     2     3     5     7    # B1, 5
+         -0.500000       torsion     2     4     6     7
+     6    1.000000    OutOfPlane     1     2     3     4    # B1, 6
+     7    0.500000       torsion     8     1     2     3    # B1, 7
+         -0.500000       torsion     9     1     2     4
+     8    0.500000       torsion     3     5     7     6    # A2, 1
+          0.500000       torsion     4     6     7     5
+     9    0.500000    OutOfPlane    12     5     7     3    # A2, 2
+          0.500000    OutOfPlane    13     6     7     4
+    10    0.500000    OutOfPlane    10     3     5     7    # A2, 3
+          0.500000    OutOfPlane    11     4     6     7
+    11    0.500000       torsion     8     1     2     3    # A2, 4
+          0.500000       torsion     9     1     2     4
