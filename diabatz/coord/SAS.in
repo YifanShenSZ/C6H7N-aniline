@@ -1,16 +1,26 @@
 Internal coordinate origin file:
     origin.int
 Internal coordinates who are scaled by others: (self, alpha, scalor)
-     5    1.000000     3
-     6    1.000000     4
-    35    1.000000     3
-    36    1.000000     3
-    37    1.000000     4
-    38    1.000000     4
-    39    1.000000     3
-    40    1.000000     3
-    41    1.000000     4
-    42    1.000000     4
+     5    2.000000     3
+     6    2.000000     4
+    35    2.000000     3
+    36    2.000000     3
+    37    2.000000     4
+    38    2.000000     4
+    39    2.000000     3
+    40    2.000000     3
+    41    2.000000     4
+    42    2.000000     4
+    43    1.000000     3
+    44    1.000000     4
+    45    1.000000     3
+    46    1.000000     3
+    47    1.000000     4
+    48    1.000000     4
+    49    1.000000     3
+    50    1.000000     3
+    51    1.000000     4
+    52    1.000000     4
 Internal coordinates who are scaled by themselves:
      3    1.500000
      4    1.500000
@@ -38,19 +48,15 @@ Coordinates of irreducible 1: (number, coefficient, index of internal coordinate
           0.707107    25
     13    0.707107    26
           0.707107    27
-    14    0.500000    39
-          0.500000    40
-          0.500000    41
-          0.500000    42
+    14    0.707107    43
+          0.707107    44
 Coordinates of irreducible 2: (number, coefficient, index of internal coordinate)
      1    0.707107     3
          -0.707107     4
      2    0.707107     5
          -0.707107     6
-     3    0.500000    39
-          0.500000    40
-         -0.500000    41
-         -0.500000    42
+     3    0.707107    43
+         -0.707107    44
 Coordinates of irreducible 3: (number, coefficient, index of internal coordinate)
      1    0.707107     7
          -0.707107     8
@@ -74,6 +80,10 @@ Coordinates of irreducible 3: (number, coefficient, index of internal coordinate
          -0.500000    40
           0.500000    41
          -0.500000    42
+    12    0.500000    49
+         -0.500000    50
+          0.500000    51
+         -0.500000    52
 Coordinates of irreducible 4: (number, coefficient, index of internal coordinate)
      1    0.707107    16
           0.707107    17
@@ -81,15 +91,15 @@ Coordinates of irreducible 4: (number, coefficient, index of internal coordinate
           0.707107    30
      3    0.707107    31
           0.707107    32
-     4    0.500000    35
-          0.500000    36
-          0.500000    37
-          0.500000    38
 Coordinates of irreducible 5: (number, coefficient, index of internal coordinate)
      1    0.500000    39
          -0.500000    40
          -0.500000    41
           0.500000    42
+     2    0.500000    49
+         -0.500000    50
+         -0.500000    51
+          0.500000    52
 Coordinates of irreducible 6: (number, coefficient, index of internal coordinate)
      1    0.500000    35
           0.500000    36
@@ -109,8 +119,16 @@ Coordinates of irreducible 7: (number, coefficient, index of internal coordinate
          -0.500000    36
           0.500000    37
          -0.500000    38
+     8    0.500000    45
+         -0.500000    46
+          0.500000    47
+         -0.500000    48
 Coordinates of irreducible 8: (number, coefficient, index of internal coordinate)
      1    0.500000    35
          -0.500000    36
          -0.500000    37
           0.500000    38
+     2    0.500000    45
+         -0.500000    46
+         -0.500000    47
+          0.500000    48
