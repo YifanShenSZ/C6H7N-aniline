@@ -6,8 +6,11 @@ bias1 = ((1,15), (2,4))
 bias2 = ((1,16), (2,5))
 
 switch_table = {
-    (5,1) : bias1, (8,1) : bias1,
-    (5,2) : bias2, (8,2) : bias2
+    (1,4) : bias1, (2,2) : bias1, (3,11): bias1,
+    (5,1) : bias1, (7,7) : bias1, (8,1) : bias1,
+
+    (1,14): bias2, (2,3) : bias2, (3,12): bias2,
+    (5,2) : bias2, (7,8) : bias2, (8,2) : bias2
 }
 
 # Command line input
@@ -56,10 +59,11 @@ if __name__ == "__main__":
                 # store the others
                 else:
                     output_coords.append(coord)
-            # output if there are >= 2 of a same coordinate to be switched
+            # output if there is a totally-symmetric coordinate to be switched
+            # or >= 2 of a same asymmetric coordinate to be switched
             output = False
             for coord in switch_count:
-                if switch_count[coord] >= 2:
+                if coord[0] == 1 or switch_count[coord] >= 2:
                     output = True
                     break
             if output:
