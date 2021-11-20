@@ -13,4 +13,6 @@ At 1.5 A an intruder state jumps in and out, so it cannot be fully optimized. I 
 
 1.6 A and 1.7 A can be done with constraint C-C-N-H2 = 0, although the true minimum should have it slightly above 0. The remaining force is 0.008, so be it
 
+Also at 1.6 A and 1.7 A, a higher dissociative state intrudes the B2 state. Fortunately, they do not mix, so we can collect 5-state data then remove the intruder later on
+
 Starting from 1.8 A I have run out of tricks. I have no choice but to end with 1.79 A, which is merely a stretched version of 1.7 A with no optimization
