@@ -43,17 +43,9 @@
     40    1.000000    costorsion     8     1     2     4
     41    1.000000    costorsion     9     1     2     3
     42    1.000000    costorsion     9     1     2     4
-    43    1.000000    cosbending     8     1     2          # for 2nd scaling
-    44    1.000000    cosbending     9     1     2
-    45    1.000000    sintorsion     8     1     2     3
-    46    1.000000    sintorsion     8     1     2     4
-    47    1.000000    sintorsion     9     1     2     3
-    48    1.000000    sintorsion     9     1     2     4
-    49    1.000000    costorsion     8     1     2     3
-    50    1.000000    costorsion     8     1     2     4
-    51    1.000000    costorsion     9     1     2     3
-    52    1.000000    costorsion     9     1     2     4
-    53    1.000000         dummy                            # bias
-    54    1.000000         dummy
-    55    1.000000         dummy
-    56    1.000000         dummy
+    43    1.000000    stretching     1     8                # for Morse
+    44    1.000000    stretching     1     9
+    45    1.000000    stretching     1     8                # for 1st scaling
+    46    1.000000    stretching     1     9
+    47    1.000000    stretching     1     8                # for 2nd scaling
+    48    1.000000    stretching     1     9
