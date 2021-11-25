@@ -34,7 +34,7 @@ Most data points along this path have their B1 state energy minimized with N-H b
 
 Starting from 1.9 there only are 3-state data. The B2 state crosses with 6th and higher states here and there, and the number of intruders varies, so it does not always be the 5th state like in the 1.6 1.7 1.8 cases.
 
-Starting from 2.9 there is no loop. The rasscf often converge to wrong local minimum, even in a small finite difference loop there can be discontinuity
+Starting from 2.0 there is no loop. The rasscf often converge to wrong local minimum, even in a small finite difference loop there can be discontinuity
 
 ## Issue
 The points between 2 A and 3 A are so hard to optimize, since the rasscf often converge to wrong local minimum, which cannot be avoided by Cs symmetry since the local minimum also has Cs symmetry

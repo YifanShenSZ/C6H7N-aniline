@@ -26,7 +26,7 @@ more-dummy:
 * add more terms by replacing the totally-symmetric angles in a polynomial to totally-symmetric dummies
 * I realized that angles x others also need to be (angles + bias) x others
 
-scaled_non-NH:
+non-NH:
 * add scaled non-NH terms
 * when I fit the dissociation asymptote with more-dummy, bound region gets deteriorated. The reason is possibly:
 1. I set the coordinate origin at min-B1, so every term is 0 there and small in the bound region
@@ -34,3 +34,7 @@ scaled_non-NH:
 3. So the NH-related terms is similar for bound region and dissociation region
 4. So the neural network gets confused: the bound region and the asymtote region are both minima; they have different non-NH terms, but the NH terms are the same, so the non-NH terms alone produces 2 minima; those terms are quadratic, how can they produce more than 1 minimum???
 * This reasoning indicates a solution: the non-NH terms may also need scalings, with the scaled ones being local focusing on the bound region, the unscaled ones being global describing the asymptote
+
+irred-2-scale:
+* add irreducible-2-scaled terms
+* I realized that irreducible-1 scaling focuses at both N-H bonds at peak, while irreducible-2 scaling focuses at one at peak and another at 0, which is the case of our single N-H bond breaking asymptote
