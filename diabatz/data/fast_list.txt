@@ -2,9 +2,9 @@ fast/0.8
 fast/0.9
 fast/1.1
 fast/1.2
-fast/sad-B1
+sad-B1
 fast/1.4
-fast/sad-A2
+sad-A2
 fast/1.5
 fast/1.6
 fast/1.7
