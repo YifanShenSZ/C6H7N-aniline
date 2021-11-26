@@ -11,11 +11,11 @@ Gradient decrease threshold:
 * maximum ||ground state energy gradient||_infinity = 0.125353
 * So given `--energy_weight 0 0.16 0.162201582 0.02 0.181441193 0.081 0.227543914 0.035`, which on average cares about energy below 0.074, `--gradient_weight` should be 0.058
 
-# Symmetry adapted and scaled internal coordinate hyperparameter
+# Symmetry adapted and scaled dimensionless internal coordinate hyperparameter
 Morse fit on fast dissociation path gives:
 1. A1 state is a Morse with alpha = 1.5
 2. B1 state is a 4th-order Morse with alpha = 1.5
 
-So we know the self scaling (the 2 N-H bonds) should have alpha = 1.5
+So we know the N-H bond scalings should use Morse with alpha = 1.5
 
-But the alpha other scaling (the 2 H-N-C angles and the 2 H-N-C-C dihedral angles) remains unknown. For now looks like 0.5 is too small, 1.0 and 1.5 are promising
+But the scaling for NH angles remains unknown. For now we know there must be one localization for bound region; one for 2A is good but not enough
