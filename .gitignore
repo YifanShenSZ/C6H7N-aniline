@@ -1,6 +1,7 @@
 # Executables
 build/
 *.exe
+__pycache__/
 
 # slurm output
 slurm*

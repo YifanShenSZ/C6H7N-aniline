@@ -1,0 +1,15 @@
+artifact/fast-B2/1.9
+artifact/fast-B2/2.0
+artifact/fast-B2/2.1
+artifact/fast-B2/2.2
+artifact/fast-B2/2.3
+artifact/fast-B2/2.4
+artifact/fast-B2/2.5
+artifact/fast-B2/2.6
+artifact/fast-B2/2.7
+artifact/fast-B2/2.8
+artifact/fast-B2/2.9
+artifact/fast-B2/3
+artifact/fast-B2/4
+artifact/fast-B2/5
+artifact/fast-B2/6
