@@ -1,3 +1,4 @@
+slow/0.7
 slow/0.8
 slow/0.9
 slow/1.1

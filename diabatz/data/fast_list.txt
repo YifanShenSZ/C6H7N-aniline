@@ -1,3 +1,4 @@
+fast/0.7
 fast/0.8
 fast/0.9
 fast/1.1
