@@ -8,7 +8,10 @@ while start < lines.__len__():
     atoms = []
     for line in lines[start : start + 14]:
         symbol, x, y, z = line.split()
-        atoms.append((symbol, float(x), float(y), float(z)))
+        atoms.append((symbol,
+                      float(x) / 1.8897261339212517,
+                      float(y) / 1.8897261339212517,
+                      float(z) / 1.8897261339212517))
     with open(str(count) + ".xyz", 'w') as f:
         print(14, file=f)
         print(file=f)
