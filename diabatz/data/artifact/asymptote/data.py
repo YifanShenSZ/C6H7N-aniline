@@ -134,7 +134,7 @@ dH[2, 2, :] = np.array([
 ])
 
 weight = 0.1
-CNPI2point = "     1     2     3     4     5     6     7     8     ->     1     1     1     2     1     2     2     2"
+CNPI2point = "     1     2     3     4     5     6     7     8     ->     1     1     1     1     1     1     1     1"
 point_def  = "C1.IntCoordDef"
 
 def print_vector(vector, file):
