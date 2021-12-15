@@ -20,5 +20,5 @@ if __name__ == "__main__":
     with open("parameters.txt", 'w') as f:
         dr = args.dr * 1.8897261339212517
         for hessian, length in Hessian_length:
-            a = hessian * dr * (length + dr)**2
+            a = hessian * dr * (length + dr)**13 / 12
             print(a, file=f)
