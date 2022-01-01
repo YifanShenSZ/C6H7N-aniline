@@ -35,7 +35,12 @@ non-NH:
 4. So the neural network gets confused: the bound region and the asymtote region are both minima; they have different non-NH terms, but the NH terms are the same, so the non-NH terms alone produces 2 minima; those terms are quadratic, how can they produce more than 1 minimum???
 * This reasoning indicates a solution: the non-NH terms may also need scalings, with the scaled ones being local focusing on the bound region, the unscaled ones being global describing the asymptote
 
+rotation-CCH:
+* add C-C-H coupled with NH2 rotation
+* imaginary frequency appears in bound region in a benzene C-C-H A1 mode, which probably comes from C2v-perpendicular region, where benzene hydrogen points more toward NH2 since the perpendicular N-H no longer repulses
+
+## archive
 irred-2-scale:
-* add irreducible-2-scaled terms
+* add irreducible-2-scaled terms based on non-NH
 * I realized that irreducible-1 scaling focuses at both N-H bonds at peak, while irreducible-2 scaling focuses at one at peak and another at 0, which is the case of our single N-H bond breaking asymptote
 * only reduces residue a tiny little bit (0.5520 -> 0.5505)
