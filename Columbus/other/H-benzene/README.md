@@ -8,3 +8,6 @@ Startinf from min-B1, scan along internal coordinates:
 For A1 coordinates, scan positively and negatively; for others, scan positively
 
 step = 0.1, 10 steps each direction (fewer if impossible to int2cart)
+
+## B1 15
+The pi->sigma* state intrudes the A2 states from 6 to 9, so 0 to 5 can use 4 states while 6 to 9 can only use 3 states
