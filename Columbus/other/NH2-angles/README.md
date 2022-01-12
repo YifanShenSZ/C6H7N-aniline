@@ -5,10 +5,14 @@ The original internal coordinate definition did not have H-N-H angle; it was des
 
 H-N-H is not independent from C-C-N-H1 - C-C-N-H2, so internal coordinate 20 is replaced with C out of NH2
 
+## H-N-H from min-B1
 Starting from min-B1, scan along internal coordinates:
 * A1 H-N-H: 13
 * B1 C out of NH2: 20
 
+The pi->sigma* state intrudes the A2 states at 19
+
+## H-N-H from min-A1
 Starting from min-A1, scan along A1 H-N-H
 
 step = 0.1, 10 steps each direction
