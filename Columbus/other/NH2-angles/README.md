@@ -10,7 +10,7 @@ Starting from min-B1, scan along internal coordinates:
 * A1 H-N-H: 13
 * B1 C out of NH2: 20
 
-The pi->sigma* state intrudes the A2 states at 19
+The pi->sigma* state intrudes the A2 states at 19, so 0 to 18 can use 4 states while 19 can only use 3 states
 
 ## H-N-H from min-A1
 Starting from min-A1, scan along A1 H-N-H
