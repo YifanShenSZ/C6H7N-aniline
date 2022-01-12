@@ -1,8 +1,0 @@
-fast-loop/1.1
-fast-loop/1.2
-fast-loop/1.4
-fast-loop/1.5
-fast-loop/1.6
-fast-loop/1.7
-fast-loop/1.9
-fast-loop/6
