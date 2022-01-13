@@ -1,5 +1,5 @@
-fast_bound_N-H/1.1
-fast_bound_N-H/1.2
-fast_bound_N-H/1.3
-fast_bound_N-H/1.4
-fast_bound_N-H/1.5
+other/fast_bound_N-H/1.1
+other/fast_bound_N-H/1.2
+other/fast_bound_N-H/1.3
+other/fast_bound_N-H/1.4
+other/fast_bound_N-H/1.5
