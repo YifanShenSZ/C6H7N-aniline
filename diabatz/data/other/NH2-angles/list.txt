@@ -1,0 +1,5 @@
+H-N-H_from_min-A1
+H-N-H_from_min-B1/0-18_4-states
+H-N-H_from_min-B1/19_3-states
+C-out-of-NH2/0-9_4-states
+C-out-of-NH2/10-14_3-states
