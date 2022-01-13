@@ -1,7 +1,0 @@
-critical/sad-A1
-critical/min-B1
-critical/sad-B2
-critical/min-A2
-linear_path/min-B1_min-B2
-critical/min-B2
-critical/min-A1

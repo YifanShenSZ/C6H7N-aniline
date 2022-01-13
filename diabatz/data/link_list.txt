@@ -1,7 +1,0 @@
-linear_path/1.1-fast-slow
-linear_path/1.2-fast-slow
-linear_path/1.3-fast-slow
-linear_path/1.4-fast-slow
-linear_path/1.5-fast-slow
-linear_path/1.6-fast-slow
-linear_path/1.7-fast-slow
