@@ -1,0 +1,54 @@
+Diabatz version 0
+Yifan Shen 2021
+
+Echo of user command line input:
+/home/yshen/Software/Mine/diabatz/v0.0.0/diabatz.exe -f default -i IntCoordDef -s SAS.in -n Hd.in -l 11.in -d ../data/sad-A1/ -z -286.1075216397
+
+Mon Jan 31 15:42:54 2022
+
+The data set will be read from: 
+    ../data/sad-A1/, 
+There are 50 data points in adiabatic representation
+          0 data points in composite representation
+
+maximum ground state energy = 0.00636254
+maximum ||ground state energy gradient||_infinity = 0.0108162
+so we suggest to set gradient / energy scaling to around 1.69998
+
+The number of threads = 4
+
+Thread 1:
+* owns 13 adiabatic data points
+* owns 0 composite data points
+* owns 0 energy-only data points
+* starts with Jacobian row 0
+Thread 2:
+* owns 13 adiabatic data points
+* owns 0 composite data points
+* owns 0 energy-only data points
+* starts with Jacobian row 182
+Thread 3:
+* owns 12 adiabatic data points
+* owns 0 composite data points
+* owns 0 energy-only data points
+* starts with Jacobian row 364
+Thread 4:
+* owns 12 adiabatic data points
+* owns 0 composite data points
+* owns 0 energy-only data points
+* starts with Jacobian row 629
+
+The data set corresponds to 909 least square equations
+There are 221 parameters to train
+
+The initial residue = 0.830231
+ 
+2022 year  1 month 31 day 15:42:56
+ Iteration           1 , residue  1.960349597839124E-003
+ Trust region warning: step length has converged, but residual has not met accur
+ acy goal
+ Final residual =   1.960349597839124E-003
+The final residue = 0.00196035
+
+Mon Jan 31 15:42:56 2022
+Mission success
