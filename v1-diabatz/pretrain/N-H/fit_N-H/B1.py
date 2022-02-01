@@ -6,24 +6,24 @@ import matplotlib.pyplot as plt
 if __name__ == "__main__":
     data = pd.read_csv("A1B1A2.csv")
     x = np.array(data["N-H / A   "])
-    y = np.array(data[" energy A1 / Hartree"])
-    m = x.shape[0]
+    y = np.array(data[" energy B1 / Hartree"])
 
     morse_x = 1.0 - np.exp(-1.5 * (x - 1.02767) / 1.02767)
 
     # we have a pretrained bias from bound fit,
     # so instead of training bias we subtract pretrained bias from target
-    bias = 1.277073535618853e-02
+    bias = 1.622014524639297e-01
     y -= bias
 
-    order = 3
-    X = np.empty((m, order))
+    order = 8
+    X = np.empty((x.shape[0], order))
     X[:, 0] = morse_x
     for i in range(1, order):
         X[:, i] = X[:, i - 1] * morse_x
 
     XT = X.T
     Hessian = np.matmul(XT, X)
+
     Hessian_inv = np.linalg.inv(Hessian)
 
     coeffs = np.matmul(Hessian_inv, np.matmul(XT, y))
@@ -43,5 +43,5 @@ if __name__ == "__main__":
 
     plt.plot(xplot, np.matmul(Xplot, coeffs))
     plt.scatter(x, y)
-    plt.ylim(-0.005, 0.245)
+    plt.ylim(-0.02, 0.18)
     plt.show()

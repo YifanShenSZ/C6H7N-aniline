@@ -4,16 +4,16 @@ import sklearn.metrics
 import matplotlib.pyplot as plt
 
 if __name__ == "__main__":
-    data = pd.read_csv("A1B1A2.csv")
+    data = pd.read_csv("B2.csv")
     x = np.array(data["N-H / A   "])
-    y = np.array(data[" energy A1 / Hartree"])
+    y = np.array(data[" energy B2 / Hartree"])
     m = x.shape[0]
 
     morse_x = 1.0 - np.exp(-1.5 * (x - 1.02767) / 1.02767)
 
     # we have a pretrained bias from bound fit,
     # so instead of training bias we subtract pretrained bias from target
-    bias = 1.277073535618853e-02
+    bias = 1.908722388502470e-01
     y -= bias
 
     order = 3
