@@ -83,7 +83,9 @@ Coordinates of irreducible 5: (number, coefficient, index of internal coordinate
          -0.500000    40
          -0.500000    41
           0.500000    42
-Coordinates of irreducible 6: (number, coefficient, index of internal coordinate)
+Coordinates of irreducible 6: (since there is no irred 6 coords, we use it for miscellaneous coords)
+     1    1.000000    43    # N-H1 Morse
+     2    1.000000    44    # N-H2 Morse
 Coordinates of irreducible 7: (number, coefficient, index of internal coordinate)
      1    1.000000    28
      2    1.000000    34
