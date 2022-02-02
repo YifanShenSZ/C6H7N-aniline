@@ -2,9 +2,9 @@ Evaluation for diabatz
 Yifan Shen 2021
 
 Echo of user command line input:
-/home/yshen57/Software/Mine/diabatz/tools/eval/v0/eval.exe -d default IntCoordDef SAS.in Hd.in Hd.net 11.in 12.in 13.in 14.in 22.in 23.in 24.in 33.in 34.in 44.in -x /home/yshen57/C6H7N-aniline/Columbus/sad-B1/sad-B1.xyz
+/home/yshen57/Software/Mine/diabatz/tools/eval/v0/eval.exe -d default IntCoordDef SAS.in pretrained_Hd.in pretrained_Hd.net pretrained_11.in pretrained_12.in pretrained_13.in pretrained_14.in pretrained_22.in pretrained_23.in pretrained_24.in pretrained_33.in pretrained_34.in pretrained_44.in -x /home/yshen57/C6H7N-aniline/Columbus/sad-B1/sad-B1.xyz
 
-Tue Feb  1 18:46:56 2022
+Tue Feb  1 21:29:50 2022
 
 Hd =
     6.299044e-02    0.000000e+00    0.000000e+00    0.000000e+00
@@ -12,5 +12,5 @@ Hd =
                                     2.430828e-01    0.000000e+00
                                                     2.687577e-01
 
-Tue Feb  1 18:46:56 2022
+Tue Feb  1 21:29:50 2022
 Mission success
