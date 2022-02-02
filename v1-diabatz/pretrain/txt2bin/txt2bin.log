@@ -2,7 +2,7 @@ Convert text fitting parameters to binary for diabatz version 0
 Yifan Shen 2021
 
 Echo of user command line input:
-/home/yshen57/Software/Mine/diabatz/tools/v0/txt2bin/txt2bin.exe -n Hd.in -p txt2bin/parameters -o pretrain.net
+/home/yshen57/Software/Mine/diabatz/tools/v0/txt2bin/txt2bin.exe -n pretrained_Hd.in -p txt2bin/parameters -o pretrained_Hd.net
 
 Tue Feb  1 18:44:21 2022
 
