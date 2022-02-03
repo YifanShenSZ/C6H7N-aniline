@@ -43,9 +43,21 @@
     40    1.000000    costorsion     8     1     2     4
     41    1.000000    costorsion     9     1     2     3
     42    1.000000    costorsion     9     1     2     4
-    43    1.000000         dummy                            # angle scaling
-    44    1.000000         dummy
-    45    1.000000         dummy
-    46    1.000000         dummy
-    47    1.000000         dummy
-    48    1.000000         dummy
+    43    1.000000    stretching     1     8                # for 2nd scaling
+    44    1.000000    stretching     1     9
+    45    1.000000    cosbending     8     1     2          
+    46    1.000000    cosbending     9     1     2
+    47    1.000000    sintorsion     8     1     2     3
+    48    1.000000    sintorsion     8     1     2     4
+    49    1.000000    sintorsion     9     1     2     3
+    50    1.000000    sintorsion     9     1     2     4
+    51    1.000000    costorsion     8     1     2     3
+    52    1.000000    costorsion     8     1     2     4
+    53    1.000000    costorsion     9     1     2     3
+    54    1.000000    costorsion     9     1     2     4
+    55    1.000000         dummy                            # bias
+    56    1.000000         dummy
+    57    1.000000         dummy
+    58    1.000000         dummy
+    59    1.000000         dummy
+    60    1.000000         dummy
