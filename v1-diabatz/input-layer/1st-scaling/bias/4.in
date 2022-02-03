@@ -1,0 +1,8 @@
+    1,17       4,1    # 1st-scaling bias replacing 1 symmetric NH coord
+    1,17       4,2    
+    1,17       4,3    
+    1,17       8,1        5,1    
+    1,17       1,17       5,1        8,1    # 1st-scaling bias replacing a square of asymmetric NH coord
+    1,17       1,17       3,11       7,7    
+    2,6        2,6        5,1        8,1    
+    2,6        2,6        3,11       7,7    
