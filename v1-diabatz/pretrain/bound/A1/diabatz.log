@@ -1,13 +1,13 @@
-Diabatz version 0
+Diabatz version 0.0.0
 Yifan Shen 2021
 
 Echo of user command line input:
-/home/yshen/Software/Mine/diabatz/v0.0.0/diabatz.exe -f default -i IntCoordDef -s SAS.in -n Hd.in -l 11.in -d ../data/sad-A1/ -z -286.1075216397
+/home/yshen/Software/Mine/diabatz/v0.0.0/diabatz.exe -f default -i IntCoordDef -s SAS.in -n Hd.in -l 11.in -d data/sad-A1/ -z -286.1075216397
 
-Mon Jan 31 15:42:54 2022
+Wed Feb  9 10:49:01 2022
 
 The data set will be read from: 
-    ../data/sad-A1/, 
+    data/sad-A1/, 
 There are 50 data points in adiabatic representation
           0 data points in composite representation
 
@@ -41,14 +41,14 @@ Thread 4:
 The data set corresponds to 909 least square equations
 There are 221 parameters to train
 
-The initial residue = 0.830231
+The initial residue = 0.587347
  
-2022 year  1 month 31 day 15:42:56
- Iteration           1 , residue  1.960349597839124E-003
+2022 year  2 month  9 day 10:49: 3
+ Iteration           1 , residue  1.960138432193360E-003
  Trust region warning: step length has converged, but residual has not met accur
  acy goal
- Final residual =   1.960349597839124E-003
-The final residue = 0.00196035
+ Final residual =   1.960138432193360E-003
+The final residue = 0.00196014
 
-Mon Jan 31 15:42:56 2022
+Wed Feb  9 10:49:03 2022
 Mission success

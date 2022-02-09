@@ -6,8 +6,7 @@ Coordinates of irreducible 1: (number, coefficient, index of internal coordinate
      2    1.000000     2
      3    0.707107     3    # N-H1 + N-H2
           0.707107     4
-     4    0.707107     5    # C-N-H1 + C-N-H2
-          0.707107     6
+     4    1.000000    43    # H1-N-H2 replaces C-N-H1 + C-N-H2
      5    0.707107     7
           0.707107     8
      6    0.707107     9
