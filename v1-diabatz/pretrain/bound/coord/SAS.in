@@ -75,10 +75,7 @@ Coordinates of irreducible 7: (number, coefficient, index of internal coordinate
      5    0.707107    31
          -0.707107    32
      6    1.000000    18
-     7    0.500000    35    # NH2 out of plane at C2v-planar
-         -0.500000    36
-          0.500000    37
-         -0.500000    38
+     7    1.000000    44    # C out of NH2 replaces NH2 out of plane at C2v-planar
 Coordinates of irreducible 8: (number, coefficient, index of internal coordinate)
      1    0.500000    35    # NH2 rotation at C2v-planar
          -0.500000    36
