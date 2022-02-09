@@ -129,6 +129,7 @@ Coordinates of irreducible 6: (since there is no irred 6 coords, we use it for m
      3    1.000000    57    # N-H1 1st-scaling
      4    1.000000    58    # N-H2 1st-scaling
      5    1.000000    61    # H1-N-H2
+     6    1.000000    62    # C out of NH2
 Coordinates of irreducible 7: (number, coefficient, index of internal coordinate)
      1    1.000000    28
      2    1.000000    34
