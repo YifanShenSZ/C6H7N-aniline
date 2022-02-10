@@ -11,12 +11,11 @@ if __name__ == "__main__":
 
     morse_x = 1.0 - np.exp(-1.5 * (x - 1.02767) / 1.02767)
 
-    # we have a pretrained bias from bound fit,
+    # we have an ab initio bias,
     # so instead of training bias we subtract pretrained bias from target
-    bias = 1.277073535618853e-02
-    y -= bias
+    y -= 0.01300314
 
-    order = 3
+    order = 7
     X = np.empty((m, order))
     X[:, 0] = morse_x
     for i in range(1, order):

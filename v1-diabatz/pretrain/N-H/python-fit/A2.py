@@ -10,12 +10,12 @@ if __name__ == "__main__":
 
     morse_x = 1.0 - np.exp(-1.5 * (x - 1.02767) / 1.02767)
 
-    # we have a pretrained bias from bound fit,
+    # we have an ab initio bias,
     # so instead of training bias we subtract pretrained bias from target
-    bias = 2.405267020263244e-01
-    y -= bias
+    y -= 0.241593866
 
-    order = 8
+    # order = 8
+    order = 10
     X = np.empty((x.shape[0], order))
     X[:, 0] = morse_x
     for i in range(1, order):
@@ -23,7 +23,8 @@ if __name__ == "__main__":
 
     XT = X.T
     Hessian = np.matmul(XT, X)
-
+    Hessian[8, 8] += 0.00001
+    Hessian[9, 9] += 0.00001
     Hessian_inv = np.linalg.inv(Hessian)
 
     coeffs = np.matmul(Hessian_inv, np.matmul(XT, y))
@@ -43,5 +44,5 @@ if __name__ == "__main__":
 
     plt.plot(xplot, np.matmul(Xplot, coeffs))
     plt.scatter(x, y)
-    plt.ylim(-0.002, 0.178)
+    plt.ylim(-0.01, 0.07)
     plt.show()
