@@ -2,9 +2,9 @@ Diabatz version 0.0.0
 Yifan Shen 2021
 
 Echo of user command line input:
-/home/yshen/Software/Mine/diabatz/v0.0.0/diabatz.exe -f default -i IntCoordDef -s SAS.in -n Hd.in -l 11.in -d data/min-A2/ -z -286.1075216397
+/home/yshen/Software/Mine/diabatz/v0.0.0/diabatz.exe -f default -i IntCoordDef -s SAS.in -n Hd.in -l 11.in -d data/min-A2/ -z -286.1075216397 -r regularization/reg -p regularization/prior
 
-Wed Feb  9 12:57:23 2022
+Thu Feb 10 11:19:41 2022
 
 The data set will be read from: 
     data/min-A2/, 
@@ -14,6 +14,8 @@ There are 50 data points in adiabatic representation
 maximum ground state energy = 0.227875
 maximum ||ground state energy gradient||_infinity = 0.0114946
 so we suggest to set gradient / energy scaling to around 0.0504424
+
+Got regularization strength, enable regularization
 
 The number of threads = 4
 
@@ -41,17 +43,14 @@ Thread 4:
 The data set corresponds to 909 least square equations
 There are 221 parameters to train
 
-The initial residue = 0.188642
+The initial residue = 0.163423
  
-2022 year  2 month  9 day 12:57:25
- Iteration           1 , residue  6.159687317457345E-003
- 
-2022 year  2 month  9 day 12:57:25
- Iteration           2 , residue  1.865777921429959E-003
+2022 year  2 month 10 day 11:19:43
+ Iteration           1 , residue  1.909617591967877E-003
  Trust region warning: step length has converged, but residual has not met accur
  acy goal
- Final residual =   1.865777921429958E-003
-The final residue = 0.00186578
+ Final residual =   1.909617591967877E-003
+The final residue = 0.00190955
 
-Wed Feb  9 12:57:25 2022
+Thu Feb 10 11:19:43 2022
 Mission success
