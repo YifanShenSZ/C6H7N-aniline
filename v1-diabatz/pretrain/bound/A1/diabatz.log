@@ -4,7 +4,7 @@ Yifan Shen 2021
 Echo of user command line input:
 /home/yshen/Software/Mine/diabatz/v0.0.0/diabatz.exe -f default -i IntCoordDef -s SAS.in -n Hd.in -l 11.in -d data/sad-A1/ -z -286.1075216397 -r regularization/reg -p regularization/prior
 
-Thu Feb 10 11:07:17 2022
+Thu Feb 10 20:30:22 2022
 
 The data set will be read from: 
     data/sad-A1/, 
@@ -43,14 +43,14 @@ Thread 4:
 The data set corresponds to 909 least square equations
 There are 221 parameters to train
 
-The initial residue = 0.428536
+The initial residue = 0.168194
  
-2022 year  2 month 10 day 11: 7:19
- Iteration           1 , residue  2.021630480417431E-003
+2022 year  2 month 10 day 20:30:23
+ Iteration           1 , residue  1.954465399254561E-003
  Trust region warning: step length has converged, but residual has not met accur
  acy goal
- Final residual =   2.021630480417431E-003
-The final residue = 0.00201885
+ Final residual =   1.954465399254561E-003
+The final residue = 0.00195164
 
-Thu Feb 10 11:07:19 2022
+Thu Feb 10 20:30:23 2022
 Mission success

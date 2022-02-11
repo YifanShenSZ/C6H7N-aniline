@@ -23,10 +23,14 @@
     22    1.000000    stretching     4    11
     23    0.707107    cosbending    14     7     5
          -0.707107    cosbending    14     7     6
-    24    1.000000    cosbending    12     5     7
-    25    1.000000    cosbending    13     6     7
-    26    1.000000    cosbending    10     3     5
-    27    1.000000    cosbending    11     4     6
+    24    0.707107    cosbending    12     5     7
+         -0.707107    cosbending    12     5     3
+    25    0.707107    cosbending    13     6     7
+         -0.707107    cosbending    13     6     4
+    26    0.707107    cosbending    10     3     5
+         -0.707107    cosbending    10     3     2
+    27    0.707107    cosbending    11     4     6
+         -0.707107    cosbending    11     4     2
     28    1.000000        sinoop    14     7     6     5
     29    1.000000        sinoop    12     5     7     3
     30    1.000000        sinoop    13     6     7     4
