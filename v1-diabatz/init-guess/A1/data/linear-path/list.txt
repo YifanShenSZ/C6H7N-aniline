@@ -1,0 +1,8 @@
+min-B1_min-B2
+1.1-fast-slow
+1.2-fast-slow
+1.3-fast-slow
+1.4-fast-slow
+1.5-fast-slow
+1.6-fast-slow
+1.7-fast-slow
