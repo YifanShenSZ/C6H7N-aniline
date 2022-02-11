@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 # 2. we have pretrained 1st-and-2nd-order weights from bound fit
 def pretraining(x: np.ndarray) -> np.ndarray:
     y = 0.191602965 \
-      - 4.730317749440870e-03 * x * x
+      - 4.730401321440401e-03 * x * x
     return y
 
 if __name__ == "__main__":
