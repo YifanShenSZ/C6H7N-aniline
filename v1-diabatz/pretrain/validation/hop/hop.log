@@ -3,5 +3,3 @@ Yifan Shen 2021
 
 Echo of user command line input:
 /home/yshen/Software/Mine/hop/C6H7N-aniline/MD/v0/MD.exe -d default IntCoordDef SAS.in pretrained_Hd.in pretrained_Hd.net pretrained_11.in pretrained_12.in pretrained_13.in pretrained_14.in pretrained_22.in pretrained_23.in pretrained_24.in pretrained_33.in pretrained_34.in pretrained_44.in -x /home/yshen/C6H7N-aniline/Columbus/min-A1/min-A1.xyz -m /home/yshen/C6H7N-aniline/Columbus/input/mass.txt -H /home/yshen/C6H7N-aniline/hop/Hessian.txt --target 1
-
-Fri Feb 11 12:00:41 2022
