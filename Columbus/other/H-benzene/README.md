@@ -9,7 +9,7 @@ For A1 coordinates, scan positively and negatively; for others, scan positively
 
 step = 0.1, scan until impossible to int2cart or converge mcscf
 
-An A1 pi->pi* (HOMO B1 pi to B1 pi*) state may intrude the A2 pi->Rydberg state for B1 and A2 scans, since B1 and A2 displacements destablize the pi system (smaller pi-pi* gap) so that pi->pi* states are favored
+An A1 pi->pi* (HOMO B1 pi to B1 pi*) state may intrude, since B1 and A2 displacements destablize the pi system (smaller pi-pi* gap) so that pi->pi* states are favored
 
 ## B1 15
 Invasion is trivial crossing
@@ -25,7 +25,9 @@ Invasion is trivial crossing
 
 State ordering:
 * 0 to 9: A1, B1, B2, A2
-* 10 to 13: A1, B1, B2, intruder, A2
+* 10: A1, B1, B2, intruder, A2
+* 11 to 12: A1, B2, B1, intruder, A2
+* 13: A1, intruder, B1, B2, A2
 
 5-state data is collected for [10, 13]
 
