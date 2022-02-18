@@ -23,10 +23,3 @@ Starting from min-B1, scan along C out of NH2
 step = 0.1
 
 The benzene distortion destablize the pi orbitals, so so an A1 pi->pi* (HOMO B1 pi to B1 pi*) state intrudes the A2 pi->Rydberg state from 10 to 14, so 0 to 9 can use 4 states while 10 to 14 can only use 3 states
-
-## N out of benzene
-Starting from min-B1, scan along N out of benzene
-
-step = 0.1
-
-The N pz displacement destablize the pi orbitals, so so an A1 pi->pi* (HOMO B1 pi to B1 pi*) state intrudes the A2 pi->Rydberg state from 3 to 4, so 0 to 2 can use 4 states while 3 to 4 can only use 3 states
