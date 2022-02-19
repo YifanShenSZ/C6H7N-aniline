@@ -19,7 +19,7 @@ if __name__ == "__main__":
     y -= pretraining(x)
 
     # even orders only
-    order = 20
+    order = 24
     X = np.empty((m, int(order / 2) - 1))
     X[:, 0] = x * x * x * x
     for i in range(1, X.shape[1]):
