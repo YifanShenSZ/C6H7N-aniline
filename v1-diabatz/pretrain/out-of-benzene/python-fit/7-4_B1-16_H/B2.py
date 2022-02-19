@@ -4,31 +4,29 @@ import sklearn.metrics
 import matplotlib.pyplot as plt
 
 # 1. we have bias from ab initio
-# 2. we have pretrained 1st-and-2nd-order weights from bound fit
+# 2. we have pretrained 2nd-order weight from bound fit
 def pretraining(x: np.ndarray) -> np.ndarray:
-    y = 0.241593866 \
-      + 1.880083975377197e-03 * x * x
+    y = 0.191602965 \
+      + 3.351665174631342e-02 * x * x
     return y
 
 if __name__ == "__main__":
     data = pd.read_csv("energy.csv")
-    x = np.array(data["sin(CooNH2)"])
-    y = np.array(data[" energy A2 / Hartree"]) + 286.1075216397
-    m = x.shape[0]
+    xraw = np.array(data["sin(HooC)"])
+    yraw = np.array(data[" energy B2 / Hartree"]) + 286.1075216397
 
-    y -= pretraining(x)
+    x = xraw
+    y = yraw - pretraining(x)
 
     # even orders only
-    order = 20
-    X = np.empty((m, int(order / 2) - 1))
+    order = 6
+    X = np.empty((x.shape[0], int(order / 2) - 1))
     X[:, 0] = x * x * x * x
     for i in range(1, X.shape[1]):
         X[:, i] = X[:, i - 1] * x * x
 
     XT = X.T
     Hessian = np.matmul(XT, X)
-    for i in range(Hessian.shape[0]):
-        Hessian[i, i] += 0.0001
     Hessian_inv = np.linalg.inv(Hessian)
 
     coeffs = np.matmul(Hessian_inv, np.matmul(XT, y))
@@ -36,16 +34,15 @@ if __name__ == "__main__":
     for coeff in coeffs:
         print("%25.15e" % coeff)
 
-    y += pretraining(x)
     prediction = np.matmul(X, coeffs) + pretraining(x)
-    print("R^2 =", sklearn.metrics.r2_score(y, prediction))
+    print("R^2 =", sklearn.metrics.r2_score(yraw, prediction))
 
-    xplot = np.linspace(0, 1, 100)
+    xplot = np.linspace(0, 2**0.5, 100)
     Xplot = np.empty((xplot.shape[0], X.shape[1]))
     Xplot[:, 0] = xplot * xplot * xplot * xplot
     for i in range(1, Xplot.shape[1]):
         Xplot[:, i] = Xplot[:, i - 1] * xplot * xplot
 
     plt.plot(xplot, np.matmul(Xplot, coeffs) + pretraining(xplot))
-    plt.scatter(x, y)
+    plt.scatter(xraw, yraw)
     plt.show()
