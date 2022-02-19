@@ -22,4 +22,12 @@ Starting from min-B1, scan along C out of NH2
 
 step = 0.1
 
-The benzene distortion destablize the pi orbitals, so so an A1 pi->pi* (HOMO B1 pi to B1 pi*) state intrudes the A2 pi->Rydberg state from 10 to 14, so 0 to 9 can use 4 states while 10 to 14 can only use 3 states
+An A1 pi->pi* (HOMO B1 pi to B1 pi*) state may intrude, since N-out-of-benzene-plane displacements destablize the pi system (smaller pi-pi* gap) so that pi->pi* states are favored
+
+Invasion is trivial crossing
+
+State ordering:
+* 0 to 9: A1, B1, B2, A2
+* 10 to 14: A1, B1, B2, intruder, A2
+
+5-state data is collected for [10, 14]
