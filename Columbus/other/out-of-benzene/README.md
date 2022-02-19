@@ -26,9 +26,8 @@ State ordering:
 * 0 to 9: A1, B1, B2, A2
 * 10: A1, B1, B2, intruder, A2
 * 11 to 12: A1, B2, B1, intruder, A2
-* 13: A1, intruder, B1, B2, A2
 
-5-state data is collected for [10, 13]
+5-state data is collected for [10, 12]
 
 ## B1 17
 Invasion is trivial crossing
