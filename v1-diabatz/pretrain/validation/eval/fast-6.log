@@ -4,13 +4,13 @@ Yifan Shen 2021
 Echo of user command line input:
 /home/yshen/Software/Mine/diabatz/tools/eval/v0/eval.exe -d default IntCoordDef SAS.in pretrained_Hd.in pretrained_Hd.net pretrained_11.in pretrained_12.in pretrained_13.in pretrained_14.in pretrained_22.in pretrained_23.in pretrained_24.in pretrained_33.in pretrained_34.in pretrained_44.in -x /home/yshen/C6H7N-aniline/Columbus/fast/6/fast-6.xyz
 
-Fri Feb 11 14:48:33 2022
+Sun Feb 20 12:18:23 2022
 
 Hd =
-    2.473548e-01    0.000000e+00    0.000000e+00    0.000000e+00
-                    1.462056e-01    0.000000e+00    0.000000e+00
-                                    4.066351e-01    0.000000e+00
-                                                    2.569548e-01
+    2.559559e-01    0.000000e+00    0.000000e+00    0.000000e+00
+                    1.585695e-01    0.000000e+00    0.000000e+00
+                                    4.222334e-01    0.000000e+00
+                                                    2.612939e-01
 
-Fri Feb 11 14:48:33 2022
+Sun Feb 20 12:18:23 2022
 Mission success
