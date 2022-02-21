@@ -8,9 +8,9 @@ H-N-H is not independent from C-C-N-H1 - C-C-N-H2, so internal coordinate 20 is 
 ## H-N-H from min-B1
 Starting from min-B1, scan along H-N-H
 
-step = 0.1
+step = 0.1, 10 steps each direction
 
-The pi->sigma* state intrudes the A2 states at 19, so 0 to 18 can use 4 states while 19 can only use 3 states
+A pi->sigma* state and a 2nd pi->pi* state intrude the A2 state at 19, so 0 to 18 can use 4 states while 19 can only use 3 states
 
 ## H-N-H from min-A1
 Starting from min-A1, scan along A1 H-N-H
