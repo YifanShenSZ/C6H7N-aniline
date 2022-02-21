@@ -7,12 +7,12 @@ import matplotlib.pyplot as plt
 # 2. we have pretrained 1st-and-2nd-order weights from bound fit
 def pretraining(x: np.ndarray) -> np.ndarray:
     y = 0.241593866 \
-      - 8.403676300615150e-04 * x \
-      + 1.120785542937880e-01 * x * x
+      - 9.939287782924522e-04 * x \
+      + 1.121687444834549e-01 * x * x
     return y
 
 if __name__ == "__main__":
-    data = pd.read_csv("A2.csv")
+    data = pd.read_csv("energy.csv")
     x = np.array(data["cos(H-N-H)"]) + 0.448660552147955
     y = np.array(data[" energy A2 / Hartree"]) + 286.1075216397
     m = x.shape[0]
@@ -36,8 +36,8 @@ if __name__ == "__main__":
     for coeff in coeffs:
         print("%25.15e" % coeff)
 
-    prediction = np.matmul(X, coeffs)
-    print("residue = ", np.linalg.norm(prediction - y))
+    y += pretraining(x)
+    prediction = np.matmul(X, coeffs) + pretraining(x)
     print("R^2 =", sklearn.metrics.r2_score(y, prediction))
 
     xplot = np.linspace(-1, 1, 100) + 0.448660552147955
@@ -47,5 +47,5 @@ if __name__ == "__main__":
         Xplot[:, i] = Xplot[:, i - 1] * xplot
 
     plt.plot(xplot, np.matmul(Xplot, coeffs) + pretraining(xplot))
-    plt.scatter(x, y + pretraining(x))
+    plt.scatter(x, y)
     plt.show()
