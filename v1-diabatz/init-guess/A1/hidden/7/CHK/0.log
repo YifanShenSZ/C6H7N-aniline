@@ -1,0 +1,401 @@
+Diabatz version 1.0.0
+Yifan Shen 2021
+
+Echo of user command line input:
+/home/yshen57/Software/Mine/diabatz/v1.0.0/diabatz.exe --pretrained default IntCoordDef SAS.in pretrained_Hd.in pretrained_Hd.net pretrained_11.in -f default -i IntCoordDef -s SAS.in -n Hd.in -l 11.in -d data/critical/list.txt data/fast/list.txt data/slow/list.txt data/linear-path/list.txt data/other/A1-rotation/list.txt data/other/B1-rotation/list.txt data/artifact/asymptote/ -z -286.1075216397
+
+Sun Feb 20 18:50:47 2022
+
+The data set will be read from: 
+    data/critical/min-A1/, data/critical/sad-A1/, data/critical/min-B1/, 
+    data/critical/sad-B1/, data/critical/min-B2/, data/critical/sad-B2/, data/critical/min-A2/, 
+    data/critical/sad-A2/, data/critical/mex-B1-B2/, data/critical/mex-B2-A2/, data/fast/0.7/, 
+    data/fast/0.8/, data/fast/0.9/, data/fast/1.1/, data/fast/1.2/, data/fast/1.4/, 
+    data/fast/1.5/, data/fast/1.6/, data/fast/1.7/, data/fast/1.9/, data/fast/2.0/, 
+    data/fast/2.1/, data/fast/2.2/, data/fast/2.3/, data/fast/2.4/, data/fast/2.5/, 
+    data/fast/2.6/, data/fast/2.7/, data/fast/2.8/, data/fast/2.9/, data/fast/3/, 
+    data/fast/4/, data/fast/5/, data/fast/6/, data/fast/6_partial-loop/, data/slow/0.7/, 
+    data/slow/0.8/, data/slow/0.9/, data/slow/1.1/, data/slow/1.2/, data/slow/1.3/, 
+    data/slow/1.4/, data/slow/1.5/, data/slow/1.6/, data/slow/1.7/, 
+    data/linear-path/min-B1_min-B2/, data/linear-path/1.1-fast-slow/, data/linear-path/1.2-fast-slow/, 
+    data/linear-path/1.3-fast-slow/, data/linear-path/1.4-fast-slow/, data/linear-path/1.5-fast-slow/, 
+    data/linear-path/1.6-fast-slow/, data/linear-path/1.7-fast-slow/, data/other/A1-rotation/0.1/, 
+    data/other/A1-rotation/0.2/, data/other/A1-rotation/0.3/, data/other/A1-rotation/0.4/, 
+    data/other/A1-rotation/0.5/, data/other/A1-rotation/0.6/, data/other/A1-rotation/0.7/, 
+    data/other/A1-rotation/0.8/, data/other/A1-rotation/0.9/, data/other/A1-rotation/1.0/, 
+    data/other/A1-rotation/1.1/, data/other/A1-rotation/1.2/, data/other/A1-rotation/1.3/, 
+    data/other/A1-rotation/1.4/, data/other/A1-rotation/1.5/, data/other/A1-rotation/1.6/, 
+    data/other/A1-rotation/1.7/, data/other/A1-rotation/1.8/, data/other/A1-rotation/1.9/, 
+    data/other/A1-rotation/2.0/, data/other/A1-rotation/2.1/, data/other/A1-rotation/2.2/, 
+    data/other/B1-rotation/0.1/, data/other/B1-rotation/0.2/, data/other/B1-rotation/0.3/, 
+    data/other/B1-rotation/0.4/, data/other/B1-rotation/0.5/, data/other/B1-rotation/0.6/, 
+    data/other/B1-rotation/0.7/, data/other/B1-rotation/0.8/, data/other/B1-rotation/0.9/, 
+    data/other/B1-rotation/1.0/, data/other/B1-rotation/1.1/, data/other/B1-rotation/1.2/, 
+    data/other/B1-rotation/1.3/, data/other/B1-rotation/1.4/, data/other/B1-rotation/1.5/, 
+    data/other/B1-rotation/1.6/, data/other/B1-rotation/1.7/, data/other/B1-rotation/1.8/, 
+    data/other/B1-rotation/1.9/, data/other/B1-rotation/2.0/, data/other/B1-rotation/2.1/, 
+    data/other/B1-rotation/2.2/, data/artifact/asymptote/, 
+There are 1849 data points in adiabatic representation
+          0 data points in composite representation
+
+maximum ground state energy = 0.254234
+maximum ||ground state energy gradient||_infinity = 0.703726
+so we suggest to set gradient / energy scaling to around 2.76803
+
+The number of threads = 4
+
+Thread 1:
+* owns 463 adiabatic data points
+* owns 0 composite data points
+* owns 0 energy-only data points
+* starts with Jacobian row 0
+Thread 2:
+* owns 462 adiabatic data points
+* owns 0 composite data points
+* owns 0 energy-only data points
+* starts with Jacobian row 10533
+Thread 3:
+* owns 462 adiabatic data points
+* owns 0 composite data points
+* owns 0 energy-only data points
+* starts with Jacobian row 23411
+Thread 4:
+* owns 462 adiabatic data points
+* owns 0 composite data points
+* owns 0 energy-only data points
+* starts with Jacobian row 39636
+
+The data set corresponds to 54996 least square equations
+There are 4075 parameters to train
+
+The initial residue = 59.8459
+ 
+2022 year  2 month 20 day 18:56:59
+ Iteration           1 , residue   59.8459014728462     
+ 
+2022 year  2 month 20 day 18:57: 7
+ Iteration           2 , residue   59.8459014728462     
+ 
+2022 year  2 month 20 day 18:57:16
+ Iteration           3 , residue   59.8459014728462     
+ 
+2022 year  2 month 20 day 18:57:26
+ Iteration           4 , residue   28.9140894389075     
+ 
+2022 year  2 month 20 day 18:57:47
+ Iteration           5 , residue   28.9140894389075     
+ 
+2022 year  2 month 20 day 18:57:57
+ Iteration           6 , residue   28.9140894389075     
+ 
+2022 year  2 month 20 day 18:58: 6
+ Iteration           7 , residue   28.9140894389075     
+ 
+2022 year  2 month 20 day 18:58:15
+ Iteration           8 , residue   25.6059176068378     
+ 
+2022 year  2 month 20 day 18:58:37
+ Iteration           9 , residue   7.02999549305456     
+ 
+2022 year  2 month 20 day 18:58:58
+ Iteration          10 , residue   2.45352366913197     
+ 
+2022 year  2 month 20 day 18:59:20
+ Iteration          11 , residue   1.82588785506414     
+ 
+2022 year  2 month 20 day 18:59:41
+ Iteration          12 , residue   1.39912741825959     
+ 
+2022 year  2 month 20 day 19: 0: 2
+ Iteration          13 , residue   1.19298659543128     
+ 
+2022 year  2 month 20 day 19: 0:24
+ Iteration          14 , residue  0.913124218499077     
+ 
+2022 year  2 month 20 day 19: 0:45
+ Iteration          15 , residue  0.887977639951955     
+ 
+2022 year  2 month 20 day 19: 1: 6
+ Iteration          16 , residue  0.887977639951955     
+ 
+2022 year  2 month 20 day 19: 1:15
+ Iteration          17 , residue  0.887977639951955     
+ 
+2022 year  2 month 20 day 19: 1:24
+ Iteration          18 , residue  0.732971700339056     
+ 
+2022 year  2 month 20 day 19: 1:45
+ Iteration          19 , residue  0.604858600623304     
+ 
+2022 year  2 month 20 day 19: 2: 7
+ Iteration          20 , residue  0.595296774069033     
+ 
+2022 year  2 month 20 day 19: 2:28
+ Iteration          21 , residue  0.592995964276554     
+ 
+2022 year  2 month 20 day 19: 2:49
+ Iteration          22 , residue  0.581137213858947     
+ 
+2022 year  2 month 20 day 19: 3:10
+ Iteration          23 , residue  0.575017650793840     
+ 
+2022 year  2 month 20 day 19: 3:31
+ Iteration          24 , residue  0.570721467256847     
+ 
+2022 year  2 month 20 day 19: 3:51
+ Iteration          25 , residue  0.566691345207657     
+ 
+2022 year  2 month 20 day 19: 4:13
+ Iteration          26 , residue  0.562857370514176     
+ 
+2022 year  2 month 20 day 19: 4:33
+ Iteration          27 , residue  0.559206721622777     
+ 
+2022 year  2 month 20 day 19: 4:55
+ Iteration          28 , residue  0.555708035503940     
+ 
+2022 year  2 month 20 day 19: 5:16
+ Iteration          29 , residue  0.552344680826817     
+ 
+2022 year  2 month 20 day 19: 5:37
+ Iteration          30 , residue  0.549085447117363     
+ 
+2022 year  2 month 20 day 19: 5:58
+ Iteration          31 , residue  0.545897384314081     
+ 
+2022 year  2 month 20 day 19: 6:19
+ Iteration          32 , residue  0.542764624832769     
+ 
+2022 year  2 month 20 day 19: 6:39
+ Iteration          33 , residue  0.539664017313369     
+ 
+2022 year  2 month 20 day 19: 6:59
+ Iteration          34 , residue  0.536597297358210     
+ 
+2022 year  2 month 20 day 19: 7:20
+ Iteration          35 , residue  0.533548288265190     
+ 
+2022 year  2 month 20 day 19: 7:40
+ Iteration          36 , residue  0.530526173775679     
+ 
+2022 year  2 month 20 day 19: 8: 1
+ Iteration          37 , residue  0.527516376915522     
+ 
+2022 year  2 month 20 day 19: 8:22
+ Iteration          38 , residue  0.524530861319381     
+ 
+2022 year  2 month 20 day 19: 8:43
+ Iteration          39 , residue  0.521556190950933     
+ 
+2022 year  2 month 20 day 19: 9: 4
+ Iteration          40 , residue  0.518604835949418     
+ 
+2022 year  2 month 20 day 19: 9:25
+ Iteration          41 , residue  0.515665408537191     
+ 
+2022 year  2 month 20 day 19: 9:45
+ Iteration          42 , residue  0.512749442712333     
+ 
+2022 year  2 month 20 day 19:10: 6
+ Iteration          43 , residue  0.509848352393704     
+ 
+2022 year  2 month 20 day 19:10:27
+ Iteration          44 , residue  0.506971847116051     
+ 
+2022 year  2 month 20 day 19:10:48
+ Iteration          45 , residue  0.504114242986673     
+ 
+2022 year  2 month 20 day 19:11:10
+ Iteration          46 , residue  0.501282940571551     
+ 
+2022 year  2 month 20 day 19:11:31
+ Iteration          47 , residue  0.498474569333421     
+ 
+2022 year  2 month 20 day 19:11:51
+ Iteration          48 , residue  0.495694037551346     
+ 
+2022 year  2 month 20 day 19:12:12
+ Iteration          49 , residue  0.492939362655426     
+ 
+2022 year  2 month 20 day 19:12:32
+ Iteration          50 , residue  0.490213138834469     
+ 
+2022 year  2 month 20 day 19:12:54
+ Iteration          51 , residue  0.487514030021548     
+ 
+2022 year  2 month 20 day 19:13:15
+ Iteration          52 , residue  0.484842914682457     
+ 
+2022 year  2 month 20 day 19:13:36
+ Iteration          53 , residue  0.482198772343839     
+ 
+2022 year  2 month 20 day 19:13:59
+ Iteration          54 , residue  0.479581534563267     
+ 
+2022 year  2 month 20 day 19:14:23
+ Iteration          55 , residue  0.476990393862821     
+ 
+2022 year  2 month 20 day 19:14:45
+ Iteration          56 , residue  0.474424906011137     
+ 
+2022 year  2 month 20 day 19:15: 8
+ Iteration          57 , residue  0.471884403954848     
+ 
+2022 year  2 month 20 day 19:15:30
+ Iteration          58 , residue  0.469368342162030     
+ 
+2022 year  2 month 20 day 19:15:52
+ Iteration          59 , residue  0.466876128767860     
+ 
+2022 year  2 month 20 day 19:16:15
+ Iteration          60 , residue  0.464407211025314     
+ 
+2022 year  2 month 20 day 19:16:37
+ Iteration          61 , residue  0.461961037567211     
+ 
+2022 year  2 month 20 day 19:16:59
+ Iteration          62 , residue  0.459537075708117     
+ 
+2022 year  2 month 20 day 19:17:21
+ Iteration          63 , residue  0.457134806372762     
+ 
+2022 year  2 month 20 day 19:17:44
+ Iteration          64 , residue  0.454753728325779     
+ 
+2022 year  2 month 20 day 19:18: 7
+ Iteration          65 , residue  0.452393359770596     
+ 
+2022 year  2 month 20 day 19:18:31
+ Iteration          66 , residue  0.450053241175417     
+ 
+2022 year  2 month 20 day 19:18:55
+ Iteration          67 , residue  0.447732938031201     
+ 
+2022 year  2 month 20 day 19:19:18
+ Iteration          68 , residue  0.445432043661411     
+ 
+2022 year  2 month 20 day 19:19:42
+ Iteration          69 , residue  0.443150181909293     
+ 
+2022 year  2 month 20 day 19:20: 6
+ Iteration          70 , residue  0.440887009529843     
+ 
+2022 year  2 month 20 day 19:20:29
+ Iteration          71 , residue  0.438642218134068     
+ 
+2022 year  2 month 20 day 19:20:53
+ Iteration          72 , residue  0.436415535508512     
+ 
+2022 year  2 month 20 day 19:21:17
+ Iteration          73 , residue  0.434206726146638     
+ 
+2022 year  2 month 20 day 19:21:41
+ Iteration          74 , residue  0.432015590844775     
+ 
+2022 year  2 month 20 day 19:22: 4
+ Iteration          75 , residue  0.429841965256625     
+ 
+2022 year  2 month 20 day 19:22:27
+ Iteration          76 , residue  0.427685717363401     
+ 
+2022 year  2 month 20 day 19:22:49
+ Iteration          77 , residue  0.425546743902295     
+ 
+2022 year  2 month 20 day 19:23:13
+ Iteration          78 , residue  0.423424965896985     
+ 
+2022 year  2 month 20 day 19:23:36
+ Iteration          79 , residue  0.421320323537723     
+ 
+2022 year  2 month 20 day 19:24: 0
+ Iteration          80 , residue  0.419232770748713     
+ 
+2022 year  2 month 20 day 19:24:24
+ Iteration          81 , residue  0.417162269838914     
+ 
+2022 year  2 month 20 day 19:24:48
+ Iteration          82 , residue  0.415108786643955     
+ 
+2022 year  2 month 20 day 19:25:10
+ Iteration          83 , residue  0.413072286524378     
+ 
+2022 year  2 month 20 day 19:25:32
+ Iteration          84 , residue  0.411052731491037     
+ 
+2022 year  2 month 20 day 19:25:54
+ Iteration          85 , residue  0.409050078596307     
+ 
+2022 year  2 month 20 day 19:26:15
+ Iteration          86 , residue  0.407064279580774     
+ 
+2022 year  2 month 20 day 19:26:36
+ Iteration          87 , residue  0.405095281624595     
+ 
+2022 year  2 month 20 day 19:26:57
+ Iteration          88 , residue  0.403143028942419     
+ 
+2022 year  2 month 20 day 19:27:18
+ Iteration          89 , residue  0.401207464895665     
+ 
+2022 year  2 month 20 day 19:27:39
+ Iteration          90 , residue  0.399288534280542     
+ 
+2022 year  2 month 20 day 19:28: 0
+ Iteration          91 , residue  0.397386185479765     
+ 
+2022 year  2 month 20 day 19:28:21
+ Iteration          92 , residue  0.395500372228504     
+ 
+2022 year  2 month 20 day 19:28:41
+ Iteration          93 , residue  0.393631054826005     
+ 
+2022 year  2 month 20 day 19:29: 2
+ Iteration          94 , residue  0.391778200708793     
+ 
+2022 year  2 month 20 day 19:29:23
+ Iteration          95 , residue  0.389941784378230     
+ 
+2022 year  2 month 20 day 19:29:44
+ Iteration          96 , residue  0.388121786737209     
+ 
+2022 year  2 month 20 day 19:30: 5
+ Iteration          97 , residue  0.386318193934769     
+ 
+2022 year  2 month 20 day 19:30:26
+ Iteration          98 , residue  0.384530995843756     
+ 
+2022 year  2 month 20 day 19:30:47
+ Iteration          99 , residue  0.382760184307492     
+ 
+2022 year  2 month 20 day 19:31: 8
+ Iteration         100 , residue  0.381005751289846     
+ 
+2022 year  2 month 20 day 19:31:30
+ Iteration         101 , residue  0.379267687052578     
+ 
+2022 year  2 month 20 day 19:31:51
+ Iteration         102 , residue  0.377545978467033     
+ 
+2022 year  2 month 20 day 19:32:14
+ Iteration         103 , residue  0.375840607546831     
+ 
+2022 year  2 month 20 day 19:32:37
+ Iteration         104 , residue  0.374151550265744     
+ 
+2022 year  2 month 20 day 19:33: 1
+ Iteration         105 , residue  0.372478775702208     
+ 
+2022 year  2 month 20 day 19:33:24
+ Iteration         106 , residue  0.370822245529942     
+ 
+2022 year  2 month 20 day 19:33:49
+ Iteration         107 , residue  0.369181913853883     
+ 
+2022 year  2 month 20 day 19:34:12
+ Iteration         108 , residue  0.367557727373164     
+ Failed trust region: max iteration exceeded!
+ Final residual =   0.367557727373163     
+The final residue = 0.367558
+
+Sun Feb 20 19:34:12 2022
+Mission success
