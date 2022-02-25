@@ -17,6 +17,21 @@ Starting from min-A1, scan along A1 H-N-H
 
 step = 0.1, 10 steps each direction
 
+## C-N-avgH from min-B1
+Starting from min-B1, scan along C-N-H1 - C-N-H2
+
+step = 0.1, until cannot int2cart
+
+An A1 pi->pi* (HOMO B1 pi to B1 pi*) state may intrude, since N-out-of-benzene-plane displacements destablize the pi system (smaller pi-pi* gap) so that pi->pi* states are favored
+
+Invasion is trivial crossing
+
+State ordering:
+* 0 to 11: A1, B1, B2, A2
+* 12 to 13: A1, B1, B2, intruder, A2
+
+5-state data is collected for [12, 13]
+
 ## C out of NH2
 Starting from min-B1, scan along C out of NH2
 
