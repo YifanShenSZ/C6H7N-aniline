@@ -1,0 +1,1 @@
+~/Software/Mine/hop/C6H7N-aniline/MD/v1/MD.exe -d default IntCoordDef SAS.in pretrained_Hd.in pretrained_Hd.net pretrained_11.in Hd.in Hd.net 11.in -x ~/C6H7N-aniline/Columbus/min-A1/min-A1.xyz -m ~/C6H7N-aniline/Columbus/input/mass.txt -H ~/C6H7N-aniline/hop/Hessian.txt --target 1
