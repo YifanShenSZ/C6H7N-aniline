@@ -46,3 +46,17 @@ State ordering:
 * 10 to 14: A1, B1, B2, intruder, A2
 
 5-state data is collected for [10, 14]
+
+## NH2 rotation from min-B1
+Start from min-B1, rotate NH2 until the rotational saddle point
+
+step = 0.1
+
+See `NH2-rotation_from_min-B1/README.md` for details
+
+## NH2 rotation from min-A1
+Start from min-A1, rotate NH2 until the rotational saddle point
+
+step = 0.1
+
+See `NH2-rotation_from_min-A1/README.md` for details
