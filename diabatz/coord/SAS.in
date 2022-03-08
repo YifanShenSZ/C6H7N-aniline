@@ -1,0 +1,161 @@
+Internal coordinate origin file:
+    origin.int
+Scale: (self, other, scaling function, parameter(s))
+     3     3    tanh((x-a)/b)        0.000000    0.400000
+     4     4    tanh((x-a)/b)        0.000000    0.400000
+     5     3    exp(-a*x)*(1+x)^b    5.000000    5.000000
+     6     4    exp(-a*x)*(1+x)^b    5.000000    5.000000
+    42     3    exp(-a*x)*(1+x)^b    5.000000    5.000000
+    43     4    exp(-a*x)*(1+x)^b    5.000000    5.000000
+    44     3    exp(-a*x)*(1+x)^b    5.000000    5.000000
+    45     4    exp(-a*x)*(1+x)^b    5.000000    5.000000
+    46    46    tanh((x-a)/b)        0.800000    0.240000
+    47    47    tanh((x-a)/b)        0.800000    0.240000
+    48    46    exp(-a*x)*(1+x)^b    5.000000    9.000000
+    49    47    exp(-a*x)*(1+x)^b    5.000000    9.000000
+    52    46    exp(-a*x)*(1+x)^b    5.000000    9.000000
+    53    47    exp(-a*x)*(1+x)^b    5.000000    9.000000
+    54    46    exp(-a*x)*(1+x)^b    5.000000    9.000000
+    55    47    exp(-a*x)*(1+x)^b    5.000000    9.000000
+    56     3    1-exp(-a*x)          1.500000
+    57     4    1-exp(-a*x)          1.500000
+    58     3    exp(-a*x)*(1+x)^b    5.000000    5.000000
+    59     4    exp(-a*x)*(1+x)^b    5.000000    5.000000
+    60     3    exp(-a*x)*(1+x)^b    5.000000    9.000000
+    61     4    exp(-a*x)*(1+x)^b    5.000000    9.000000
+Scale2: (self, other1, other2, scaling function, parameter(s))
+     7     3     4    exp[-a*(x+y)]*[(1+x)*(1+y)]^b    5.000000    5.000000
+     8     3     4    exp[-a*(x+y)]*[(1+x)*(1+y)]^b    5.000000    5.000000
+    50    46    47    exp[-a*(x+y)]*[(1+x)*(1+y)]^b    5.000000    9.000000
+    51    46    47    exp[-a*(x+y)]*[(1+x)*(1+y)]^b    5.000000    9.000000
+Coordinates of irreducible 1: (number, coefficient, index of internal coordinate)
+     1    1.000000     1    # no nuclei to permute
+     2    1.000000     2
+     3    1.000000     3    # 1st-scaling N-H1 + N-H2
+          1.000000     4
+     4    1.000000     5    # 1st-scaling C-N-H1 + C-N-H2
+          1.000000     6
+     5    1.000000     9    # benzene C-C
+          1.000000    10
+     6    1.000000    11
+          1.000000    12
+     7    1.000000    13
+          1.000000    14
+     8    1.000000    15    # benzene C-C-C
+     9    1.000000    16
+    10    1.000000    21    # benzene C-H
+          1.000000    22
+    11    1.000000    23
+          1.000000    24
+    12    1.000000    27    # benzene C-C-H
+         -1.000000    28
+          1.000000    29
+         -1.000000    30
+    13    1.000000    31
+         -1.000000    32
+          1.000000    33
+         -1.000000    34
+    14    1.000000     7    # redundant: H1-N-H2 under 1st scaling
+    15    1.000000    25    # redundant: benzene C-C-H
+          1.000000    26
+    16    1.000000    27
+          1.000000    28
+          1.000000    29
+          1.000000    30
+    17    1.000000    31
+          1.000000    32
+          1.000000    33
+          1.000000    34
+    18    1.000000    46    # 2nd-scaling N-H1 + N-H2
+          1.000000    47
+    19    1.000000    48    # 2nd-scaling C-N-H1 + C-N-H2
+          1.000000    49
+    20    1.000000    50    # 2nd-scaling H1-N-H2
+    21    1.000000    56    # symmetric Morse
+          1.000000    57
+    22    1.000000    58    # symmetric 1st scaling
+          1.000000    59
+    23    1.000000    60    # symmetric 2nd scaling
+          1.000000    61
+Coordinates of irreducible 2: (number, coefficient, index of internal coordinate)
+     1    1.000000     3    # 1st-scaling N-H1 - N-H2
+         -1.000000     4
+     2    1.000000     5    # 1st-scaling C-N-H1 - C-N-H2
+         -1.000000     6
+     3    1.000000    46    # 2nd-scaling N-H1 - N-H2
+         -1.000000    47
+     4    1.000000    48    # 2nd-scaling C-N-H1 - C-N-H2
+         -1.000000    49
+     5    1.000000    56    # asymmetric Morse
+         -1.000000    57
+     6    1.000000    58    # asymmetric 1st scaling
+         -1.000000    59
+     7    1.000000    60    # asymmetric 2nd scaling
+         -1.000000    61
+Coordinates of irreducible 3: (number, coefficient, index of internal coordinate)
+     1    1.000000     9    # benzene C-C
+         -1.000000    10
+     2    1.000000    11
+         -1.000000    12
+     3    1.000000    13
+         -1.000000    14
+     4    1.000000    17    # benzene C-C-C
+     5    1.000000    21    # benzene C-H
+         -1.000000    22
+     6    1.000000    23
+         -1.000000    24
+     7    1.000000    25    # benzene C-C-H
+         -1.000000    26
+     8    1.000000    27
+         -1.000000    28
+         -1.000000    29
+          1.000000    30
+     9    1.000000    31
+         -1.000000    32
+         -1.000000    33
+          1.000000    34
+    10    1.000000    40    # benzene N-C-C
+    11    1.000000    27    # redundant: benzene C-C-H
+          1.000000    28
+         -1.000000    29
+         -1.000000    30
+    12    1.000000    31
+          1.000000    32
+         -1.000000    33
+         -1.000000    34
+    13    1.000000    44    # 1st-scaling NH2 out of plane at C2v-perpendicular
+         -1.000000    45
+    14    1.000000    54    # 2nd-scaling NH2 out of plane at C2v-perpendicular
+         -1.000000    55
+Coordinates of irreducible 4: (number, coefficient, index of internal coordinate)
+     1    1.000000    18    # benzene C-C-C-C
+     2    1.000000    36    # benzene H-C-C-C
+          1.000000    37
+     3    1.000000    38
+          1.000000    39
+Coordinates of irreducible 5: (number, coefficient, index of internal coordinate)
+     1    1.000000    44    # 1st-scaling NH2 rotation at C2v-perpendicular
+          1.000000    45
+     2    1.000000    54    # 2nd-scaling NH2 rotation at C2v-perpendicular
+          1.000000    55
+Coordinates of irreducible 6: (number, coefficient, index of internal coordinate)
+     1    1.000000     8    # redundant: 1st-scaling C out of NH2
+     2    1.000000    51    # redundant: 2nd-scaling C out of NH2
+Coordinates of irreducible 7: (number, coefficient, index of internal coordinate)
+     1    1.000000    19    # benzene C-C-C-C
+     2    1.000000    20
+     3    1.000000    35    # benzene H-C-C-C
+     4    1.000000    36
+         -1.000000    37
+     5    1.000000    38
+         -1.000000    39
+     6    1.000000    41    # benzene N-C-C-C
+     7    1.000000    42    # 1st-scaling NH2 out of plane at C2v-planar
+         -1.000000    43
+     8    1.000000    52    # 2nd-scaling NH2 out of plane at C2v-planar
+         -1.000000    53
+Coordinates of irreducible 8: (number, coefficient, index of internal coordinate)
+     1    1.000000    42    # 1st-scaling NH2 rotation at C2v-planar
+          1.000000    43
+     2    1.000000    52    # 2nd-scaling NH2 rotation at C2v-planar
+          1.000000    53
