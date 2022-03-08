@@ -55,7 +55,7 @@ Coordinates of irreducible 1: (number, coefficient, index of internal coordinate
          -1.000000    32
           1.000000    33
          -1.000000    34
-    14    1.000000     7    # redundant: H1-N-H2 under 1st scaling
+    14    1.000000     7    # redundant: 1st-scaling H1-N-H2
     15    1.000000    25    # redundant: benzene C-C-H
           1.000000    26
     16    1.000000    27
@@ -70,7 +70,7 @@ Coordinates of irreducible 1: (number, coefficient, index of internal coordinate
           1.000000    47
     19    1.000000    48    # 2nd-scaling C-N-H1 + C-N-H2
           1.000000    49
-    20    1.000000    50    # 2nd-scaling H1-N-H2
+    20    1.000000    50    # redundant: 2nd-scaling H1-N-H2
     21    1.000000    56    # symmetric Morse
           1.000000    57
     22    1.000000    58    # symmetric 1st scaling
