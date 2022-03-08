@@ -1,7 +1,6 @@
 # Data set
-loops around `fast` and `slow` are stored in `fast-loop` and `slow-loop`. I am not sure when to use them yet
 
-## scripts
+## script
 `5to4.sh`:
 * some data sets contains 5 states because the 4th state is an intruder
 * this script automatically removes the gradients involving the 4th state

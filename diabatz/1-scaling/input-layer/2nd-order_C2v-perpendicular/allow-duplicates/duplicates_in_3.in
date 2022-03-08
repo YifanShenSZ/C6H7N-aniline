@@ -1,8 +1,0 @@
-    5,1        2,1    # C2v-perpendicular 2nd-order -> G8 2nd-order
-    5,1        2,2    
-    7,1        5,1        8,1    # C2v-perpendicular B1 x A2 -> G8 irred-7 x irred-5 x irred-8
-    7,2        5,1        8,1    
-    7,3        5,1        8,1    
-    7,4        5,1        8,1    
-    7,5        5,1        8,1    
-    7,6        5,1        8,1    

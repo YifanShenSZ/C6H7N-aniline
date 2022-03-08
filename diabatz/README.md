@@ -74,10 +74,10 @@ Wild NH2 rotation bound region
 ## Electronic states
 How can we reproduce the ab initio G4 electronic states?
 
-Naively, use 8 states each carries a G8 irreducible:
+1, naively, use 8 states each carries a G8 irreducible:
 * pros: most rigurous
 * cons: only 4-state data available
 
-Assume the ab initio states are symmetric in N, since in bound region the NH2 molecular orbitals are doubly occupied:
+2, ssume the ab initio states are symmetric in N, since in bound region the NH2 molecular orbitals are doubly occupied:
 * pros: 4-state model with 4-state data
 * cons: more complicated neural network may be necessary to describe NAC, e.g. at C2v-planar the NAC along irreducible 2 starts to come from 2nd-order term 2 x 5, but NAC is usually considered as a 1st-order coupling

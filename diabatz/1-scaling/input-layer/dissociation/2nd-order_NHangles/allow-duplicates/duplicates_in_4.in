@@ -1,8 +1,0 @@
-               1,3        4,1    # NAC coupled with Cs NH2 rotation
-               1,3        4,2    
-               1,3        4,3    
-               1,3        8,1        5,1    
-               1,3        8,1        5,1    # 2nd-order N-H angles coupled with N-H bond length
-    1,3        1,3        8,1        5,1    
-    2,1        2,1        8,1        5,1    
-               1,3        8,1        5,1        1,3    # 2nd-order N-H angles x irred-5 or irred-8 coupled with N-H bond length
