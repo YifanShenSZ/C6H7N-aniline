@@ -9,8 +9,10 @@ Unfortunately, this cannot be done without redundant coordinates. For example, f
 So, the redundant coordinates are introduced to eliminate holes, which means they should only couple to their corresponding dependent coordinates
 
 Redundancy `(1,14) H1-N-H2` and `(6,1) C out of NH2` depend on:
-* (1,4) C-N-H1 + C-N-H2
-* (2,2) C-N-H1 - C-N-H2
+* (1, 4) C-N-H1 + C-N-H2
+* (2, 2) C-N-H1 - C-N-H2
+* (7, 7) NH2 out of plane at C2v-planar
+* (3,13) NH2 out of plane at C2v-perpendicular
 
 Redundancy `(1,15) H14-C7-C5 + H14-C7-C6` depends on:
 * (3,7) H14-C7-C5 - H14-C7-C6
