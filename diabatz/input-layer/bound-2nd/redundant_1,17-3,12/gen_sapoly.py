@@ -23,17 +23,17 @@ product_table = numpy.array([
 ])
 
 # To make sure you did not forget any coordinate
-degree_of_freedom = 7
+degree_of_freedom = 6
 
 # 1st element in tuple tells the order, others are the coordinates following this order
 polynomial_specification = [
-    (2, [[14, 15, 16, 17],
+    (2, [[17, 13],
          [],
-         [11, 12],
+         [12, 9],
+         [3],
          [],
          [],
-         [1],
-         [],
+         [5],
          []
         ]
     )
@@ -115,6 +115,17 @@ if __name__ == "__main__":
         with open(str(irred + 1) + ".in", 'w') as f:
             for order in range(len(terms)):
                 for polynomial in terms[order][irred]:
+                    has_redundant = False
+                    has_dependent = False
                     for nomial in polynomial:
-                        print('%5d,%-5d' % (nomial[0]+1, nomial[1]), file=f, end='')
-                    print(file=f)
+                        # redundant: (1,17) and (3,12)
+                        if (nomial[0] + 1 == 1 and nomial[1] == 17) \
+                        or (nomial[0] + 1 == 3 and nomial[1] == 12):
+                            has_redundant = True
+                        else:
+                            has_dependent = True
+                        if has_redundant and has_dependent: break
+                    if has_redundant and has_dependent:
+                        for nomial in polynomial:
+                            print('%5d,%-5d' % (nomial[0]+1, nomial[1]), file=f, end='')
+                        print(file=f)
