@@ -1,4 +1,4 @@
-with open("tol_1e-10.txt", 'r') as f: lines = f.readlines()
+with open("to_delete.txt", 'r') as f: lines = f.readlines()
 indices = {}
 for line in lines:
     indices[int(line.split()[0]) - 1] = 0

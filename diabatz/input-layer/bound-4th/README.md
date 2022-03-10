@@ -5,4 +5,4 @@
 
 1.in 4th-order terms:
 * NH2 rotation
-* redundancy and corresponding independency, if max(S) >= 1e-9
+* redundancy and corresponding independency, if max(S) >= 1e-5
