@@ -11,41 +11,37 @@ K              1    STRE   5    5.       12.
 K              1    STRE   6    3.       10.
                1    STRE        4.       11.
 K                   STRE   7    2.        1.
-K              1    STRE   8    1.        8.
-               1    STRE        1.        9.
-K                   BEND   9     5.        6.        7.
-K              1    BEND  10     7.        3.        5.
+K                   BEND   8     5.        6.        7.
+K              1    BEND   9     7.        3.        5.
                1    BEND         7.        4.        6.
-K              1    BEND  11    12.        7.        5.
+K              1    BEND  10    12.        7.        5.
                1    BEND        13.        7.        6.
-K              1    BEND  12    10.        5.        3.
+K              1    BEND  11    10.        5.        3.
                1    BEND        11.        6.        4.
-K              1    BEND  13     8.        2.        1.
-               1    BEND         9.        2.        1.
-K              1    STRE  14    7.        5.
+K              1    STRE  12    7.        5.
               -1    STRE        7.        6.
-K              1    STRE  15    5.        3.
+K              1    STRE  13    5.        3.
               -1    STRE        6.        4.
-K              1    STRE  16    2.        3.
+K              1    STRE  14    2.        3.
               -1    STRE        2.        4.
-K              1    STRE  17    5.       12.
+K              1    STRE  15    5.       12.
               -1    STRE        6.       13.
-K              1    STRE  18    3.       10.
+K              1    STRE  16    3.       10.
               -1    STRE        4.       11.
-K              1    STRE  19    1.        8.
-              -1    STRE        1.        9.
-K              1    BEND  20     7.        3.        5.
+K              1    BEND  17     7.        3.        5.
               -1    BEND         7.        4.        6.
-K              1    BEND  21    14.        5.        7.
+K              1    BEND  18    14.        5.        7.
               -1    BEND        14.        6.        7.
-K              1    BEND  22    12.        7.        5.
+K              1    BEND  19    12.        7.        5.
               -1    BEND        13.        7.        6.
-K              1    BEND  23    10.        5.        3.
+K              1    BEND  20    10.        5.        3.
               -1    BEND        11.        6.        4.
-K              1    BEND  24     1.        3.        2.
+K              1    BEND  21     1.        3.        2.
               -1    BEND         1.        4.        2.
-K              1    BEND  25     8.        2.        1.
-              -1    BEND         9.        2.        1.
+K                   STRE  22    1.        8.
+K                   STRE  23    1.        9.
+K                   BEND  24     8.        2.        1.
+K                   BEND  25     9.        2.        1.
 K              1    TORS  26     3.        5.        7.        6.
               -1    TORS         4.        6.        7.        5.
 K                   OUT   27    14.        5.        7.        6.
@@ -56,13 +52,11 @@ K              1    OUT   29    10.        7.        3.        5.
 K              1    TORS  30     2.        3.        5.        7.
               -1    TORS         2.        4.        6.        7.
 K                   OUT   31     1.        4.        2.        3.
-K              1    TORS  32     8.        1.        2.        3.
-              -1    TORS         9.        1.        2.        4.
-K              1    TORS  33     3.        5.        7.        6.
+K              1    TORS  32     3.        5.        7.        6.
                1    TORS         4.        6.        7.        5.
-K              1    OUT   34    12.        3.        5.        7.
+K              1    OUT   33    12.        3.        5.        7.
                1    OUT         13.        4.        6.        7.
-K              1    OUT   35    10.        7.        3.        5.
+K              1    OUT   34    10.        7.        3.        5.
                1    OUT         11.        7.        4.        6.
-K              1    TORS  36     8.        1.        2.        3.
-               1    TORS         9.        1.        2.        4.
+K                   TORS  35     8.        1.        2.        3.
+K                   TORS  36     9.        1.        2.        4.
