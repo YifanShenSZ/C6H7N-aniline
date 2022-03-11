@@ -21,13 +21,15 @@ Scale: (self, other, scaling function, parameter(s))
     57     4    1-exp(-a*x)          1.500000
     58     3    exp(-a*x)*(1+x)^b    3.000000    3.000000
     59     4    exp(-a*x)*(1+x)^b    3.000000    3.000000
-    60     3    exp(-a*x)*(1+x)^b    9.500000    17.10000
-    61     4    exp(-a*x)*(1+x)^b    9.500000    17.10000
+    61     3    exp(-a*x)*(1+x)^b    9.500000    17.10000
+    62     4    exp(-a*x)*(1+x)^b    9.500000    17.10000
 Scale2: (self, other1, other2, scaling function, parameter(s))
      7     3     4    exp[-a*(x+y)]*[(1+x)*(1+y)]^b    3.000000    3.000000
      8     3     4    exp[-a*(x+y)]*[(1+x)*(1+y)]^b    3.000000    3.000000
     50    46    47    exp[-a*(x+y)]*[(1+x)*(1+y)]^b    9.500000    17.10000
     51    46    47    exp[-a*(x+y)]*[(1+x)*(1+y)]^b    9.500000    17.10000
+    60     3     4    exp[-a*(x+y)]*[(1+x)*(1+y)]^b    3.000000    3.000000
+    63    46    47    exp[-a*(x+y)]*[(1+x)*(1+y)]^b    9.500000    17.10000
 Coordinates of irreducible 1: (number, coefficient, index of internal coordinate)
      1    1.000000     1    # no nuclei to permute
      2    1.000000     2
@@ -75,8 +77,10 @@ Coordinates of irreducible 1: (number, coefficient, index of internal coordinate
           1.000000    57
     22    1.000000    58    # symmetric 1st scaling
           1.000000    59
-    23    1.000000    60    # symmetric 2nd scaling
-          1.000000    61
+    23    1.000000    60
+    24    1.000000    61    # symmetric 2nd scaling
+          1.000000    62
+    25    1.000000    63
 Coordinates of irreducible 2: (number, coefficient, index of internal coordinate)
      1    1.000000     3    # 1st-scaling N-H1 - N-H2
          -1.000000     4
@@ -90,8 +94,8 @@ Coordinates of irreducible 2: (number, coefficient, index of internal coordinate
          -1.000000    57
      6    1.000000    58    # asymmetric 1st scaling
          -1.000000    59
-     7    1.000000    60    # asymmetric 2nd scaling
-         -1.000000    61
+     7    1.000000    61    # asymmetric 2nd scaling
+         -1.000000    62
 Coordinates of irreducible 3: (number, coefficient, index of internal coordinate)
      1    1.000000     9    # benzene C-C
          -1.000000    10
