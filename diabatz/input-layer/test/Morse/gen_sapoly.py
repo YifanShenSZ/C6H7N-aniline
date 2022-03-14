@@ -21,7 +21,7 @@ degree_of_freedom = 2
 
 # 1st element in tuple tells the order, others are the coordinates following this order
 polynomial_specification = [
-    (6, [[21],
+    (4, [[21],
          [5]
         ]
     )
