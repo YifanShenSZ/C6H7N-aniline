@@ -11,7 +11,7 @@ def parse_args() -> argparse.Namespace: # command line input
 
 if __name__ == "__main__":
     args = parse_args()
-    with open(args.input, 'r') as f: lines = f.readlines()
+    with open(args.input_layer, 'r') as f: lines = f.readlines()
     with open(args.output, 'w') as f:
         for i in range(0, lines.__len__(), 2):
             line = lines[i]
