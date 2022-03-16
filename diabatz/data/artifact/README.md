@@ -8,6 +8,8 @@ Energy only
 
 B2 energy is computed by Cs-planar MRCI; other states are the same C1 MRCI energies
 
+See `fast-B2/python/README.md` for details
+
 ## asymptote
 The dissociated H is (almost) evenly distributed on an r = 6A sphere centred at N
 
