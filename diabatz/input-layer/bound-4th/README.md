@@ -3,5 +3,4 @@ This input layer is an addition to `../bound-2nd/`. The additional terms are gen
 1. `NH2-rotation/` generates 4th-order NH2 rotation terms
 2. manually generate 4th-order terms made up solely with redundant coordinates
 3. `redundant_*/` generates the 4th-order cross terms between (1,14) (6,1) and their corresponding independencies
-4. `trim/` performs a data statistics then removes some of `2.` and `3.` terms because of `max(S) < 1e-5`
-5. manually generate 2nd-order NH2 rotation x 1st-order G8 term (and data-stats makes sure their `max(S) >= 1e-5`)
+4. `trim/` performs a data statistics then removes some of `2.` and `3.` terms because of `max(S) < 1e-3`
