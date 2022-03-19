@@ -4,3 +4,5 @@ This input layer is an addition to `../bound-2nd/`. The additional terms are gen
 2. manually generate 4th-order terms made up solely with redundant coordinates
 3. `redundant_*/` generates the 4th-order cross terms between (1,14) (6,1) and their corresponding independencies
 4. `trim/` performs a data statistics then removes some of `2.` and `3.` terms because of `max(S) < 1e-3`
+
+`regularization/` provides a regularization strength and a prior estimation
