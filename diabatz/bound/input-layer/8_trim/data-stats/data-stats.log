@@ -4,7 +4,7 @@ Yifan Shen 2022
 Echo of user command line input:
 /home/yshen/Software/Mine/diabatz/tools/v0/data-stats/data-stats.exe -f default -i IntCoordDef -s SAS.in -n Hd.in -l 11.in 12.in 13.in 14.in 22.in 23.in 24.in 33.in 34.in 44.in -d data/critical/min-A1/ data/critical/sad-A1/ data/critical/min-B1/ data/critical/min-B2/ data/critical/sad-B2/ data/critical/min-A2/ data/linear-path/min-B1_min-B2/ data/other/in-benzene/list.txt data/other/out-of-benzene/list.txt data/other/NH2-angles/list.txt -z -286.1075216397
 
-Sun Mar 20 17:29:40 2022
+Wed Mar 23 21:42:14 2022
 
 The data set will be read from: 
     data/critical/min-A1/, data/critical/sad-A1/, data/critical/min-B1/, 
@@ -47,56 +47,56 @@ There are 651 data points in adiabatic representation
           1 data points in composite representation
 
 state 1 - state 1
-* x      average       range [-0.14336, 2.92582]
-* x standard deviation range [6.10414e-12, 1.50363]
-* S      average       range [1.11948e-16, 7.56193]
+* x      average       range [-0.0279525, 1.66127]
+* x standard deviation range [6.10414e-12, 0.852144]
+* S      average       range [1.11948e-16, 6.83228]
 * S standard deviation range [nan, nan]
 state 1 - state 2
 * x      average       range [0, 0]
-* x standard deviation range [3.64276e-07, 0.476035]
-* S      average       range [2.51912e-06, 20.0555]
-* S standard deviation range [1.48172e-05, 126.723]
+* x standard deviation range [3.64276e-07, 0.575604]
+* S      average       range [2.24879e-06, 11.3906]
+* S standard deviation range [1.33873e-05, 49.0145]
 state 1 - state 3
 * x      average       range [0, 0]
-* x standard deviation range [1.29691e-06, 0.34685]
-* S      average       range [1.34281e-06, 22.6644]
+* x standard deviation range [1.29691e-06, 0.365964]
+* S      average       range [1.34281e-06, 9.75642]
 * S standard deviation range [nan, nan]
 state 1 - state 4
 * x      average       range [0, 0]
-* x standard deviation range [3.89929e-07, 0.165111]
-* S      average       range [1.73908e-06, 14.0764]
-* S standard deviation range [9.37968e-06, 247.356]
+* x standard deviation range [3.74645e-07, 0.124737]
+* S      average       range [1.57085e-06, 3.85678]
+* S standard deviation range [8.4583e-06, 2.09651]
 state 2 - state 2
-* x      average       range [-0.14336, 2.92582]
-* x standard deviation range [6.10414e-12, 1.50363]
-* S      average       range [1.11948e-16, 7.56193]
+* x      average       range [-0.0279525, 1.66127]
+* x standard deviation range [6.10414e-12, 0.852144]
+* S      average       range [1.11948e-16, 6.83228]
 * S standard deviation range [nan, nan]
 state 2 - state 3
 * x      average       range [0, 0]
-* x standard deviation range [3.89929e-07, 0.165111]
-* S      average       range [1.73908e-06, 14.0764]
-* S standard deviation range [9.37968e-06, 247.356]
+* x standard deviation range [3.74645e-07, 0.124737]
+* S      average       range [1.57085e-06, 3.85678]
+* S standard deviation range [8.4583e-06, 2.09651]
 state 2 - state 4
 * x      average       range [0, 0]
-* x standard deviation range [1.29691e-06, 0.34685]
-* S      average       range [1.34281e-06, 22.6644]
+* x standard deviation range [1.29691e-06, 0.365964]
+* S      average       range [1.34281e-06, 9.75642]
 * S standard deviation range [nan, nan]
 state 3 - state 3
-* x      average       range [-0.14336, 2.92582]
-* x standard deviation range [6.10414e-12, 1.50363]
-* S      average       range [1.11948e-16, 7.56193]
+* x      average       range [-0.0279525, 1.66127]
+* x standard deviation range [6.10414e-12, 0.852144]
+* S      average       range [1.11948e-16, 6.83228]
 * S standard deviation range [nan, nan]
 state 3 - state 4
 * x      average       range [0, 0]
-* x standard deviation range [3.64276e-07, 0.476035]
-* S      average       range [2.51912e-06, 20.0555]
-* S standard deviation range [1.48172e-05, 126.723]
+* x standard deviation range [3.64276e-07, 0.575604]
+* S      average       range [2.24879e-06, 11.3906]
+* S standard deviation range [1.33873e-05, 49.0145]
 state 4 - state 4
-* x      average       range [-0.14336, 2.92582]
-* x standard deviation range [6.10414e-12, 1.50363]
-* S      average       range [1.11948e-16, 7.56193]
+* x      average       range [-0.0279525, 1.66127]
+* x standard deviation range [6.10414e-12, 0.852144]
+* S      average       range [1.11948e-16, 6.83228]
 * S standard deviation range [nan, nan]
 Details can be found in regset_x.txt and regset_S.txt
 
-Sun Mar 20 17:31:27 2022
+Wed Mar 23 21:43:56 2022
 Mission success
