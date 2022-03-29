@@ -8,8 +8,10 @@
          -0.500000    stretching     6    13
      5    0.500000    stretching     3    10                # B2, 5
          -0.500000    stretching     4    11
-     6    0.500000       bending     7     5     3          # B2, 6
-         -0.500000       bending     7     6     4
+     6    1.000000       bending     2     3     5          # B2, 6
+         -1.000000       bending     2     4     6
+          1.000000       bending     7     6     4
+         -1.000000       bending     7     5     3
      7    0.500000       bending    14     7     5          # B2, 7
          -0.500000       bending    14     7     6
      8    0.500000       bending    12     5     7          # B2, 8

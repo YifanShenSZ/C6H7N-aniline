@@ -19,10 +19,3 @@ The data are the same to fast-6.xyz
 Energy only
 
 Same fake geometries as `asymptote/`, with B2 energy from Cs-planar MRCI at fast-6.xyz; other states are the same C1 MRCI energies as fast-6.xyz
-
-## asymptote-Hessian
-Energy only
-
-Finite difference for A' internal coordinates by Cs-planar MRCI
-
-But B1 A1 A2 energies differ from C1 MRCI by ~0.0008 Hartree, so maybe need some smooth before using
