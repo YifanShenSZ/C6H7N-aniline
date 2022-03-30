@@ -37,6 +37,8 @@ Starting from 1.9 there only are 3-state data. The B2 state crosses with 6th and
 Starting from 2.0 there is no loop. The rasscf often converge to wrong local minimum, even in a small finite difference loop there can be discontinuity
 
 ## Issue
+At 1.6 A and 1.7 A and mex-A1-B1, a higher dissociative state intrudes the B2 state. Fortunately, they do not mix, so we can collect 5-state data then remove the intruder later on
+
 The points between 2 A and 3 A are so hard to optimize, since the rasscf often converge to wrong local minimum, which cannot be avoided by Cs symmetry since the local minimum also has Cs symmetry
 
-At 1.6 A and 1.7 A and mex-A1-B1, a higher dissociative state intrudes the B2 state. Fortunately, they do not mix, so we can collect 5-state data then remove the intruder later on
+Starting from 2.1 A, I have no way to keep the B2 pi->pi* state within active space, but an A1 pi->pi* comes in so that the state average still has similar weight (A1 + B1 + a pi->pi* state + A2). The A1 B1 A2 states are still smooth, so be it
