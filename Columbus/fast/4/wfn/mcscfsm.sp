@@ -21,7 +21,7 @@
  iter     emc (average)    demc       wnorm      knorm      apxde  qcoupl
 
  final mcscf convergence values:
-    1   -285.6052291244  2.856E+02  3.495E-09  8.018E-09  5.525E-19  F   *converged*     
+    1   -285.6052291244  2.856E+02  3.511E-09  7.917E-09  2.337E-17  F   *converged*     
 
 
 
@@ -30,9 +30,9 @@
    DRT #1 state # 1 wt 0.250 total energy=     -285.733335773, rel. (eV)=   0.000000
    DRT #1 state # 2 wt 0.250 total energy=     -285.623589212, rel. (eV)=   2.986357
    DRT #1 state # 3 wt 0.250 total energy=     -285.609031148, rel. (eV)=   3.382502
-   DRT #1 state # 4 wt 0.000 total energy=     -285.602082025, rel. (eV)=   3.571598
-   DRT #1 state # 5 wt 0.000 total energy=     -285.485317858, rel. (eV)=   6.748914
-   DRT #1 state # 6 wt 0.000 total energy=     -285.457278727, rel. (eV)=   7.511898
+   DRT #1 state # 4 wt 0.000 total energy=     -285.602082849, rel. (eV)=   3.571575
+   DRT #1 state # 5 wt 0.000 total energy=     -285.485318549, rel. (eV)=   6.748895
+   DRT #1 state # 6 wt 0.000 total energy=     -285.457275810, rel. (eV)=   7.511977
    DRT #1 state # 7 wt 0.250 total energy=     -285.454960364, rel. (eV)=   7.574984
    ------------------------------------------------------------
 
