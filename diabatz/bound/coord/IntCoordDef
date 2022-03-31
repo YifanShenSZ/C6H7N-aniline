@@ -44,7 +44,7 @@
          -1.000000       torsion     4     2     3     5
           1.000000       torsion     5     7     6     4
          -1.000000       torsion     6     7     5     3
-    21    1.000000    stretching     5    12                # benzene C and H only
+    21    1.000000    stretching     5    12                  # benzene C and H only
     22    1.000000    stretching     6    13
     23    1.000000    stretching     3    10
     24    1.000000    stretching     4    11
