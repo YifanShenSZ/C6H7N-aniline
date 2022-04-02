@@ -2,10 +2,10 @@ Convert binary fitting parameters to text for diabatz version 0
 Yifan Shen 2021
 
 Echo of user command line input:
-/home/yshen/Software/Mine/diabatz/tools/v0/bin2txt/bin2txt.exe -n single.in -c Hd.net -l 11.in
+/home/yshen/Software/Mine/diabatz/tools/v0/bin2txt/bin2txt.exe -n single.in -c Hd.net -l C2v_22.in
 
-Fri Apr  1 12:43:28 2022
+Fri Apr  1 19:16:23 2022
 
 
-Fri Apr  1 12:43:28 2022
+Fri Apr  1 19:16:23 2022
 Mission success
