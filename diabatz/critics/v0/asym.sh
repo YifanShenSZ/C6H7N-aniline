@@ -14,11 +14,11 @@ ln -s ../../34.in
 ln -s ../../44.in
 ln -s ../../Hd.net
 
-cp ~/C6H7N-aniline/Columbus/input/IntCoordDef_disso opt.IntCoordDef
-cp ~/C6H7N-aniline/Columbus/fast/6/fast-6.xyz .
+ln -s ~/C6H7N-aniline/Columbus/input/IntCoordDef_disso opt.IntCoordDef
+ln -s ~/C6H7N-aniline/Columbus/fast/6/fast-6.xyz asym.xyz
 ln -s ~/C6H7N-aniline/Columbus/input/mass.txt
 
-~/Software/Mine/diabatz/tools/critics/v0/critics.exe -j min -f default -i opt.IntCoordDef -t 1 -d default IntCoordDef SAS.in Hd.in Hd.net 11.in 12.in 13.in 14.in 22.in 23.in 24.in 33.in 34.in 44.in -x fast-6.xyz -c 22 24 26 27 28 29 30 31 32 33 34 35 36 -o min.xyz > critics.log
+~/Software/Mine/diabatz/tools/critics/v0/critics.exe -j min -f default -i opt.IntCoordDef -t 1 -d default IntCoordDef SAS.in Hd.in Hd.net 11.in 12.in 13.in 14.in 22.in 23.in 24.in 33.in 34.in 44.in -x asym.xyz -c 22 24 26 27 28 29 30 31 32 33 34 35 36 -o min.xyz > critics.log
 
 ~/Software/Mine/diabatz/tools/eval/v0/eval.exe -d default IntCoordDef SAS.in Hd.in Hd.net 11.in 12.in 13.in 14.in 22.in 23.in 24.in 33.in 34.in 44.in -x min.xyz -g    > eval-d.log
 ~/Software/Mine/diabatz/tools/eval/v0/eval.exe -d default IntCoordDef SAS.in Hd.in Hd.net 11.in 12.in 13.in 14.in 22.in 23.in 24.in 33.in 34.in 44.in -x min.xyz -g -a > eval-a.log
