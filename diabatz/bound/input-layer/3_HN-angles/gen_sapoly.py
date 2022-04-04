@@ -23,12 +23,12 @@ product_table = numpy.array([
 ])
 
 # To make sure you did not forget any coordinate
-degree_of_freedom = 4
+degree_of_freedom = 6
 
 # 1st element in tuple tells the order, others are the coordinates following this order
 polynomial_specification = [
-    (4, [[],
-         [],
+    (4, [[4],
+         [2],
          [13],
          [],
          [1],

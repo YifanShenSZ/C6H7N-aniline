@@ -118,9 +118,8 @@ if __name__ == "__main__":
                     has_redundant = False
                     has_dependent = False
                     for nomial in polynomial:
-                        # redundant: (1,14) and (6,1)
-                        if (nomial[0] + 1 == 1 and nomial[1] == 14) \
-                        or (nomial[0] + 1 == 6 and nomial[1] ==  1):
+                        # redundant: (1,4)
+                        if (nomial[0] + 1 == 1 and nomial[1] == 4):
                             has_redundant = True
                         else:
                             has_dependent = True
