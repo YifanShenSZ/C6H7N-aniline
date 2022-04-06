@@ -17,3 +17,7 @@ A higher A1 pi->pi* state mixes with the A2 state (possibly an avoided crossing)
 However, the B2 n->pi* intruder does mix with the B1 state. Let the B1 configuration threshold be 0.8, then the mixture is intolerable in [1.9, 2.1]. Usable B1 state data are:
 * in [0.1, 1.8], B1 state is the 2nd state
 * at 2.2, B1 state is the 3rd state
+
+In addition, since the B1 state mixes with the B2 state at 1.9, where the B1 state is invaded by the B2 n->pi* intruder, we cannot use the B2 state data there. Usable B2 state data are:
+* in [0.1, 1.8], B2 state is the 3rd state
+* in [2.0, 2.2], B2 state is the 2nd state
