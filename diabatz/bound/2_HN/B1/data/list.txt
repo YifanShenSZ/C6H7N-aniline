@@ -4,3 +4,4 @@ min-B1
 min-B2
 sad-B2
 min-A2
+min-B1_min-B2
