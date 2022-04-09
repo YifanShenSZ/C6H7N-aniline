@@ -4,7 +4,7 @@ Yifan Shen 2021
 Echo of user command line input:
 /home/yshen/Software/Mine/diabatz/v1.0.0/diabatz.exe --pretrained default IntCoordDef SAS.in pretrain/HN_Hd.in pretrain/HN_Hd.net pretrain/HN_11.in -f default -i IntCoordDef -s SAS.in -n single.in -l benzene.in -d data/list.txt data/NH2-angles/list.txt data/benzene/list.txt data/in-benzene/list.txt data/out-of-benzene/list.txt -z -286.1075216397 -r regularization/reg -p regularization/prior -m 5
 
-Thu Apr  7 21:24:38 2022
+Fri Apr  8 19:53:35 2022
 
 The data set will be read from: 
     data/min-A1/, data/sad-A1/, data/min-B1/, data/min-B2/, data/sad-B2/, 
@@ -69,14 +69,14 @@ Thread 4:
 The data set corresponds to 16466 least square equations
 There are 98 parameters to train
 
-The initial residue = 0.805492
+The initial residue = 1.23037
  
-2022 year  4 month  7 day 21:25:43
- Iteration           1 , residue  0.941682265562681     
+2022 year  4 month  8 day 19:55:14
+ Iteration           1 , residue  0.941721323927722     
  Trust region warning: step length has converged, but residual has not met accur
  acy goal
- Final residual =   0.941682265562682     
-The final residue = 0.662046
+ Final residual =   0.941721323927722     
+The final residue = 0.6621
 
-Thu Apr  7 21:25:44 2022
+Fri Apr  8 19:55:14 2022
 Mission success
