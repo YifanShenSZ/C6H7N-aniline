@@ -4,7 +4,7 @@ Yifan Shen 2021
 Echo of user command line input:
 /home/yshen/Software/Mine/diabatz/v1.0.0/diabatz.exe --pretrained default IntCoordDef SAS.in pretrain/C2v_Hd.in pretrain/C2v_Hd.net pretrain/C2v_11.in -f default -i IntCoordDef -s SAS.in -n single.in -l HN-C2v.in -d data/list.txt data/NH2-angles/list.txt -z -286.1075216397 -r regularization/reg -p regularization/prior -m 5
 
-Wed Apr  6 12:05:47 2022
+Sat Apr  9 11:07:34 2022
 
 The data set will be read from: 
     data/min-A1/, data/sad-A1/, data/min-B1/, data/min-B2/, data/sad-B2/, 
@@ -35,8 +35,8 @@ There are 516 data points in adiabatic representation
           0 data points in composite representation
 
 maximum ground state energy = 0.322625
-maximum ||ground state energy gradient||_infinity = 0.157545
-so we suggest to set gradient / energy scaling to around 0.488323
+maximum ||ground state energy gradient||_infinity = 0.147585
+so we suggest to set gradient / energy scaling to around 0.45745
 
 Got regularization strength, enable regularization
 
@@ -66,14 +66,14 @@ Thread 4:
 The data set corresponds to 11127 least square equations
 There are 192 parameters to train
 
-The initial residue = 1.45722
+The initial residue = 1.43452
  
-2022 year  4 month  6 day 12: 6:30
- Iteration           1 , residue  0.311485739681466     
+2022 year  4 month  9 day 11: 8:17
+ Iteration           1 , residue  0.211086977335914     
  Trust region warning: step length has converged, but residual has not met accur
  acy goal
- Final residual =   0.311485739681466     
-The final residue = 0.305576
+ Final residual =   0.211086977335914     
+The final residue = 0.203372
 
-Wed Apr  6 12:06:31 2022
+Sat Apr  9 11:08:17 2022
 Mission success
