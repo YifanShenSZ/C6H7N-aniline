@@ -4,13 +4,13 @@ Yifan Shen 2021
 Echo of user command line input:
 /home/yshen/Software/Mine/diabatz/tools/eval/v0/eval.exe -d default IntCoordDef SAS.in Hd.in Hd.net 11.in 12.in 13.in 14.in 22.in 23.in 24.in 33.in 34.in 44.in -x /home/yshen/C6H7N-aniline/Columbus/min-A1/min-A1.xyz
 
-Sat Apr  9 17:13:31 2022
+Sun Apr 10 21:47:17 2022
 
 Hd =
-   -4.262442e-05   -7.280754e-04    1.037783e-07    2.656711e-08
-                    1.862722e-01    4.346737e-10    3.630267e-08
-                                    1.899294e-01    1.656375e-04
-                                                    2.387015e-01
+   -4.561588e-05   -7.055696e-04    1.038498e-07    2.659621e-08
+                    1.861722e-01    4.218092e-10    3.632070e-08
+                                    1.900093e-01    1.572604e-04
+                                                    2.387005e-01
 
-Sat Apr  9 17:13:31 2022
+Sun Apr 10 21:47:17 2022
 Mission success
