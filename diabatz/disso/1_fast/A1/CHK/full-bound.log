@@ -1,10 +1,10 @@
-Statisticize data set for diabatz version 0
-Yifan Shen 2022
+Diabatz version 1.0.0
+Yifan Shen 2021
 
 Echo of user command line input:
-/home/yshen/Software/Mine/diabatz/tools/v0/data-stats/data-stats.exe -f default -i IntCoordDef -s SAS.in -n single.in -l fast-11.in -d data/critical/list.txt data/min-B1_min-B2/ data/other/benzene/list.txt data/other/in-benzene/list.txt data/other/out-of-benzene/list.txt data/other/NH2-angles/list.txt data/fast/list.txt data/other/fast_bound_N-H/list.txt data/asymptote/ -z -286.1075216397
+/home/yshen/Software/Mine/diabatz/v1.0.0/diabatz.exe --pretrained default pretrain-IntCoordDef pretrain-SAS.in pretrain-Hd.in pretrain-Hd.net pretrain-11.in -f default -i IntCoordDef -s SAS.in -n single-11.in -l fast-11.in -d data/critical/list.txt data/min-B1_min-B2/ data/other/benzene/list.txt data/other/in-benzene/list.txt data/other/out-of-benzene/list.txt data/other/NH2-angles/list.txt data/fast/list.txt data/other/fast_bound_N-H/list.txt data/asymptote/ -z -286.1075216397 -m 5
 
-Tue Apr 12 21:31:08 2022
+Sun Apr 17 14:37:50 2022
 
 The data set will be read from: 
     data/critical/min-A1/, data/critical/sad-A1/, data/critical/min-B1/, 
@@ -51,12 +51,58 @@ The data set will be read from:
 There are 1560 data points in adiabatic representation
           0 data points in composite representation
 
-state 1 - state 1
-* x      average       range [-0.407491, 10.2158]
-* x standard deviation range [1.01597e-08, 35.9912]
-* S      average       range [1.46699e-06, 1035.71]
-* S standard deviation range [8.27108e-06, 3805.03]
-Details can be found in regset_x.txt and regset_S.txt
+maximum ground state energy = 0.254234
+maximum ||ground state energy gradient||_infinity = 0.703726
+so we suggest to set gradient / energy scaling to around 2.76803
 
-Tue Apr 12 21:34:25 2022
+The number of threads = 4
+
+Thread 1:
+* owns 390 adiabatic data points
+* owns 0 composite data points
+* owns 0 energy-only data points
+* starts with Jacobian row 0
+Thread 2:
+* owns 390 adiabatic data points
+* owns 0 composite data points
+* owns 0 energy-only data points
+* starts with Jacobian row 8639
+Thread 3:
+* owns 390 adiabatic data points
+* owns 0 composite data points
+* owns 0 energy-only data points
+* starts with Jacobian row 17460
+Thread 4:
+* owns 390 adiabatic data points
+* owns 0 composite data points
+* owns 0 energy-only data points
+* starts with Jacobian row 27346
+
+The data set corresponds to 39070 least square equations
+There are 394 parameters to train
+
+The initial residue = 19.2139
+ 
+2022 year  4 month 17 day 14:44:43
+ Iteration           1 , residue   19.2139108620342     
+ 
+2022 year  4 month 17 day 14:44:44
+ Iteration           2 , residue  0.702005285139903     
+ 
+2022 year  4 month 17 day 14:44:46
+ Iteration           3 , residue  0.679302574165260     
+ 
+2022 year  4 month 17 day 14:44:48
+ Iteration           4 , residue  0.679170242390920     
+ 
+2022 year  4 month 17 day 14:44:51
+ Iteration           5 , residue  0.679118353511358     
+ 
+2022 year  4 month 17 day 14:44:53
+ Iteration           6 , residue  0.679101271636254     
+ Failed trust region: max iteration exceeded!
+ Final residual =   0.679101271636254     
+The final residue = 0.679101
+
+Sun Apr 17 14:44:53 2022
 Mission success
