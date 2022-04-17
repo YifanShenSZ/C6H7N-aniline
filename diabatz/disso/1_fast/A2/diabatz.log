@@ -1,0 +1,90 @@
+Diabatz version 1.0.0
+Yifan Shen 2021
+
+Echo of user command line input:
+/home/yshen/Software/Mine/diabatz/v1.0.0/diabatz.exe --pretrained default pretrain-IntCoordDef pretrain-SAS.in pretrain-Hd.in pretrain-Hd.net pretrain-44.in -f default -i IntCoordDef -s SAS.in -n single-44.in -l fast-44.in -d data/critical/list.txt data/min-B1_min-B2/ data/other/benzene/list.txt data/other/in-benzene/list.txt data/other/out-of-benzene/list.txt data/other/NH2-angles/list.txt data/fast/list.txt data/other/fast_bound_N-H/list.txt data/asymptote/ -z -286.1075216397 -m 10
+
+Sun Apr 17 19:40:28 2022
+
+The data set will be read from: 
+    data/critical/min-A1/, data/critical/sad-A1/, data/critical/min-B1/, 
+    data/critical/min-B2/, data/critical/sad-B2/, data/critical/min-A2/, data/critical/sad-A2/, 
+    data/critical/mex-A1-B1/, data/min-B1_min-B2/, data/other/benzene/A1-9/, 
+    data/other/benzene/A1-10/, data/other/benzene/B1-14/, data/other/benzene/B1-15/, 
+    data/other/benzene/B2-27/, data/other/benzene/A2-33/, data/other/in-benzene/A1-11/, 
+    data/other/in-benzene/A1-12/, data/other/in-benzene/B2-28/, data/other/in-benzene/B2-29/, 
+    data/other/in-benzene/B2-30/, data/other/out-of-benzene/B1-16_H/, 
+    data/other/out-of-benzene/B1-17_H/, data/other/out-of-benzene/B1-18_H/, 
+    data/other/out-of-benzene/B1-19_N/, data/other/out-of-benzene/A2-34_H/, 
+    data/other/out-of-benzene/A2-35_H/, data/other/NH2-angles/C-N-avgH_from_min-B1/, 
+    data/other/NH2-angles/C-out-of-NH2/, data/other/NH2-angles/H-N-H_from_min-A1/, 
+    data/other/NH2-angles/H-N-H_from_min-B1/, data/other/NH2-angles/NH2-rotation_from_min-A1/0.1/, 
+    data/other/NH2-angles/NH2-rotation_from_min-A1/0.2/, data/other/NH2-angles/NH2-rotation_from_min-A1/0.3/, 
+    data/other/NH2-angles/NH2-rotation_from_min-A1/0.7/, data/other/NH2-angles/NH2-rotation_from_min-A1/0.8/, 
+    data/other/NH2-angles/NH2-rotation_from_min-A1/0.9/, data/other/NH2-angles/NH2-rotation_from_min-A1/1.0/, 
+    data/other/NH2-angles/NH2-rotation_from_min-A1/1.1/, data/other/NH2-angles/NH2-rotation_from_min-A1/1.2/, 
+    data/other/NH2-angles/NH2-rotation_from_min-A1/1.3/, data/other/NH2-angles/NH2-rotation_from_min-A1/1.4/, 
+    data/other/NH2-angles/NH2-rotation_from_min-A1/1.5/, data/other/NH2-angles/NH2-rotation_from_min-A1/1.6/, 
+    data/other/NH2-angles/NH2-rotation_from_min-A1/1.7/, data/other/NH2-angles/NH2-rotation_from_min-A1/1.8/, 
+    data/other/NH2-angles/NH2-rotation_from_min-A1/1.9/, data/other/NH2-angles/NH2-rotation_from_min-A1/2.0/, 
+    data/other/NH2-angles/NH2-rotation_from_min-A1/2.1/, data/other/NH2-angles/NH2-rotation_from_min-A1/2.2/, 
+    data/other/NH2-angles/NH2-rotation_from_min-B1/0.1/, data/other/NH2-angles/NH2-rotation_from_min-B1/0.2/, 
+    data/other/NH2-angles/NH2-rotation_from_min-B1/0.3/, data/other/NH2-angles/NH2-rotation_from_min-B1/0.4/, 
+    data/other/NH2-angles/NH2-rotation_from_min-B1/0.5/, data/other/NH2-angles/NH2-rotation_from_min-B1/0.6/, 
+    data/other/NH2-angles/NH2-rotation_from_min-B1/0.7/, data/other/NH2-angles/NH2-rotation_from_min-B1/0.8/, 
+    data/other/NH2-angles/NH2-rotation_from_min-B1/0.9/, data/other/NH2-angles/NH2-rotation_from_min-B1/1.0/, 
+    data/other/NH2-angles/NH2-rotation_from_min-B1/1.1/, data/other/NH2-angles/NH2-rotation_from_min-B1/1.2/, 
+    data/other/NH2-angles/NH2-rotation_from_min-B1/1.3/, data/other/NH2-angles/NH2-rotation_from_min-B1/1.4/, 
+    data/other/NH2-angles/NH2-rotation_from_min-B1/1.5/, data/other/NH2-angles/NH2-rotation_from_min-B1/1.6/, 
+    data/other/NH2-angles/NH2-rotation_from_min-B1/1.7/, data/other/NH2-angles/NH2-rotation_from_min-B1/1.8/, 
+    data/other/NH2-angles/NH2-rotation_from_min-B1/2.2/, data/fast/0.7/, data/fast/0.8/, data/fast/0.9/, data/fast/1.1/, 
+    data/fast/1.2/, data/fast/1.4/, data/fast/1.5/, data/fast/1.6/, data/fast/1.7/, 
+    data/fast/1.9/, data/fast/2.0/, data/fast/2.1/, data/fast/2.2/, data/fast/2.3/, 
+    data/fast/2.4/, data/fast/2.5/, data/fast/2.6/, data/fast/2.7/, data/fast/2.8/, 
+    data/fast/2.9/, data/fast/3/, data/fast/4/, data/fast/5/, data/fast/6/, 
+    data/fast/6_partial-loop/, data/other/fast_bound_N-H/1.1/, data/other/fast_bound_N-H/1.2/, 
+    data/other/fast_bound_N-H/1.4/, data/other/fast_bound_N-H/1.5/, data/asymptote/, 
+There are 1430 data points in adiabatic representation
+          0 data points in composite representation
+
+maximum ground state energy = 0.41471
+maximum ||ground state energy gradient||_infinity = 0.706561
+so we suggest to set gradient / energy scaling to around 1.70375
+
+The number of threads = 4
+
+Thread 1:
+* owns 358 adiabatic data points
+* owns 0 composite data points
+* owns 0 energy-only data points
+* starts with Jacobian row 0
+Thread 2:
+* owns 358 adiabatic data points
+* owns 0 composite data points
+* owns 0 energy-only data points
+* starts with Jacobian row 7686
+Thread 3:
+* owns 357 adiabatic data points
+* owns 0 composite data points
+* owns 0 energy-only data points
+* starts with Jacobian row 15385
+Thread 4:
+* owns 357 adiabatic data points
+* owns 0 composite data points
+* owns 0 energy-only data points
+* starts with Jacobian row 24712
+
+The data set corresponds to 35578 least square equations
+There are 197 parameters to train
+
+The initial residue = 16.4829
+ 
+2022 year  4 month 17 day 19:46:38
+ Iteration           1 , residue   3.46462760489739     
+ Trust region warning: step length has converged, but residual has not met accur
+ acy goal
+ Final residual =    3.46462760489739     
+The final residue = 3.46463
+
+Sun Apr 17 19:46:40 2022
+Mission success

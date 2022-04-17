@@ -1,0 +1,50 @@
+C2v-planar-1.IntCoordDef    C2v-planar-2.IntCoordDef    C2v-planar-3.IntCoordDef    C2v-planar-4.IntCoordDef
+C2v-planar-1.IntCoordDef    C2v-planar-2.IntCoordDef    C2v-planar-3.IntCoordDef    C2v-planar-4.IntCoordDef
+C2v-planar-1.IntCoordDef    C2v-planar-2.IntCoordDef    C2v-planar-3.IntCoordDef    C2v-planar-4.IntCoordDef
+C2v-planar-1.IntCoordDef    C2v-planar-2.IntCoordDef    C2v-planar-3.IntCoordDef    C2v-planar-4.IntCoordDef
+C2v-planar-1.IntCoordDef    C2v-planar-2.IntCoordDef    C2v-planar-3.IntCoordDef    C2v-planar-4.IntCoordDef
+C2v-planar-1.IntCoordDef    C2v-planar-2.IntCoordDef    C2v-planar-3.IntCoordDef    C2v-planar-4.IntCoordDef
+C2v-planar-1.IntCoordDef    C2v-planar-2.IntCoordDef    C2v-planar-3.IntCoordDef    C2v-planar-4.IntCoordDef
+C2v-planar-1.IntCoordDef    C2v-planar-2.IntCoordDef    C2v-planar-3.IntCoordDef    C2v-planar-4.IntCoordDef
+C2v-planar-1.IntCoordDef    C2v-planar-2.IntCoordDef    C2v-planar-3.IntCoordDef    C2v-planar-4.IntCoordDef
+C2v-planar-1.IntCoordDef    C2v-planar-2.IntCoordDef    C2v-planar-3.IntCoordDef    C2v-planar-4.IntCoordDef
+C2v-planar-1.IntCoordDef    C2v-planar-2.IntCoordDef    C2v-planar-3.IntCoordDef    C2v-planar-4.IntCoordDef
+C2v-planar-1.IntCoordDef    C2v-planar-2.IntCoordDef    C2v-planar-3.IntCoordDef    C2v-planar-4.IntCoordDef
+C2v-planar-1.IntCoordDef    C2v-planar-2.IntCoordDef    C2v-planar-3.IntCoordDef    C2v-planar-4.IntCoordDef
+C2v-planar-1.IntCoordDef    C2v-planar-2.IntCoordDef    C2v-planar-3.IntCoordDef    C2v-planar-4.IntCoordDef
+C2v-planar-1.IntCoordDef    C2v-planar-2.IntCoordDef    C2v-planar-3.IntCoordDef    C2v-planar-4.IntCoordDef
+C2v-planar-1.IntCoordDef    C2v-planar-2.IntCoordDef    C2v-planar-3.IntCoordDef    C2v-planar-4.IntCoordDef
+C2v-planar-1.IntCoordDef    C2v-planar-2.IntCoordDef    C2v-planar-3.IntCoordDef    C2v-planar-4.IntCoordDef
+C2v-planar-1.IntCoordDef    C2v-planar-2.IntCoordDef    C2v-planar-3.IntCoordDef    C2v-planar-4.IntCoordDef
+C2v-planar-1.IntCoordDef    C2v-planar-2.IntCoordDef    C2v-planar-3.IntCoordDef    C2v-planar-4.IntCoordDef
+C2v-planar-1.IntCoordDef    C2v-planar-2.IntCoordDef    C2v-planar-3.IntCoordDef    C2v-planar-4.IntCoordDef
+C2v-planar-1.IntCoordDef    C2v-planar-2.IntCoordDef    C2v-planar-3.IntCoordDef    C2v-planar-4.IntCoordDef
+C2v-planar-1.IntCoordDef    C2v-planar-2.IntCoordDef    C2v-planar-3.IntCoordDef    C2v-planar-4.IntCoordDef
+C2v-planar-1.IntCoordDef    C2v-planar-2.IntCoordDef    C2v-planar-3.IntCoordDef    C2v-planar-4.IntCoordDef
+C2v-planar-1.IntCoordDef    C2v-planar-2.IntCoordDef    C2v-planar-3.IntCoordDef    C2v-planar-4.IntCoordDef
+C2v-planar-1.IntCoordDef    C2v-planar-2.IntCoordDef    C2v-planar-3.IntCoordDef    C2v-planar-4.IntCoordDef
+C2v-planar-1.IntCoordDef    C2v-planar-2.IntCoordDef    C2v-planar-3.IntCoordDef    C2v-planar-4.IntCoordDef
+C2v-planar-1.IntCoordDef    C2v-planar-2.IntCoordDef    C2v-planar-3.IntCoordDef    C2v-planar-4.IntCoordDef
+Cs-bijection-1.IntCoordDef    Cs-bijection-2.IntCoordDef
+Cs-bijection-1.IntCoordDef    Cs-bijection-2.IntCoordDef
+Cs-bijection-1.IntCoordDef    Cs-bijection-2.IntCoordDef
+Cs-bijection-1.IntCoordDef    Cs-bijection-2.IntCoordDef
+Cs-bijection-1.IntCoordDef    Cs-bijection-2.IntCoordDef
+Cs-bijection-1.IntCoordDef    Cs-bijection-2.IntCoordDef
+Cs-bijection-1.IntCoordDef    Cs-bijection-2.IntCoordDef
+Cs-benzene-1.IntCoordDef    Cs-benzene-2.IntCoordDef
+Cs-benzene-1.IntCoordDef    Cs-benzene-2.IntCoordDef
+Cs-benzene-1.IntCoordDef    Cs-benzene-2.IntCoordDef
+Cs-benzene-1.IntCoordDef    Cs-benzene-2.IntCoordDef
+Cs-benzene-1.IntCoordDef    Cs-benzene-2.IntCoordDef
+Cs-benzene-1.IntCoordDef    Cs-benzene-2.IntCoordDef
+Cs-benzene-1.IntCoordDef    Cs-benzene-2.IntCoordDef
+Cs-benzene-1.IntCoordDef    Cs-benzene-2.IntCoordDef
+Cs-benzene-1.IntCoordDef    Cs-benzene-2.IntCoordDef
+Cs-benzene-1.IntCoordDef    Cs-benzene-2.IntCoordDef
+Cs-benzene-1.IntCoordDef    Cs-benzene-2.IntCoordDef
+Cs-benzene-1.IntCoordDef    Cs-benzene-2.IntCoordDef
+C2-1.IntCoordDef    C2-2.IntCoordDef
+C2-1.IntCoordDef    C2-2.IntCoordDef
+C2-1.IntCoordDef    C2-2.IntCoordDef
+C2-1.IntCoordDef    C2-2.IntCoordDef
