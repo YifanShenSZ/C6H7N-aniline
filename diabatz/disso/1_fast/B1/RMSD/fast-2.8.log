@@ -1,0 +1,16 @@
+Root mean square deviation analyzer for diabatz
+Yifan Shen 2021
+
+Echo of user command line input:
+/home/yshen/Software/Mine/diabatz/tools/RMSD/v1/RMSD.exe -d default pretrain-IntCoordDef pretrain-SAS.in pretrain-Hd.in pretrain-Hd.net pretrain-22.in default IntCoordDef SAS.in single-22.in Hd.net fast-22.in -s data/fast/2.8/ -z -286.1075216397
+
+Sat Apr 16 22:57:35 2022
+
+Root mean square deviation of energy:
+State 1 = 0.00272815
+Root mean square deviation of energy gradient:
+State 1 = 0.00174422
+Root mean square deviation of interstate coupling:
+
+Sat Apr 16 22:57:36 2022
+Mission success
