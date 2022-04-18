@@ -1,2 +1,1 @@
-    3,1    # dummy
-0.0
+../../pretrain/txt2bin/parameters_1-3_1.txt
