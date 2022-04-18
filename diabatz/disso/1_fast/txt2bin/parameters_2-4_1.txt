@@ -1,1 +1,0 @@
-../../pretrain/txt2bin/parameters_2-4_1.txt
