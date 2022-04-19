@@ -4,13 +4,13 @@ Yifan Shen 2021
 Echo of user command line input:
 /home/yshen/Software/Mine/diabatz/tools/RMSD/v1/RMSD.exe -d default pretrain-IntCoordDef pretrain-SAS.in pretrain-Hd.in pretrain-Hd.net pretrain-22.in default IntCoordDef SAS.in single-22.in Hd.net fast-22.in -s data/fast/1.2/ -z -286.1075216397
 
-Sat Apr 16 22:55:39 2022
+Tue Apr 19 11:31:10 2022
 
 Root mean square deviation of energy:
-State 1 = 0.000754488
+State 1 = 0.000623988
 Root mean square deviation of energy gradient:
-State 1 = 0.00241437
+State 1 = 0.00242885
 Root mean square deviation of interstate coupling:
 
-Sat Apr 16 22:56:17 2022
+Tue Apr 19 11:32:08 2022
 Mission success

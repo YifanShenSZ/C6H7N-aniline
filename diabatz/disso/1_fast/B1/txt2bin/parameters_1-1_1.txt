@@ -1,1 +1,1 @@
-../../../pretrain/txt2bin/parameters_2-2_1.txt
+../../bound-pretrain/txt2bin/parameters_2-2_1.txt

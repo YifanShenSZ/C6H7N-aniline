@@ -4,10 +4,10 @@ Yifan Shen 2021
 Echo of user command line input:
 /home/yshen/Software/Mine/diabatz/tools/eval/v1/eval.exe -d default pretrain-IntCoordDef pretrain-SAS.in pretrain-Hd.in pretrain-Hd.net pretrain-33.in default IntCoordDef SAS.in single-33.in Hd.net fast-33.in -x /home/yshen/C6H7N-aniline/Columbus/fast/6/fast-6.xyz
 
-Sun Apr 17 23:05:39 2022
+Tue Apr 19 11:33:51 2022
 
 Hd =
-    4.334099e-01
+    4.333638e-01
 
-Sun Apr 17 23:05:39 2022
+Tue Apr 19 11:33:51 2022
 Mission success

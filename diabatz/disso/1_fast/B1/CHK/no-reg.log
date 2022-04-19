@@ -4,7 +4,7 @@ Yifan Shen 2021
 Echo of user command line input:
 /home/yshen/Software/Mine/diabatz/v1.0.0/diabatz.exe --pretrained default pretrain-IntCoordDef pretrain-SAS.in pretrain-Hd.in pretrain-Hd.net pretrain-22.in -f default -i IntCoordDef -s SAS.in -n single-22.in -l fast-22.in -d data/critical/list.txt data/min-B1_min-B2/ data/other/benzene/list.txt data/other/in-benzene/list.txt data/other/out-of-benzene/list.txt data/other/NH2-angles/list.txt data/fast/list.txt data/other/fast_bound_N-H/list.txt data/asymptote/ -z -286.1075216397 -m 10
 
-Sat Apr 16 20:29:44 2022
+Tue Apr 19 10:35:36 2022
 
 The data set will be read from: 
     data/critical/min-A1/, data/critical/sad-A1/, data/critical/min-B1/, 
@@ -78,49 +78,43 @@ Thread 4:
 The data set corresponds to 37452 least square equations
 There are 197 parameters to train
 
-The initial residue = 13.7696
+The initial residue = 14.9997
  
-2022 year  4 month 16 day 20:36:24
- Iteration           1 , residue   13.7695720391476     
+2022 year  4 month 19 day 10:54:43
+ Iteration           1 , residue   14.9996881859811     
  
-2022 year  4 month 16 day 20:36:24
- Iteration           2 , residue  0.607796278303647     
+2022 year  4 month 19 day 10:54:44
+ Iteration           2 , residue  0.623849645591119     
  
-2022 year  4 month 16 day 20:36:26
- Iteration           3 , residue  0.605059453564148     
+2022 year  4 month 19 day 10:54:49
+ Iteration           3 , residue  0.607416980129133     
  
-2022 year  4 month 16 day 20:36:28
- Iteration           4 , residue  0.605059453564148     
+2022 year  4 month 19 day 10:54:54
+ Iteration           4 , residue  0.606017001333108     
  
-2022 year  4 month 16 day 20:36:28
- Iteration           5 , residue  0.604981668887136     
+2022 year  4 month 19 day 10:54:59
+ Iteration           5 , residue  0.604870838268723     
  
-2022 year  4 month 16 day 20:36:30
- Iteration           6 , residue  0.604929688203044     
+2022 year  4 month 19 day 10:55: 4
+ Iteration           6 , residue  0.603920658963717     
  
-2022 year  4 month 16 day 20:36:32
- Iteration           7 , residue  0.604902650141434     
+2022 year  4 month 19 day 10:55: 9
+ Iteration           7 , residue  0.603141217132161     
  
-2022 year  4 month 16 day 20:36:34
- Iteration           8 , residue  0.604902650141434     
+2022 year  4 month 19 day 10:55:14
+ Iteration           8 , residue  0.602518641249685     
  
-2022 year  4 month 16 day 20:36:34
- Iteration           9 , residue  0.604901282311491     
+2022 year  4 month 19 day 10:55:19
+ Iteration           9 , residue  0.602045288829800     
  
-2022 year  4 month 16 day 20:36:36
- Iteration          10 , residue  0.604900154962561     
+2022 year  4 month 19 day 10:55:24
+ Iteration          10 , residue  0.601716416473968     
  
-2022 year  4 month 16 day 20:36:38
- Iteration          11 , residue  0.604899265921499     
- 
-2022 year  4 month 16 day 20:36:40
- Iteration          12 , residue  0.604898612811406     
- 
-2022 year  4 month 16 day 20:36:42
- Iteration          13 , residue  0.604898193017382     
+2022 year  4 month 19 day 10:55:29
+ Iteration          11 , residue  0.601527905196920     
  Failed trust region: max iteration exceeded!
- Final residual =   0.604898193017382     
-The final residue = 0.604898
+ Final residual =   0.601527905196920     
+The final residue = 0.601528
 
-Sat Apr 16 20:36:42 2022
+Tue Apr 19 10:55:30 2022
 Mission success
