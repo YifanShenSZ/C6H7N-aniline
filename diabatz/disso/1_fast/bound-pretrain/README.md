@@ -1,6 +1,5 @@
 # Pretrained bound Hd
 This is mainly the bound Hd, with scaling now added to the angles
 
-The scaling is added by a dual scaling
-
-The scaled bias is added to cancel out pure 5,1 terms at min-B1
+## Modification
+Term `    4,1        4,1        4,1        4,1    ` in B1B1 is modified from -8.028471623093291e-05 to 1.0e-05 to make sure the curve heads up

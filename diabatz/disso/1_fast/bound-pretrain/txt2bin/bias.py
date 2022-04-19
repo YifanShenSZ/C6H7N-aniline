@@ -1,7 +1,7 @@
 value51 = -1.203603153929050
 
 '''
-separate bias and scaled bias by:
+try separating bias and scaled bias by:
 let scaled bias cancel out pure 5,1 terms at min-B1
 '''
 def partition_bias(coeff2, coeff4, appeared_bias):
