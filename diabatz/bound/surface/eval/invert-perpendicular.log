@@ -1,0 +1,16 @@
+Evaluation for diabatz
+Yifan Shen 2021
+
+Echo of user command line input:
+/home/yshen/Software/Mine/diabatz/tools/eval/v0/eval.exe -d default IntCoordDef SAS.in Hd.in Hd.net 11.in 12.in 13.in 14.in 22.in 23.in 24.in 33.in 34.in 44.in -x /home/yshen/C6H7N-aniline/diabatz/bound/hole/invert-perpendicular.xyz
+
+Mon Apr 18 23:24:23 2022
+
+Hd =
+    5.266510e-01   -3.117358e-02    8.758231e-03    1.029035e-03
+                    4.608398e-01   -1.257739e-02   -1.116263e-02
+                                    5.670006e-01   -8.208029e-04
+                                                    8.432259e-01
+
+Mon Apr 18 23:24:23 2022
+Mission success
