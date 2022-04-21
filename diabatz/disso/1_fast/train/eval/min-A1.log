@@ -1,0 +1,16 @@
+Evaluation for diabatz
+Yifan Shen 2021
+
+Echo of user command line input:
+/home/yshen/Software/Mine/diabatz/tools/eval/v1/eval.exe -d default IntCoordDef SAS.in pretrain-Hd.in pretrain-Hd.net pretrain-11.in pretrain-12.in pretrain-13.in pretrain-14.in pretrain-22.in pretrain-23.in pretrain-24.in pretrain-33.in pretrain-34.in pretrain-44.in default IntCoordDef SAS.in Hd.in Hd.net 11.in 12.in 13.in 14.in 22.in 23.in 24.in 33.in 34.in 44.in -x /home/yshen/C6H7N-aniline/Columbus/min-A1/min-A1.xyz
+
+Wed Apr 20 20:48:57 2022
+
+Hd =
+   -2.406138e-04   -2.321233e-03    1.035757e-07    2.628817e-08
+                    1.859224e-01    2.775265e-09    3.716945e-08
+                                    1.893844e-01    2.122069e-04
+                                                    2.381661e-01
+
+Wed Apr 20 20:48:58 2022
+Mission success
