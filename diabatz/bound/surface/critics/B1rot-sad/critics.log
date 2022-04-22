@@ -1,32 +1,25 @@
  Trust region warning: step length has converged, but residual has not met accur
  acy goal
- Final residual =   1.522606762999218E-008
+ Final residual =   8.167555265745994E-010
  Trust region warning: step length has converged, but residual has not met accur
  acy goal
- Final residual =   1.682044101121108E-008
+ Final residual =   1.026636683801840E-008
  Trust region warning: step length has converged, but residual has not met accur
  acy goal
- Final residual =   2.310796006908436E-008
+ Final residual =   9.006883147341381E-009
  Trust region warning: step length has converged, but residual has not met accur
  acy goal
- Final residual =   6.463115422661660E-009
- Trust region warning: step length has converged, but residual has not met accur
- acy goal
- Final residual =   1.192695630300694E-008
- Failed trust region: max iteration exceeded!
- Final residual =   3.553488685044886E-010
- Failed trust region: max iteration exceeded!
- Final residual =   3.553488685044886E-010
+ Final residual =   9.006883147341381E-009
 Critics: a critical geometry searcher
 Yifan Shen 2021
 
 Echo of user command line input:
 /home/yshen/Software/Mine/diabatz/tools/critics/v0/critics.exe -j min -f default -i opt.IntCoordDef -t 3 -d default IntCoordDef SAS.in Hd.in Hd.net 11.in 12.in 13.in 14.in 22.in 23.in 24.in 33.in 34.in 44.in -x B1rot-sad.xyz -c 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 -o sad.xyz
 
-Mon Apr 18 23:25:18 2022
+Thu Apr 21 21:15:07 2022
 
 Job type: min
 The target electronic state is 3
 
-Mon Apr 18 23:25:41 2022
+Thu Apr 21 21:15:16 2022
 Mission success

@@ -11,4 +11,4 @@ The off-diagonal terms are modeled as a combination of no-HN terms and with-HN t
 The final bound terms are in `surface/`:
 1. run 100 ramdom initial guesses for the best one
 2. keep the best off-diagonals; replace the diagonals with `3_benzene/` coefficients
-3. continue training with `3_benzene/` coefficients as the prior (with little modification)
+3. continue training with `3_benzene/` coefficients and the best off-diagonals as the prior
