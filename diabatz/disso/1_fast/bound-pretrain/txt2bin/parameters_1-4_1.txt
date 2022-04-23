@@ -1,1 +1,0 @@
-../../../../bound/surface/bin2txt/parameters_1-4_1.txt
