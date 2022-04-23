@@ -2,11 +2,11 @@ Vibrational analysis for diabatz
 Yifan Shen 2021
 
 Echo of user command line input:
-/home/yshen/Software/Mine/diabatz/tools/vibration/v0/vibration.exe -f default -i opt.IntCoordDef -t 1 -x sad.xyz -m mass.txt -d default IntCoordDef SAS.in Hd.in Hd.net 11.in 12.in 13.in 14.in 22.in 23.in 24.in 33.in 34.in 44.in -o sad.log
+/home/yshen/Software/Mine/diabatz/tools/vibration/v0/vibration.exe -f default -i opt.IntCoordDef -t 1 -x sad.xyz -m mass.txt -d default IntCoordDef SAS.in Hd.in Hd.net 11.in 12.in 13.in 14.in 22.in 23.in 24.in 33.in 34.in 44.in -o sad.log -a
 
-Thu Apr 21 21:15:01 2022
+Fri Apr 22 16:43:17 2022
 
 The target electronic state is 1
 
-Thu Apr 21 21:15:06 2022
+Fri Apr 22 16:43:45 2022
 Mission success

@@ -1,1 +1,1 @@
-../../../2_HN/txt2bin/parameters_3-3_1.txt
+../../../2_HN/combine/parameters_3-3_1.txt
