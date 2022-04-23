@@ -2,9 +2,9 @@ Diabatz version 1.0.0
 Yifan Shen 2021
 
 Echo of user command line input:
-/home/yshen/Software/Mine/diabatz/v1.0.0/diabatz.exe --pretrained default pretrain-IntCoordDef pretrain-SAS.in pretrain-Hd.in pretrain-Hd.net pretrain-44.in -f default -i IntCoordDef -s SAS.in -n single-44.in -l fast-44.in -d data/critical/list.txt data/min-B1_min-B2/ data/other/benzene/list.txt data/other/in-benzene/list.txt data/other/out-of-benzene/list.txt data/other/NH2-angles/list.txt data/fast/list.txt data/other/fast_bound_N-H/list.txt data/asymptote/ -z -286.1075216397 -r regularization/reg -p regularization/prior -m 10
+/home/yshen/Software/Mine/diabatz/v1.0.0/diabatz.exe --pretrained default pretrain-IntCoordDef pretrain-SAS.in pretrain-Hd.in pretrain-Hd.net pretrain-44.in -f default -i IntCoordDef -s SAS.in -n single-44.in -l fast-44.in -d data/critical/list.txt data/min-B1_min-B2/ data/other/benzene/list.txt data/other/in-benzene/list.txt data/other/out-of-benzene/list.txt data/other/NH2-angles/list.txt data/fast/list.txt data/other/fast_bound_N-H/list.txt data/asymptote/ -z -286.1075216397 -r regularization/reg -p regularization/prior -m 5
 
-Tue Apr 19 10:16:49 2022
+Fri Apr 22 21:21:56 2022
 
 The data set will be read from: 
     data/critical/min-A1/, data/critical/sad-A1/, data/critical/min-B1/, 
@@ -79,14 +79,14 @@ Thread 4:
 The data set corresponds to 35495 least square equations
 There are 154 parameters to train
 
-The initial residue = 12.756
+The initial residue = 12.895
  
-2022 year  4 month 19 day 10:33: 8
- Iteration           1 , residue  0.830742529970250     
+2022 year  4 month 22 day 21:31:27
+ Iteration           1 , residue  0.865646517678781     
  Trust region warning: step length has converged, but residual has not met accur
  acy goal
- Final residual =   0.830742529970250     
-The final residue = 0.81819
+ Final residual =   0.865646517678781     
+The final residue = 0.852966
 
-Tue Apr 19 10:33:11 2022
+Fri Apr 22 21:31:30 2022
 Mission success
