@@ -1,0 +1,13 @@
+Critics: a critical geometry searcher
+Yifan Shen 2021
+
+Echo of user command line input:
+/home/yshen/Software/Mine/diabatz/tools/critics/v1/critics.exe -j min -f default -i opt.IntCoordDef -t 4 -d default IntCoordDef SAS.in pretrain-Hd.in pretrain-Hd.net pretrain-11.in pretrain-12.in pretrain-13.in pretrain-14.in pretrain-22.in pretrain-23.in pretrain-24.in pretrain-33.in pretrain-34.in pretrain-44.in default IntCoordDef SAS.in Hd.in Hd.net 11.in 12.in 13.in 14.in 22.in 23.in 24.in 33.in 34.in 44.in -x sad-A2.xyz -c 22 26 27 28 29 30 31 32 33 34 35 36 -o min.xyz
+
+Sun Apr 24 14:09:40 2022
+
+Job type: min
+The target electronic state is 4
+
+Sun Apr 24 14:10:48 2022
+Mission success

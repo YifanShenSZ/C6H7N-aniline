@@ -1,0 +1,35 @@
+Evaluation for diabatz
+Yifan Shen 2021
+
+Echo of user command line input:
+/home/yshen/Software/Mine/diabatz/tools/eval/v1/eval.exe -d default IntCoordDef SAS.in pretrain-Hd.in pretrain-Hd.net pretrain-11.in pretrain-12.in pretrain-13.in pretrain-14.in pretrain-22.in pretrain-23.in pretrain-24.in pretrain-33.in pretrain-34.in pretrain-44.in default IntCoordDef SAS.in Hd.in Hd.net 11.in 12.in 13.in 14.in 22.in 23.in 24.in 33.in 34.in 44.in -x /home/yshen/C6H7N-aniline/Columbus/slow/1.4/slow-1.4.xyz
+
+Wed Apr 20 19:18:25 2022
+
+Hd =
+    6.513862e-02   -7.398464e-03   -5.865144e-03   -2.373886e-03
+                    2.475883e-01   -1.327544e-02   -1.357395e-03
+                                    2.368310e-01   -1.809829e-02
+                                                    2.780172e-01
+
+Wed Apr 20 19:18:25 2022
+Mission success
+Evaluation for diabatz
+Yifan Shen 2021
+
+Echo of user command line input:
+/home/yshen/Software/Mine/diabatz/tools/eval/v1/eval.exe -d default IntCoordDef SAS.in pretrain-Hd.in pretrain-Hd.net pretrain-11.in pretrain-12.in pretrain-13.in pretrain-14.in pretrain-22.in pretrain-23.in pretrain-24.in pretrain-33.in pretrain-34.in pretrain-44.in default IntCoordDef SAS.in Hd.in Hd.net 11.in 12.in 13.in 14.in 22.in 23.in 24.in 33.in 34.in 44.in -x /home/yshen/C6H7N-aniline/Columbus/slow/1.4/slow-1.4.xyz -a
+
+Wed Apr 20 19:18:25 2022
+
+energy =
+    6.455465e-02    2.236616e-01    2.541796e-01    2.851792e-01
+
+states are:
+    9.981993e-01    5.686072e-02    1.880665e-02    3.357137e-03
+    4.327584e-02   -4.628765e-01   -8.798389e-01   -9.877273e-02
+    3.885968e-02   -8.365362e-01    4.002250e-01    3.721788e-01
+    1.467071e-02   -2.876098e-01    2.556360e-01   -9.228844e-01
+
+Wed Apr 20 19:18:25 2022
+Mission success

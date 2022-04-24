@@ -2,9 +2,9 @@ Diabatz version 1.3.0
 Yifan Shen 2021
 
 Echo of user command line input:
-/home/yshen57/Software/Mine/diabatz/v1.3.0/diabatz.exe --pretrained default IntCoordDef SAS.in pretrain-Hd.in pretrain-Hd.net pretrain-11.in pretrain-12.in pretrain-13.in pretrain-14.in pretrain-22.in pretrain-23.in pretrain-24.in pretrain-33.in pretrain-34.in pretrain-44.in -f default -i IntCoordDef -s SAS.in -n Hd.in -l 11.in 12.in 13.in 14.in 22.in 23.in 24.in 33.in 34.in 44.in -d data/critical/no-deg_list.txt data/linear-path/min-B1_min-B2/ data/other/benzene/list.txt data/other/in-benzene/list.txt data/other/out-of-benzene/list.txt data/other/NH2-angles/list.txt data/fast/list.txt data/other/fast_bound_N-H/list.txt data/artifact/asymptote/ --energy_data data/artifact/fast-B2/list.txt data/artifact/asymptote-B2/ -z -286.1075216397 -r regularization/reg -p regularization/prior -m 20
+/home/yshen/Software/Mine/diabatz/v1.3.0/diabatz.exe --pretrained default IntCoordDef SAS.in pretrain-Hd.in pretrain-Hd.net pretrain-11.in pretrain-12.in pretrain-13.in pretrain-14.in pretrain-22.in pretrain-23.in pretrain-24.in pretrain-33.in pretrain-34.in pretrain-44.in -f default -i IntCoordDef -s SAS.in -n Hd.in -l 11.in 12.in 13.in 14.in 22.in 23.in 24.in 33.in 34.in 44.in -d data/critical/no-deg_list.txt data/linear-path/min-B1_min-B2/ data/other/benzene/list.txt data/other/in-benzene/list.txt data/other/out-of-benzene/list.txt data/other/NH2-angles/list.txt data/fast/list.txt data/other/fast_bound_N-H/list.txt data/artifact/asymptote/ --energy_data data/artifact/fast-B2/list.txt data/artifact/asymptote-B2/ -z -286.1075216397 -r reg-continue/reg -p reg-continue/prior -c replace-diag.net -m 20
 
-Wed Apr 20 17:14:09 2022
+Sun Apr 24 12:14:31 2022
 
 The data set will be read from: 
     data/critical/min-A1/, data/critical/sad-A1/, data/critical/min-B1/, 
@@ -97,79 +97,50 @@ Thread 4:
 The data set corresponds to 274765 least square equations
 There are 1440 parameters to train
 
-The initial residue = 51.4209
+The initial residue = 4.8572
  
-2022 year  4 month 20 day 17:33:27
- Iteration           1 , residue   23.7950333108285     
+2022 year  4 month 24 day 12:34:24
+ Iteration           1 , residue   3.85408066155109     
  
-2022 year  4 month 20 day 17:38: 1
- Iteration           2 , residue   10.7068762332458     
+2022 year  4 month 24 day 12:38:30
+ Iteration           2 , residue   3.84205297938156     
  
-2022 year  4 month 20 day 17:42:29
- Iteration           3 , residue   8.95533438451729     
+2022 year  4 month 24 day 12:42:32
+ Iteration           3 , residue   3.84202086245363     
  
-2022 year  4 month 20 day 17:46:49
- Iteration           4 , residue   6.06980588244544     
+2022 year  4 month 24 day 12:46:34
+ Iteration           4 , residue   3.84201824333287     
  
-2022 year  4 month 20 day 17:51:23
- Iteration           5 , residue   5.60373740180592     
+2022 year  4 month 24 day 12:50:36
+ Iteration           5 , residue   3.84201788382964     
  
-2022 year  4 month 20 day 17:55:56
- Iteration           6 , residue   5.28705835526188     
+2022 year  4 month 24 day 12:54:35
+ Iteration           6 , residue   3.84201782690602     
  
-2022 year  4 month 20 day 18: 0:30
- Iteration           7 , residue   5.28705835526188     
+2022 year  4 month 24 day 12:58:33
+ Iteration           7 , residue   3.84201781760191     
  
-2022 year  4 month 20 day 18: 0:43
- Iteration           8 , residue   4.67658046432823     
+2022 year  4 month 24 day 13: 2:33
+ Iteration           8 , residue   3.84201781602401     
  
-2022 year  4 month 20 day 18: 5: 0
- Iteration           9 , residue   4.35465147843358     
+2022 year  4 month 24 day 13: 6:33
+ Iteration           9 , residue   3.84201781575263     
  
-2022 year  4 month 20 day 18: 9:33
- Iteration          10 , residue   3.78941693175677     
+2022 year  4 month 24 day 13:10:16
+ Iteration          10 , residue   3.84201781570536     
  
-2022 year  4 month 20 day 18:14: 6
- Iteration          11 , residue   3.12752131797061     
+2022 year  4 month 24 day 13:13:55
+ Iteration          11 , residue   3.84201781569708     
  
-2022 year  4 month 20 day 18:18:39
- Iteration          12 , residue   2.95856096601539     
+2022 year  4 month 24 day 13:17:34
+ Iteration          12 , residue   3.84201781569563     
  
-2022 year  4 month 20 day 18:22:54
- Iteration          13 , residue   2.95856096601539     
- 
-2022 year  4 month 20 day 18:23: 6
- Iteration          14 , residue   2.93831646073596     
- 
-2022 year  4 month 20 day 18:27:47
- Iteration          15 , residue   2.93831646073596     
- 
-2022 year  4 month 20 day 18:28: 0
- Iteration          16 , residue   2.93146059249073     
- 
-2022 year  4 month 20 day 18:32:33
- Iteration          17 , residue   2.92741255785664     
- 
-2022 year  4 month 20 day 18:37: 3
- Iteration          18 , residue   2.92457433854239     
- 
-2022 year  4 month 20 day 18:41:20
- Iteration          19 , residue   2.92249041685033     
- 
-2022 year  4 month 20 day 18:45:10
- Iteration          20 , residue   2.91711146335087     
- 
-2022 year  4 month 20 day 18:49:35
- Iteration          21 , residue   2.91415951671651     
- 
-2022 year  4 month 20 day 18:53:59
- Iteration          22 , residue   2.91172204448892     
- 
-2022 year  4 month 20 day 18:58:24
- Iteration          23 , residue   2.90936887559611     
- Failed trust region: max iteration exceeded!
- Final residual =    2.90936887559611     
-The final residue = 2.89969
+2022 year  4 month 24 day 13:21:13
+ Iteration          13 , residue   3.84201781569537     
+ Trust region warning: step length has converged, but residual has not met accur
+ acy goal
+ Final residual =    3.84201781569538     
+The final residue = 3.80647
 
-Wed Apr 20 18:58:30 2022
+Sun Apr 24 13:24:52 2022
 Mission success
