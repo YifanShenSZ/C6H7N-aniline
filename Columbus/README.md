@@ -25,22 +25,23 @@ RASSCF: 14-electron 14-orbital CISD, the active orbitals are
 |   21   |     C-N sigma      |     A1      |
 |   20   | N-H1 - N-H2 sigma  |     B2      |
 |   19   | N-H1 + N-H2 sigma  |     A1      |
-The 3 states of interest are 1 A1 (Hatree-Fock ground state), 1 B1 (pi4 -> 3s Rydberg), 1 B2 (0.74 pi4 -> pi*1 + 0.44 pi3 -> pi\*2)
 
 MRCISD: 18 frozen cores (the doubly occupied orbitals in RASSCF), excluding 2-external CSFs if 19 & 20 are not full
 
-## Critical geometry
-Ground state minimum (min-A1, Cs, NH2 out of benzene plane)
+The 3 states of interest are 1A1 (Hatree-Fock ground state), 1B1 (pi4 -> 3s Rydberg), 1B2 (0.77 pi4 -> pi\*1 + 0.36 pi3 -> pi\*2). 1A2 (pi3 -> 3s Rydberg) is also computed since it would mix with 1 B2 along the slow dissociation path
 
-Ground state saddle point (sad-A1, C2v, planar)
+## Critical geometry
+ground state minimum (min-A1, Cs, NH2 out of benzene plane)
+
+ground state saddle point (sad-A1, C2v, planar)
 
 Rydberg state minimum (min-B1, C2v, planar)
 
-Dissociation saddle point (sad-B1, Cs, planar)
+dissociation saddle point (sad-B1, Cs, planar)
 
-pipi* state minimum (min-B2, Cs, NH2 slightly out of benzene plane)
+pipi\* state minimum (min-B2, Cs, NH2 slightly out of benzene plane)
 
-pipi* state saddle point (sad-B2, C2v, planar)
+pipi\* state saddle point (sad-B2, C2v, planar)
 
 2nd Rydberg state minimum (min-A2, C2v, planar)
 

@@ -1,5 +1,5 @@
 # Diabatz
-Global fit diabatization by *diabatz* version 0
+Global fit diabatization by *diabatz* version 0 and 1
 
 Although the electronic structure is rationalized at G4 level since the highest point group aniline can carry is C2v, for fitting purpose we have to extend to G8
 
@@ -78,6 +78,6 @@ How can we reproduce the ab initio G4 electronic states?
 * pros: most rigurous
 * cons: only 4-state data available
 
-2, ssume the ab initio states are symmetric in N, since in bound region the NH2 molecular orbitals are doubly occupied:
+2, assume the ab initio states are symmetric in N, since in bound region the NH2 molecular orbitals are doubly occupied:
 * pros: 4-state model with 4-state data
 * cons: more complicated neural network may be necessary to describe NAC, e.g. at C2v-planar the NAC along irreducible 2 starts to come from 2nd-order term 2 x 5, but NAC is usually considered as a 1st-order coupling

@@ -1,5 +1,5 @@
-# Diabatz
-Loca fit diabatization by *diabatz* version 0
+# Diabatz-bound
+Local fit diabatization by *diabatz* version 0
 
 This fit is carried out by 3 steps:
 1. `1_C2v/` (2nd-order fit) to generate initial guess on the C2v region
