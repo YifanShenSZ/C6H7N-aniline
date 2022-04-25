@@ -1,1 +1,1 @@
-../../3_benzene/combine/parameters_4-4_1.txt
+../txt2bin/parameters_4-4_1.txt

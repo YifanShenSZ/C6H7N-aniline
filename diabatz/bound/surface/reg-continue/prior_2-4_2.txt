@@ -1,3 +1,1 @@
-transposed transformation matrix
-    3.836470458508667e-02
-    2.082393415149915e-02
+../txt2bin/parameters_2-4_2.txt
