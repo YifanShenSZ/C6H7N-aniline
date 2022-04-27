@@ -1,0 +1,8 @@
+Convert geometry from Cartesian coordinate to internal coordinate
+Echo of user command line input:
+/home/yshen/Software/Mine/Tool-Collection/bin/cart2int.exe -f default -i opt.IntCoordDef -x mex-A1-B1.xyz -g h.cart
+
+Tue Apr 26 15:46:29 2022
+
+Tue Apr 26 15:46:29 2022
+Mission success

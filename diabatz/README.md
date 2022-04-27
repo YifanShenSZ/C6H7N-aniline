@@ -21,3 +21,5 @@ The final surface is in `surface`
 `coord` defines the G8 CNPI group symmetry adpated internal coordinate system
 
 `script` contains useful scripts
+
+`analysis` performs all kinds of analysis
