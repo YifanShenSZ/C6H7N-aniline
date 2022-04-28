@@ -1,0 +1,19 @@
+Evaluation for diabatz
+Yifan Shen 2021
+
+Echo of user command line input:
+/home/yshen/Software/Mine/diabatz/tools/eval/v0/eval.exe -d default IntCoordDef SAS.in Hd.in Hd.net 11.in 12.in 13.in 14.in 22.in 23.in 24.in 33.in 34.in 44.in -x /home/yshen/C6H7N-aniline/Columbus/fast/1.7/fast-1.7.xyz -a
+
+Thu Apr 28 19:49:03 2022
+
+energy =
+    1.433212e-01    1.600427e-01    2.628082e-01    3.252567e-01
+
+states are:
+   -9.996721e-01    0.000000e+00    0.000000e+00   -2.560655e-02
+   -0.000000e+00    9.999769e-01    6.793589e-03    0.000000e+00
+    2.560655e-02   -0.000000e+00    0.000000e+00   -9.996721e-01
+   -0.000000e+00   -6.793589e-03    9.999769e-01    0.000000e+00
+
+Thu Apr 28 19:49:03 2022
+Mission success
