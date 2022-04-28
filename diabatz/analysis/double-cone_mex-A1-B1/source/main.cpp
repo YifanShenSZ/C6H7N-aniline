@@ -31,7 +31,8 @@ int main(size_t argc, const char ** argv) {
     std::vector<std::string> diabatz_inputs = args.retrieve<std::vector<std::string>>("diabatz");
     Hd::kernel Hdkernel(diabatz_inputs);
 
-    auto intcoordset = std::make_shared<tchem::IC::IntCoordSet>("default", "opt.IntCoordDef");
+    auto intcoordset      = std::make_shared<tchem::IC::IntCoordSet>("default",  "opt.IntCoordDef");
+    auto intcoordset_plot = std::make_shared<tchem::IC::IntCoordSet>("default", "plot.IntCoordDef");
 
     CL::chem::xyz<double> mex("mex-A1-B1.xyz", true);
     std::vector<double> mex_coords = mex.coords();
@@ -43,8 +44,9 @@ int main(size_t argc, const char ** argv) {
     g[21].fill_(1.8897261339212517);
     at::Tensor h = tchem::utility::read_vector("h.int");
 
-    std::ofstream ofs_m, ofs_l, ofs_u;
+    std::ofstream ofs_m, ofs_p, ofs_l, ofs_u;
     ofs_m.open("gh-mesh.txt");
+    ofs_p.open("plot-mesh.txt");
     ofs_l.open("lower.txt");
     ofs_u.open("upper.txt");
 
@@ -55,12 +57,15 @@ int main(size_t argc, const char ** argv) {
     for (int64_t j = -Nh; j <= Nh; j++) {
         at::Tensor q = q_mex + i * dg * g + j * dh * h;
         at::Tensor r = int2cart(q, r_mex, intcoordset);
+        at::Tensor q_plot = (*intcoordset_plot)(r);
         at::Tensor Hd, dHd;
         std::tie(Hd, dHd) = Hdkernel.compute_Hd_dHd(r);
         at::Tensor energy, states;
         std::tie(energy, states) = Hd.symeig();
         ofs_m << std::setw(25) << std::scientific << std::setprecision(15) << i * dg
               << std::setw(25) << std::scientific << std::setprecision(15) << j * dh << '\n';
+        ofs_p << std::setw(25) << std::scientific << std::setprecision(15) << q_plot[0].item<double>()
+              << std::setw(25) << std::scientific << std::setprecision(15) << q_plot[1].item<double>() << '\n';
         ofs_l << std::setw(25) << std::scientific << std::setprecision(15) << energy[0].item<double>() << '\n';
         ofs_u << std::setw(25) << std::scientific << std::setprecision(15) << energy[1].item<double>() << '\n';
     }

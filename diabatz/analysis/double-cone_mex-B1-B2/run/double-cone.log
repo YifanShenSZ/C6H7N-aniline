@@ -1,26 +1,20 @@
  Trust region warning: step length has converged, but residual has not met accur
  acy goal
- Final residual =   1.026094999693904E-012
+ Final residual =   1.087395057590802E-008
  Trust region warning: step length has converged, but residual has not met accur
  acy goal
- Final residual =   1.240104194885133E-012
+ Final residual =   1.426551109383910E-012
  Trust region warning: step length has converged, but residual has not met accur
  acy goal
- Final residual =   1.412333224756920E-012
- Trust region warning: step length has converged, but residual has not met accur
- acy goal
- Final residual =   1.688359374552420E-012
- Trust region warning: step length has converged, but residual has not met accur
- acy goal
- Final residual =   1.482640368606696E-012
+ Final residual =   1.087395057590802E-008
 g-h plane double cone analysis based on diabatz
 Yifan Shen 2021
 
 Echo of user command line input:
 ../double-cone.exe -d default IntCoordDef SAS.in Hd.in Hd.net 11.in 12.in 13.in 14.in 22.in 23.in 24.in 33.in 34.in 44.in
 
-Tue Apr 26 15:25:51 2022
+Wed Apr 27 21:02:52 2022
 
 
-Tue Apr 26 15:33:13 2022
+Wed Apr 27 21:11:59 2022
 Mission success

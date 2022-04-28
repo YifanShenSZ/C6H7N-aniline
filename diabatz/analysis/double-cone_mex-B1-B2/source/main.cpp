@@ -31,7 +31,8 @@ int main(size_t argc, const char ** argv) {
     std::vector<std::string> diabatz_inputs = args.retrieve<std::vector<std::string>>("diabatz");
     Hd::kernel Hdkernel(diabatz_inputs);
 
-    auto intcoordset = std::make_shared<tchem::IC::IntCoordSet>("default", "opt.IntCoordDef");
+    auto intcoordset      = std::make_shared<tchem::IC::IntCoordSet>("default",  "opt.IntCoordDef");
+    auto intcoordset_plot = std::make_shared<tchem::IC::IntCoordSet>("default", "plot.IntCoordDef");
 
     CL::chem::xyz<double> min("min-B1.xyz", true);
     std::vector<double> min_coords = min.coords();
@@ -43,6 +44,7 @@ int main(size_t argc, const char ** argv) {
     at::Tensor r_mex = at::from_blob(mex_coords.data(), mex_coords.size(), at::TensorOptions().dtype(torch::kFloat64));
     at::Tensor q_mex = (*intcoordset)(r_mex);
 
+    // we use the internal coordinate direction where mex-B1-B2 deviates from C2v instead of true g
     at::Tensor g = q_mex.clone();
     g.slice(0, 0, 13).fill_(0.0);
 
@@ -52,8 +54,9 @@ int main(size_t argc, const char ** argv) {
     q0 -= g;
     at::Tensor r0 = int2cart(q0, r_min, intcoordset);
 
-    std::ofstream ofs_m, ofs_l, ofs_u;
+    std::ofstream ofs_m, ofs_p, ofs_l, ofs_u;
     ofs_m.open("gh-mesh.txt");
+    ofs_p.open("plot-mesh.txt");
     ofs_l.open("lower.txt");
     ofs_u.open("upper.txt");
 
@@ -64,12 +67,15 @@ int main(size_t argc, const char ** argv) {
     for (int64_t j = -Nh; j <= Nh; j++) {
         at::Tensor q = q0 + i * dg * g + j * dh * h;
         at::Tensor r = int2cart(q, r0, intcoordset);
+        at::Tensor q_plot = (*intcoordset_plot)(r);
         at::Tensor Hd, dHd;
         std::tie(Hd, dHd) = Hdkernel.compute_Hd_dHd(r);
         at::Tensor energy, states;
         std::tie(energy, states) = Hd.symeig();
         ofs_m << std::setw(25) << std::scientific << std::setprecision(15) << i * dg
               << std::setw(25) << std::scientific << std::setprecision(15) << j * dh << '\n';
+        ofs_p << std::setw(25) << std::scientific << std::setprecision(15) << q_plot[0].item<double>()
+              << std::setw(25) << std::scientific << std::setprecision(15) << q_plot[1].item<double>() << '\n';
         ofs_l << std::setw(25) << std::scientific << std::setprecision(15) << energy[1].item<double>() << '\n';
         ofs_u << std::setw(25) << std::scientific << std::setprecision(15) << energy[2].item<double>() << '\n';
     }
