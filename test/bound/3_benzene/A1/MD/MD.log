@@ -1,0 +1,7 @@
+C6H7N-aniline: aniline photodissociation
+Yifan Shen 2021
+
+Echo of user command line input:
+/home/yshen/Software/Mine/hop/C6H7N-aniline/MD/v1/MD.exe -d default IntCoordDef SAS.in pretrain/HN_Hd.in pretrain/HN_Hd.net pretrain/HN_11.in default IntCoordDef SAS.in single.in Hd.net benzene.in -x min-A1.xyz -m mass.txt -H ../Hessian/diabatic-Hessian-1-1.txt --target 1
+
+Thu Apr  7 15:41:54 2022

@@ -1,0 +1,9 @@
+min-A1
+sad-A1
+min-B1
+sad-B1
+min-B2
+sad-B2
+min-A2
+sad-A2
+mex-B2-A2

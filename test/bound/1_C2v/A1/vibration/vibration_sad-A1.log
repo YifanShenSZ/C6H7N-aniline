@@ -1,0 +1,12 @@
+Vibrational analysis for diabatz
+Yifan Shen 2021
+
+Echo of user command line input:
+/home/yshen/Software/Mine/diabatz/tools/vibration/v0/vibration.exe -f default -i vibration/opt.IntCoordDef -t 1 -x vibration/sad-A1.xyz -m vibration/mass.txt -d default IntCoordDef SAS.in single.in Hd.net C2v_11.in -o vibration/sad-A1.log
+
+Sat Apr  2 11:45:19 2022
+
+The target electronic state is 1
+
+Sat Apr  2 11:45:21 2022
+Mission success

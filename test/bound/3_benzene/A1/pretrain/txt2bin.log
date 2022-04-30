@@ -1,0 +1,11 @@
+Convert text fitting parameters to binary for diabatz version 0
+Yifan Shen 2021
+
+Echo of user command line input:
+/home/yshen/Software/Mine/diabatz/tools/v0/txt2bin/txt2bin.exe -n HN-Hd.in -p parameters -o HN-Hd.net
+
+Fri Apr 22 15:43:49 2022
+
+
+Fri Apr 22 15:43:49 2022
+Mission success
