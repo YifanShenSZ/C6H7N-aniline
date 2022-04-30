@@ -84,6 +84,8 @@
     0.0
     5,1        8,1        1,14   
     0.0
+    5,1        8,1               # HN spherical coordinate angles
+    0.0
     1,22       4,1               # 1st-scaling bias replacing an irred-1 HN coord
     0.0
     1,22       4,2    
@@ -199,6 +201,8 @@
     5,2        8,2        1,12   
     0.0
     5,2        8,2        1,13   
+    0.0
+    5,2        8,2               # 2nd-scaling HN spherical coordinate angles
     0.0
     1,24       4,1               # 2nd-scaling bias replacing an irred-1 HN coord
     0.0
