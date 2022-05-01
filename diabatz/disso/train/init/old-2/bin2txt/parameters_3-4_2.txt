@@ -1,2 +1,0 @@
-transposed transformation matrix
-    6.428564865230101e-03
