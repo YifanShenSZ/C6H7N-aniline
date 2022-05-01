@@ -1,7 +1,0 @@
-C6H7N-aniline: aniline photodissociation
-Yifan Shen 2021
-
-Echo of user command line input:
-/home/yshen/Software/Mine/hop/C6H7N-aniline/FSSH/v0/FSSH.exe -d default IntCoordDef SAS.in Hd.in Hd.net 11.in 12.in 13.in 14.in 22.in 23.in 24.in 33.in 34.in 44.in -x /home/yshen/C6H7N-aniline/Columbus/min-A1/min-A1.xyz -m /home/yshen/C6H7N-aniline/Columbus/input/mass.txt -H ../Hessian/adiabatic-Hessian-1-1.txt
-
-Fri Apr  8 22:56:04 2022

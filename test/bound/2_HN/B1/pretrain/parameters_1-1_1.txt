@@ -1,1 +1,0 @@
-../../../1_C2v/B1/bin2txt/parameters_1-1_1.txt

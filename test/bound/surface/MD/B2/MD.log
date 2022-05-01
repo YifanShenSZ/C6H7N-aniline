@@ -1,6 +1,0 @@
-Yifan Shen 2021
-
-Echo of user command line input:
-/home/yshen/Software/Mine/hop/C6H7N-aniline/MD/v0/MD.exe -d default IntCoordDef SAS.in single.in single.net 11.in -x /home/yshen/C6H7N-aniline/Columbus/min-A1/min-A1.xyz -m /home/yshen/C6H7N-aniline/Columbus/input/mass.txt -H ../../Hessian/adiabatic-Hessian-1-1.txt --target 1
-
-Fri Apr  8 23:04:18 2022
