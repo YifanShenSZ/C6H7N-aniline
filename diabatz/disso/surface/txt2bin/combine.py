@@ -133,7 +133,7 @@ for middle in ["1-3", "2-4"]:
 for middle in ["1-4", "2-3"]:
     # 117 terms
     with open("pretrain-txt/parameters_" + middle + "_1.txt", 'r') as f: prelines = f.readlines()
-    # 43 repeat terms + 69 new terms
+    # 44 repeat terms + 70 new terms
     with open(   "train-txt/parameters_" + middle + "_1.txt", 'r') as f:    lines = f.readlines()
     # complicated appending
     with open("parameters_" + middle + "_1.txt", 'w') as f:
@@ -167,15 +167,21 @@ for middle in ["1-4", "2-3"]:
             coeff1 = float(strs[1].strip())
             coeff2 = float(lines[2 * (30 + i) + 1].strip())
             print("%25.15e%25.15e%25.15e" % (coeff0, coeff1, coeff2), file=f)
-        # 166 - 167 are skipped
-        for i in range(165, 167):
-            print(prelines[2 * i], end='', file=f)
-            strs = prelines[2 * i + 1].split()
-            coeff0 = float(strs[0].strip())
-            coeff1 = float(strs[1].strip())
-            print("%25.15e%25.15e%25.15e" % (coeff0, coeff1, 0.0), file=f)
-        # 168 - 236 are new in 44 - 112
-        for i in range(43, 112):
+        # 166 is skipped
+        print(prelines[2 * 165], end='', file=f)
+        strs = prelines[2 * 165 + 1].split()
+        coeff0 = float(strs[0].strip())
+        coeff1 = float(strs[1].strip())
+        print("%25.15e%25.15e%25.15e" % (coeff0, coeff1, 0.0), file=f)
+        # 167 is repeated in 44
+        print(prelines[2 * 166], end='', file=f)
+        strs = prelines[2 * 166 + 1].split()
+        coeff0 = float(strs[0].strip())
+        coeff1 = float(strs[1].strip())
+        coeff2 = float(lines[2 * 43 + 1].strip())
+        print("%25.15e%25.15e%25.15e" % (coeff0, coeff1, coeff2), file=f)
+        # 168 - 237 are new in 45 - 114
+        for i in range(44, 114):
             print(lines[2 * i], end='', file=f)
             coeff2 = float(lines[2 * i + 1].strip())
             print("%25.15e%25.15e%25.15e" % (0.0, 0.0, coeff2), file=f)

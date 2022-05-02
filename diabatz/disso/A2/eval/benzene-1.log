@@ -1,0 +1,13 @@
+Evaluation for diabatz
+Yifan Shen 2021
+
+Echo of user command line input:
+/home/yshen/Software/Mine/diabatz/tools/eval/v1/eval.exe -d default pretrain-IntCoordDef pretrain-SAS.in pretrain-Hd.in pretrain-Hd.net pretrain-44.in default IntCoordDef SAS.in single-44.in Hd.net fast-44.in -x /home/yshen/C6H7N-aniline/diabatz/disso/hole/benzene-1.xyz
+
+Sun May  1 18:26:30 2022
+
+Hd =
+    5.713842e-01
+
+Sun May  1 18:26:30 2022
+Mission success

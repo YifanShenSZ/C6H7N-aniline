@@ -4,7 +4,7 @@ Yifan Shen 2021
 Echo of user command line input:
 /home/yshen/Software/Mine/diabatz/v1.0.0/diabatz.exe --pretrained default pretrain-IntCoordDef pretrain-SAS.in pretrain-Hd.in pretrain-Hd.net pretrain-22.in -f default -i IntCoordDef -s SAS.in -n single-22.in -l fast-22.in -d data/critical/list.txt data/min-B1_min-B2/ data/other/benzene/list.txt data/other/in-benzene/list.txt data/other/out-of-benzene/list.txt data/other/NH2-angles/list.txt data/fast/list.txt data/other/fast_bound_N-H/list.txt data/asymptote/ -z -286.1075216397 -r regularization/reg -p regularization/prior -m 5
 
-Sat Apr 23 17:49:47 2022
+Sun May  1 17:16:15 2022
 
 The data set will be read from: 
     data/critical/min-A1/, data/critical/sad-A1/, data/critical/min-B1/, 
@@ -45,7 +45,7 @@ The data set will be read from:
     data/fast/6_partial-loop/, data/other/fast_bound_N-H/1.1/, data/other/fast_bound_N-H/1.2/, 
     data/other/fast_bound_N-H/1.3/, data/other/fast_bound_N-H/1.4/, data/other/fast_bound_N-H/1.5/, 
     data/asymptote/, 
-There are 1497 data points in adiabatic representation
+There are 1505 data points in adiabatic representation
           0 data points in composite representation
 
 maximum ground state energy = 0.367116
@@ -57,37 +57,37 @@ Got regularization strength, enable regularization
 The number of threads = 4
 
 Thread 1:
-* owns 375 adiabatic data points
+* owns 377 adiabatic data points
 * owns 0 composite data points
 * owns 0 energy-only data points
 * starts with Jacobian row 0
 Thread 2:
-* owns 374 adiabatic data points
+* owns 376 adiabatic data points
 * owns 0 composite data points
 * owns 0 energy-only data points
-* starts with Jacobian row 8257
+* starts with Jacobian row 8301
 Thread 3:
-* owns 374 adiabatic data points
+* owns 376 adiabatic data points
 * owns 0 composite data points
 * owns 0 energy-only data points
-* starts with Jacobian row 16593
+* starts with Jacobian row 16677
 Thread 4:
-* owns 374 adiabatic data points
+* owns 376 adiabatic data points
 * owns 0 composite data points
 * owns 0 energy-only data points
-* starts with Jacobian row 26144
+* starts with Jacobian row 26300
 
-The data set corresponds to 37452 least square equations
+The data set corresponds to 37660 least square equations
 There are 154 parameters to train
 
-The initial residue = 18.8184
+The initial residue = 14.471
  
-2022 year  4 month 23 day 18: 0:16
- Iteration           1 , residue  0.741991998778881     
+2022 year  5 month  1 day 17:28:25
+ Iteration           1 , residue  0.750161389857058     
  Trust region warning: step length has converged, but residual has not met accur
  acy goal
- Final residual =   0.741991998778881     
-The final residue = 0.725931
+ Final residual =   0.750161389857058     
+The final residue = 0.734115
 
-Sat Apr 23 18:00:18 2022
+Sun May  1 17:28:28 2022
 Mission success
