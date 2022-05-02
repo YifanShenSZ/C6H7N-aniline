@@ -1,1 +1,0 @@
-../../../bound-pretrain/bin2txt/parameters_1-2_1.txt

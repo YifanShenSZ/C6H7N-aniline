@@ -28,8 +28,7 @@
           0.500000       bending    13     6     7
     12    0.500000       bending    10     3     5          # A1, 12
           0.500000       bending    11     4     6
-    13    0.500000       bending     8     1     2          # A1, 13
-          0.500000       bending     9     1     2
+    13    1.000000       bending     8     1     9          # A1, 13
     14    1.000000       torsion     4     2     3     5    # B1, 1
          -1.000000       torsion     3     2     4     6
          -1.000000       torsion     3     5     7     6
@@ -46,8 +45,7 @@
     18    0.500000    OutOfPlane    10     3     5     7    # B1, 5
          -0.500000    OutOfPlane    11     4     6     7
     19    1.000000    OutOfPlane     1     2     3     4    # B1, 6
-    20    0.500000       torsion     8     1     2     3    # B1, 7
-         -0.500000       torsion     9     1     2     4
+    20    1.000000    OutOfPlane     2     1     8     9    # B1, 7
     21    0.500000    stretching     7     5                # B2, 1
          -0.500000    stretching     7     6
     22    0.500000    stretching     5     3                # B2, 2

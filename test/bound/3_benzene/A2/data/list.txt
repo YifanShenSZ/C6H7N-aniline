@@ -1,8 +1,0 @@
-min-A1
-sad-A1
-min-B1
-min-B2
-sad-B2
-min-A2
-mex-B1-B2
-min-B1_min-B2
