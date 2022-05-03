@@ -1,0 +1,122 @@
+Statisticize data set for diabatz version 0
+Yifan Shen 2022
+
+Echo of user command line input:
+/home/yshen/Software/Mine/diabatz/tools/v0/data-stats/data-stats.exe -f default -i IntCoordDef -s SAS.in -n Hd.in -l 11.in 12.in 13.in 14.in 22.in 23.in 24.in 33.in 34.in 44.in -d data/critical/no-deg_list.txt data/linear-path/list.txt data/other/benzene/list.txt data/other/in-benzene/list.txt data/other/out-of-benzene/list.txt data/other/NH2-angles/list.txt data/fast/list.txt data/other/fast_bound_N-H/list.txt data/slow/list.txt data/other/slow_bound_N-H/list.txt data/artifact/asymptote/ -z -286.1075216397
+
+Tue May  3 15:09:41 2022
+
+The data set will be read from: 
+    data/critical/min-A1/, data/critical/sad-A1/, data/critical/min-B1/, 
+    data/critical/sad-B1/, data/critical/min-B2/, data/critical/sad-B2/, data/critical/min-A2/, 
+    data/critical/sad-A2/, data/linear-path/min-B1_min-B2/, data/linear-path/1.1-fast-slow/, 
+    data/linear-path/1.2-fast-slow/, data/linear-path/1.3-fast-slow/, data/linear-path/1.4-fast-slow/, 
+    data/linear-path/1.5-fast-slow/, data/linear-path/1.6-fast-slow/, data/linear-path/1.7-fast-slow/, 
+    data/other/benzene/A1-9/0-13_4-states/, data/other/benzene/A1-9/14-19_4-states/, data/other/benzene/A1-10/, 
+    data/other/benzene/B1-14/0-5_4-states/, data/other/benzene/B1-14/6-9_4-states/, data/other/benzene/B1-15/, 
+    data/other/benzene/B2-27/, data/other/benzene/A2-33/, data/other/in-benzene/A1-11/, 
+    data/other/in-benzene/A1-12/, data/other/in-benzene/B2-28/, data/other/in-benzene/B2-29/, 
+    data/other/in-benzene/B2-30/, data/other/out-of-benzene/B1-16_H/0-5_4-states/, 
+    data/other/out-of-benzene/B1-16_H/6-10_4-states/, data/other/out-of-benzene/B1-17_H/0-9_4-states/, 
+    data/other/out-of-benzene/B1-17_H/10-12_4-states/, data/other/out-of-benzene/B1-18_H/, 
+    data/other/out-of-benzene/B1-19_N/0-2_4-states/, data/other/out-of-benzene/B1-19_N/3-4_4-states/, 
+    data/other/out-of-benzene/A2-34_H/0-6_4-states/, data/other/out-of-benzene/A2-34_H/7_3-states/, 
+    data/other/out-of-benzene/A2-34_H/8-10_4-states/, data/other/out-of-benzene/A2-35_H/0-2_4-states/, 
+    data/other/out-of-benzene/A2-35_H/3-7_3-states/, data/other/NH2-angles/H-N-H_from_min-B1/0-18_4-states/, 
+    data/other/NH2-angles/H-N-H_from_min-B1/19_3-states/, data/other/NH2-angles/H-N-H_from_min-A1/, 
+    data/other/NH2-angles/C-N-avgH_from_min-B1/0-11_4-states/, data/other/NH2-angles/C-N-avgH_from_min-B1/12-13_5to4-states/, 
+    data/other/NH2-angles/C-out-of-NH2/0-9_4-states/, data/other/NH2-angles/C-out-of-NH2/10-14_5to4-states/, 
+    data/other/NH2-angles/NH2-rotation_from_min-B1/0.1/, data/other/NH2-angles/NH2-rotation_from_min-B1/0.2/, 
+    data/other/NH2-angles/NH2-rotation_from_min-B1/0.3/, data/other/NH2-angles/NH2-rotation_from_min-B1/0.4/, 
+    data/other/NH2-angles/NH2-rotation_from_min-B1/0.5/, data/other/NH2-angles/NH2-rotation_from_min-B1/0.6/, 
+    data/other/NH2-angles/NH2-rotation_from_min-B1/0.7/, data/other/NH2-angles/NH2-rotation_from_min-B1/0.8/, 
+    data/other/NH2-angles/NH2-rotation_from_min-B1/0.9/, data/other/NH2-angles/NH2-rotation_from_min-B1/1.0/, 
+    data/other/NH2-angles/NH2-rotation_from_min-B1/1.1/, data/other/NH2-angles/NH2-rotation_from_min-B1/1.2/, 
+    data/other/NH2-angles/NH2-rotation_from_min-B1/1.3/, data/other/NH2-angles/NH2-rotation_from_min-B1/1.4/, 
+    data/other/NH2-angles/NH2-rotation_from_min-B1/1.5/, data/other/NH2-angles/NH2-rotation_from_min-B1/1.6/, 
+    data/other/NH2-angles/NH2-rotation_from_min-B1/1.7/, data/other/NH2-angles/NH2-rotation_from_min-B1/1.8/, 
+    data/other/NH2-angles/NH2-rotation_from_min-B1/1.9/, data/other/NH2-angles/NH2-rotation_from_min-B1/2.0/, 
+    data/other/NH2-angles/NH2-rotation_from_min-B1/2.1/, data/other/NH2-angles/NH2-rotation_from_min-B1/2.2/, 
+    data/other/NH2-angles/NH2-rotation_from_min-A1/0.1/, data/other/NH2-angles/NH2-rotation_from_min-A1/0.2/, 
+    data/other/NH2-angles/NH2-rotation_from_min-A1/0.3/, data/other/NH2-angles/NH2-rotation_from_min-A1/0.4/, 
+    data/other/NH2-angles/NH2-rotation_from_min-A1/0.5/, data/other/NH2-angles/NH2-rotation_from_min-A1/0.6/, 
+    data/other/NH2-angles/NH2-rotation_from_min-A1/0.7/, data/other/NH2-angles/NH2-rotation_from_min-A1/0.8/, 
+    data/other/NH2-angles/NH2-rotation_from_min-A1/0.9/, data/other/NH2-angles/NH2-rotation_from_min-A1/1.0/, 
+    data/other/NH2-angles/NH2-rotation_from_min-A1/1.1/, data/other/NH2-angles/NH2-rotation_from_min-A1/1.2/, 
+    data/other/NH2-angles/NH2-rotation_from_min-A1/1.3/, data/other/NH2-angles/NH2-rotation_from_min-A1/1.4/, 
+    data/other/NH2-angles/NH2-rotation_from_min-A1/1.5/, data/other/NH2-angles/NH2-rotation_from_min-A1/1.6/, 
+    data/other/NH2-angles/NH2-rotation_from_min-A1/1.7/, data/other/NH2-angles/NH2-rotation_from_min-A1/1.8/, 
+    data/other/NH2-angles/NH2-rotation_from_min-A1/1.9/, data/other/NH2-angles/NH2-rotation_from_min-A1/2.0/, 
+    data/other/NH2-angles/NH2-rotation_from_min-A1/2.1/, data/other/NH2-angles/NH2-rotation_from_min-A1/2.2/, data/fast/0.7/, 
+    data/fast/0.8/, data/fast/0.9/, data/fast/1.1/, data/fast/1.2/, data/fast/1.4/, 
+    data/fast/1.5/, data/fast/1.6/, data/fast/1.7/, data/fast/1.9/, data/fast/2.0/, 
+    data/fast/2.1/, data/fast/2.2/, data/fast/2.3/, data/fast/2.4/, data/fast/2.5/, 
+    data/fast/2.6/, data/fast/2.7/, data/fast/2.8/, data/fast/2.9/, data/fast/3/, 
+    data/fast/4/, data/fast/5/, data/fast/6/, data/fast/6_partial-loop/, 
+    data/other/fast_bound_N-H/1.1/0.8-0.9-1.1-1.2_4-states/, data/other/fast_bound_N-H/1.1/1.3_3-states/, 
+    data/other/fast_bound_N-H/1.2/0.8-0.9-1.1-1.2_4-states/, data/other/fast_bound_N-H/1.2/1.3_3-states/, 
+    data/other/fast_bound_N-H/1.3/0.8-0.9-1.1_3-states/, data/other/fast_bound_N-H/1.3/1.2_4-states/, 
+    data/other/fast_bound_N-H/1.3/1.3_3-states/, data/other/fast_bound_N-H/1.4/0.8-0.9-1.1-1.2-1.3_4-states/, 
+    data/other/fast_bound_N-H/1.4/1.4_2-states/, data/other/fast_bound_N-H/1.5/0.8-0.9-1.1-1.2-1.3_4-states/, 
+    data/other/fast_bound_N-H/1.5/1.4-1.5_2-states/, data/slow/0.7/, data/slow/0.8/, data/slow/0.9/, data/slow/1.1/, 
+    data/slow/1.2/, data/slow/1.3/, data/slow/1.4/, data/slow/1.5/, data/slow/1.6/, 
+    data/slow/1.7/, data/slow/1.79/, data/other/slow_bound_N-H/1.1/, 
+    data/other/slow_bound_N-H/1.2/, data/other/slow_bound_N-H/1.3/, data/other/slow_bound_N-H/1.4/, 
+    data/other/slow_bound_N-H/1.5/, data/artifact/asymptote/, 
+There are 2059 data points in adiabatic representation
+          1 data points in composite representation
+
+state 1 - state 1
+* x      average       range [-0.247752, 0.44534]
+* x standard deviation range [1.2476e-05, 0.419624]
+* S      average       range [9.73306e-06, 6.9584]
+* S standard deviation range [2.52067e-05, 3.53743]
+state 1 - state 2
+* x      average       range [0, 0]
+* x standard deviation range [1.09706e-05, 0.621958]
+* S      average       range [1.4252e-05, 11.8312]
+* S standard deviation range [5.05288e-05, 14.1224]
+state 1 - state 3
+* x      average       range [0, 0]
+* x standard deviation range [3.45918e-05, 0.48172]
+* S      average       range [6.19477e-05, 6.20771]
+* S standard deviation range [0.000159311, 4.36135]
+state 1 - state 4
+* x      average       range [0, 0]
+* x standard deviation range [7.39263e-06, 0.173308]
+* S      average       range [8.94031e-06, 4.05175]
+* S standard deviation range [3.14041e-05, 1.38474]
+state 2 - state 2
+* x      average       range [-0.247752, 0.44534]
+* x standard deviation range [1.2476e-05, 0.419624]
+* S      average       range [9.73306e-06, 6.9584]
+* S standard deviation range [2.52067e-05, 3.53743]
+state 2 - state 3
+* x      average       range [0, 0]
+* x standard deviation range [7.39263e-06, 0.173308]
+* S      average       range [8.94031e-06, 4.05175]
+* S standard deviation range [3.14041e-05, 1.38474]
+state 2 - state 4
+* x      average       range [0, 0]
+* x standard deviation range [3.45918e-05, 0.48172]
+* S      average       range [6.19477e-05, 6.20771]
+* S standard deviation range [0.000159311, 4.36135]
+state 3 - state 3
+* x      average       range [-0.247752, 0.44534]
+* x standard deviation range [1.2476e-05, 0.419624]
+* S      average       range [9.73306e-06, 6.9584]
+* S standard deviation range [2.52067e-05, 3.53743]
+state 3 - state 4
+* x      average       range [0, 0]
+* x standard deviation range [1.09706e-05, 0.621958]
+* S      average       range [1.4252e-05, 11.8312]
+* S standard deviation range [5.05288e-05, 14.1224]
+state 4 - state 4
+* x      average       range [-0.247752, 0.44534]
+* x standard deviation range [1.2476e-05, 0.419624]
+* S      average       range [9.73306e-06, 6.9584]
+* S standard deviation range [2.52067e-05, 3.53743]
+Details can be found in regset_x.txt and regset_S.txt
+
+Tue May  3 15:23:14 2022
+Mission success
