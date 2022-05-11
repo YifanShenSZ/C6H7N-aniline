@@ -1,0 +1,1178 @@
+===========================================================
+===                   runc                              ===
+===           version 7.0.2 , April 2021              ===
+===          requires COLUMBUS version Col_7.0.2        ===
+===                                                     ===
+===   written by: Thomas Mueller                        ===
+===   gradient ext. by: Michal Dallos                   ===
+===               University of Vienna                  ===
+===   maintained by: Felix Plasser                      ===
+===               Loughborough University               ===
+===========================================================
+
+
+coremem. (seq.): 200000 MB,  coremem. (par.): 19000 MB
+Vdisk size: 0 DP
+Reading job control file control.run ... 
+ ****** This is an 2c-QDPT MRCISD calculation ****** 
+ model space size=4:0:4
+SMOLCAS=/home-4/yshen57@jhu.edu/Software/Chemistry/Columbus-7.0.2_OpenMolcas-18.09-col/OpenMolcas/build
+Found serial Molcas Installation at /home-4/yshen57@jhu.edu/Software/Chemistry/Columbus-7.0.2_OpenMolcas-18.09-col/OpenMolcas/build
+  done 
+INFO: keywords nadcoupl and seward are supported for DCI mode only!
+seward specified, using also alaska
+Creating various directories ... 
+ done 
+SMOLCAS=/home-4/yshen57@jhu.edu/Software/Chemistry/Columbus-7.0.2_OpenMolcas-18.09-col/OpenMolcas/build
+PMOLCAS=
+Checking for illegal keywords and keyword combinations ... done 
+
+ Nonadiabatic coupling term calculation type: DCI+DCSF
+  States involved in calcualtion:
+   DRT1,state1;  DRT1,state2
+   DRT1,state1;  DRT1,state3
+   DRT1,state1;  DRT1,state4
+   DRT1,state2;  DRT1,state3
+   DRT1,state2;  DRT1,state4
+   DRT1,state3;  DRT1,state4
+   DRT2,state1;  DRT2,state2
+   DRT2,state1;  DRT2,state3
+   DRT2,state1;  DRT2,state4
+   DRT2,state2;  DRT2,state3
+   DRT2,state2;  DRT2,state4
+   DRT2,state3;  DRT2,state4
+
+Additional gradients computed:
+   DRT1,state1
+   DRT1,state2
+   DRT1,state3
+   DRT1,state4
+   DRT2,state1
+   DRT2,state2
+   DRT2,state3
+   DRT2,state4
+
+Checking for complete set of input files ... 
+mcscf calculation without preceeding scf calculation 
+will use 
+ /scratch/users/yshen57@jhu.edu/Molcas/slow/1.5/mrci/mocoef as starting MOs 
+Performing coupled non-rel. SO-CI calculation, nrroots: 4 0 4
+starting cidrt.x   -m 200000 < cidrtin > temp at Sat May  7 00:09:53 EDT 2022
+
+ -------------------- cidrt.x ------------------------
+ spatial symmetry:  
+ total number of configurations          0
+ number of reference configurations     0
+ --------------------------------------------------- 
+ Preparing SO cidrtin files for 1 symmetries
+cat ../cidrtin | sed -e 's/^.*input the molecular spatial symmetry/1 \/ molsym/' > cidrtin.so_A 
+calling cidrt.x -m 200000 < cidrtin.so_A > cidrtls.soci_A ...
+Checking the DRTs for consistency ...
+calling reindex.x -i 1 -m 200000  ...
+done
+
+ ++++++++++++++++++ input file generation +++++++++++++ 
+ runc start: Sat May  7 00:10:12 EDT 2022
+ 
+  runc start: Sat May  7 00:10:12 EDT 2022
+ 
+ starting unik.gets.x > unikls at Sat May  7 00:10:12 EDT 2022
+
+ -------------------- unik.gets.x ------------------------
+ --------------------------------------------------- 
+ ++++++++++++++++++++ ao integral calculation ++++++++++++++++
+starting pymolcas molcas.input.seward > molcas.output.seward  at Sat May  7 00:10:12 EDT 2022
+
+Generating link ln -s ./molcas.OrdInt ORDINT 
+ -------------------- seward ------------------------
+      Basis set label: N.ANILINE.........
+      Basis set label: C.ANILINE.........
+      Basis set label: H.ANILINE.........
+  Nuclear Coordinates in                   atomic units                                   Angstrom 
+     Center  Label                x              y              z                     x              y              z
+        1      N1              -4.461284       0.222193      -0.010274             -2.360810       0.117580      -0.005437
+        2      C2              -1.745549       0.004610      -0.022059             -0.923705       0.002440      -0.011673
+        3      C3              -0.411189       0.028156      -2.283833             -0.217592       0.014899      -1.208552
+        4      C4              -0.438251      -0.029936       2.247332             -0.231912      -0.015841       1.189237
+        5      C5               2.195422       0.006840      -2.253809              1.161767       0.003619      -1.192664
+        6      C6               2.173588      -0.014626       2.249015              1.150213      -0.007740       1.190128
+        7      C7               3.499415      -0.006324       0.004519              1.851811      -0.003347       0.002391
+        8      H8              -5.394266      -1.629251      -1.943301             -2.854523      -0.862163      -1.028350
+        9      H9              -5.148115      -0.744075       1.556346             -2.724265      -0.393747       0.823583
+       10      H10             -1.415208       0.069488      -4.043516             -0.748896       0.036771      -2.139737
+       11      H11             -1.453244      -0.058810       4.003632             -0.769023      -0.031121       2.118631
+       12      H12              3.213174       0.015243      -4.010028              1.700338       0.008066      -2.122015
+       13      H13              3.171261      -0.025626       4.016652              1.678159      -0.013561       2.125521
+       14      H14              5.528351      -0.014340       0.014797              2.925477      -0.007588       0.007830
+ 
+            Nuclear Potential Energy            270.87972208 au
+ --------------------------------------------------- 
+  >>>>>>>>>>>>> info: preparing drt no 1 out of 1 <<<<<<
+starting mcdrt.x -m 200000 < mcdrtin > mcdrtls at Sat May  7 00:15:39 EDT 2022
+
+ -------------------- mcdrt.x ------------------------
+  Spin multiplicity: singlet 
+  Spatial symmetry (#): 1
+  Number of Configurations:       1275 
+  --------------------------------------------------- 
+ starting mcuft.x at Sat May  7 00:15:39 EDT 2022
+
+ -------------------- mcuft.x ------------------------
+ --------------------------------------------------- 
+ ++++++++++++++++++++ MCSCF calculation +++++++++++++++
+info: taking mocoef file from /scratch/users/yshen57@jhu.edu/Molcas/slow/1.5/mrci/mocoef
+adding flag 30 to mcscfin
+Writing mcdenin files for mcscf.x for 1 DRTs
+adding flag 26 to mcscfin
+starting mcscf.x -m 200000 at Sat May  7 00:15:39 EDT 2022
+
+ -------------------- mcscf.x ------------------------
+ Individual total energies for all states: 
+    DRT #1 state # 1 wt 0.250 total energy=     -285.839802966, rel. (eV)=   0.000000
+    DRT #1 state # 2 wt 0.250 total energy=     -285.629778546, rel. (eV)=   5.715058
+    DRT #1 state # 3 wt 0.250 total energy=     -285.590639067, rel. (eV)=   6.780098
+    DRT #1 state # 4 wt 0.250 total energy=     -285.556077350, rel. (eV)=   7.720570
+  --------------------------------------------------- 
+ starting mcpc.x -m 200000 < mcpcin > mcpcls at Sat May  7 00:18:47 EDT 2022
+
+ -------------------- mcpc.x ------------------------
+ --------------------------------------------------- 
+ starting mcpc.x -m 200000 < mcpcin > mcpcls at Sat May  7 00:18:47 EDT 2022
+
+ -------------------- mcpc.x ------------------------
+ --------------------------------------------------- 
+ starting mcpc.x -m 200000 < mcpcin > mcpcls at Sat May  7 00:18:47 EDT 2022
+
+ -------------------- mcpc.x ------------------------
+ --------------------------------------------------- 
+ starting mcpc.x -m 200000 < mcpcin > mcpcls at Sat May  7 00:18:47 EDT 2022
+
+ -------------------- mcpc.x ------------------------
+ --------------------------------------------------- 
+ 
+========= state properties for state-averaged MCSCF =========
+mcscf.drt1.st01.sp
+starting exptvl.x -m 200000   at Sat May  7 00:18:47 EDT 2022
+
+ -------------------- exptvl.x ------------------------
+  === dipole moment === 
+                     X               Y               Z   
+   orign x       0.00000000      0.00000000      0.00000000
+   orign y       0.00000000      0.00000000      0.00000000
+   orign z       0.00000000      0.00000000      0.00000000
+   nuclear      -1.08641853     -0.89970326     -0.83034259
+   electronic    0.90169389      0.19011867      0.89146831
+   total        -0.18472464     -0.70958459      0.06112572
+   total Dipole moment =   1.87016399    Debye
+ --------------------------------------------------- 
+ mcscf.drt1.st02.sp
+starting exptvl.x -m 200000   at Sat May  7 00:18:48 EDT 2022
+
+ -------------------- exptvl.x ------------------------
+  === dipole moment === 
+                     X               Y               Z   
+   orign x       0.00000000      0.00000000      0.00000000
+   orign y       0.00000000      0.00000000      0.00000000
+   orign z       0.00000000      0.00000000      0.00000000
+   nuclear      -1.08641853     -0.89970326     -0.83034259
+   electronic    3.34393419      1.07646564      1.59853656
+   total         2.25751566      0.17676238      0.76819397
+   total Dipole moment =   6.07778049    Debye
+ --------------------------------------------------- 
+ mcscf.drt1.st03.sp
+starting exptvl.x -m 200000   at Sat May  7 00:18:48 EDT 2022
+
+ -------------------- exptvl.x ------------------------
+  === dipole moment === 
+                     X               Y               Z   
+   orign x       0.00000000      0.00000000      0.00000000
+   orign y       0.00000000      0.00000000      0.00000000
+   orign z       0.00000000      0.00000000      0.00000000
+   nuclear      -1.08641853     -0.89970326     -0.83034259
+   electronic    1.75337243      0.49547966      1.05465718
+   total         0.66695390     -0.40422360      0.22431459
+   total Dipole moment =   2.06264343    Debye
+ --------------------------------------------------- 
+ mcscf.drt1.st04.sp
+starting exptvl.x -m 200000   at Sat May  7 00:18:48 EDT 2022
+
+ -------------------- exptvl.x ------------------------
+  === dipole moment === 
+                     X               Y               Z   
+   orign x       0.00000000      0.00000000      0.00000000
+   orign y       0.00000000      0.00000000      0.00000000
+   orign z       0.00000000      0.00000000      0.00000000
+   nuclear      -1.08641853     -0.89970326     -0.83034259
+   electronic    4.00389195      0.89336824      1.49910075
+   total         2.91747342     -0.00633502      0.66875816
+   total Dipole moment =   7.60782831    Debye
+ --------------------------------------------------- 
+  using the MCSCF MOs ... 
+starting cidrt.x  -m 200000 < cidrtin.1 > cidrtls at Sat May  7 00:18:48 EDT 2022
+
+ -------------------- cidrt.x ------------------------
+ total number of orbitals            :   246
+ number of frozen core orbitals      :    18
+ number of frozen virtual orbitals   :     0
+ number of internal orbitals         :    14
+ number of external orbitals         :   214
+ spatial symmetry:   a  
+ 
+ total number of configurations  158587185
+ number of reference configurations  1275
+ --------------------------------------------------- 
+ starting cidrt.x  -m 200000 < cidrtin.2 > cidrtls at Sat May  7 00:18:51 EDT 2022
+
+ -------------------- cidrt.x ------------------------
+ total number of orbitals            :   246
+ number of frozen core orbitals      :    18
+ number of frozen virtual orbitals   :     0
+ number of internal orbitals         :    14
+ number of external orbitals         :   214
+ spatial symmetry:   a  
+ 
+ total number of configurations  282461366
+ number of reference configurations  1666
+ --------------------------------------------------- 
+ starting tran.x -m 200000  at Sat May  7 00:18:57 EDT 2022
+
+ -------------------- tran.x ------------------------
+ --------------------------------------------------- 
+  Starting ciudgav with DRT # 1 out of 2 
+
+ *** starting pciudg section *** 
+nproc: 48 machinefile:  
+assuming machinefile syntax: one host name per line optionally repeated
+ section2, MPI_STARTUP:
+ /software/apps/mpi/openmpi/3.1/intel/18.0/bin/mpirun -np 48  /home-4/yshen57@jhu.edu/Software/Chemistry/Columbus-7.0.2_OpenMolcas-18.09-col/Columbus/pciudg.x -m 19000 
+ -------------------- pciudg.x ------------------------
+ type of calculation:          mr-sdci
+ number of configurations:     158587185
+ total mr-sdci energy             -286.0379278463 
+ last mr-sdci energy change           0.0000000000 
+ residual                             0.0000076781 
+  type of calculation:          mr-sdci
+ number of configurations:     158587185
+ total mr-sdci energy             -285.8796013138 
+ last mr-sdci energy change           0.0000000000 
+ residual                             0.0000070014 
+  type of calculation:          mr-sdci
+ number of configurations:     158587185
+ total mr-sdci energy             -285.8472368439 
+ last mr-sdci energy change           0.0000000000 
+ residual                             0.0000091171 
+  type of calculation:          mr-sdci
+ number of configurations:     158587185
+ total mr-sdci energy             -285.8106611579 
+ last mr-sdci energy change           0.0000000010 
+ residual                             0.0000444530 
+  --------------------------------------------------- 
+ keyinfile returned docipci=0:
+starting cipc.x -m 200000 < cipcin > cipcls at Sat May  7 15:25:37 EDT 2022
+
+ -------------------- cipc.x ------------------------
+ --------------------------------------------------- 
+  Starting ciudgav with DRT # 2 out of 2 
+
+ *** starting pciudg section *** 
+nproc: 48 machinefile:  
+assuming machinefile syntax: one host name per line optionally repeated
+ section2, MPI_STARTUP:
+ /software/apps/mpi/openmpi/3.1/intel/18.0/bin/mpirun -np 48  /home-4/yshen57@jhu.edu/Software/Chemistry/Columbus-7.0.2_OpenMolcas-18.09-col/Columbus/pciudg.x -m 19000 
+ -------------------- pciudg.x ------------------------
+ type of calculation:          mr-sdci
+ number of configurations:     282461366
+ total mr-sdci energy             -285.9121431605 
+ last mr-sdci energy change           0.0000000000 
+ residual                             0.0000081295 
+  type of calculation:          mr-sdci
+ number of configurations:     282461366
+ total mr-sdci energy             -285.8697488577 
+ last mr-sdci energy change           0.0000000001 
+ residual                             0.0000113720 
+  type of calculation:          mr-sdci
+ number of configurations:     282461366
+ total mr-sdci energy             -285.8551806066 
+ last mr-sdci energy change           0.0000000000 
+ residual                             0.0000239300 
+  type of calculation:          mr-sdci
+ number of configurations:     282461366
+ total mr-sdci energy             -285.8462031770 
+ last mr-sdci energy change           0.0000000001 
+ residual                             0.0001129500 
+  --------------------------------------------------- 
+ keyinfile returned docipci=0:
+starting cipc.x -m 200000 < cipcin > cipcls at Mon May  9 03:18:33 EDT 2022
+
+ -------------------- cipc.x ------------------------
+ --------------------------------------------------- 
+ Reindex call
+run_socinr: imult=1 irrep=1 
+opening file =ciudgls.drt1.sp
+opening file =ciudgls.drt1.sp
+opening file =ciudgls.drt1.sp
+opening file =ciudgls.drt1.sp
+run_socinr: imult=3 irrep=1 
+opening file =ciudgls.drt2.sp
+opening file =ciudgls.drt2.sp
+opening file =ciudgls.drt2.sp
+opening file =ciudgls.drt2.sp
+ copying /scratch/users/yshen57@jhu.edu/Molcas/slow/1.5/mrci/cidrtfl.so__A --> cidrtfl.so__A 
+ copying /scratch/users/yshen57@jhu.edu/Molcas/slow/1.5/mrci/cidrtfl.so__A --> cidrtfl.so__A 
+starting reindex.x -m 200000 > reindexls at Mon May  9 03:18:46 EDT 2022
+
+ -------------------- reindex.x ------------------------
+ --------------------------------------------------- 
+ 1      1        1           civfl_1_A             1      1    0+       1             1         civfl.so__A
+1      1        2           civfl_1_A             1      1    0+       2    1005971284         civfl.so__A
+1      1        3           civfl_1_A             1      1    0+       3    2011942567         civfl.so__A
+1      1        4           civfl_1_A             1      1    0+       4    3017913850         civfl.so__A
+3      1        1           civfl_3_A             1      3    0+       5    4023885133         civfl.so__A
+3      1        1           civfl_3_A             1      3    1+       6    5029856416         civfl.so__A
+3      1        1           civfl_3_A             1      3    1-       7    6035827699         civfl.so__A
+3      1        2           civfl_3_A             1      3    0+       8    7041798982         civfl.so__A
+3      1        2           civfl_3_A             1      3    1+       9    8047770265         civfl.so__A
+3      1        2           civfl_3_A             1      3    1-      10    9053741548         civfl.so__A
+3      1        3           civfl_3_A             1      3    0+      11   10059712831         civfl.so__A
+3      1        3           civfl_3_A             1      3    1+      12   11065684114         civfl.so__A
+3      1        3           civfl_3_A             1      3    1-      13   12071655397         civfl.so__A
+3      1        4           civfl_3_A             1      3    0+      14   13077626680         civfl.so__A
+3      1        4           civfl_3_A             1      3    1+      15   14083597963         civfl.so__A
+3      1        4           civfl_3_A             1      3    1-      16   15089569246         civfl.so__A
+ Executing ciudg.x  for gamma =A ...
+
+ *** starting pciudg section *** 
+nproc: 48 machinefile:  
+assuming machinefile syntax: one host name per line optionally repeated
+ section2, MPI_STARTUP:
+ /software/apps/mpi/openmpi/3.1/intel/18.0/bin/mpirun -np 48  /home-4/yshen57@jhu.edu/Software/Chemistry/Columbus-7.0.2_OpenMolcas-18.09-col/Columbus/pciudg.x -m 19000 
+ -------------------- pciudg.x ------------------------
+ type of calculation:          mr-sdci
+ number of configurations:     1005971283
+ total mr-sdci energy             -286.0379278923 
+ last mr-sdci energy change           0.0000000460 
+ residual                            34.9360000000 
+  type of calculation:          mr-sdci
+ number of configurations:     1005971283
+ total mr-sdci energy             -285.9121431781 
+ last mr-sdci energy change           0.0325420000 
+ residual                            34.8100000000 
+  type of calculation:          mr-sdci
+ number of configurations:     1005971283
+ total mr-sdci energy             -285.9121431733 
+ last mr-sdci energy change           0.0649060000 
+ residual                            34.8100000000 
+  type of calculation:          mr-sdci
+ number of configurations:     1005971283
+ total mr-sdci energy             -285.9121431694 
+ last mr-sdci energy change           0.1014800000 
+ residual                            34.8100000000 
+  type of calculation:          mr-sdci
+ number of configurations:     1005971283
+ total mr-sdci energy             -285.8796012731 
+ last mr-sdci energy change          -0.0325420000 
+ residual                            34.7780000000 
+  type of calculation:          mr-sdci
+ number of configurations:     1005971283
+ total mr-sdci energy             -285.8697488534 
+ last mr-sdci energy change          -0.0423940000 
+ residual                            34.7680000000 
+  type of calculation:          mr-sdci
+ number of configurations:     1005971283
+ total mr-sdci energy             -285.8697488507 
+ last mr-sdci energy change          -0.0423940000 
+ residual                            34.7680000000 
+  type of calculation:          mr-sdci
+ number of configurations:     1005971283
+ total mr-sdci energy             -285.8697488444 
+ last mr-sdci energy change          -0.0000000133 
+ residual                            34.7680000000 
+  type of calculation:          mr-sdci
+ number of configurations:     1005971283
+ total mr-sdci energy             -285.8551806159 
+ last mr-sdci energy change          -0.0145680000 
+ residual                            34.7530000000 
+  type of calculation:          mr-sdci
+ number of configurations:     1005971283
+ total mr-sdci energy             -285.8551806071 
+ last mr-sdci energy change          -0.0145680000 
+ residual                            34.7530000000 
+  type of calculation:          mr-sdci
+ number of configurations:     1005971283
+ total mr-sdci energy             -285.8551806065 
+ last mr-sdci energy change          -0.0000000001 
+ residual                            34.7530000000 
+  type of calculation:          mr-sdci
+ number of configurations:     1005971283
+ total mr-sdci energy             -285.8472368606 
+ last mr-sdci energy change          -0.0079437000 
+ residual                            34.7450000000 
+  type of calculation:          mr-sdci
+ number of configurations:     1005971283
+ total mr-sdci energy             -285.8462031735 
+ last mr-sdci energy change          -0.0089774000 
+ residual                            34.7440000000 
+  type of calculation:          mr-sdci
+ number of configurations:     1005971283
+ total mr-sdci energy             -285.8462031704 
+ last mr-sdci energy change          -0.0000000066 
+ residual                            34.7440000000 
+  type of calculation:          mr-sdci
+ number of configurations:     1005971283
+ total mr-sdci energy             -285.8462031541 
+ last mr-sdci energy change          -0.0000000229 
+ residual                            34.7440000000 
+  type of calculation:          mr-sdci
+ number of configurations:     1005971283
+ total mr-sdci energy             -285.8106611445 
+ last mr-sdci energy change          -0.0355420000 
+ residual                            34.7090000000 
+  --------------------------------------------------- 
+ ************* Results for Spin-Orbit CI gamma=A **************** 
+Final spin-orbit CI state energies: 
+
+
+-------------- HT matrix in AU ----------------  
+-34.936077    
+ 0.000000    -34.777751    
+ 0.000000     0.000000    -34.745386    
+ 0.000000     0.000000     0.000000    -34.708811    
+ 0.000040    -0.000021     0.000000    -0.000002    -34.810293    
+-0.000015     0.000008     0.000002    -0.000002     0.000000    -34.810293    
+-0.000052     0.000033    -0.000005     0.000007     0.000000     0.000000    -34.810293    
+ 0.000021     0.000007     0.000000    -0.000000     0.000000    -0.000015     0.000004    -34.767898    
+-0.000009    -0.000000    -0.000001    -0.000000     0.000015     0.000000     0.000012     0.000000    -34.767898    
+-0.000028    -0.000002    -0.000004     0.000011    -0.000004    -0.000012     0.000000    -0.000000    -0.000000    -34.767898    
+ 0.000001     0.000005     0.000001     0.000014     0.000000    -0.000002     0.000003     0.000000    -0.000001     0.000002    -34.753330    
+-0.000003    -0.000002    -0.000000    -0.000003     0.000002     0.000000     0.000006     0.000001     0.000000     0.000004    -0.000000    -34.753330    
+-0.000005     0.000002    -0.000002    -0.000015    -0.000003    -0.000006     0.000000    -0.000002    -0.000004     0.000000     0.000000     0.000000    -34.753330    
+-0.000013    -0.000005     0.000004     0.000005     0.000000     0.000012    -0.000002     0.000000     0.000003    -0.000000     0.000000     0.000004    -0.000001    -34.744353    
+ 0.000005    -0.000001    -0.000001    -0.000002    -0.000012     0.000000    -0.000007    -0.000003     0.000000    -0.000001    -0.000004     0.000000    -0.000002     0.000000    -34.744353    
+ 0.000015     0.000001    -0.000001    -0.000004     0.000002     0.000007     0.000000     0.000000     0.000001     0.000000     0.000001     0.000002     0.000000     0.000000    -0.000000    -34.744353    
+-------------- HT matrix in eV ---------------- 
+ -950.659   
+    0.000    -946.351   
+    0.000       0.000    -945.470   
+    0.000       0.000       0.000    -944.475   
+    0.001      -0.001       0.000      -0.000    -947.236   
+   -0.000       0.000       0.000      -0.000       0.000    -947.236   
+   -0.001       0.001      -0.000       0.000       0.000       0.000    -947.236   
+    0.001       0.000       0.000      -0.000       0.000      -0.000       0.000    -946.083   
+   -0.000      -0.000      -0.000      -0.000       0.000       0.000       0.000       0.000    -946.083   
+   -0.001      -0.000      -0.000       0.000      -0.000      -0.000       0.000      -0.000      -0.000    -946.083   
+    0.000       0.000       0.000       0.000       0.000      -0.000       0.000       0.000      -0.000       0.000    -945.686   
+   -0.000      -0.000      -0.000      -0.000       0.000       0.000       0.000       0.000       0.000       0.000      -0.000    -945.686   
+   -0.000       0.000      -0.000      -0.000      -0.000      -0.000       0.000      -0.000      -0.000       0.000       0.000       0.000    -945.686   
+   -0.000      -0.000       0.000       0.000       0.000       0.000      -0.000       0.000       0.000      -0.000       0.000       0.000      -0.000    -945.442   
+    0.000      -0.000      -0.000      -0.000      -0.000       0.000      -0.000      -0.000       0.000      -0.000      -0.000       0.000      -0.000       0.000    -945.442   
+    0.000       0.000      -0.000      -0.000       0.000       0.000       0.000       0.000       0.000       0.000       0.000       0.000       0.000       0.000      -0.000    -945.442   
+-------------- HT matrix in cm-1 ------------------- 
+Eref = -34.93607747
+     0.00   
+     0.00    34748.72   
+     0.00        0.00    41851.91   
+     0.00        0.00        0.00    49879.36   
+     8.86       -4.70        0.01       -0.33    27606.59   
+    -3.24        1.73        0.42       -0.44        0.00    27606.59   
+   -11.37        7.19       -1.01        1.43        0.00        0.00    27606.59   
+     4.61        1.64        0.09       -0.03        0.00       -3.28        0.83    36911.08   
+    -1.89       -0.07       -0.14       -0.03        3.28        0.00        2.55        0.00    36911.08   
+    -6.07       -0.38       -0.78        2.36       -0.83       -2.55        0.00        0.00        0.00    36911.08   
+     0.24        1.19        0.14        3.11        0.00       -0.47        0.74        0.00       -0.18        0.39    40108.45   
+    -0.57       -0.54       -0.05       -0.69        0.47        0.00        1.22        0.18        0.00        0.92        0.00    40108.45   
+    -1.10        0.33       -0.53       -3.23       -0.74       -1.22        0.00       -0.39       -0.92        0.00        0.00        0.00    40108.45   
+    -2.90       -1.03        0.86        1.19        0.00        2.65       -0.51        0.00        0.71       -0.10        0.00        0.96       -0.31    42078.77   
+     1.10       -0.15       -0.32       -0.45       -2.65        0.00       -1.63       -0.71        0.00       -0.24       -0.96        0.00       -0.47        0.00    42078.77   
+     3.27        0.32       -0.27       -0.85        0.51        1.63        0.00        0.10        0.24        0.00        0.31        0.47        0.00        0.00        0.00    42078.77   
+
+
+Spin-Orbit CI: perturbational estimate of Spin-Orbit CI energies and wavefunctions 
+                SO   1         SO   2         SO   3         SO   4         SO   5         SO   6         SO   7         SO   8
+
+   energy  -286.03792789  -285.91214318  -285.91214317  -285.91214317  -285.87960127  -285.86974885  -285.86974885  -285.86974884
+ 
+   NR   1    -0.99999983    -0.00038339    -0.00001074    -0.00037313     0.00000067    -0.00014785     0.00003965     0.00014761
+   NR   2     0.00000012    -0.00094733    -0.00002611    -0.00077895    -0.99999890    -0.00009475    -0.00006232     0.00076946
+   NR   3    -0.00000001     0.00007177    -0.00002708    -0.00000332    -0.00000014     0.00015303    -0.00003028    -0.00003951
+   NR   4     0.00000002    -0.00006392     0.00002245    -0.00001269     0.00000011    -0.00018104     0.00000354     0.00002174
+   NR   5     0.00032092     0.06893404     0.33274134    -0.94049486     0.00065861    -0.00010656    -0.00034565    -0.00003605
+   NR   6    -0.00011716    -0.04245408     0.94286208     0.33046698    -0.00024207    -0.00030922     0.00005692    -0.00031703
+   NR   7    -0.00041184     0.99671689     0.01714741     0.07912080    -0.00100623    -0.00000423    -0.00028392     0.00005323
+   NR   8     0.00012478    -0.00010394     0.00033066     0.00010964     0.00075680     0.10402849    -0.13393791     0.98551405
+   NR   9    -0.00005106    -0.00029794    -0.00012191     0.00030954    -0.00003315    -0.04939969    -0.99036334    -0.12938247
+   NR  10    -0.00016445    -0.00000572     0.00028859     0.00000612    -0.00017629     0.99334659    -0.03522467    -0.10964250
+   NR  11     0.00000594    -0.00006017     0.00003421     0.00000776     0.00022163    -0.00012284    -0.00005246     0.00000551
+   NR  12    -0.00001421    -0.00009996    -0.00001411     0.00002736    -0.00010146    -0.00029009     0.00001786    -0.00002502
+   NR  13    -0.00002739    -0.00000013     0.00011167    -0.00002312     0.00006139    -0.00000187    -0.00029943     0.00008212
+   NR  14    -0.00006899     0.00004284    -0.00017204    -0.00005787    -0.00014111     0.00002585     0.00013604     0.00001620
+   NR  15     0.00002616     0.00012494     0.00006289    -0.00016328    -0.00002044     0.00006034    -0.00002044     0.00013102
+   NR  16     0.00007781     0.00000246    -0.00011798    -0.00000393     0.00004366     0.00000053     0.00004844    -0.00001279
+
+                SO   9         SO  10         SO  11         SO  12         SO  13         SO  14         SO  15         SO  16
+
+   energy  -285.85518062  -285.85518061  -285.85518061  -285.84723686  -285.84620317  -285.84620317  -285.84620315  -285.81066114
+ 
+   NR   1    -0.00002424    -0.00000892     0.00001795     0.00000045     0.00006607    -0.00000261     0.00008442    -0.00000005
+   NR   2    -0.00013928    -0.00010549    -0.00018058     0.00000053     0.00001981    -0.00006736     0.00013167     0.00000004
+   NR   3     0.00026104    -0.00003063    -0.00017135     0.99999102    -0.00057880    -0.00006749    -0.00418234     0.00000002
+   NR   4     0.00046255     0.00000209    -0.00004031     0.00000068     0.00008419    -0.00000103     0.00017810     0.99999985
+   NR   5    -0.00003319     0.00004741     0.00003919     0.00000074     0.00003142    -0.00017563    -0.00005418    -0.00001499
+   NR   6    -0.00003578     0.00001654     0.00009676     0.00002918     0.00014082     0.00005018    -0.00015463    -0.00001970
+   NR   7    -0.00003043     0.00009742    -0.00005085    -0.00007084    -0.00000781    -0.00011780    -0.00000328     0.00006434
+   NR   8    -0.00007097     0.00007823     0.00008220     0.00001884     0.00001613    -0.00013201    -0.00004183    -0.00000209
+   NR   9    -0.00014370     0.00005037     0.00024876    -0.00002791     0.00006812     0.00004041    -0.00012219    -0.00000254
+   NR  10    -0.00005024     0.00028411    -0.00011470    -0.00015740    -0.00000393    -0.00004985     0.00000337     0.00018235
+   NR  11    -0.74555347     0.02423920    -0.66600454     0.00008075     0.00014336    -0.00047155    -0.00013490     0.00031794
+   NR  12     0.13838406     0.98318743    -0.11912983    -0.00002794     0.00031183     0.00013761    -0.00042028    -0.00007087
+   NR  13     0.65191985    -0.18098206    -0.73637328    -0.00030166    -0.00002970    -0.00027223     0.00006895    -0.00033086
+   NR  14     0.00003299    -0.00050679    -0.00005605    -0.00379309     0.16218201     0.31693171    -0.93447126     0.00015309
+   NR  15    -0.00020909    -0.00003072    -0.00049817     0.00143016     0.01896518     0.94584055     0.32407340    -0.00005825
+   NR  16     0.00008296    -0.00023585     0.00013092     0.00118270     0.98657834    -0.07028198     0.14738420    -0.00010942
+rescaling new expansion vector ... old norm=   4727.4015199881
+
+ model space basis from reindexls .. 
+ --SO-CI-------         -----NR-CI-------             ---model space---- 
+ Gamma  root             S   irrep   root                S   ms* 
+A          1             1   A         1                 1   0+
+A          2             1   A         2                 1   0+
+A          3             1   A         3                 1   0+
+A          4             1   A         4                 1   0+
+A          5             3   A         1                 3   0+
+A          6             3   A         1                 3   1+
+A          7             3   A         1                 3   1-
+A          8             3   A         2                 3   0+
+A          9             3   A         2                 3   1+
+A         10             3   A         2                 3   1-
+A         11             3   A         3                 3   0+
+A         12             3   A         3                 3   1+
+A         13             3   A         3                 3   1-
+A         14             3   A         4                 3   0+
+A         15             3   A         4                 3   1+
+A         16             3   A         4                 3   1-
+
+************************** SUMMARY *********************************
+
+--------------  SO matrix for irrep A in eV ---------------- 
+|1,0+;1,A,1>  -950.659   
+|1,0+;1,A,2>     0.000    -946.351   
+|1,0+;1,A,3>     0.000       0.000    -945.470   
+|1,0+;1,A,4>     0.000       0.000       0.000    -944.475   
+|3,0+;3,A,1>     0.001      -0.001       0.000      -0.000    -947.236   
+|3,1+;3,A,1>    -0.000       0.000       0.000      -0.000       0.000    -947.236   
+|3,1-;3,A,1>    -0.001       0.001      -0.000       0.000       0.000       0.000    -947.236   
+|3,0+;3,A,2>     0.001       0.000       0.000      -0.000       0.000      -0.000       0.000    -946.083   
+|3,1+;3,A,2>    -0.000      -0.000      -0.000      -0.000       0.000       0.000       0.000       0.000    -946.083   
+|3,1-;3,A,2>    -0.001      -0.000      -0.000       0.000      -0.000      -0.000       0.000      -0.000      -0.000    -946.083   
+|3,0+;3,A,3>     0.000       0.000       0.000       0.000       0.000      -0.000       0.000       0.000      -0.000       0.000    -945.686   
+|3,1+;3,A,3>    -0.000      -0.000      -0.000      -0.000       0.000       0.000       0.000       0.000       0.000       0.000      -0.000    -945.686   
+|3,1-;3,A,3>    -0.000       0.000      -0.000      -0.000      -0.000      -0.000       0.000      -0.000      -0.000       0.000       0.000       0.000    -945.686   
+|3,0+;3,A,4>    -0.000      -0.000       0.000       0.000       0.000       0.000      -0.000       0.000       0.000      -0.000       0.000       0.000      -0.000    -945.442   
+|3,1+;3,A,4>     0.000      -0.000      -0.000      -0.000      -0.000       0.000      -0.000      -0.000       0.000      -0.000      -0.000       0.000      -0.000       0.000    -945.442   
+|3,1-;3,A,4>     0.000       0.000      -0.000      -0.000       0.000       0.000       0.000       0.000       0.000       0.000       0.000       0.000       0.000       0.000      -0.000    -945.442   
+
+--------------  SO matrix for irrep A in cm-1 ------------------- 
+Eref = -34.93607747
+|1,0+;1,A,1>      0.00   
+|1,0+;1,A,2>      0.00    34748.72   
+|1,0+;1,A,3>      0.00        0.00    41851.91   
+|1,0+;1,A,4>      0.00        0.00        0.00    49879.36   
+|3,0+;3,A,1>      8.86       -4.70        0.01       -0.33    27606.59   
+|3,1+;3,A,1>     -3.24        1.73        0.42       -0.44        0.00    27606.59   
+|3,1-;3,A,1>    -11.37        7.19       -1.01        1.43        0.00        0.00    27606.59   
+|3,0+;3,A,2>      4.61        1.64        0.09       -0.03        0.00       -3.28        0.83    36911.08   
+|3,1+;3,A,2>     -1.89       -0.07       -0.14       -0.03        3.28        0.00        2.55        0.00    36911.08   
+|3,1-;3,A,2>     -6.07       -0.38       -0.78        2.36       -0.83       -2.55        0.00        0.00        0.00    36911.08   
+|3,0+;3,A,3>      0.24        1.19        0.14        3.11        0.00       -0.47        0.74        0.00       -0.18        0.39    40108.45   
+|3,1+;3,A,3>     -0.57       -0.54       -0.05       -0.69        0.47        0.00        1.22        0.18        0.00        0.92        0.00    40108.45   
+|3,1-;3,A,3>     -1.10        0.33       -0.53       -3.23       -0.74       -1.22        0.00       -0.39       -0.92        0.00        0.00        0.00    40108.45   
+|3,0+;3,A,4>     -2.90       -1.03        0.86        1.19        0.00        2.65       -0.51        0.00        0.71       -0.10        0.00        0.96       -0.31    42078.77   
+|3,1+;3,A,4>      1.10       -0.15       -0.32       -0.45       -2.65        0.00       -1.63       -0.71        0.00       -0.24       -0.96        0.00       -0.47        0.00    42078.77   
+|3,1-;3,A,4>      3.27        0.32       -0.27       -0.85        0.51        1.63        0.00        0.10        0.24        0.00        0.31        0.47        0.00        0.00        0.00    42078.77   
+
+
+ ** perturbational estimate of Spin-Orbit CI energies and wavefunctions in model space basis** 
+
+                      A  1         A  2         A  3         A  4         A  5         A  6         A  7         A  8
+
+            energy  -286.03792789  -285.91214318  -285.91214317  -285.91214317  -285.87960127  -285.86974885  -285.86974885  -285.86974884
+          
+   |1,0+;1,A,1>    -0.99999983    -0.00038339    -0.00001074    -0.00037313     0.00000067    -0.00014785     0.00003965     0.00014761
+   |1,0+;1,A,2>     0.00000012    -0.00094733    -0.00002611    -0.00077895    -0.99999890    -0.00009475    -0.00006232     0.00076946
+   |1,0+;1,A,3>    -0.00000001     0.00007177    -0.00002708    -0.00000332    -0.00000014     0.00015303    -0.00003028    -0.00003951
+   |1,0+;1,A,4>     0.00000002    -0.00006392     0.00002245    -0.00001269     0.00000011    -0.00018104     0.00000354     0.00002174
+   |3,0+;3,A,1>     0.00032092     0.06893404     0.33274134    -0.94049486     0.00065861    -0.00010656    -0.00034565    -0.00003605
+   |3,1+;3,A,1>    -0.00011716    -0.04245408     0.94286208     0.33046698    -0.00024207    -0.00030922     0.00005692    -0.00031703
+   |3,1-;3,A,1>    -0.00041184     0.99671689     0.01714741     0.07912080    -0.00100623    -0.00000423    -0.00028392     0.00005323
+   |3,0+;3,A,2>     0.00012478    -0.00010394     0.00033066     0.00010964     0.00075680     0.10402849    -0.13393791     0.98551405
+   |3,1+;3,A,2>    -0.00005106    -0.00029794    -0.00012191     0.00030954    -0.00003315    -0.04939969    -0.99036334    -0.12938247
+   |3,1-;3,A,2>    -0.00016445    -0.00000572     0.00028859     0.00000612    -0.00017629     0.99334659    -0.03522467    -0.10964250
+   |3,0+;3,A,3>     0.00000594    -0.00006017     0.00003421     0.00000776     0.00022163    -0.00012284    -0.00005246     0.00000551
+   |3,1+;3,A,3>    -0.00001421    -0.00009996    -0.00001411     0.00002736    -0.00010146    -0.00029009     0.00001786    -0.00002502
+   |3,1-;3,A,3>    -0.00002739    -0.00000013     0.00011167    -0.00002312     0.00006139    -0.00000187    -0.00029943     0.00008212
+   |3,0+;3,A,4>    -0.00006899     0.00004284    -0.00017204    -0.00005787    -0.00014111     0.00002585     0.00013604     0.00001620
+   |3,1+;3,A,4>     0.00002616     0.00012494     0.00006289    -0.00016328    -0.00002044     0.00006034    -0.00002044     0.00013102
+   |3,1-;3,A,4>     0.00007781     0.00000246    -0.00011798    -0.00000393     0.00004366     0.00000053     0.00004844    -0.00001279
+
+                      A  9         A 10         A 11         A 12         A 13         A 14         A 15         A 16
+
+            energy  -285.85518062  -285.85518061  -285.85518061  -285.84723686  -285.84620317  -285.84620317  -285.84620315  -285.81066114
+          
+   |1,0+;1,A,1>    -0.00002424    -0.00000892     0.00001795     0.00000045     0.00006607    -0.00000261     0.00008442    -0.00000005
+   |1,0+;1,A,2>    -0.00013928    -0.00010549    -0.00018058     0.00000053     0.00001981    -0.00006736     0.00013167     0.00000004
+   |1,0+;1,A,3>     0.00026104    -0.00003063    -0.00017135     0.99999102    -0.00057880    -0.00006749    -0.00418234     0.00000002
+   |1,0+;1,A,4>     0.00046255     0.00000209    -0.00004031     0.00000068     0.00008419    -0.00000103     0.00017810     0.99999985
+   |3,0+;3,A,1>    -0.00003319     0.00004741     0.00003919     0.00000074     0.00003142    -0.00017563    -0.00005418    -0.00001499
+   |3,1+;3,A,1>    -0.00003578     0.00001654     0.00009676     0.00002918     0.00014082     0.00005018    -0.00015463    -0.00001970
+   |3,1-;3,A,1>    -0.00003043     0.00009742    -0.00005085    -0.00007084    -0.00000781    -0.00011780    -0.00000328     0.00006434
+   |3,0+;3,A,2>    -0.00007097     0.00007823     0.00008220     0.00001884     0.00001613    -0.00013201    -0.00004183    -0.00000209
+   |3,1+;3,A,2>    -0.00014370     0.00005037     0.00024876    -0.00002791     0.00006812     0.00004041    -0.00012219    -0.00000254
+   |3,1-;3,A,2>    -0.00005024     0.00028411    -0.00011470    -0.00015740    -0.00000393    -0.00004985     0.00000337     0.00018235
+   |3,0+;3,A,3>    -0.74555347     0.02423920    -0.66600454     0.00008075     0.00014336    -0.00047155    -0.00013490     0.00031794
+   |3,1+;3,A,3>     0.13838406     0.98318743    -0.11912983    -0.00002794     0.00031183     0.00013761    -0.00042028    -0.00007087
+   |3,1-;3,A,3>     0.65191985    -0.18098206    -0.73637328    -0.00030166    -0.00002970    -0.00027223     0.00006895    -0.00033086
+   |3,0+;3,A,4>     0.00003299    -0.00050679    -0.00005605    -0.00379309     0.16218201     0.31693171    -0.93447126     0.00015309
+   |3,1+;3,A,4>    -0.00020909    -0.00003072    -0.00049817     0.00143016     0.01896518     0.94584055     0.32407340    -0.00005825
+   |3,1-;3,A,4>     0.00008296    -0.00023585     0.00013092     0.00118270     0.98657834    -0.07028198     0.14738420    -0.00010942
+rescaling new expansion vector ... old norm=   4727.4015199881
+
+Sorted Energies:
+1  -286.03792789 
+2  -285.91214318 
+3  -285.91214317 
+4  -285.91214317 
+5  -285.87960127 
+6  -285.86974885 
+7  -285.86974885 
+8  -285.86974884 
+9  -285.85518062 
+10  -285.85518061 
+11  -285.85518061 
+12  -285.84723686 
+13  -285.84620317 
+14  -285.84620317 
+15  -285.84620315 
+16  -285.81066114 
+Not computing transition moment with identical bra and ket.
+ Calculating transition moment for (1,1) => (1,2)
+ starting transci.x -m 200000 at Mon May  9 05:13:05 EDT 2022
+
+ -------------------- transci.x ------------------------
+
+                          State No. 1            State No. 2
+
+   Space symmetry:           a                      a   
+   No. of CSFs:          ********               ********
+   State energies:      -286.03792785          -285.87960131  a.u.
+
+   Transition energy:     0.15832653  a.u.
+   Transition energy:     4.31        eV
+
+       Transition moment components:
+
+                 x            y            z
+
+electron         -0.707798    -0.273706    -0.166942  e*bohr
+frozen core       0.000000     0.000000     0.000000  e*bohr
+total (elec)     -0.707798    -0.273706    -0.166942  e*bohr
+
+
+   Tr.dipole length:     0.777021    e*bohr
+   Oscillator strength :  0.063728
+   Einstein A coef.:     0.5132E+08  1/sec
+   Einstein B coef.:     0.2450E+09  sec/g
+
+                 x            y            z
+
+<L> electron    -0.272807    -0.428710     0.653462  e*bohr
+
+
+   <L> value length:     0.827785    e*bohr
+ --------------------------------------------------- 
+  Calculating transition moment for (1,1) => (1,3)
+ starting transci.x -m 200000 at Mon May  9 05:15:23 EDT 2022
+
+ -------------------- transci.x ------------------------
+
+                          State No. 1            State No. 2
+
+   Space symmetry:           a                      a   
+   No. of CSFs:          ********               ********
+   State energies:      -286.03792785          -285.84723684  a.u.
+
+   Transition energy:     0.19069100  a.u.
+   Transition energy:     5.19        eV
+
+       Transition moment components:
+
+                 x            y            z
+
+electron          0.044540     0.018752     0.073366  e*bohr
+frozen core       0.000000     0.000000     0.000000  e*bohr
+total (elec)      0.044540     0.018752     0.073366  e*bohr
+
+
+   Tr.dipole length:     0.087852    e*bohr
+   Oscillator strength :  0.000981
+   Einstein A coef.:     0.1146E+07  1/sec
+   Einstein B coef.:     0.3132E+07  sec/g
+
+                 x            y            z
+
+<L> electron    -0.044514    -0.218535    -0.091061  e*bohr
+
+
+   <L> value length:     0.240896    e*bohr
+ --------------------------------------------------- 
+  Calculating transition moment for (1,1) => (1,4)
+ starting transci.x -m 200000 at Mon May  9 05:17:41 EDT 2022
+
+ -------------------- transci.x ------------------------
+
+                          State No. 1            State No. 2
+
+   Space symmetry:           a                      a   
+   No. of CSFs:          ********               ********
+   State energies:      -286.03792785          -285.81066116  a.u.
+
+   Transition energy:     0.22726669  a.u.
+   Transition energy:     6.18        eV
+
+       Transition moment components:
+
+                 x            y            z
+
+electron         -0.044625    -0.019174    -0.379534  e*bohr
+frozen core       0.000000     0.000000     0.000000  e*bohr
+total (elec)     -0.044625    -0.019174    -0.379534  e*bohr
+
+
+   Tr.dipole length:     0.382630    e*bohr
+   Oscillator strength :  0.022182
+   Einstein A coef.:     0.3681E+08  1/sec
+   Einstein B coef.:     0.5941E+08  sec/g
+
+                 x            y            z
+
+<L> electron    -0.260685     0.456930     0.055318  e*bohr
+
+
+   <L> value length:     0.528963    e*bohr
+ --------------------------------------------------- 
+ Not computing transition moment with identical bra and ket.
+ Calculating transition moment for (1,2) => (1,3)
+ starting transci.x -m 200000 at Mon May  9 05:20:00 EDT 2022
+
+ -------------------- transci.x ------------------------
+
+                          State No. 1            State No. 2
+
+   Space symmetry:           a                      a   
+   No. of CSFs:          ********               ********
+   State energies:      -285.87960131          -285.84723684  a.u.
+
+   Transition energy:     0.03236447  a.u.
+   Transition energy:     0.88        eV
+
+       Transition moment components:
+
+                 x            y            z
+
+electron          0.337450     0.067279    -0.130801  e*bohr
+frozen core       0.000000     0.000000     0.000000  e*bohr
+total (elec)      0.337450     0.067279    -0.130801  e*bohr
+
+
+   Tr.dipole length:     0.368114    e*bohr
+   Oscillator strength :  0.002924
+   Einstein A coef.:     0.9839E+05  1/sec
+   Einstein B coef.:     0.5499E+08  sec/g
+
+                 x            y            z
+
+<L> electron     0.070889     0.412688     0.029939  e*bohr
+
+
+   <L> value length:     0.419801    e*bohr
+ --------------------------------------------------- 
+  Calculating transition moment for (1,2) => (1,4)
+ starting transci.x -m 200000 at Mon May  9 05:22:13 EDT 2022
+
+ -------------------- transci.x ------------------------
+
+                          State No. 1            State No. 2
+
+   Space symmetry:           a                      a   
+   No. of CSFs:          ********               ********
+   State energies:      -285.87960131          -285.81066116  a.u.
+
+   Transition energy:     0.06894016  a.u.
+   Transition energy:     1.88        eV
+
+       Transition moment components:
+
+                 x            y            z
+
+electron         -0.328222    -0.006747    -0.047343  e*bohr
+frozen core       0.000000     0.000000     0.000000  e*bohr
+total (elec)     -0.328222    -0.006747    -0.047343  e*bohr
+
+
+   Tr.dipole length:     0.331688    e*bohr
+   Oscillator strength :  0.005056
+   Einstein A coef.:     0.7721E+06  1/sec
+   Einstein B coef.:     0.4465E+08  sec/g
+
+                 x            y            z
+
+<L> electron    -0.085309     0.351156     0.072039  e*bohr
+
+
+   <L> value length:     0.368481    e*bohr
+ --------------------------------------------------- 
+ Not computing transition moment with identical bra and ket.
+ Calculating transition moment for (1,3) => (1,4)
+ starting transci.x -m 200000 at Mon May  9 05:24:25 EDT 2022
+
+ -------------------- transci.x ------------------------
+
+                          State No. 1            State No. 2
+
+   Space symmetry:           a                      a   
+   No. of CSFs:          ********               ********
+   State energies:      -285.84723684          -285.81066116  a.u.
+
+   Transition energy:     0.03657569  a.u.
+   Transition energy:     1.00        eV
+
+       Transition moment components:
+
+                 x            y            z
+
+electron         -1.421020    -0.288860    -0.273691  e*bohr
+frozen core       0.000000     0.000000     0.000000  e*bohr
+total (elec)     -1.421020    -0.288860    -0.273691  e*bohr
+
+
+   Tr.dipole length:     1.475685    e*bohr
+   Oscillator strength :  0.053099
+   Einstein A coef.:     0.2282E+07  1/sec
+   Einstein B coef.:     0.8837E+09  sec/g
+
+                 x            y            z
+
+<L> electron    -0.079947     0.172750     0.214532  e*bohr
+
+
+   <L> value length:     0.286807    e*bohr
+ --------------------------------------------------- 
+ Not computing transition moment with identical bra and ket.
+Not computing transition moment with identical bra and ket.
+ Calculating transition moment for (2,1) => (2,2)
+ starting transci.x -m 200000 at Mon May  9 05:26:38 EDT 2022
+
+ -------------------- transci.x ------------------------
+
+                          State No. 1            State No. 2
+
+   Space symmetry:           a                      a   
+   No. of CSFs:          ********               ********
+   State energies:      -285.91214316          -285.86974886  a.u.
+
+   Transition energy:     0.04239430  a.u.
+   Transition energy:     1.15        eV
+
+       Transition moment components:
+
+                 x            y            z
+
+electron         -0.489261    -0.199979    -0.219154  e*bohr
+frozen core       0.000000     0.000000     0.000000  e*bohr
+total (elec)     -0.489261    -0.199979    -0.219154  e*bohr
+
+
+   Tr.dipole length:     0.572185    e*bohr
+   Oscillator strength :  0.009253
+   Einstein A coef.:     0.5343E+06  1/sec
+   Einstein B coef.:     0.1329E+09  sec/g
+
+                 x            y            z
+
+<L> electron    -0.053463     0.077458     0.171746  e*bohr
+
+
+   <L> value length:     0.195844    e*bohr
+ --------------------------------------------------- 
+  Calculating transition moment for (2,1) => (2,3)
+ starting transci.x -m 200000 at Mon May  9 05:30:47 EDT 2022
+
+ -------------------- transci.x ------------------------
+
+                          State No. 1            State No. 2
+
+   Space symmetry:           a                      a   
+   No. of CSFs:          ********               ********
+   State energies:      -285.91214316          -285.85518061  a.u.
+
+   Transition energy:     0.05696255  a.u.
+   Transition energy:     1.55        eV
+
+       Transition moment components:
+
+                 x            y            z
+
+electron          0.068718     0.001836     0.013245  e*bohr
+frozen core       0.000000     0.000000     0.000000  e*bohr
+total (elec)      0.068718     0.001836     0.013245  e*bohr
+
+
+   Tr.dipole length:     0.070007    e*bohr
+   Oscillator strength :  0.000186
+   Einstein A coef.:     0.1940E+05  1/sec
+   Einstein B coef.:     0.1989E+07  sec/g
+
+                 x            y            z
+
+<L> electron     0.045740     0.135202     0.047765  e*bohr
+
+
+   <L> value length:     0.150510    e*bohr
+ --------------------------------------------------- 
+  Calculating transition moment for (2,1) => (2,4)
+ starting transci.x -m 200000 at Mon May  9 05:34:58 EDT 2022
+
+ -------------------- transci.x ------------------------
+
+                          State No. 1            State No. 2
+
+   Space symmetry:           a                      a   
+   No. of CSFs:          ********               ********
+   State energies:      -285.91214316          -285.84620318  a.u.
+
+   Transition energy:     0.06593998  a.u.
+   Transition energy:     1.79        eV
+
+       Transition moment components:
+
+                 x            y            z
+
+electron          0.239086     0.093322     0.058668  e*bohr
+frozen core       0.000000     0.000000     0.000000  e*bohr
+total (elec)      0.239086     0.093322     0.058668  e*bohr
+
+
+   Tr.dipole length:     0.263274    e*bohr
+   Oscillator strength :  0.003047
+   Einstein A coef.:     0.4257E+06  1/sec
+   Einstein B coef.:     0.2813E+08  sec/g
+
+                 x            y            z
+
+<L> electron     0.039294     0.092609    -0.109071  e*bohr
+
+
+   <L> value length:     0.148381    e*bohr
+ --------------------------------------------------- 
+ Not computing transition moment with identical bra and ket.
+ Calculating transition moment for (2,2) => (2,3)
+ starting transci.x -m 200000 at Mon May  9 05:39:01 EDT 2022
+
+ -------------------- transci.x ------------------------
+
+                          State No. 1            State No. 2
+
+   Space symmetry:           a                      a   
+   No. of CSFs:          ********               ********
+   State energies:      -285.86974886          -285.85518061  a.u.
+
+   Transition energy:     0.01456825  a.u.
+   Transition energy:     0.40        eV
+
+       Transition moment components:
+
+                 x            y            z
+
+electron          0.161126     0.031699    -0.031505  e*bohr
+frozen core       0.000000     0.000000     0.000000  e*bohr
+total (elec)      0.161126     0.031699    -0.031505  e*bohr
+
+
+   Tr.dipole length:     0.167209    e*bohr
+   Oscillator strength :  0.000272
+   Einstein A coef.:     0.1852E+04  1/sec
+   Einstein B coef.:     0.1135E+08  sec/g
+
+                 x            y            z
+
+<L> electron     0.049480    -0.387564     0.027206  e*bohr
+
+
+   <L> value length:     0.391656    e*bohr
+ --------------------------------------------------- 
+  Calculating transition moment for (2,2) => (2,4)
+ starting transci.x -m 200000 at Mon May  9 05:42:56 EDT 2022
+
+ -------------------- transci.x ------------------------
+
+                          State No. 1            State No. 2
+
+   Space symmetry:           a                      a   
+   No. of CSFs:          ********               ********
+   State energies:      -285.86974886          -285.84620318  a.u.
+
+   Transition energy:     0.02354568  a.u.
+   Transition energy:     0.64        eV
+
+       Transition moment components:
+
+                 x            y            z
+
+electron          0.061262     0.033399     0.002012  e*bohr
+frozen core       0.000000     0.000000     0.000000  e*bohr
+total (elec)      0.061262     0.033399     0.002012  e*bohr
+
+
+   Tr.dipole length:     0.069804    e*bohr
+   Oscillator strength :  0.000076
+   Einstein A coef.:     0.1362E+04  1/sec
+   Einstein B coef.:     0.1977E+07  sec/g
+
+                 x            y            z
+
+<L> electron     0.013688    -0.113674    -0.012095  e*bohr
+
+
+   <L> value length:     0.115133    e*bohr
+ --------------------------------------------------- 
+ Not computing transition moment with identical bra and ket.
+ Calculating transition moment for (2,3) => (2,4)
+ starting transci.x -m 200000 at Mon May  9 05:46:51 EDT 2022
+
+ -------------------- transci.x ------------------------
+
+                          State No. 1            State No. 2
+
+   Space symmetry:           a                      a   
+   No. of CSFs:          ********               ********
+   State energies:      -285.85518061          -285.84620318  a.u.
+
+   Transition energy:     0.00897743  a.u.
+   Transition energy:     0.24        eV
+
+       Transition moment components:
+
+                 x            y            z
+
+electron          0.043257     0.018748     0.025738  e*bohr
+frozen core       0.000000     0.000000     0.000000  e*bohr
+total (elec)      0.043257     0.018748     0.025738  e*bohr
+
+
+   Tr.dipole length:     0.053713    e*bohr
+   Oscillator strength :  0.000017
+   Einstein A coef.:     0.4471E+02  1/sec
+   Einstein B coef.:     0.1171E+07  sec/g
+
+                 x            y            z
+
+<L> electron     0.001786    -0.556707    -0.009871  e*bohr
+
+
+   <L> value length:     0.556797    e*bohr
+ --------------------------------------------------- 
+ Not computing transition moment with identical bra and ket.
+starting mo_convert.x at Mon May  9 05:50:50 EDT 2022
+
+ -------------------- mo_convert.x ------------------------
+ --------------------------------------------------- 
+ starting pymolcas molcas.input.molden > molcas.output.molden at Mon May  9 05:50:50 EDT 2022
+
+Generating link ln -s ./molcas.OrdInt ORDINT 
+ -------------------- molden ------------------------
+ --------------------------------------------------- 
+ starting mo_convert.x at Mon May  9 05:51:19 EDT 2022
+
+ -------------------- mo_convert.x ------------------------
+ --------------------------------------------------- 
+ starting pymolcas molcas.input.molden > molcas.output.molden at Mon May  9 05:51:20 EDT 2022
+
+Generating link ln -s ./molcas.OrdInt ORDINT 
+ -------------------- molden ------------------------
+ --------------------------------------------------- 
+ starting mo_convert.x at Mon May  9 05:51:43 EDT 2022
+
+ -------------------- mo_convert.x ------------------------
+ --------------------------------------------------- 
+ starting pymolcas molcas.input.molden > molcas.output.molden at Mon May  9 05:51:43 EDT 2022
+
+Generating link ln -s ./molcas.OrdInt ORDINT 
+ -------------------- molden ------------------------
+ --------------------------------------------------- 
+ starting mo_convert.x at Mon May  9 05:52:04 EDT 2022
+
+ -------------------- mo_convert.x ------------------------
+ --------------------------------------------------- 
+ starting pymolcas molcas.input.molden > molcas.output.molden at Mon May  9 05:52:04 EDT 2022
+
+Generating link ln -s ./molcas.OrdInt ORDINT 
+ -------------------- molden ------------------------
+ --------------------------------------------------- 
+ starting mo_convert.x at Mon May  9 05:52:27 EDT 2022
+
+ -------------------- mo_convert.x ------------------------
+ --------------------------------------------------- 
+ starting pymolcas molcas.input.molden > molcas.output.molden at Mon May  9 05:52:27 EDT 2022
+
+Generating link ln -s ./molcas.OrdInt ORDINT 
+ -------------------- molden ------------------------
+ --------------------------------------------------- 
+ starting mo_convert.x at Mon May  9 05:52:48 EDT 2022
+
+ -------------------- mo_convert.x ------------------------
+ --------------------------------------------------- 
+ starting pymolcas molcas.input.molden > molcas.output.molden at Mon May  9 05:52:48 EDT 2022
+
+Generating link ln -s ./molcas.OrdInt ORDINT 
+ -------------------- molden ------------------------
+ --------------------------------------------------- 
+ 
+
+ +++++++++++ STARTING GRADIENTS AND NAD. COUPLINGS CALCULATION +++++++++++ 
+
+ Using new transition density code ... 
+INFO: this is a frozen core gradient calculation
+starting cidrt.x  -m 200000 < cidrtin.cigrd > cidrtls.cigrd at Mon May  9 05:53:09 EDT 2022
+
+ -------------------- cidrt.x ------------------------
+ total number of orbitals            :   246
+ number of frozen core orbitals      :    18
+ number of frozen virtual orbitals   :     0
+ number of internal orbitals         :    14
+ number of external orbitals         :   214
+ spatial symmetry:   a  
+ 
+ total number of configurations  282461366
+ number of reference configurations  1666
+ --------------------------------------------------- 
+ starting tran.x -m 200000  at Mon May  9 05:53:16 EDT 2022
+
+ -------------------- tran.x ------------------------
+ --------------------------------------------------- 
+ ---- Computing 8 gradient(s)  ----
+
+ --- Computing gradient for DRT:1, State; 1
+
+starting cigrd.x -m 200000 at Mon May  9 06:01:37 EDT 2022
+
+
+ *** Error occured! ***
+
+end of transci
+ numv1=                284669
+ numv1=                284669
+end of transci
+end of cidrt
+ prnopt=                     0
+end of tran
+ allocate: status=                     0
+ bummer (fatal):rdhcid: from sifrh1, ierr=-1
+bummer
