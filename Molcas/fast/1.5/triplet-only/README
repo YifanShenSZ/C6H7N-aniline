@@ -1,0 +1,7 @@
+The soc + nac calculation did not finish within 72 hours: triplet nac did not finish
+
+So we did triplet nac computation alone, then append it to the soc + nac calculation:
+* both calculation should give same nac up to a sign
+* the sign is determined from transition dipole
+
+Here are the triplet results for future reference

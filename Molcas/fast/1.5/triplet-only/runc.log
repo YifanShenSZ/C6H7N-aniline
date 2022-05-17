@@ -1,0 +1,1765 @@
+===========================================================
+===                   runc                              ===
+===           version 7.0.2 , April 2021              ===
+===          requires COLUMBUS version Col_7.0.2        ===
+===                                                     ===
+===   written by: Thomas Mueller                        ===
+===   gradient ext. by: Michal Dallos                   ===
+===               University of Vienna                  ===
+===   maintained by: Felix Plasser                      ===
+===               Loughborough University               ===
+===========================================================
+
+
+coremem. (seq.): 100000 MB,  coremem. (par.): 20000 MB
+Vdisk size: 0 DP
+Reading job control file control.run ... SMOLCAS=/global/homes/y/yifnshen/Software/Chemistry/Columbus-7.0.2_OpenMolcas-18.09-col/OpenMolcas/build
+Found serial Molcas Installation at /global/homes/y/yifnshen/Software/Chemistry/Columbus-7.0.2_OpenMolcas-18.09-col/OpenMolcas/build
+parallel CI calculation specified ... 
+info: commandline option -nproc overrides nproc statement in control.run 
+ .... info: limiting MOLCAS parallelism to at most  processes 
+  done 
+Creating various directories ... 
+ done 
+SMOLCAS=/global/homes/y/yifnshen/Software/Chemistry/Columbus-7.0.2_OpenMolcas-18.09-col/OpenMolcas/build
+PMOLCAS=
+Checking for illegal keywords and keyword combinations ... done 
+
+ Nonadiabatic coupling term calculation type: DCI+DCSF
+  States involved in calcualtion:
+   DRT1,state1;  DRT1,state2
+   DRT1,state1;  DRT1,state3
+   DRT1,state1;  DRT1,state4
+   DRT1,state1;  DRT1,state5
+   DRT1,state2;  DRT1,state3
+   DRT1,state2;  DRT1,state4
+   DRT1,state2;  DRT1,state5
+   DRT1,state3;  DRT1,state4
+   DRT1,state3;  DRT1,state5
+   DRT1,state4;  DRT1,state5
+
+Additional gradients computed:
+   DRT1,state1
+   DRT1,state2
+   DRT1,state3
+   DRT1,state4
+   DRT1,state5
+
+Checking for complete set of input files ... 
+mcscf calculation without preceeding scf calculation 
+will use 
+ /tmp/yshen_min-TB1_/mocoef as starting MOs 
+done
+
+ ++++++++++++++++++ input file generation +++++++++++++ 
+ runc start: Sat May 14 02:23:47 PDT 2022
+ 
+  runc start: Sat May 14 02:23:47 PDT 2022
+ 
+ starting unik.gets.x > unikls at Sat May 14 02:23:47 PDT 2022
+
+ -------------------- unik.gets.x ------------------------
+ --------------------------------------------------- 
+ starting hernew.x at Sat May 14 02:23:47 PDT 2022
+
+ -------------------- hernew.x ------------------------
+ --------------------------------------------------- 
+ ++++++++++++++++++++ ao integral calculation ++++++++++++++++
+starting dalton.x -m 100000 > hermitls at Sat May 14 02:23:47 PDT 2022
+
+ -------------------- dalton.x ------------------------
+  Nuclear repulsion energy:      270.5209829869
+
+ Irred. repr. : A       
+ # orbitals  :  246 
+ --------------------------------------------------- 
+  >>>>>>>>>>>>> info: preparing drt no 1 out of 1 <<<<<<
+starting mcdrt.x -m 100000 < mcdrtin > mcdrtls at Sat May 14 02:24:21 PDT 2022
+
+ -------------------- mcdrt.x ------------------------
+  Spin multiplicity: singlet 
+  Spatial symmetry (#): 1
+  Number of Configurations:       1275 
+  --------------------------------------------------- 
+ starting mcuft.x at Sat May 14 02:24:21 PDT 2022
+
+ -------------------- mcuft.x ------------------------
+ --------------------------------------------------- 
+ ++++++++++++++++++++ MCSCF calculation +++++++++++++++
+info: taking mocoef file from /tmp/yshen_min-TB1_/mocoef
+starting mcscf.x -m 100000 at Sat May 14 02:24:22 PDT 2022
+
+ -------------------- mcscf.x ------------------------
+ Individual total energies for all states: 
+    DRT #1 state # 1 wt 0.250 total energy=     -285.809368127, rel. (eV)=   0.000000
+    DRT #1 state # 2 wt 0.250 total energy=     -285.691561102, rel. (eV)=   3.205694
+    DRT #1 state # 3 wt 0.250 total energy=     -285.583968425, rel. (eV)=   6.133441
+    DRT #1 state # 4 wt 0.250 total energy=     -285.565374598, rel. (eV)=   6.639405
+  --------------------------------------------------- 
+ starting mcpc.x -m 100000 < mcpcin > mcpcls at Sat May 14 02:25:16 PDT 2022
+
+ -------------------- mcpc.x ------------------------
+ --------------------------------------------------- 
+ starting mcpc.x -m 100000 < mcpcin > mcpcls at Sat May 14 02:25:16 PDT 2022
+
+ -------------------- mcpc.x ------------------------
+ --------------------------------------------------- 
+ starting mcpc.x -m 100000 < mcpcin > mcpcls at Sat May 14 02:25:16 PDT 2022
+
+ -------------------- mcpc.x ------------------------
+ --------------------------------------------------- 
+ starting mcpc.x -m 100000 < mcpcin > mcpcls at Sat May 14 02:25:16 PDT 2022
+
+ -------------------- mcpc.x ------------------------
+ --------------------------------------------------- 
+  using the MCSCF MOs ... 
+starting cidrt.x   -m 100000 < cidrtin > cidrtls  at Sat May 14 02:25:16 PDT 2022
+
+ -------------------- cidrt.x ------------------------
+ total number of orbitals            :   246
+ number of frozen core orbitals      :    18
+ number of frozen virtual orbitals   :     0
+ number of internal orbitals         :    14
+ number of external orbitals         :   214
+ spatial symmetry:   a  
+ 
+ total number of configurations  255853141
+ number of reference configurations  1666
+ --------------------------------------------------- 
+ starting tran.x -m 100000  at Sat May 14 02:25:18 PDT 2022
+
+ -------------------- tran.x ------------------------
+ --------------------------------------------------- 
+ skipping cisrt.x call .... 
+
+ *** starting pciudg section *** 
+nproc: 32 machinefile:  
+assuming machinefile syntax: one host name per line optionally repeated
+ section2, MPI_STARTUP:
+ /global/homes/y/yifnshen/Software/Programming/openmpi-3.1.4/bin/mpirun -np 32  /global/homes/y/yifnshen/Software/Chemistry/Columbus-7.0.2_OpenMolcas-18.09-col/Columbus/pciudg.x -m 20000 
+ -------------------- pciudg.x ------------------------
+ type of calculation:          mr-sdci
+ number of configurations:     255853141
+ total mr-sdci energy             -285.9455848980 
+ last mr-sdci energy change           0.0000000000 
+ residual                             0.0000050081 
+  type of calculation:          mr-sdci
+ number of configurations:     255853141
+ total mr-sdci energy             -285.8575354235 
+ last mr-sdci energy change          -0.0000000000 
+ residual                             0.0000072634 
+  type of calculation:          mr-sdci
+ number of configurations:     255853141
+ total mr-sdci energy             -285.8434466760 
+ last mr-sdci energy change           0.0000000000 
+ residual                             0.0000069604 
+  type of calculation:          mr-sdci
+ number of configurations:     255853141
+ total mr-sdci energy             -285.8374944945 
+ last mr-sdci energy change           0.0000000001 
+ residual                             0.0000092665 
+  type of calculation:          mr-sdci
+ number of configurations:     255853141
+ total mr-sdci energy             -285.8142275926 
+ last mr-sdci energy change          -0.0000000000 
+ residual                             0.0000085770 
+  --------------------------------------------------- 
+ starting cipc.x -m 100000 < cipcin > cipcls at Sun May 15 14:19:48 PDT 2022
+
+ -------------------- cipc.x ------------------------
+ --------------------------------------------------- 
+  Calculating transition moment for (1,1) => (1,1)
+ starting transci.x -m 100000  at Sun May 15 14:19:56 PDT 2022
+
+ -------------------- transci.x ------------------------
+
+                          State No. 1            State No. 2
+
+   Space symmetry:            A                      A  
+   No. of CSFs:          ********               ********
+   State energies:      -285.94558490          -285.94558490  a.u.
+
+   Transition energy:     0.00000000  a.u.
+   Transition energy:     0.00        eV
+
+       Transition moment components:
+
+                 x            y            z
+
+electron         -2.203333   -30.995838     0.000000  e*bohr
+frozen core       0.333093    28.205911     0.000000  e*bohr
+total (elec)     -1.870240    -2.789926     0.000000  e*bohr
+
+
+   Tr.dipole length:     3.358792    e*bohr
+   Oscillator strength :  0.000000
+   Einstein A coef.:     0.0000E+00  1/sec
+   Einstein B coef.:     0.4578E+10  sec/g
+
+                 x            y            z
+
+<L> electron     0.000000     0.000000     0.000000  e*bohr
+
+
+   <L> value length:     0.000000    e*bohr
+ --------------------------------------------------- 
+  Calculating transition moment for (1,1) => (1,2)
+ starting transci.x -m 100000  at Sun May 15 14:21:51 PDT 2022
+
+ -------------------- transci.x ------------------------
+
+                          State No. 1            State No. 2
+
+   Space symmetry:            A                      A  
+   No. of CSFs:          ********               ********
+   State energies:      -285.94558490          -285.85753542  a.u.
+
+   Transition energy:     0.08804947  a.u.
+   Transition energy:     2.40        eV
+
+       Transition moment components:
+
+                 x            y            z
+
+electron         -0.000000     0.000000    -0.028414  e*bohr
+frozen core       0.000000     0.000000     0.000000  e*bohr
+total (elec)     -0.000000     0.000000    -0.028414  e*bohr
+
+
+   Tr.dipole length:     0.028414    e*bohr
+   Oscillator strength :  0.000047
+   Einstein A coef.:     0.1180E+05  1/sec
+   Einstein B coef.:     0.3276E+06  sec/g
+
+                 x            y            z
+
+<L> electron     0.213715    -0.119985     0.000000  e*bohr
+
+
+   <L> value length:     0.245093    e*bohr
+ --------------------------------------------------- 
+  Calculating transition moment for (1,1) => (1,3)
+ starting transci.x -m 100000  at Sun May 15 14:23:47 PDT 2022
+
+ -------------------- transci.x ------------------------
+
+                          State No. 1            State No. 2
+
+   Space symmetry:            A                      A  
+   No. of CSFs:          ********               ********
+   State energies:      -285.94558490          -285.84344668  a.u.
+
+   Transition energy:     0.10213822  a.u.
+   Transition energy:     2.78        eV
+
+       Transition moment components:
+
+                 x            y            z
+
+electron         -0.000000     0.000000    -0.021405  e*bohr
+frozen core       0.000000     0.000000     0.000000  e*bohr
+total (elec)     -0.000000     0.000000    -0.021405  e*bohr
+
+
+   Tr.dipole length:     0.021405    e*bohr
+   Oscillator strength :  0.000031
+   Einstein A coef.:     0.1046E+05  1/sec
+   Einstein B coef.:     0.1859E+06  sec/g
+
+                 x            y            z
+
+<L> electron     0.037416    -0.004476     0.000000  e*bohr
+
+
+   <L> value length:     0.037683    e*bohr
+ --------------------------------------------------- 
+  Calculating transition moment for (1,1) => (1,4)
+ starting transci.x -m 100000  at Sun May 15 14:25:43 PDT 2022
+
+ -------------------- transci.x ------------------------
+
+                          State No. 1            State No. 2
+
+   Space symmetry:            A                      A  
+   No. of CSFs:          ********               ********
+   State energies:      -285.94558490          -285.83749449  a.u.
+
+   Transition energy:     0.10809040  a.u.
+   Transition energy:     2.94        eV
+
+       Transition moment components:
+
+                 x            y            z
+
+electron          0.245574    -0.017192    -0.000000  e*bohr
+frozen core       0.000000     0.000000     0.000000  e*bohr
+total (elec)      0.245574    -0.017192    -0.000000  e*bohr
+
+
+   Tr.dipole length:     0.246175    e*bohr
+   Oscillator strength :  0.004367
+   Einstein A coef.:     0.1639E+07  1/sec
+   Einstein B coef.:     0.2459E+08  sec/g
+
+                 x            y            z
+
+<L> electron     0.000000     0.000000    -0.344654  e*bohr
+
+
+   <L> value length:     0.344654    e*bohr
+ --------------------------------------------------- 
+  Calculating transition moment for (1,1) => (1,5)
+ starting transci.x -m 100000  at Sun May 15 14:27:40 PDT 2022
+
+ -------------------- transci.x ------------------------
+
+                          State No. 1            State No. 2
+
+   Space symmetry:            A                      A  
+   No. of CSFs:          ********               ********
+   State energies:      -285.94558490          -285.81422759  a.u.
+
+   Transition energy:     0.13135731  a.u.
+   Transition energy:     3.57        eV
+
+       Transition moment components:
+
+                 x            y            z
+
+electron          0.000000     0.000000     0.000098  e*bohr
+frozen core       0.000000     0.000000     0.000000  e*bohr
+total (elec)      0.000000     0.000000     0.000098  e*bohr
+
+
+   Tr.dipole length:     0.000098    e*bohr
+   Oscillator strength :  0.000000
+   Einstein A coef.:     0.4623E+00  1/sec
+   Einstein B coef.:     0.3865E+01  sec/g
+
+                 x            y            z
+
+<L> electron     0.027131    -0.011431    -0.000000  e*bohr
+
+
+   <L> value length:     0.029441    e*bohr
+ --------------------------------------------------- 
+  Calculating transition moment for (1,2) => (1,2)
+ starting transci.x -m 100000  at Sun May 15 14:29:36 PDT 2022
+
+ -------------------- transci.x ------------------------
+
+                          State No. 1            State No. 2
+
+   Space symmetry:            A                      A  
+   No. of CSFs:          ********               ********
+   State energies:      -285.85753542          -285.85753542  a.u.
+
+   Transition energy:     0.00000000  a.u.
+   Transition energy:     0.00        eV
+
+       Transition moment components:
+
+                 x            y            z
+
+electron         -0.933788   -28.292740    -0.000000  e*bohr
+frozen core       0.333093    28.205911     0.000000  e*bohr
+total (elec)     -0.600694    -0.086829    -0.000000  e*bohr
+
+
+   Tr.dipole length:     0.606937    e*bohr
+   Oscillator strength :  0.000000
+   Einstein A coef.:     0.0000E+00  1/sec
+   Einstein B coef.:     0.1495E+09  sec/g
+
+                 x            y            z
+
+<L> electron    -0.000000    -0.000000     0.000000  e*bohr
+
+
+   <L> value length:     0.000000    e*bohr
+ --------------------------------------------------- 
+  Calculating transition moment for (1,2) => (1,3)
+ starting transci.x -m 100000  at Sun May 15 14:31:33 PDT 2022
+
+ -------------------- transci.x ------------------------
+
+                          State No. 1            State No. 2
+
+   Space symmetry:            A                      A  
+   No. of CSFs:          ********               ********
+   State energies:      -285.85753542          -285.84344668  a.u.
+
+   Transition energy:     0.01408875  a.u.
+   Transition energy:     0.38        eV
+
+       Transition moment components:
+
+                 x            y            z
+
+electron         -0.275647    -0.096318    -0.000000  e*bohr
+frozen core       0.000000     0.000000     0.000000  e*bohr
+total (elec)     -0.275647    -0.096318    -0.000000  e*bohr
+
+
+   Tr.dipole length:     0.291990    e*bohr
+   Oscillator strength :  0.000801
+   Einstein A coef.:     0.5107E+04  1/sec
+   Einstein B coef.:     0.3460E+08  sec/g
+
+                 x            y            z
+
+<L> electron     0.000000    -0.000000    -1.270896  e*bohr
+
+
+   <L> value length:     1.270896    e*bohr
+ --------------------------------------------------- 
+  Calculating transition moment for (1,2) => (1,4)
+ starting transci.x -m 100000  at Sun May 15 14:33:31 PDT 2022
+
+ -------------------- transci.x ------------------------
+
+                          State No. 1            State No. 2
+
+   Space symmetry:            A                      A  
+   No. of CSFs:          ********               ********
+   State energies:      -285.85753542          -285.83749449  a.u.
+
+   Transition energy:     0.02004093  a.u.
+   Transition energy:     0.55        eV
+
+       Transition moment components:
+
+                 x            y            z
+
+electron         -0.000000    -0.000000     0.002915  e*bohr
+frozen core       0.000000     0.000000     0.000000  e*bohr
+total (elec)     -0.000000    -0.000000     0.002915  e*bohr
+
+
+   Tr.dipole length:     0.002915    e*bohr
+   Oscillator strength :  0.000000
+   Einstein A coef.:     0.1465E+01  1/sec
+   Einstein B coef.:     0.3449E+04  sec/g
+
+                 x            y            z
+
+<L> electron    -0.017465     0.020303    -0.000000  e*bohr
+
+
+   <L> value length:     0.026781    e*bohr
+ --------------------------------------------------- 
+  Calculating transition moment for (1,2) => (1,5)
+ starting transci.x -m 100000  at Sun May 15 14:35:27 PDT 2022
+
+ -------------------- transci.x ------------------------
+
+                          State No. 1            State No. 2
+
+   Space symmetry:            A                      A  
+   No. of CSFs:          ********               ********
+   State energies:      -285.85753542          -285.81422759  a.u.
+
+   Transition energy:     0.04330783  a.u.
+   Transition energy:     1.18        eV
+
+       Transition moment components:
+
+                 x            y            z
+
+electron         -0.006148     0.199820     0.000000  e*bohr
+frozen core       0.000000     0.000000     0.000000  e*bohr
+total (elec)     -0.006148     0.199820     0.000000  e*bohr
+
+
+   Tr.dipole length:     0.199915    e*bohr
+   Oscillator strength :  0.001154
+   Einstein A coef.:     0.6953E+05  1/sec
+   Einstein B coef.:     0.1622E+08  sec/g
+
+                 x            y            z
+
+<L> electron     0.000000    -0.000000     0.062456  e*bohr
+
+
+   <L> value length:     0.062456    e*bohr
+ --------------------------------------------------- 
+  Calculating transition moment for (1,3) => (1,3)
+ starting transci.x -m 100000  at Sun May 15 14:37:24 PDT 2022
+
+ -------------------- transci.x ------------------------
+
+                          State No. 1            State No. 2
+
+   Space symmetry:            A                      A  
+   No. of CSFs:          ********               ********
+   State energies:      -285.84344668          -285.84344668  a.u.
+
+   Transition energy:     0.00000000  a.u.
+   Transition energy:     0.00        eV
+
+       Transition moment components:
+
+                 x            y            z
+
+electron         -0.991964   -27.581220    -0.000000  e*bohr
+frozen core       0.333093    28.205911     0.000000  e*bohr
+total (elec)     -0.658870     0.624691    -0.000000  e*bohr
+
+
+   Tr.dipole length:     0.907937    e*bohr
+   Oscillator strength :  0.000000
+   Einstein A coef.:     0.0000E+00  1/sec
+   Einstein B coef.:     0.3345E+09  sec/g
+
+                 x            y            z
+
+<L> electron    -0.000000     0.000000     0.000000  e*bohr
+
+
+   <L> value length:     0.000000    e*bohr
+ --------------------------------------------------- 
+  Calculating transition moment for (1,3) => (1,4)
+ starting transci.x -m 100000  at Sun May 15 14:39:20 PDT 2022
+
+ -------------------- transci.x ------------------------
+
+                          State No. 1            State No. 2
+
+   Space symmetry:            A                      A  
+   No. of CSFs:          ********               ********
+   State energies:      -285.84344668          -285.83749449  a.u.
+
+   Transition energy:     0.00595218  a.u.
+   Transition energy:     0.16        eV
+
+       Transition moment components:
+
+                 x            y            z
+
+electron          0.000000     0.000000     0.023107  e*bohr
+frozen core       0.000000     0.000000     0.000000  e*bohr
+total (elec)      0.000000     0.000000     0.023107  e*bohr
+
+
+   Tr.dipole length:     0.023107    e*bohr
+   Oscillator strength :  0.000002
+   Einstein A coef.:     0.2412E+01  1/sec
+   Einstein B coef.:     0.2167E+06  sec/g
+
+                 x            y            z
+
+<L> electron     0.144928    -0.082241     0.000000  e*bohr
+
+
+   <L> value length:     0.166636    e*bohr
+ --------------------------------------------------- 
+  Calculating transition moment for (1,3) => (1,5)
+ starting transci.x -m 100000  at Sun May 15 14:41:16 PDT 2022
+
+ -------------------- transci.x ------------------------
+
+                          State No. 1            State No. 2
+
+   Space symmetry:            A                      A  
+   No. of CSFs:          ********               ********
+   State energies:      -285.84344668          -285.81422759  a.u.
+
+   Transition energy:     0.02921908  a.u.
+   Transition energy:     0.80        eV
+
+       Transition moment components:
+
+                 x            y            z
+
+electron          0.197344     0.004920     0.000000  e*bohr
+frozen core       0.000000     0.000000     0.000000  e*bohr
+total (elec)      0.197344     0.004920     0.000000  e*bohr
+
+
+   Tr.dipole length:     0.197405    e*bohr
+   Oscillator strength :  0.000759
+   Einstein A coef.:     0.2082E+05  1/sec
+   Einstein B coef.:     0.1581E+08  sec/g
+
+                 x            y            z
+
+<L> electron     0.000000    -0.000000    -0.044423  e*bohr
+
+
+   <L> value length:     0.044423    e*bohr
+ --------------------------------------------------- 
+  Calculating transition moment for (1,4) => (1,4)
+ starting transci.x -m 100000  at Sun May 15 14:43:10 PDT 2022
+
+ -------------------- transci.x ------------------------
+
+                          State No. 1            State No. 2
+
+   Space symmetry:            A                      A  
+   No. of CSFs:          ********               ********
+   State energies:      -285.83749449          -285.83749449  a.u.
+
+   Transition energy:     0.00000000  a.u.
+   Transition energy:     0.00        eV
+
+       Transition moment components:
+
+                 x            y            z
+
+electron         -2.206222   -31.674224     0.000000  e*bohr
+frozen core       0.333093    28.205911     0.000000  e*bohr
+total (elec)     -1.873129    -3.468313     0.000000  e*bohr
+
+
+   Tr.dipole length:     3.941802    e*bohr
+   Oscillator strength :  0.000000
+   Einstein A coef.:     0.0000E+00  1/sec
+   Einstein B coef.:     0.6306E+10  sec/g
+
+                 x            y            z
+
+<L> electron     0.000000     0.000000     0.000000  e*bohr
+
+
+   <L> value length:     0.000000    e*bohr
+ --------------------------------------------------- 
+  Calculating transition moment for (1,4) => (1,5)
+ starting transci.x -m 100000  at Sun May 15 14:45:06 PDT 2022
+
+ -------------------- transci.x ------------------------
+
+                          State No. 1            State No. 2
+
+   Space symmetry:            A                      A  
+   No. of CSFs:          ********               ********
+   State energies:      -285.83749449          -285.81422759  a.u.
+
+   Transition energy:     0.02326690  a.u.
+   Transition energy:     0.63        eV
+
+       Transition moment components:
+
+                 x            y            z
+
+electron          0.000000     0.000000    -0.019168  e*bohr
+frozen core       0.000000     0.000000     0.000000  e*bohr
+total (elec)      0.000000     0.000000    -0.019168  e*bohr
+
+
+   Tr.dipole length:     0.019168    e*bohr
+   Oscillator strength :  0.000006
+   Einstein A coef.:     0.9911E+02  1/sec
+   Einstein B coef.:     0.1491E+06  sec/g
+
+                 x            y            z
+
+<L> electron     0.010130     0.023149    -0.000000  e*bohr
+
+
+   <L> value length:     0.025269    e*bohr
+ --------------------------------------------------- 
+  Calculating transition moment for (1,5) => (1,5)
+ starting transci.x -m 100000  at Sun May 15 14:47:04 PDT 2022
+
+ -------------------- transci.x ------------------------
+
+                          State No. 1            State No. 2
+
+   Space symmetry:            A                      A  
+   No. of CSFs:          ********               ********
+   State energies:      -285.81422759          -285.81422759  a.u.
+
+   Transition energy:     0.00000000  a.u.
+   Transition energy:     0.00        eV
+
+       Transition moment components:
+
+                 x            y            z
+
+electron         -0.980941   -28.126631     0.000000  e*bohr
+frozen core       0.333093    28.205911     0.000000  e*bohr
+total (elec)     -0.647847     0.079280     0.000000  e*bohr
+
+
+   Tr.dipole length:     0.652680    e*bohr
+   Oscillator strength :  0.000000
+   Einstein A coef.:     0.0000E+00  1/sec
+   Einstein B coef.:     0.1729E+09  sec/g
+
+                 x            y            z
+
+<L> electron     0.000000     0.000000    -0.000000  e*bohr
+
+
+   <L> value length:     0.000000    e*bohr
+ --------------------------------------------------- 
+ starting transmo.x > transmols at Sun May 15 14:48:59 PDT 2022
+
+ -------------------- transmo.x ------------------------
+ --------------------------------------------------- 
+ converting MOCOEFS/molden_mo_mc.sp 
+ ... to molden prop. format (MOLDEN/molden_mo_mc.sp)
+starting transmo.x > transmols at Sun May 15 14:48:59 PDT 2022
+
+ -------------------- transmo.x ------------------------
+ --------------------------------------------------- 
+ converting MOCOEFS/molden_no_ci.drt1.state1.sp 
+ ... to molden prop. format (MOLDEN/molden_no_ci.drt1.state1.sp)
+starting transmo.x > transmols at Sun May 15 14:48:59 PDT 2022
+
+ -------------------- transmo.x ------------------------
+ --------------------------------------------------- 
+ converting MOCOEFS/molden_no_ci.drt1.state2.sp 
+ ... to molden prop. format (MOLDEN/molden_no_ci.drt1.state2.sp)
+starting transmo.x > transmols at Sun May 15 14:48:59 PDT 2022
+
+ -------------------- transmo.x ------------------------
+ --------------------------------------------------- 
+ converting MOCOEFS/molden_no_ci.drt1.state3.sp 
+ ... to molden prop. format (MOLDEN/molden_no_ci.drt1.state3.sp)
+starting transmo.x > transmols at Sun May 15 14:48:59 PDT 2022
+
+ -------------------- transmo.x ------------------------
+ --------------------------------------------------- 
+ converting MOCOEFS/molden_no_ci.drt1.state4.sp 
+ ... to molden prop. format (MOLDEN/molden_no_ci.drt1.state4.sp)
+starting transmo.x > transmols at Sun May 15 14:49:00 PDT 2022
+
+ -------------------- transmo.x ------------------------
+ --------------------------------------------------- 
+ converting MOCOEFS/molden_no_ci.drt1.state5.sp 
+ ... to molden prop. format (MOLDEN/molden_no_ci.drt1.state5.sp)
+starting transmo.x > transmols at Sun May 15 14:49:00 PDT 2022
+
+ -------------------- transmo.x ------------------------
+ --------------------------------------------------- 
+ converting MOCOEFS/molden_no_mc.sp 
+ ... to molden prop. format (MOLDEN/molden_no_mc.sp)
+
+
+ +++++++++++ STARTING GRADIENTS AND NAD. COUPLINGS CALCULATION +++++++++++ 
+
+ Using new transition density code ... 
+INFO: this is a frozen core gradient calculation
+starting cidrt.x  -m 100000 < cidrtin.cigrd > cidrtls.cigrd at Sun May 15 14:49:00 PDT 2022
+
+ -------------------- cidrt.x ------------------------
+ total number of orbitals            :   246
+ number of frozen core orbitals      :    18
+ number of frozen virtual orbitals   :     0
+ number of internal orbitals         :    14
+ number of external orbitals         :   214
+ spatial symmetry:   a  
+ 
+ total number of configurations  255853141
+ number of reference configurations  1666
+ --------------------------------------------------- 
+ starting tran.x -m 100000  at Sun May 15 14:49:01 PDT 2022
+
+ -------------------- tran.x ------------------------
+ --------------------------------------------------- 
+ ---- Computing 5 gradient(s)  ----
+
+ --- Computing gradient for DRT:1, State; 1
+
+starting cigrd.x -m 100000 at Sun May 15 14:52:35 PDT 2022
+
+ -------------------- cigrd.x ------------------------
+ Total energy (ciudg) :  -285.945584898133 
+  Effective energy     :  -285.945584909564 
+  Delta E              :     0.000000011431 
+  --------------------------------------------------- 
+ starting tran.x -m 100000  at Sun May 15 14:55:14 PDT 2022
+
+ -------------------- tran.x ------------------------
+ --------------------------------------------------- 
+ starting dalton.x -m 100000 > abacusls at Sun May 15 14:58:02 PDT 2022
+
+ -------------------- dalton.x ------------------------
+  Nuclear repulsion energy:      270.5209829869
+
+ Irred. repr. : A       
+ # orbitals  :  246 
+ --------------------------------------------------- 
+ 
+ === Gradient of DRT 1, state 1 === 
+  -0.255618D-01  -0.181913D-02   0.174676D-09
+   0.501726D-03  -0.207764D-01  -0.559517D-10
+  -0.552651D-02   0.617957D-02  -0.334451D-10
+   0.564994D-02   0.740488D-02   0.552451D-11
+  -0.239594D-02  -0.433702D-02  -0.354192D-10
+   0.283448D-02  -0.514976D-02  -0.618909D-11
+  -0.640205D-03   0.342242D-02   0.469885D-10
+   0.259170D-01   0.146820D-01  -0.534906D-10
+  -0.490659D-03   0.403300D-03  -0.379049D-10
+  -0.460661D-04   0.705147D-04   0.193036D-11
+  -0.235799D-03   0.288020D-04  -0.928828D-11
+  -0.583815D-05  -0.178518D-04  -0.976917D-12
+   0.135047D-04  -0.177079D-04   0.437197D-11
+  -0.138025D-04  -0.735471D-04  -0.826064D-12
+===================================
+ --- Computing gradient for DRT:1, State; 2
+
+starting cigrd.x -m 100000 at Sun May 15 15:00:40 PDT 2022
+
+ -------------------- cigrd.x ------------------------
+ Total energy (ciudg) :  -285.857535423628 
+  Effective energy     :  -285.857535436366 
+  Delta E              :     0.000000012738 
+  --------------------------------------------------- 
+ starting tran.x -m 100000  at Sun May 15 15:03:23 PDT 2022
+
+ -------------------- tran.x ------------------------
+ --------------------------------------------------- 
+ starting dalton.x -m 100000 > abacusls at Sun May 15 15:06:12 PDT 2022
+
+ -------------------- dalton.x ------------------------
+  Nuclear repulsion energy:      270.5209829869
+
+ Irred. repr. : A       
+ # orbitals  :  246 
+ --------------------------------------------------- 
+ 
+ === Gradient of DRT 1, state 2 === 
+   0.532044D-01   0.114794D+00   0.407745D-10
+   0.896716D-02  -0.658852D-01  -0.765972D-10
+   0.161510D-01  -0.241627D-01  -0.504861D-10
+  -0.405065D-02  -0.404509D-02   0.108768D-11
+   0.260484D-01   0.210703D-01   0.367366D-10
+  -0.429328D-01   0.325138D-01   0.342485D-10
+   0.186650D-01  -0.376166D-01  -0.180715D-10
+  -0.103413D+00  -0.538147D-01  -0.141038D-10
+   0.252024D-01   0.173556D-01   0.149773D-10
+   0.437840D-02  -0.165649D-02   0.117241D-10
+  -0.301022D-02  -0.982136D-03   0.210905D-10
+   0.496312D-03   0.214241D-03   0.631766D-11
+  -0.331173D-03   0.164426D-02  -0.640774D-11
+   0.624534D-03   0.570475D-03  -0.129068D-11
+===================================
+ --- Computing gradient for DRT:1, State; 3
+
+starting cigrd.x -m 100000 at Sun May 15 15:08:51 PDT 2022
+
+ -------------------- cigrd.x ------------------------
+ Total energy (ciudg) :  -285.843446676126 
+  Effective energy     :  -285.843446690498 
+  Delta E              :     0.000000014372 
+  --------------------------------------------------- 
+ starting tran.x -m 100000  at Sun May 15 15:11:28 PDT 2022
+
+ -------------------- tran.x ------------------------
+ --------------------------------------------------- 
+ starting dalton.x -m 100000 > abacusls at Sun May 15 15:14:16 PDT 2022
+
+ -------------------- dalton.x ------------------------
+  Nuclear repulsion energy:      270.5209829869
+
+ Irred. repr. : A       
+ # orbitals  :  246 
+ --------------------------------------------------- 
+ 
+ === Gradient of DRT 1, state 3 === 
+   0.499940D-01   0.630518D-01   0.135235D-10
+   0.554647D-01  -0.571026D-01  -0.252519D-10
+  -0.178426D-01   0.598584D-01   0.489149D-11
+  -0.156296D-01   0.719959D-01   0.264805D-10
+   0.195719D-01  -0.531729D-01   0.122177D-10
+   0.786594D-02  -0.623535D-01  -0.767083D-10
+  -0.171512D-01   0.171584D-01   0.530984D-10
+  -0.103259D+00  -0.563218D-01  -0.113621D-09
+   0.198816D-01   0.159907D-01   0.115952D-09
+   0.220675D-02   0.553098D-03   0.159992D-10
+  -0.392496D-03   0.549619D-03  -0.331636D-10
+  -0.129269D-02  -0.368132D-04   0.541873D-11
+   0.903179D-03   0.748211D-03   0.131947D-12
+  -0.320894D-03  -0.918437D-03   0.103178D-11
+===================================
+ --- Computing gradient for DRT:1, State; 4
+
+starting cigrd.x -m 100000 at Sun May 15 15:16:52 PDT 2022
+
+ -------------------- cigrd.x ------------------------
+ Total energy (ciudg) :  -285.837494494629 
+  Effective energy     :  -285.837494505455 
+  Delta E              :     0.000000010826 
+  --------------------------------------------------- 
+ starting tran.x -m 100000  at Sun May 15 15:19:32 PDT 2022
+
+ -------------------- tran.x ------------------------
+ --------------------------------------------------- 
+ starting dalton.x -m 100000 > abacusls at Sun May 15 15:22:22 PDT 2022
+
+ -------------------- dalton.x ------------------------
+  Nuclear repulsion energy:      270.5209829869
+
+ Irred. repr. : A       
+ # orbitals  :  246 
+ --------------------------------------------------- 
+ 
+ === Gradient of DRT 1, state 4 === 
+  -0.211137D-01  -0.147692D-01   0.585441D-10
+   0.141909D-02   0.263699D-01   0.920981D-11
+  -0.480556D-02   0.522035D-01  -0.247398D-10
+   0.440333D-02   0.548390D-01  -0.169285D-10
+  -0.161897D-01  -0.564878D-01   0.165859D-10
+   0.222272D-01  -0.632514D-01   0.218464D-10
+  -0.619867D-02  -0.815000D-02  -0.371733D-10
+   0.169668D-01   0.889698D-02  -0.799971D-11
+   0.306907D-02   0.442790D-03  -0.345313D-10
+  -0.977160D-03   0.127584D-03   0.911709D-11
+   0.104615D-02  -0.409020D-03   0.786405D-11
+  -0.318075D-03  -0.356527D-03   0.611652D-11
+   0.473195D-03  -0.581938D-03  -0.749015D-11
+  -0.185335D-05   0.112618D-02  -0.421033D-12
+===================================
+ --- Computing gradient for DRT:1, State; 5
+
+starting cigrd.x -m 100000 at Sun May 15 15:24:58 PDT 2022
+
+ -------------------- cigrd.x ------------------------
+ Total energy (ciudg) :  -285.814227592722 
+  Effective energy     :  -285.814227606961 
+  Delta E              :     0.000000014239 
+  --------------------------------------------------- 
+ starting tran.x -m 100000  at Sun May 15 15:27:39 PDT 2022
+
+ -------------------- tran.x ------------------------
+ --------------------------------------------------- 
+ starting dalton.x -m 100000 > abacusls at Sun May 15 15:30:29 PDT 2022
+
+ -------------------- dalton.x ------------------------
+  Nuclear repulsion energy:      270.5209829869
+
+ Irred. repr. : A       
+ # orbitals  :  246 
+ --------------------------------------------------- 
+ 
+ === Gradient of DRT 1, state 5 === 
+   0.495108D-01   0.966287D-01  -0.965316D-11
+   0.364056D-01  -0.852762D-01  -0.415701D-10
+  -0.330666D-01   0.117599D+00   0.819376D-10
+   0.213586D-01   0.133400D+00  -0.317244D-10
+  -0.102624D-01  -0.110861D+00  -0.144058D-10
+   0.228629D-01  -0.116459D+00   0.294841D-10
+  -0.811841D-02   0.337682D-02  -0.155681D-10
+  -0.105164D+00  -0.560758D-01   0.362488D-10
+   0.248919D-01   0.164153D-01  -0.352586D-10
+   0.190223D-02   0.227175D-03  -0.230922D-10
+  -0.495055D-03   0.732026D-03   0.108208D-10
+  -0.961218D-03  -0.575962D-03   0.545419D-13
+   0.100333D-02   0.551109D-03   0.119447D-10
+   0.132189D-03   0.317850D-03   0.781826D-12
+===================================
+
+---- Computing 10 couplings ---- 
+
+
+ -------- NAD. COUPLING for DRT:1 STATE:1 AND DRT:1 STATE:2 --------
+opening file =ciudgls
+opening file =ciudgls
+extracted: energy1= -285.9455848980   energy2=-285.8575354235   deltae=-0.0880494744999964
+starting cigrd.x -m 100000 at Sun May 15 15:33:06 PDT 2022
+
+ -------------------- cigrd.x ------------------------
+ Total energy (ciudg) :     0.000000000000 
+  Effective energy     :     0.000000000380 
+  Delta E              :    -0.000000000380 
+  --------------------------------------------------- 
+ starting tran.x -m 100000  at Sun May 15 15:35:49 PDT 2022
+
+ -------------------- tran.x ------------------------
+ --------------------------------------------------- 
+ starting dalton.x -m 100000 > abacusls at Sun May 15 15:38:34 PDT 2022
+
+ -------------------- dalton.x ------------------------
+  Nuclear repulsion energy:      270.5209829869
+
+ Irred. repr. : A       
+ # orbitals  :  246 
+ --------------------------------------------------- 
+ 
+ Calculating the Dx(r,s) term of D[CSF] nonadiabatic coupling term.
+dxcalc: INPUT LINE SEPARATOR  
+starting tran.x -m 100000  at Sun May 15 15:41:07 PDT 2022
+
+ -------------------- tran.x ------------------------
+ --------------------------------------------------- 
+ starting dalton.x -m 100000 > abacusls at Sun May 15 15:41:07 PDT 2022
+
+ -------------------- dalton.x ------------------------
+  Nuclear repulsion energy:      270.5209829869
+
+ Irred. repr. : A       
+ # orbitals  :  246 
+ --------------------------------------------------- 
+ 
+ === Non-adiabatic coupling for DRT 1 STATE 1 and DRT 1 STATE 2 === 
+   1.011160E-09  -8.540551E-11  -3.973812E-01
+  -9.015522E-10  -9.788281E-10   3.112616E-02
+  -1.018534E-10   1.531412E-10  -6.709809E-02
+  -1.088896E-10   4.150269E-10   1.535313E-01
+   2.275209E-10  -8.365047E-10   2.217055E-02
+  -4.486943E-11  -3.994357E-11   2.621204E-02
+   6.310316E-11   5.787121E-10  -5.515352E-03
+   1.914310E-10   8.713840E-10   1.888219E-01
+  -3.910790E-10  -1.158235E-11   6.836368E-02
+   6.480402E-11  -3.399702E-11  -1.389691E-02
+  -5.047026E-11   2.936679E-11  -4.939779E-03
+  -3.145993E-11  -5.265142E-11   5.505407E-03
+   8.250430E-11  -4.666206E-11  -2.058513E-02
+  -1.035020E-11   3.794333E-11  -9.262101E-03
+===================================
+
+ Norm of the nonadiabatic coupling vector: 
+ |h(drt1.state1,drt1.state2)|= 0.47879883099692 
+
+ Cross-check of the non-adiabatic coupling term:
+  DeltaE= -0.0880494744999964
+
+  <L>*dE form CIGRD   :   -0.0000000000    -0.0000000000     0.0000000000
+  <L>*dE form NADCOUPL:   -0.0188176858     0.0105648581    -0.0000000001
+ -------------------------------------------------------------------------
+  Difference          :    0.0188176858    -0.0105648581     0.0000000001
+
+ NOTE: This test is meaningless at a point of conical intersection!
+
+
+ -------- NAD. COUPLING for DRT:1 STATE:1 AND DRT:1 STATE:3 --------
+opening file =ciudgls
+opening file =ciudgls
+extracted: energy1= -285.9455848980   energy2=-285.8434466760   deltae=-0.102138222000008
+starting cigrd.x -m 100000 at Sun May 15 15:41:08 PDT 2022
+
+ -------------------- cigrd.x ------------------------
+ Total energy (ciudg) :     0.000000000000 
+  Effective energy     :    -0.000000000296 
+  Delta E              :     0.000000000296 
+  --------------------------------------------------- 
+ starting tran.x -m 100000  at Sun May 15 15:43:50 PDT 2022
+
+ -------------------- tran.x ------------------------
+ --------------------------------------------------- 
+ starting dalton.x -m 100000 > abacusls at Sun May 15 15:46:28 PDT 2022
+
+ -------------------- dalton.x ------------------------
+  Nuclear repulsion energy:      270.5209829869
+
+ Irred. repr. : A       
+ # orbitals  :  246 
+ --------------------------------------------------- 
+ 
+ Calculating the Dx(r,s) term of D[CSF] nonadiabatic coupling term.
+dxcalc: INPUT LINE SEPARATOR  
+starting tran.x -m 100000  at Sun May 15 15:49:04 PDT 2022
+
+ -------------------- tran.x ------------------------
+ --------------------------------------------------- 
+ starting dalton.x -m 100000 > abacusls at Sun May 15 15:49:04 PDT 2022
+
+ -------------------- dalton.x ------------------------
+  Nuclear repulsion energy:      270.5209829869
+
+ Irred. repr. : A       
+ # orbitals  :  246 
+ --------------------------------------------------- 
+ 
+ === Non-adiabatic coupling for DRT 1 STATE 1 and DRT 1 STATE 3 === 
+  -1.222686E-10   8.342430E-10   3.101880E-02
+  -2.224515E-09   2.079134E-09  -2.095949E-02
+   7.368397E-10  -3.223201E-09  -2.360417E-02
+  -1.847310E-10   1.146035E-09  -5.182482E-02
+   3.028357E-11   8.480586E-10  -1.726510E-03
+  -2.941112E-10  -9.233458E-10   3.932541E-02
+   1.009896E-09  -3.009422E-11  -2.292496E-02
+   3.623854E-10   1.660387E-10  -3.346216E-02
+   5.202656E-10  -5.710536E-10   3.447905E-02
+   3.547722E-10  -1.441116E-10   3.129553E-02
+  -1.955634E-10  -3.387096E-11  -1.843048E-02
+   6.782975E-11  -4.801493E-11   1.259463E-02
+  -5.832185E-11  -3.480626E-11   2.233228E-02
+  -2.757518E-12  -6.501357E-11  -6.911049E-04
+===================================
+
+ Norm of the nonadiabatic coupling vector: 
+ |h(drt1.state1,drt1.state3)|= 0.104904257661936 
+
+ Cross-check of the non-adiabatic coupling term:
+  DeltaE= -0.102138222000008
+
+  <L>*dE form CIGRD   :   -0.0000000000    -0.0000000000     0.0000000000
+  <L>*dE form NADCOUPL:   -0.0038215258     0.0004571121    -0.0000000003
+ -------------------------------------------------------------------------
+  Difference          :    0.0038215258    -0.0004571121     0.0000000003
+
+ NOTE: This test is meaningless at a point of conical intersection!
+
+
+ -------- NAD. COUPLING for DRT:1 STATE:1 AND DRT:1 STATE:4 --------
+opening file =ciudgls
+opening file =ciudgls
+extracted: energy1= -285.9455848980   energy2=-285.8374944945   deltae=-0.1080904035
+starting cigrd.x -m 100000 at Sun May 15 15:49:04 PDT 2022
+
+ -------------------- cigrd.x ------------------------
+ Total energy (ciudg) :    -0.000000000458 
+  Effective energy     :     0.000000000725 
+  Delta E              :    -0.000000001183 
+  --------------------------------------------------- 
+ starting tran.x -m 100000  at Sun May 15 15:51:42 PDT 2022
+
+ -------------------- tran.x ------------------------
+ --------------------------------------------------- 
+ starting dalton.x -m 100000 > abacusls at Sun May 15 15:54:26 PDT 2022
+
+ -------------------- dalton.x ------------------------
+  Nuclear repulsion energy:      270.5209829869
+
+ Irred. repr. : A       
+ # orbitals  :  246 
+ --------------------------------------------------- 
+ 
+ Calculating the Dx(r,s) term of D[CSF] nonadiabatic coupling term.
+dxcalc: INPUT LINE SEPARATOR  
+starting tran.x -m 100000  at Sun May 15 15:57:02 PDT 2022
+
+ -------------------- tran.x ------------------------
+ --------------------------------------------------- 
+ starting dalton.x -m 100000 > abacusls at Sun May 15 15:57:02 PDT 2022
+
+ -------------------- dalton.x ------------------------
+  Nuclear repulsion energy:      270.5209829869
+
+ Irred. repr. : A       
+ # orbitals  :  246 
+ --------------------------------------------------- 
+ 
+ === Non-adiabatic coupling for DRT 1 STATE 1 and DRT 1 STATE 4 === 
+  -2.148703E-02  -3.302954E-03  -6.094824E-10
+  -1.405981E-02  -2.284012E-03   1.552506E-12
+   5.520077E-02  -3.650712E-01   3.407759E-10
+   5.196163E-02   3.414137E-01  -1.687865E-10
+   3.198173E-01   6.310988E-01  -4.008506E-11
+   3.076059E-01  -6.146008E-01   3.430045E-10
+  -6.574249E-01   4.446515E-05  -2.150912E-10
+  -8.734922E-05   6.301280E-03   2.682579E-10
+  -4.765187E-03   5.534229E-03  -2.075022E-10
+  -9.091598E-05  -3.992816E-03   1.099126E-10
+   2.939217E-04   2.801346E-03   2.551586E-10
+   4.647849E-03   3.625516E-03  -4.219135E-11
+   5.061854E-03  -3.371376E-03  -3.351842E-11
+  -1.262676E-02  -4.830230E-04  -2.004600E-12
+===================================
+
+ Norm of the nonadiabatic coupling vector: 
+ |h(drt1.state1,drt1.state4)|= 1.28908611476878 
+
+ Cross-check of the non-adiabatic coupling term:
+  DeltaE= -0.1080904035
+
+  <L>*dE form CIGRD   :   -0.0000000000    -0.0000000000     0.0000000000
+  <L>*dE form NADCOUPL:   -0.0000000001    -0.0000000001     0.0372536799
+ -------------------------------------------------------------------------
+  Difference          :    0.0000000001     0.0000000001    -0.0372536799
+
+ NOTE: This test is meaningless at a point of conical intersection!
+
+
+ -------- NAD. COUPLING for DRT:1 STATE:1 AND DRT:1 STATE:5 --------
+opening file =ciudgls
+opening file =ciudgls
+extracted: energy1= -285.9455848980   energy2=-285.8142275926   deltae=-0.131357305400002
+starting cigrd.x -m 100000 at Sun May 15 15:57:02 PDT 2022
+
+ -------------------- cigrd.x ------------------------
+ Total energy (ciudg) :    -0.000000000002 
+  Effective energy     :    -0.000000000078 
+  Delta E              :     0.000000000076 
+  --------------------------------------------------- 
+ starting tran.x -m 100000  at Sun May 15 15:59:43 PDT 2022
+
+ -------------------- tran.x ------------------------
+ --------------------------------------------------- 
+ starting dalton.x -m 100000 > abacusls at Sun May 15 16:02:17 PDT 2022
+
+ -------------------- dalton.x ------------------------
+  Nuclear repulsion energy:      270.5209829869
+
+ Irred. repr. : A       
+ # orbitals  :  246 
+ --------------------------------------------------- 
+ 
+ Calculating the Dx(r,s) term of D[CSF] nonadiabatic coupling term.
+dxcalc: INPUT LINE SEPARATOR  
+starting tran.x -m 100000  at Sun May 15 16:04:54 PDT 2022
+
+ -------------------- tran.x ------------------------
+ --------------------------------------------------- 
+ starting dalton.x -m 100000 > abacusls at Sun May 15 16:04:54 PDT 2022
+
+ -------------------- dalton.x ------------------------
+  Nuclear repulsion energy:      270.5209829869
+
+ Irred. repr. : A       
+ # orbitals  :  246 
+ --------------------------------------------------- 
+ 
+ === Non-adiabatic coupling for DRT 1 STATE 1 and DRT 1 STATE 5 === 
+   1.699577E-10   5.469728E-11  -4.179382E-02
+   5.393830E-10  -1.583444E-10  -5.695017E-03
+  -1.693336E-10   5.872692E-10  -8.370362E-03
+  -2.777173E-10  -5.367855E-10   2.575607E-02
+   2.614084E-11  -9.192561E-11   6.080451E-03
+   6.700617E-11  -1.367103E-10   7.710555E-03
+  -3.764717E-10   2.731819E-10  -2.234865E-03
+   0.000000E+00   0.000000E+00   2.563223E-02
+   3.372945E-12  -3.886103E-12   4.037799E-03
+   1.762018E-11   1.024526E-11  -5.274009E-03
+  -1.042987E-11   8.599065E-12  -3.189423E-03
+   5.346410E-13  -1.743885E-11   1.639592E-03
+   1.018558E-11  -1.397341E-11  -4.507548E-03
+  -2.488617E-13   2.504817E-11  -2.815965E-03
+===================================
+
+ Norm of the nonadiabatic coupling vector: 
+ |h(drt1.state1,drt1.state5)|= 0.0579331785799994 
+
+ Cross-check of the non-adiabatic coupling term:
+  DeltaE= -0.131357305400002
+
+  <L>*dE form CIGRD   :   -0.0000000000    -0.0000000000     0.0000000000
+  <L>*dE form NADCOUPL:   -0.0035637811     0.0015014004     0.0000000000
+ -------------------------------------------------------------------------
+  Difference          :    0.0035637811    -0.0015014004    -0.0000000000
+
+ NOTE: This test is meaningless at a point of conical intersection!
+
+
+ -------- NAD. COUPLING for DRT:1 STATE:2 AND DRT:1 STATE:3 --------
+opening file =ciudgls
+opening file =ciudgls
+extracted: energy1= -285.8575354235   energy2=-285.8434466760   deltae=-0.0140887475000113
+starting cigrd.x -m 100000 at Sun May 15 16:04:55 PDT 2022
+
+ -------------------- cigrd.x ------------------------
+ Total energy (ciudg) :     0.000000000199 
+  Effective energy     :     0.000000005335 
+  Delta E              :    -0.000000005136 
+  --------------------------------------------------- 
+ starting tran.x -m 100000  at Sun May 15 16:07:33 PDT 2022
+
+ -------------------- tran.x ------------------------
+ --------------------------------------------------- 
+ starting dalton.x -m 100000 > abacusls at Sun May 15 16:10:17 PDT 2022
+
+ -------------------- dalton.x ------------------------
+  Nuclear repulsion energy:      270.5209829869
+
+ Irred. repr. : A       
+ # orbitals  :  246 
+ --------------------------------------------------- 
+ 
+ Calculating the Dx(r,s) term of D[CSF] nonadiabatic coupling term.
+dxcalc: INPUT LINE SEPARATOR  
+starting tran.x -m 100000  at Sun May 15 16:12:55 PDT 2022
+
+ -------------------- tran.x ------------------------
+ --------------------------------------------------- 
+ starting dalton.x -m 100000 > abacusls at Sun May 15 16:12:55 PDT 2022
+
+ -------------------- dalton.x ------------------------
+  Nuclear repulsion energy:      270.5209829869
+
+ Irred. repr. : A       
+ # orbitals  :  246 
+ --------------------------------------------------- 
+ 
+ === Non-adiabatic coupling for DRT 1 STATE 2 and DRT 1 STATE 3 === 
+   8.580122E-01  -6.665267E-01   1.208411E-08
+  -5.928816E+00   6.883314E-02   1.177429E-09
+   2.694120E+00   5.169626E-01   1.482545E-09
+   2.981875E+00   1.491728E+00  -3.699179E-09
+  -3.152144E+00  -2.468034E+00   3.815591E-10
+  -2.508515E+00   4.883075E-01  -7.069457E-10
+   4.957536E+00   6.061929E-01  -1.710109E-10
+   4.426037E-03  -1.453595E-02  -1.094008E-08
+  -6.886746E-02  -3.868577E-02  -4.816461E-11
+  -4.245045E-02  -3.574829E-02   2.154130E-09
+   1.021845E-02   7.587334E-02  -2.178405E-09
+   1.725283E-02  -4.470583E-02   9.770705E-11
+   4.826539E-02   3.342224E-02   3.329167E-10
+   1.289846E-01  -1.408262E-02   3.343633E-11
+===================================
+
+ Norm of the nonadiabatic coupling vector: 
+ |h(drt1.state2,drt1.state3)|= 10.1251821669252 
+
+ Cross-check of the non-adiabatic coupling term:
+  DeltaE= -0.0140887475000113
+
+  <L>*dE form CIGRD   :   -0.0000000000    -0.0000000000     0.0000000000
+  <L>*dE form NADCOUPL:   -0.0000000001    -0.0000000001     0.0179052982
+ -------------------------------------------------------------------------
+  Difference          :    0.0000000001     0.0000000001    -0.0179052982
+
+ NOTE: This test is meaningless at a point of conical intersection!
+
+
+ -------- NAD. COUPLING for DRT:1 STATE:2 AND DRT:1 STATE:4 --------
+opening file =ciudgls
+opening file =ciudgls
+extracted: energy1= -285.8575354235   energy2=-285.8374944945   deltae=-0.0200409290000039
+starting cigrd.x -m 100000 at Sun May 15 16:12:55 PDT 2022
+
+ -------------------- cigrd.x ------------------------
+ Total energy (ciudg) :     0.000000000000 
+  Effective energy     :    -0.000000000125 
+  Delta E              :     0.000000000125 
+  --------------------------------------------------- 
+ starting tran.x -m 100000  at Sun May 15 16:15:29 PDT 2022
+
+ -------------------- tran.x ------------------------
+ --------------------------------------------------- 
+ starting dalton.x -m 100000 > abacusls at Sun May 15 16:18:04 PDT 2022
+
+ -------------------- dalton.x ------------------------
+  Nuclear repulsion energy:      270.5209829869
+
+ Irred. repr. : A       
+ # orbitals  :  246 
+ --------------------------------------------------- 
+ 
+ Calculating the Dx(r,s) term of D[CSF] nonadiabatic coupling term.
+dxcalc: INPUT LINE SEPARATOR  
+starting tran.x -m 100000  at Sun May 15 16:21:03 PDT 2022
+
+ -------------------- tran.x ------------------------
+ --------------------------------------------------- 
+ starting dalton.x -m 100000 > abacusls at Sun May 15 16:21:03 PDT 2022
+
+ -------------------- dalton.x ------------------------
+  Nuclear repulsion energy:      270.5209829869
+
+ Irred. repr. : A       
+ # orbitals  :  246 
+ --------------------------------------------------- 
+ 
+ === Non-adiabatic coupling for DRT 1 STATE 2 and DRT 1 STATE 4 === 
+  -3.423808E-09   4.760787E-10  -2.241758E-01
+  -4.053844E-09   2.143478E-09   1.031996E-01
+   6.584326E-09   3.053107E-09  -2.475231E-03
+   1.994798E-09  -1.559823E-09   7.773303E-02
+  -4.984390E-09  -8.304156E-09  -1.351185E-02
+  -4.486199E-09   4.605750E-09  -4.317011E-02
+   9.507942E-09   1.713304E-09   2.309446E-02
+  -1.463849E-09  -1.954091E-09   9.845909E-02
+   1.164402E-09  -1.750079E-09   6.590055E-03
+  -3.816485E-10   7.238936E-10  -1.351886E-02
+  -3.516085E-10   1.118431E-10   2.637393E-02
+  -2.190018E-10   2.833811E-10  -8.649249E-03
+   8.811717E-11   2.483128E-10  -2.936623E-02
+   2.475359E-11   2.089753E-10   1.543810E-03
+===================================
+
+ Norm of the nonadiabatic coupling vector: 
+ |h(drt1.state2,drt1.state4)|= 0.284760629257628 
+
+ Cross-check of the non-adiabatic coupling term:
+  DeltaE= -0.0200409290000039
+
+  <L>*dE form CIGRD   :   -0.0000000000    -0.0000000000     0.0000000000
+  <L>*dE form NADCOUPL:    0.0003499046    -0.0004068236     0.0000000003
+ -------------------------------------------------------------------------
+  Difference          :   -0.0003499046     0.0004068236    -0.0000000003
+
+ NOTE: This test is meaningless at a point of conical intersection!
+
+
+ -------- NAD. COUPLING for DRT:1 STATE:2 AND DRT:1 STATE:5 --------
+opening file =ciudgls
+opening file =ciudgls
+extracted: energy1= -285.8575354235   energy2=-285.8142275926   deltae=-0.0433078309000052
+starting cigrd.x -m 100000 at Sun May 15 16:21:03 PDT 2022
+
+ -------------------- cigrd.x ------------------------
+ Total energy (ciudg) :     0.000000000019 
+  Effective energy     :    -0.000000005093 
+  Delta E              :     0.000000005112 
+  --------------------------------------------------- 
+ starting tran.x -m 100000  at Sun May 15 16:23:42 PDT 2022
+
+ -------------------- tran.x ------------------------
+ --------------------------------------------------- 
+ starting dalton.x -m 100000 > abacusls at Sun May 15 16:26:26 PDT 2022
+
+ -------------------- dalton.x ------------------------
+  Nuclear repulsion energy:      270.5209829869
+
+ Irred. repr. : A       
+ # orbitals  :  246 
+ --------------------------------------------------- 
+ 
+ Calculating the Dx(r,s) term of D[CSF] nonadiabatic coupling term.
+dxcalc: INPUT LINE SEPARATOR  
+starting tran.x -m 100000  at Sun May 15 16:29:05 PDT 2022
+
+ -------------------- tran.x ------------------------
+ --------------------------------------------------- 
+ starting dalton.x -m 100000 > abacusls at Sun May 15 16:29:05 PDT 2022
+
+ -------------------- dalton.x ------------------------
+  Nuclear repulsion energy:      270.5209829869
+
+ Irred. repr. : A       
+ # orbitals  :  246 
+ --------------------------------------------------- 
+ 
+ === Non-adiabatic coupling for DRT 1 STATE 2 and DRT 1 STATE 5 === 
+  -6.775274E-04   2.246092E-03  -3.934208E-09
+  -6.825133E-02  -2.346073E-01   3.837320E-09
+  -2.495123E-01   1.008752E+00  -2.054555E-10
+   2.689999E-01   1.028891E+00   2.642986E-11
+  -3.318549E-01  -1.132200E+00  -1.511720E-09
+   3.430351E-01  -1.001412E+00  -1.412269E-09
+   3.900074E-02   3.744319E-01   1.958456E-09
+  -1.557606E-02  -1.001851E-02   1.633155E-09
+   1.465389E-02  -6.887426E-03   7.243655E-10
+  -1.462220E-02   7.345975E-03  -7.661617E-11
+   1.666620E-02   6.018309E-03  -9.098701E-10
+  -1.448226E-02  -1.310234E-02  -1.599016E-10
+   1.183597E-02  -1.582693E-02   1.290436E-11
+  -6.247646E-04  -7.328434E-03   1.740983E-11
+===================================
+
+ Norm of the nonadiabatic coupling vector: 
+ |h(drt1.state2,drt1.state5)|= 2.21962991051474 
+
+ Cross-check of the non-adiabatic coupling term:
+  DeltaE= -0.0433078309000052
+
+  <L>*dE form CIGRD   :   -0.0000000000    -0.0000000000     0.0000000000
+  <L>*dE form NADCOUPL:    0.0000000001    -0.0000000002    -0.0027047970
+ -------------------------------------------------------------------------
+  Difference          :   -0.0000000001     0.0000000002     0.0027047970
+
+ NOTE: This test is meaningless at a point of conical intersection!
+
+
+ -------- NAD. COUPLING for DRT:1 STATE:3 AND DRT:1 STATE:4 --------
+opening file =ciudgls
+opening file =ciudgls
+extracted: energy1= -285.8434466760   energy2=-285.8374944945   deltae=-0.00595218149999255
+starting cigrd.x -m 100000 at Sun May 15 16:29:05 PDT 2022
+
+ -------------------- cigrd.x ------------------------
+ Total energy (ciudg) :     0.000000000000 
+  Effective energy     :    -0.000000000085 
+  Delta E              :     0.000000000085 
+  --------------------------------------------------- 
+ starting tran.x -m 100000  at Sun May 15 16:31:46 PDT 2022
+
+ -------------------- tran.x ------------------------
+ --------------------------------------------------- 
+ starting dalton.x -m 100000 > abacusls at Sun May 15 16:34:28 PDT 2022
+
+ -------------------- dalton.x ------------------------
+  Nuclear repulsion energy:      270.5209829869
+
+ Irred. repr. : A       
+ # orbitals  :  246 
+ --------------------------------------------------- 
+ 
+ Calculating the Dx(r,s) term of D[CSF] nonadiabatic coupling term.
+dxcalc: INPUT LINE SEPARATOR  
+starting tran.x -m 100000  at Sun May 15 16:37:05 PDT 2022
+
+ -------------------- tran.x ------------------------
+ --------------------------------------------------- 
+ starting dalton.x -m 100000 > abacusls at Sun May 15 16:37:05 PDT 2022
+
+ -------------------- dalton.x ------------------------
+  Nuclear repulsion energy:      270.5209829869
+
+ Irred. repr. : A       
+ # orbitals  :  246 
+ --------------------------------------------------- 
+ 
+ === Non-adiabatic coupling for DRT 1 STATE 3 and DRT 1 STATE 4 === 
+   5.985772E-09  -2.499218E-09   3.481659E+00
+  -1.444334E-08   5.018160E-09  -6.333624E-01
+   9.185909E-09  -1.099071E-09   5.537438E-01
+   3.715226E-09  -3.764653E-09  -8.896411E-01
+  -1.077366E-08   2.352751E-09   4.575038E-02
+  -8.578871E-09   1.264740E-08   9.258081E-02
+   1.807203E-08  -2.759039E-10   9.637481E-03
+  -4.102865E-09  -7.440885E-09  -1.594817E+00
+   3.558426E-10  -7.039537E-09  -7.803559E-01
+  -4.459172E-09   5.401347E-10  -2.222283E-01
+   3.379198E-09  -8.948803E-10  -9.832355E-02
+   9.082351E-10   1.244063E-10  -1.984766E-02
+   9.235723E-10   2.031474E-09   7.308690E-02
+  -1.678616E-10   2.998060E-10  -2.961565E-02
+===================================
+
+ Norm of the nonadiabatic coupling vector: 
+ |h(drt1.state3,drt1.state4)|= 4.10487618731349 
+
+ Cross-check of the non-adiabatic coupling term:
+  DeltaE= -0.00595218149999255
+
+  <L>*dE form CIGRD   :   -0.0000000000    -0.0000000000     0.0000000000
+  <L>*dE form NADCOUPL:   -0.0008626364     0.0004894672     0.0000000001
+ -------------------------------------------------------------------------
+  Difference          :    0.0008626364    -0.0004894672    -0.0000000001
+
+ NOTE: This test is meaningless at a point of conical intersection!
+
+
+ -------- NAD. COUPLING for DRT:1 STATE:3 AND DRT:1 STATE:5 --------
+opening file =ciudgls
+opening file =ciudgls
+extracted: energy1= -285.8434466760   energy2=-285.8142275926   deltae=-0.0292190833999939
+starting cigrd.x -m 100000 at Sun May 15 16:37:05 PDT 2022
+
+ -------------------- cigrd.x ------------------------
+ Total energy (ciudg) :     0.000000000057 
+  Effective energy     :     0.000000004043 
+  Delta E              :    -0.000000003986 
+  --------------------------------------------------- 
+ starting tran.x -m 100000  at Sun May 15 16:39:45 PDT 2022
+
+ -------------------- tran.x ------------------------
+ --------------------------------------------------- 
+ starting dalton.x -m 100000 > abacusls at Sun May 15 16:42:29 PDT 2022
+
+ -------------------- dalton.x ------------------------
+  Nuclear repulsion energy:      270.5209829869
+
+ Irred. repr. : A       
+ # orbitals  :  246 
+ --------------------------------------------------- 
+ 
+ Calculating the Dx(r,s) term of D[CSF] nonadiabatic coupling term.
+dxcalc: INPUT LINE SEPARATOR  
+starting tran.x -m 100000  at Sun May 15 16:45:04 PDT 2022
+
+ -------------------- tran.x ------------------------
+ --------------------------------------------------- 
+ starting dalton.x -m 100000 > abacusls at Sun May 15 16:45:04 PDT 2022
+
+ -------------------- dalton.x ------------------------
+  Nuclear repulsion energy:      270.5209829869
+
+ Irred. repr. : A       
+ # orbitals  :  246 
+ --------------------------------------------------- 
+ 
+ === Non-adiabatic coupling for DRT 1 STATE 3 and DRT 1 STATE 5 === 
+  -2.528916E-01  -3.188215E-02  -1.224854E-08
+   1.671570E+00   8.713528E-03   5.182503E-09
+  -5.016796E-01   2.054528E-01  -4.134490E-09
+  -4.594355E-01  -2.303864E-02   5.228056E-09
+   3.125403E-01   7.007600E-01   1.336024E-09
+   3.488781E-01  -9.082153E-01  -9.300258E-10
+  -1.094014E+00   7.374128E-02  -3.934586E-10
+  -3.058095E-03  -3.008770E-02   3.012511E-09
+   6.919389E-03   1.664482E-02   2.380567E-09
+  -1.535070E-02  -5.188390E-03   3.720856E-10
+  -9.976285E-03   2.235349E-03   4.659250E-10
+   7.510544E-03  -1.614720E-02  -3.562432E-10
+   1.338317E-02   1.101701E-02   2.424248E-10
+  -1.113258E-02  -3.492225E-03  -1.573119E-10
+===================================
+
+ Norm of the nonadiabatic coupling vector: 
+ |h(drt1.state3,drt1.state5)|= 2.4707650082334 
+
+ Cross-check of the non-adiabatic coupling term:
+  DeltaE= -0.0292190833999939
+
+  <L>*dE form CIGRD   :   -0.0000000000    -0.0000000000     0.0000000000
+  <L>*dE form NADCOUPL:   -0.0000000003     0.0000000005     0.0012978241
+ -------------------------------------------------------------------------
+  Difference          :    0.0000000003    -0.0000000005    -0.0012978241
+
+ NOTE: This test is meaningless at a point of conical intersection!
+
+
+ -------- NAD. COUPLING for DRT:1 STATE:4 AND DRT:1 STATE:5 --------
+opening file =ciudgls
+opening file =ciudgls
+extracted: energy1= -285.8374944945   energy2=-285.8142275926   deltae=-0.0232669019000014
+starting cigrd.x -m 100000 at Sun May 15 16:45:04 PDT 2022
+
+ -------------------- cigrd.x ------------------------
+ Total energy (ciudg) :    -0.000000000000 
+  Effective energy     :    -0.000000000380 
+  Delta E              :     0.000000000380 
+  --------------------------------------------------- 
+ starting tran.x -m 100000  at Sun May 15 16:47:52 PDT 2022
+
+ -------------------- tran.x ------------------------
+ --------------------------------------------------- 
+ starting dalton.x -m 100000 > abacusls at Sun May 15 16:50:31 PDT 2022
+
+ -------------------- dalton.x ------------------------
+  Nuclear repulsion energy:      270.5209829869
+
+ Irred. repr. : A       
+ # orbitals  :  246 
+ --------------------------------------------------- 
+ 
+ Calculating the Dx(r,s) term of D[CSF] nonadiabatic coupling term.
+dxcalc: INPUT LINE SEPARATOR  
+starting tran.x -m 100000  at Sun May 15 16:53:08 PDT 2022
+
+ -------------------- tran.x ------------------------
+ --------------------------------------------------- 
+ starting dalton.x -m 100000 > abacusls at Sun May 15 16:53:08 PDT 2022
+
+ -------------------- dalton.x ------------------------
+  Nuclear repulsion energy:      270.5209829869
+
+ Irred. repr. : A       
+ # orbitals  :  246 
+ --------------------------------------------------- 
+ 
+ === Non-adiabatic coupling for DRT 1 STATE 4 and DRT 1 STATE 5 === 
+   2.430289E-09   7.930837E-09   2.427955E-01
+  -7.625854E-09   2.586520E-09  -3.533300E-02
+   5.165922E-09   1.633862E-09  -1.348774E-01
+  -5.087785E-10  -5.474515E-09  -2.228936E-01
+   2.361101E-09  -2.341085E-09   2.738184E-03
+   5.413398E-12  -6.211656E-10   1.152646E-01
+  -3.596908E-09   4.733806E-10  -8.084321E-02
+   5.730888E-11  -7.840322E-10  -1.705949E-01
+   1.705801E-09  -3.187304E-09   1.009819E-01
+   1.602938E-09  -2.008097E-11   1.254664E-01
+  -1.602358E-09   1.373956E-10  -9.078116E-02
+   1.863643E-10   2.331385E-14   4.446325E-02
+  -1.525055E-10  -2.057236E-10   1.002326E-01
+  -2.873408E-11  -1.281357E-10   3.118137E-03
+===================================
+
+ Norm of the nonadiabatic coupling vector: 
+ |h(drt1.state4,drt1.state5)|= 0.472458333941341 
+
+ Cross-check of the non-adiabatic coupling term:
+  DeltaE= -0.0232669019000014
+
+  <L>*dE form CIGRD   :   -0.0000000000    -0.0000000000     0.0000000000
+  <L>*dE form NADCOUPL:   -0.0002356367    -0.0005386345     0.0000000000
+ -------------------------------------------------------------------------
+  Difference          :    0.0002356367     0.0005386345    -0.0000000000
+
+ NOTE: This test is meaningless at a point of conical intersection!
+
+
+
+============== timings ===================
+
+   unik.gets.x    
+   hernew.x       
+ * dalton.x         walltime    0:00:34
+   mcdrt.x        
+   mcuft.x        
+ * mcscf.x          walltime    0:00:54
+   mcpc.x         
+   mcpc.x         
+   mcpc.x         
+   mcpc.x         
+   cidrt.x        
+ * tran.x           walltime    0:03:06
+ * pciudg.x -m 20000   walltime   35:51:24
+ * cipc.x           walltime    0:00:08
+ * transci.x        walltime    0:01:55
+ * transci.x        walltime    0:01:56
+ * transci.x        walltime    0:01:56
+ * transci.x        walltime    0:01:57
+ * transci.x        walltime    0:01:56
+ * transci.x        walltime    0:01:57
+ * transci.x        walltime    0:01:58
+ * transci.x        walltime    0:01:56
+ * transci.x        walltime    0:01:57
+ * transci.x        walltime    0:01:56
+ * transci.x        walltime    0:01:56
+ * transci.x        walltime    0:01:54
+ * transci.x        walltime    0:01:56
+ * transci.x        walltime    0:01:58
+ * transci.x        walltime    0:01:55
+   transmo.x      
+   transmo.x      
+   transmo.x      
+   transmo.x      
+   transmo.x      
+   transmo.x      
+   transmo.x      
+   cidrt.x        
+ * tran.x           walltime    0:03:34
+ * cigrd.x          walltime    0:02:39
+ * tran.x           walltime    0:02:48
+ * dalton.x         walltime    0:02:37
+ * cigrd.x          walltime    0:02:43
+ * tran.x           walltime    0:02:49
+ * dalton.x         walltime    0:02:39
+ * cigrd.x          walltime    0:02:37
+ * tran.x           walltime    0:02:48
+ * dalton.x         walltime    0:02:36
+ * cigrd.x          walltime    0:02:40
+ * tran.x           walltime    0:02:50
+ * dalton.x         walltime    0:02:36
+ * cigrd.x          walltime    0:02:41
+ * tran.x           walltime    0:02:50
+ * dalton.x         walltime    0:02:37
+ * cigrd.x          walltime    0:02:43
+ * tran.x           walltime    0:02:45
+ * dalton.x         walltime    0:02:33
+   tran.x         
+   dalton.x       
+ * cigrd.x          walltime    0:02:42
+ * tran.x           walltime    0:02:38
+ * dalton.x         walltime    0:02:36
+   tran.x         
+   dalton.x       
+ * cigrd.x          walltime    0:02:38
+ * tran.x           walltime    0:02:43
+ * dalton.x         walltime    0:02:36
+   tran.x         
+   dalton.x       
+ * cigrd.x          walltime    0:02:41
+ * tran.x           walltime    0:02:34
+ * dalton.x         walltime    0:02:37
+   tran.x         
+   dalton.x       
+ * cigrd.x          walltime    0:02:38
+ * tran.x           walltime    0:02:44
+ * dalton.x         walltime    0:02:38
+   tran.x         
+   dalton.x       
+ * cigrd.x          walltime    0:02:34
+ * tran.x           walltime    0:02:35
+ * dalton.x         walltime    0:02:58
+   tran.x         
+   dalton.x       
+ * cigrd.x          walltime    0:02:39
+ * tran.x           walltime    0:02:44
+ * dalton.x         walltime    0:02:39
+   tran.x         
+   dalton.x       
+ * cigrd.x          walltime    0:02:41
+ * tran.x           walltime    0:02:42
+ * dalton.x         walltime    0:02:37
+   tran.x         
+   dalton.x       
+ * cigrd.x          walltime    0:02:40
+ * tran.x           walltime    0:02:44
+ * dalton.x         walltime    0:02:35
+   tran.x         
+   dalton.x       
+ * cigrd.x          walltime    0:02:48
+ * tran.x           walltime    0:02:39
+ * dalton.x         walltime    0:02:37
+   tran.x         
+   dalton.x       
+
+==========================================
+
