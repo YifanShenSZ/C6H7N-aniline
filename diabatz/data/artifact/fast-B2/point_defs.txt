@@ -12,4 +12,3 @@ Cs-benzene-1.IntCoordDef    Cs-benzene-2.IntCoordDef
 Cs-benzene-1.IntCoordDef    Cs-benzene-2.IntCoordDef
 Cs-benzene-1.IntCoordDef    Cs-benzene-2.IntCoordDef
 Cs-benzene-1.IntCoordDef    Cs-benzene-2.IntCoordDef
-Cs-benzene-1.IntCoordDef    Cs-benzene-2.IntCoordDef
