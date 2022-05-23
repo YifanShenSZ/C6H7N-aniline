@@ -1,0 +1,8 @@
+min-B1_stretch
+min-A1_stretch
+A1rot-sad_stretch
+B1rot-sad_stretch
+fast-B2
+asymptote
+asymptote-B2
+asymptote_C-N-H
