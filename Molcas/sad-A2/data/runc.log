@@ -1,0 +1,2617 @@
+===========================================================
+===                   runc                              ===
+===           version 7.0.2 , April 2021              ===
+===          requires COLUMBUS version Col_7.0.2        ===
+===                                                     ===
+===   written by: Thomas Mueller                        ===
+===   gradient ext. by: Michal Dallos                   ===
+===               University of Vienna                  ===
+===   maintained by: Felix Plasser                      ===
+===               Loughborough University               ===
+===========================================================
+
+
+coremem. (seq.): 200000 MB,  coremem. (par.): 19000 MB
+Vdisk size: 0 DP
+Reading job control file control.run ... 
+ ****** This is an 2c-QDPT MRCISD calculation ****** 
+ model space size=4:0:4
+SMOLCAS=/home-4/yshen57@jhu.edu/Software/Chemistry/Columbus-7.0.2_OpenMolcas-18.09-col/OpenMolcas/build
+Found serial Molcas Installation at /home-4/yshen57@jhu.edu/Software/Chemistry/Columbus-7.0.2_OpenMolcas-18.09-col/OpenMolcas/build
+  done 
+INFO: keywords nadcoupl and seward are supported for DCI mode only!
+seward specified, using also alaska
+Creating various directories ... 
+ done 
+SMOLCAS=/home-4/yshen57@jhu.edu/Software/Chemistry/Columbus-7.0.2_OpenMolcas-18.09-col/OpenMolcas/build
+PMOLCAS=
+Checking for illegal keywords and keyword combinations ... done 
+
+ Nonadiabatic coupling term calculation type: DCI+DCSF
+  States involved in calcualtion:
+   DRT1,state1;  DRT1,state2
+   DRT1,state1;  DRT1,state3
+   DRT1,state1;  DRT1,state4
+   DRT1,state2;  DRT1,state3
+   DRT1,state2;  DRT1,state4
+   DRT1,state3;  DRT1,state4
+   DRT2,state1;  DRT2,state2
+   DRT2,state1;  DRT2,state3
+   DRT2,state1;  DRT2,state4
+   DRT2,state2;  DRT2,state3
+   DRT2,state2;  DRT2,state4
+   DRT2,state3;  DRT2,state4
+
+Additional gradients computed:
+   DRT1,state1
+   DRT1,state2
+   DRT1,state3
+   DRT1,state4
+   DRT2,state1
+   DRT2,state2
+   DRT2,state3
+   DRT2,state4
+
+Checking for complete set of input files ... 
+mcscf calculation without preceeding scf calculation 
+will use 
+ /scratch/users/yshen57@jhu.edu/Molcas/sad-A2/mrci/mocoef as starting MOs 
+Performing coupled non-rel. SO-CI calculation, nrroots: 4 0 4
+starting cidrt.x   -m 200000 < cidrtin > temp at Thu May 19 22:29:11 EDT 2022
+
+ -------------------- cidrt.x ------------------------
+ spatial symmetry:  
+ total number of configurations          0
+ number of reference configurations     0
+ --------------------------------------------------- 
+ Preparing SO cidrtin files for 1 symmetries
+cat ../cidrtin | sed -e 's/^.*input the molecular spatial symmetry/1 \/ molsym/' > cidrtin.so_A 
+calling cidrt.x -m 200000 < cidrtin.so_A > cidrtls.soci_A ...
+Checking the DRTs for consistency ...
+calling reindex.x -i 1 -m 200000  ...
+done
+
+ ++++++++++++++++++ input file generation +++++++++++++ 
+ runc start: Thu May 19 22:29:31 EDT 2022
+ 
+  runc start: Thu May 19 22:29:31 EDT 2022
+ 
+ starting unik.gets.x > unikls at Thu May 19 22:29:31 EDT 2022
+
+ -------------------- unik.gets.x ------------------------
+ --------------------------------------------------- 
+ ++++++++++++++++++++ ao integral calculation ++++++++++++++++
+starting pymolcas molcas.input.seward > molcas.output.seward  at Thu May 19 22:29:31 EDT 2022
+
+Generating link ln -s ./molcas.OrdInt ORDINT 
+ -------------------- seward ------------------------
+      Basis set label: N.ANILINE.........
+      Basis set label: C.ANILINE.........
+      Basis set label: H.ANILINE.........
+  Nuclear Coordinates in                   atomic units                                   Angstrom 
+     Center  Label                x              y              z                     x              y              z
+        1      N1              -0.052402      -4.452421       0.000000             -0.027730      -2.356120       0.000000
+        2      C2               0.057103      -1.957865       0.000000              0.030218      -1.036057       0.000000
+        3      C3              -2.225783      -0.493551       0.000000             -1.177834      -0.261176       0.000000
+        4      C4               2.307124      -0.442213       0.000000              1.220878      -0.234009       0.000000
+        5      C5              -2.205987       2.200607       0.000000             -1.167358       1.164511       0.000000
+        6      C6               2.233245       2.262533       0.000000              1.181782       1.197281       0.000000
+        7      C7               0.004055       3.598812       0.000000              0.002146       1.904409       0.000000
+        8      H8              -2.396788      -5.676823       0.000000             -1.268326      -3.004045       0.000000
+        9      H9               1.632840      -5.410178       0.000000              0.864062      -2.862943       0.000000
+       10      H10             -3.994745      -1.467893       0.000000             -2.113928      -0.776775       0.000000
+       11      H11              4.114868      -1.353083       0.000000              2.177494      -0.716021       0.000000
+       12      H12             -4.002937       3.144241       0.000000             -2.118263       1.663861       0.000000
+       13      H13              4.008584       3.245441       0.000000              2.121251       1.717414       0.000000
+       14      H14             -0.023057       5.620945       0.000000             -0.012201       2.974476       0.000000
+ 
+            Nuclear Potential Energy            268.78935498 au
+ --------------------------------------------------- 
+  >>>>>>>>>>>>> info: preparing drt no 1 out of 1 <<<<<<
+starting mcdrt.x -m 200000 < mcdrtin > mcdrtls at Thu May 19 22:33:38 EDT 2022
+
+ -------------------- mcdrt.x ------------------------
+  Spin multiplicity: singlet 
+  Spatial symmetry (#): 1
+  Number of Configurations:       1275 
+  --------------------------------------------------- 
+ starting mcuft.x at Thu May 19 22:33:38 EDT 2022
+
+ -------------------- mcuft.x ------------------------
+ --------------------------------------------------- 
+ ++++++++++++++++++++ MCSCF calculation +++++++++++++++
+info: taking mocoef file from /scratch/users/yshen57@jhu.edu/Molcas/sad-A2/mrci/mocoef
+adding flag 30 to mcscfin
+Writing mcdenin files for mcscf.x for 1 DRTs
+adding flag 26 to mcscfin
+starting mcscf.x -m 200000 at Thu May 19 22:33:39 EDT 2022
+
+ -------------------- mcscf.x ------------------------
+ Individual total energies for all states: 
+    DRT #1 state # 1 wt 0.250 total energy=     -285.832476886, rel. (eV)=   0.000000
+    DRT #1 state # 2 wt 0.250 total energy=     -285.670883145, rel. (eV)=   4.397191
+    DRT #1 state # 3 wt 0.250 total energy=     -285.592661501, rel. (eV)=   6.525711
+    DRT #1 state # 4 wt 0.250 total energy=     -285.592469345, rel. (eV)=   6.530940
+  --------------------------------------------------- 
+ starting mcpc.x -m 200000 < mcpcin > mcpcls at Thu May 19 22:35:54 EDT 2022
+
+ -------------------- mcpc.x ------------------------
+ --------------------------------------------------- 
+ starting mcpc.x -m 200000 < mcpcin > mcpcls at Thu May 19 22:35:54 EDT 2022
+
+ -------------------- mcpc.x ------------------------
+ --------------------------------------------------- 
+ starting mcpc.x -m 200000 < mcpcin > mcpcls at Thu May 19 22:35:54 EDT 2022
+
+ -------------------- mcpc.x ------------------------
+ --------------------------------------------------- 
+ starting mcpc.x -m 200000 < mcpcin > mcpcls at Thu May 19 22:35:54 EDT 2022
+
+ -------------------- mcpc.x ------------------------
+ --------------------------------------------------- 
+ 
+========= state properties for state-averaged MCSCF =========
+mcscf.drt1.st01.sp
+starting exptvl.x -m 200000   at Thu May 19 22:35:54 EDT 2022
+
+ -------------------- exptvl.x ------------------------
+  === dipole moment === 
+                     X               Y               Z   
+   orign x       0.00000000      0.00000000      0.00000000
+   orign y       0.00000000      0.00000000      0.00000000
+   orign z       0.00000000      0.00000000      0.00000000
+   nuclear      -0.00950594     -2.05435773      0.00000000
+   electronic   -0.24646453      0.75264123     -0.00000000
+   total        -0.25597047     -1.30171650     -0.00000000
+   total Dipole moment =   3.37199839    Debye
+ --------------------------------------------------- 
+ mcscf.drt1.st02.sp
+starting exptvl.x -m 200000   at Thu May 19 22:35:54 EDT 2022
+
+ -------------------- exptvl.x ------------------------
+  === dipole moment === 
+                     X               Y               Z   
+   orign x       0.00000000      0.00000000      0.00000000
+   orign y       0.00000000      0.00000000      0.00000000
+   orign z       0.00000000      0.00000000      0.00000000
+   nuclear      -0.00950594     -2.05435773      0.00000000
+   electronic    1.11164144      4.11367788     -0.00000000
+   total         1.10213550      2.05932015     -0.00000000
+   total Dipole moment =   5.93676731    Debye
+ --------------------------------------------------- 
+ mcscf.drt1.st03.sp
+starting exptvl.x -m 200000   at Thu May 19 22:35:54 EDT 2022
+
+ -------------------- exptvl.x ------------------------
+  === dipole moment === 
+                     X               Y               Z   
+   orign x       0.00000000      0.00000000      0.00000000
+   orign y       0.00000000      0.00000000      0.00000000
+   orign z       0.00000000      0.00000000      0.00000000
+   nuclear      -0.00950594     -2.05435773      0.00000000
+   electronic   -0.21789939      0.39122027      0.00000000
+   total        -0.22740533     -1.66313746      0.00000000
+   total Dipole moment =   4.26661125    Debye
+ --------------------------------------------------- 
+ mcscf.drt1.st04.sp
+starting exptvl.x -m 200000   at Thu May 19 22:35:55 EDT 2022
+
+ -------------------- exptvl.x ------------------------
+  === dipole moment === 
+                     X               Y               Z   
+   orign x       0.00000000      0.00000000      0.00000000
+   orign y       0.00000000      0.00000000      0.00000000
+   orign z       0.00000000      0.00000000      0.00000000
+   nuclear      -0.00950594     -2.05435773      0.00000000
+   electronic    1.13524456      5.25497333     -0.00000001
+   total         1.12573862      3.20061560     -0.00000001
+   total Dipole moment =   8.62369687    Debye
+ --------------------------------------------------- 
+  using the MCSCF MOs ... 
+starting cidrt.x  -m 200000 < cidrtin.1 > cidrtls at Thu May 19 22:35:55 EDT 2022
+
+ -------------------- cidrt.x ------------------------
+ total number of orbitals            :   246
+ number of frozen core orbitals      :    18
+ number of frozen virtual orbitals   :     0
+ number of internal orbitals         :    14
+ number of external orbitals         :   214
+ spatial symmetry:   a  
+ 
+ total number of configurations  158587185
+ number of reference configurations  1275
+ --------------------------------------------------- 
+ starting cidrt.x  -m 200000 < cidrtin.2 > cidrtls at Thu May 19 22:35:57 EDT 2022
+
+ -------------------- cidrt.x ------------------------
+ total number of orbitals            :   246
+ number of frozen core orbitals      :    18
+ number of frozen virtual orbitals   :     0
+ number of internal orbitals         :    14
+ number of external orbitals         :   214
+ spatial symmetry:   a  
+ 
+ total number of configurations  282461366
+ number of reference configurations  1666
+ --------------------------------------------------- 
+ starting tran.x -m 200000  at Thu May 19 22:36:01 EDT 2022
+
+ -------------------- tran.x ------------------------
+ --------------------------------------------------- 
+  Starting ciudgav with DRT # 1 out of 2 
+
+ *** starting pciudg section *** 
+nproc: 48 machinefile:  
+assuming machinefile syntax: one host name per line optionally repeated
+ section2, MPI_STARTUP:
+ /software/apps/mpi/openmpi/3.1/intel/18.0/bin/mpirun -np 48  /home-4/yshen57@jhu.edu/Software/Chemistry/Columbus-7.0.2_OpenMolcas-18.09-col/Columbus/pciudg.x -m 19000 
+ -------------------- pciudg.x ------------------------
+ type of calculation:          mr-sdci
+ number of configurations:     158587185
+ total mr-sdci energy             -286.0268108023 
+ last mr-sdci energy change          -0.0000000000 
+ residual                             0.0000074134 
+  type of calculation:          mr-sdci
+ number of configurations:     158587185
+ total mr-sdci energy             -285.9191462684 
+ last mr-sdci energy change           0.0000000000 
+ residual                             0.0000056513 
+  type of calculation:          mr-sdci
+ number of configurations:     158587185
+ total mr-sdci energy             -285.8488398032 
+ last mr-sdci energy change           0.0000000000 
+ residual                             0.0000086922 
+  type of calculation:          mr-sdci
+ number of configurations:     158587185
+ total mr-sdci energy             -285.8451893756 
+ last mr-sdci energy change           0.0000000001 
+ residual                             0.0000090692 
+  --------------------------------------------------- 
+ keyinfile returned docipci=0:
+starting cipc.x -m 200000 < cipcin > cipcls at Fri May 20 14:08:51 EDT 2022
+
+ -------------------- cipc.x ------------------------
+ --------------------------------------------------- 
+  Starting ciudgav with DRT # 2 out of 2 
+
+ *** starting pciudg section *** 
+nproc: 48 machinefile:  
+assuming machinefile syntax: one host name per line optionally repeated
+ section2, MPI_STARTUP:
+ /software/apps/mpi/openmpi/3.1/intel/18.0/bin/mpirun -np 48  /home-4/yshen57@jhu.edu/Software/Chemistry/Columbus-7.0.2_OpenMolcas-18.09-col/Columbus/pciudg.x -m 19000 
+ -------------------- pciudg.x ------------------------
+ type of calculation:          mr-sdci
+ number of configurations:     282461366
+ total mr-sdci energy             -285.9299426954 
+ last mr-sdci energy change           0.0000000000 
+ residual                             0.0000036149 
+  type of calculation:          mr-sdci
+ number of configurations:     282461366
+ total mr-sdci energy             -285.8738245714 
+ last mr-sdci energy change          -0.0000000000 
+ residual                             0.0000091036 
+  type of calculation:          mr-sdci
+ number of configurations:     282461366
+ total mr-sdci energy             -285.8655502592 
+ last mr-sdci energy change          -0.0000000000 
+ residual                             0.0000057059 
+  type of calculation:          mr-sdci
+ number of configurations:     282461366
+ total mr-sdci energy             -285.8504581308 
+ last mr-sdci energy change           0.0000000000 
+ residual                             0.0000046689 
+  --------------------------------------------------- 
+ keyinfile returned docipci=0:
+starting cipc.x -m 200000 < cipcin > cipcls at Sun May 22 01:34:00 EDT 2022
+
+ -------------------- cipc.x ------------------------
+ --------------------------------------------------- 
+ Reindex call
+run_socinr: imult=1 irrep=1 
+opening file =ciudgls.drt1.sp
+opening file =ciudgls.drt1.sp
+opening file =ciudgls.drt1.sp
+opening file =ciudgls.drt1.sp
+run_socinr: imult=3 irrep=1 
+opening file =ciudgls.drt2.sp
+opening file =ciudgls.drt2.sp
+opening file =ciudgls.drt2.sp
+opening file =ciudgls.drt2.sp
+ copying /scratch/users/yshen57@jhu.edu/Molcas/sad-A2/mrci/cidrtfl.so__A --> cidrtfl.so__A 
+ copying /scratch/users/yshen57@jhu.edu/Molcas/sad-A2/mrci/cidrtfl.so__A --> cidrtfl.so__A 
+starting reindex.x -m 200000 > reindexls at Sun May 22 01:34:20 EDT 2022
+
+ -------------------- reindex.x ------------------------
+ --------------------------------------------------- 
+ 1      1        1           civfl_1_A             1      1    0+       1             1         civfl.so__A
+1      1        2           civfl_1_A             1      1    0+       2    1005971284         civfl.so__A
+1      1        3           civfl_1_A             1      1    0+       3    2011942567         civfl.so__A
+1      1        4           civfl_1_A             1      1    0+       4    3017913850         civfl.so__A
+3      1        1           civfl_3_A             1      3    0+       5    4023885133         civfl.so__A
+3      1        1           civfl_3_A             1      3    1+       6    5029856416         civfl.so__A
+3      1        1           civfl_3_A             1      3    1-       7    6035827699         civfl.so__A
+3      1        2           civfl_3_A             1      3    0+       8    7041798982         civfl.so__A
+3      1        2           civfl_3_A             1      3    1+       9    8047770265         civfl.so__A
+3      1        2           civfl_3_A             1      3    1-      10    9053741548         civfl.so__A
+3      1        3           civfl_3_A             1      3    0+      11   10059712831         civfl.so__A
+3      1        3           civfl_3_A             1      3    1+      12   11065684114         civfl.so__A
+3      1        3           civfl_3_A             1      3    1-      13   12071655397         civfl.so__A
+3      1        4           civfl_3_A             1      3    0+      14   13077626680         civfl.so__A
+3      1        4           civfl_3_A             1      3    1+      15   14083597963         civfl.so__A
+3      1        4           civfl_3_A             1      3    1-      16   15089569246         civfl.so__A
+ Executing ciudg.x  for gamma =A ...
+
+ *** starting pciudg section *** 
+nproc: 48 machinefile:  
+assuming machinefile syntax: one host name per line optionally repeated
+ section2, MPI_STARTUP:
+ /software/apps/mpi/openmpi/3.1/intel/18.0/bin/mpirun -np 48  /home-4/yshen57@jhu.edu/Software/Chemistry/Columbus-7.0.2_OpenMolcas-18.09-col/Columbus/pciudg.x -m 19000 
+ -------------------- pciudg.x ------------------------
+ type of calculation:          mr-sdci
+ number of configurations:     1005971283
+ total mr-sdci energy             -286.0268108719 
+ last mr-sdci energy change           0.0000000696 
+ residual                            35.3980000000 
+  type of calculation:          mr-sdci
+ number of configurations:     1005971283
+ total mr-sdci energy             -285.9299427298 
+ last mr-sdci energy change           0.0107960000 
+ residual                            35.3010000000 
+  type of calculation:          mr-sdci
+ number of configurations:     1005971283
+ total mr-sdci energy             -285.9299427297 
+ last mr-sdci energy change           0.0811030000 
+ residual                            35.3010000000 
+  type of calculation:          mr-sdci
+ number of configurations:     1005971283
+ total mr-sdci energy             -285.9299426262 
+ last mr-sdci energy change           0.0847530000 
+ residual                            35.3010000000 
+  type of calculation:          mr-sdci
+ number of configurations:     1005971283
+ total mr-sdci energy             -285.9191463103 
+ last mr-sdci energy change          -0.0107960000 
+ residual                            35.2900000000 
+  type of calculation:          mr-sdci
+ number of configurations:     1005971283
+ total mr-sdci energy             -285.8738245515 
+ last mr-sdci energy change          -0.0561180000 
+ residual                            35.2450000000 
+  type of calculation:          mr-sdci
+ number of configurations:     1005971283
+ total mr-sdci energy             -285.8738245511 
+ last mr-sdci energy change          -0.0561180000 
+ residual                            35.2450000000 
+  type of calculation:          mr-sdci
+ number of configurations:     1005971283
+ total mr-sdci energy             -285.8738245456 
+ last mr-sdci energy change          -0.0000000258 
+ residual                            35.2450000000 
+  type of calculation:          mr-sdci
+ number of configurations:     1005971283
+ total mr-sdci energy             -285.8655502983 
+ last mr-sdci energy change          -0.0082743000 
+ residual                            35.2360000000 
+  type of calculation:          mr-sdci
+ number of configurations:     1005971283
+ total mr-sdci energy             -285.8655502585 
+ last mr-sdci energy change          -0.0082743000 
+ residual                            35.2360000000 
+  type of calculation:          mr-sdci
+ number of configurations:     1005971283
+ total mr-sdci energy             -285.8655502584 
+ last mr-sdci energy change          -0.0000000008 
+ residual                            35.2360000000 
+  type of calculation:          mr-sdci
+ number of configurations:     1005971283
+ total mr-sdci energy             -285.8504581184 
+ last mr-sdci energy change          -0.0150920000 
+ residual                            35.2210000000 
+  type of calculation:          mr-sdci
+ number of configurations:     1005971283
+ total mr-sdci energy             -285.8504581175 
+ last mr-sdci energy change          -0.0150920000 
+ residual                            35.2210000000 
+  type of calculation:          mr-sdci
+ number of configurations:     1005971283
+ total mr-sdci energy             -285.8504581160 
+ last mr-sdci energy change          -0.0000000148 
+ residual                            35.2210000000 
+  type of calculation:          mr-sdci
+ number of configurations:     1005971283
+ total mr-sdci energy             -285.8488398031 
+ last mr-sdci energy change          -0.0016183000 
+ residual                            35.2200000000 
+  type of calculation:          mr-sdci
+ number of configurations:     1005971283
+ total mr-sdci energy             -285.8451893338 
+ last mr-sdci energy change          -0.0052688000 
+ residual                            35.2160000000 
+  --------------------------------------------------- 
+ ************* Results for Spin-Orbit CI gamma=A **************** 
+Final spin-orbit CI state energies: 
+
+
+-------------- HT matrix in AU ----------------  
+-35.397726    
+ 0.000000    -35.290061    
+ 0.000000     0.000000    -35.219755    
+ 0.000000     0.000000     0.000000    -35.216104    
+ 0.000000    -0.000000     0.000000     0.000000    -35.300858    
+ 0.000065     0.000000    -0.000003    -0.000000    -0.000000    -35.300858    
+-0.000050    -0.000000    -0.000002     0.000000     0.000000     0.000000    -35.300858    
+-0.000000     0.000000     0.000000    -0.000000     0.000000     0.000023     0.000025    -35.244739    
+ 0.000000     0.000026    -0.000000    -0.000004    -0.000023     0.000000    -0.000000    -0.000000    -35.244739    
+-0.000000    -0.000023    -0.000000    -0.000001    -0.000025     0.000000     0.000000    -0.000000     0.000000    -35.244739    
+ 0.000000     0.000000     0.000000     0.000000     0.000000     0.000006     0.000002     0.000000     0.000000     0.000000    -35.236465    
+ 0.000000     0.000002     0.000000     0.000021    -0.000006     0.000000    -0.000000    -0.000000     0.000000    -0.000000     0.000000    -35.236465    
+-0.000000    -0.000007    -0.000000    -0.000019    -0.000002     0.000000     0.000000    -0.000000     0.000000     0.000000     0.000000     0.000000    -35.236465    
+ 0.000000     0.000000     0.000000     0.000000     0.000000     0.000022     0.000024     0.000000    -0.000000     0.000000     0.000000    -0.000000    -0.000000    -35.221373    
+ 0.000000     0.000024    -0.000000     0.000001    -0.000022     0.000000    -0.000000     0.000000     0.000000    -0.000000     0.000000     0.000000     0.000000    -0.000000    -35.221373    
+-0.000000    -0.000021     0.000000     0.000002    -0.000024     0.000000     0.000000    -0.000000     0.000000     0.000000     0.000000    -0.000000     0.000000    -0.000000    -0.000000    -35.221373    
+-------------- HT matrix in eV ---------------- 
+ -963.221   
+    0.000    -960.291   
+    0.000       0.000    -958.378   
+    0.000       0.000       0.000    -958.279   
+    0.000      -0.000       0.000       0.000    -960.585   
+    0.002       0.000      -0.000      -0.000      -0.000    -960.585   
+   -0.001      -0.000      -0.000       0.000       0.000       0.000    -960.585   
+   -0.000       0.000       0.000      -0.000       0.000       0.001       0.001    -959.058   
+    0.000       0.001      -0.000      -0.000      -0.001       0.000      -0.000      -0.000    -959.058   
+   -0.000      -0.001      -0.000      -0.000      -0.001       0.000       0.000      -0.000       0.000    -959.058   
+    0.000       0.000       0.000       0.000       0.000       0.000       0.000       0.000       0.000       0.000    -958.833   
+    0.000       0.000       0.000       0.001      -0.000       0.000      -0.000      -0.000       0.000      -0.000       0.000    -958.833   
+   -0.000      -0.000      -0.000      -0.001      -0.000       0.000       0.000      -0.000       0.000       0.000       0.000       0.000    -958.833   
+    0.000       0.000       0.000       0.000       0.000       0.001       0.001       0.000      -0.000       0.000       0.000      -0.000      -0.000    -958.422   
+    0.000       0.001      -0.000       0.000      -0.001       0.000      -0.000       0.000       0.000      -0.000       0.000       0.000       0.000      -0.000    -958.422   
+   -0.000      -0.001       0.000       0.000      -0.001       0.000       0.000      -0.000       0.000       0.000       0.000      -0.000       0.000      -0.000      -0.000    -958.422   
+-------------- HT matrix in cm-1 ------------------- 
+Eref = -35.39772562
+     0.00   
+     0.00    23629.67   
+     0.00        0.00    39060.19   
+     0.00        0.00        0.00    39861.36   
+     0.00       -0.07        0.00        0.06    21260.13   
+    14.22        0.00       -0.59        0.00        0.00    21260.13   
+   -11.06        0.00       -0.48        0.00        0.00        0.00    21260.13   
+    -0.00        0.00        0.00        0.00        0.00        4.95        5.52    33576.65   
+     0.00        5.68        0.00       -0.91       -4.95        0.00        0.00        0.00    33576.65   
+     0.00       -4.95        0.00       -0.26       -5.52        0.00        0.00        0.00        0.00    33576.65   
+     0.00        0.00        0.00        0.00        0.00        1.42        0.52        0.00        0.00        0.00    35392.66   
+     0.00        0.55        0.00        4.63       -1.42        0.00        0.00        0.00        0.00       -0.01        0.00    35392.66   
+     0.00       -1.54        0.00       -4.23       -0.52        0.00        0.00        0.00        0.01        0.00        0.00        0.00    35392.66   
+     0.00        0.00        0.00        0.00        0.00        4.83        5.27        0.00        0.00        0.00        0.00        0.00        0.00    38705.00   
+     0.00        5.20        0.00        0.18       -4.83        0.00        0.00        0.00        0.00       -0.00        0.00        0.00        0.01        0.00    38705.00   
+     0.00       -4.71        0.00        0.49       -5.27        0.00        0.00        0.00        0.00        0.00        0.00       -0.01        0.00        0.00        0.00    38705.00   
+
+
+Spin-Orbit CI: perturbational estimate of Spin-Orbit CI energies and wavefunctions 
+                SO   1         SO   2         SO   3         SO   4         SO   5         SO   6         SO   7         SO   8
+
+   energy  -286.02681087  -285.92994273  -285.92994273  -285.92994263  -285.91914631  -285.87382455  -285.87382455  -285.87382455
+ 
+   NR   1    -0.99999964    -0.00000000     0.00002344    -0.00084703     0.00000000     0.00000000     0.00000006    -0.00000000
+   NR   2     0.00000000    -0.00003025    -0.00000000     0.00000000     0.99999959    -0.00000274    -0.00000000    -0.00075752
+   NR   3     0.00000000    -0.00000000     0.00004175    -0.00000837     0.00000000     0.00000000     0.00000089     0.00000000
+   NR   4     0.00000000     0.00000306     0.00000000    -0.00000000     0.00000002    -0.00012669     0.00000000    -0.00008094
+   NR   5     0.00000000    -0.99999973    -0.00000001    -0.00000000    -0.00003025     0.00060203    -0.00000000     0.00000591
+   NR   6     0.00066896    -0.00000001     0.63538657    -0.77219376     0.00000000    -0.00000000    -0.00040190     0.00000000
+   NR   7    -0.00052009    -0.00000001     0.77219386     0.63538655    -0.00000000    -0.00000000    -0.00044828     0.00000000
+   NR   8    -0.00000009     0.00000000    -0.00060152     0.00002551    -0.00000000    -0.00000081    -0.99999982     0.00000010
+   NR   9     0.00000000    -0.00040188    -0.00000000    -0.00000000    -0.00057079    -0.66019941     0.00000046    -0.75109003
+   NR  10    -0.00000000    -0.00044829    -0.00000000     0.00000000     0.00049805    -0.75109011     0.00000068     0.66019936
+   NR  11     0.00000006     0.00000000    -0.00009226     0.00005462    -0.00000000     0.00000000     0.00000044    -0.00000000
+   NR  12     0.00000000    -0.00010080    -0.00000000     0.00000000    -0.00004639    -0.00000303     0.00000000     0.00000380
+   NR  13    -0.00000000    -0.00003654    -0.00000000     0.00000000     0.00013084     0.00000324    -0.00000000     0.00000300
+   NR  14     0.00000007     0.00000000    -0.00040920     0.00002180     0.00000000     0.00000000     0.00000084    -0.00000000
+   NR  15     0.00000000    -0.00027683    -0.00000000     0.00000000    -0.00034500     0.00000040     0.00000000     0.00000093
+   NR  16    -0.00000000    -0.00030213    -0.00000000     0.00000000     0.00031248     0.00000078    -0.00000000    -0.00000051
+
+                SO   9         SO  10         SO  11         SO  12         SO  13         SO  14         SO  15         SO  16
+
+   energy  -285.86555030  -285.86555026  -285.86555026  -285.85045812  -285.85045812  -285.85045812  -285.84883980  -285.84518933
+ 
+   NR   1     0.00000000    -0.00000011    -0.00000000    -0.00000000     0.00000009     0.00000000     0.00000000     0.00000000
+   NR   2     0.00012232     0.00000000    -0.00006563    -0.00008655    -0.00000000     0.00045736     0.00000000     0.00000001
+   NR   3    -0.00000000     0.00000017     0.00000000    -0.00000000    -0.00001269    -0.00000000    -1.00000000     0.00000000
+   NR   4    -0.00140298     0.00000000     0.00000437    -0.00043963    -0.00000000     0.00009036     0.00000000     0.99999890
+   NR   5    -0.00005003     0.00000000    -0.00009483    -0.00040219    -0.00000000    -0.00007850    -0.00000000     0.00000289
+   NR   6    -0.00000000    -0.00010080    -0.00000000    -0.00000000     0.00027684     0.00000000     0.00003299    -0.00000000
+   NR   7    -0.00000000    -0.00003654    -0.00000000    -0.00000000     0.00030213     0.00000000     0.00002692     0.00000000
+   NR   8     0.00000000    -0.00000039    -0.00000000    -0.00000000     0.00000059     0.00000000    -0.00000092    -0.00000000
+   NR   9    -0.00000221    -0.00000000     0.00000382     0.00000057    -0.00000000     0.00000045     0.00000000    -0.00014444
+   NR  10    -0.00000375     0.00000000    -0.00000296     0.00000042     0.00000000    -0.00000056     0.00000000    -0.00004172
+   NR  11    -0.00000008    -0.99999999    -0.00000302     0.00000000     0.00000017     0.00000000    -0.00000018     0.00000000
+   NR  12     0.74009787    -0.00000209     0.67249837    -0.00000269    -0.00000000     0.00000160    -0.00000000     0.00103540
+   NR  13    -0.67249770    -0.00000218     0.74009860     0.00000203    -0.00000000     0.00000191     0.00000000    -0.00094673
+   NR  14     0.00000000     0.00000021     0.00000000    -0.00000049     0.99999992     0.00000055    -0.00001271     0.00000000
+   NR  15     0.00000157     0.00000000    -0.00000197     0.52181802    -0.00000021     0.85305670     0.00000000     0.00015233
+   NR  16     0.00000224    -0.00000000     0.00000151     0.85305661     0.00000071    -0.52181802    -0.00000000     0.00042218
+rescaling new expansion vector ... old norm=   5355.3045140074
+
+ model space basis from reindexls .. 
+ --SO-CI-------         -----NR-CI-------             ---model space---- 
+ Gamma  root             S   irrep   root                S   ms* 
+A          1             1   A         1                 1   0+
+A          2             1   A         2                 1   0+
+A          3             1   A         3                 1   0+
+A          4             1   A         4                 1   0+
+A          5             3   A         1                 3   0+
+A          6             3   A         1                 3   1+
+A          7             3   A         1                 3   1-
+A          8             3   A         2                 3   0+
+A          9             3   A         2                 3   1+
+A         10             3   A         2                 3   1-
+A         11             3   A         3                 3   0+
+A         12             3   A         3                 3   1+
+A         13             3   A         3                 3   1-
+A         14             3   A         4                 3   0+
+A         15             3   A         4                 3   1+
+A         16             3   A         4                 3   1-
+
+************************** SUMMARY *********************************
+
+--------------  SO matrix for irrep A in eV ---------------- 
+|1,0+;1,A,1>  -963.221   
+|1,0+;1,A,2>     0.000    -960.291   
+|1,0+;1,A,3>     0.000       0.000    -958.378   
+|1,0+;1,A,4>     0.000       0.000       0.000    -958.279   
+|3,0+;3,A,1>     0.000      -0.000       0.000       0.000    -960.585   
+|3,1+;3,A,1>     0.002       0.000      -0.000      -0.000      -0.000    -960.585   
+|3,1-;3,A,1>    -0.001      -0.000      -0.000       0.000       0.000       0.000    -960.585   
+|3,0+;3,A,2>    -0.000       0.000       0.000      -0.000       0.000       0.001       0.001    -959.058   
+|3,1+;3,A,2>     0.000       0.001      -0.000      -0.000      -0.001       0.000      -0.000      -0.000    -959.058   
+|3,1-;3,A,2>    -0.000      -0.001      -0.000      -0.000      -0.001       0.000       0.000      -0.000       0.000    -959.058   
+|3,0+;3,A,3>     0.000       0.000       0.000       0.000       0.000       0.000       0.000       0.000       0.000       0.000    -958.833   
+|3,1+;3,A,3>     0.000       0.000       0.000       0.001      -0.000       0.000      -0.000      -0.000       0.000      -0.000       0.000    -958.833   
+|3,1-;3,A,3>    -0.000      -0.000      -0.000      -0.001      -0.000       0.000       0.000      -0.000       0.000       0.000       0.000       0.000    -958.833   
+|3,0+;3,A,4>     0.000       0.000       0.000       0.000       0.000       0.001       0.001       0.000      -0.000       0.000       0.000      -0.000      -0.000    -958.422   
+|3,1+;3,A,4>     0.000       0.001      -0.000       0.000      -0.001       0.000      -0.000       0.000       0.000      -0.000       0.000       0.000       0.000      -0.000    -958.422   
+|3,1-;3,A,4>    -0.000      -0.001       0.000       0.000      -0.001       0.000       0.000      -0.000       0.000       0.000       0.000      -0.000       0.000      -0.000      -0.000    -958.422   
+
+--------------  SO matrix for irrep A in cm-1 ------------------- 
+Eref = -35.39772562
+|1,0+;1,A,1>      0.00   
+|1,0+;1,A,2>      0.00    23629.67   
+|1,0+;1,A,3>      0.00        0.00    39060.19   
+|1,0+;1,A,4>      0.00        0.00        0.00    39861.36   
+|3,0+;3,A,1>      0.00       -0.07        0.00        0.06    21260.13   
+|3,1+;3,A,1>     14.22        0.00       -0.59        0.00        0.00    21260.13   
+|3,1-;3,A,1>    -11.06        0.00       -0.48        0.00        0.00        0.00    21260.13   
+|3,0+;3,A,2>     -0.00        0.00        0.00        0.00        0.00        4.95        5.52    33576.65   
+|3,1+;3,A,2>      0.00        5.68        0.00       -0.91       -4.95        0.00        0.00        0.00    33576.65   
+|3,1-;3,A,2>      0.00       -4.95        0.00       -0.26       -5.52        0.00        0.00        0.00        0.00    33576.65   
+|3,0+;3,A,3>      0.00        0.00        0.00        0.00        0.00        1.42        0.52        0.00        0.00        0.00    35392.66   
+|3,1+;3,A,3>      0.00        0.55        0.00        4.63       -1.42        0.00        0.00        0.00        0.00       -0.01        0.00    35392.66   
+|3,1-;3,A,3>      0.00       -1.54        0.00       -4.23       -0.52        0.00        0.00        0.00        0.01        0.00        0.00        0.00    35392.66   
+|3,0+;3,A,4>      0.00        0.00        0.00        0.00        0.00        4.83        5.27        0.00        0.00        0.00        0.00        0.00        0.00    38705.00   
+|3,1+;3,A,4>      0.00        5.20        0.00        0.18       -4.83        0.00        0.00        0.00        0.00       -0.00        0.00        0.00        0.01        0.00    38705.00   
+|3,1-;3,A,4>      0.00       -4.71        0.00        0.49       -5.27        0.00        0.00        0.00        0.00        0.00        0.00       -0.01        0.00        0.00        0.00    38705.00   
+
+
+ ** perturbational estimate of Spin-Orbit CI energies and wavefunctions in model space basis** 
+
+                      A  1         A  2         A  3         A  4         A  5         A  6         A  7         A  8
+
+            energy  -286.02681087  -285.92994273  -285.92994273  -285.92994263  -285.91914631  -285.87382455  -285.87382455  -285.87382455
+          
+   |1,0+;1,A,1>    -0.99999964    -0.00000000     0.00002344    -0.00084703     0.00000000     0.00000000     0.00000006    -0.00000000
+   |1,0+;1,A,2>     0.00000000    -0.00003025    -0.00000000     0.00000000     0.99999959    -0.00000274    -0.00000000    -0.00075752
+   |1,0+;1,A,3>     0.00000000    -0.00000000     0.00004175    -0.00000837     0.00000000     0.00000000     0.00000089     0.00000000
+   |1,0+;1,A,4>     0.00000000     0.00000306     0.00000000    -0.00000000     0.00000002    -0.00012669     0.00000000    -0.00008094
+   |3,0+;3,A,1>     0.00000000    -0.99999973    -0.00000001    -0.00000000    -0.00003025     0.00060203    -0.00000000     0.00000591
+   |3,1+;3,A,1>     0.00066896    -0.00000001     0.63538657    -0.77219376     0.00000000    -0.00000000    -0.00040190     0.00000000
+   |3,1-;3,A,1>    -0.00052009    -0.00000001     0.77219386     0.63538655    -0.00000000    -0.00000000    -0.00044828     0.00000000
+   |3,0+;3,A,2>    -0.00000009     0.00000000    -0.00060152     0.00002551    -0.00000000    -0.00000081    -0.99999982     0.00000010
+   |3,1+;3,A,2>     0.00000000    -0.00040188    -0.00000000    -0.00000000    -0.00057079    -0.66019941     0.00000046    -0.75109003
+   |3,1-;3,A,2>    -0.00000000    -0.00044829    -0.00000000     0.00000000     0.00049805    -0.75109011     0.00000068     0.66019936
+   |3,0+;3,A,3>     0.00000006     0.00000000    -0.00009226     0.00005462    -0.00000000     0.00000000     0.00000044    -0.00000000
+   |3,1+;3,A,3>     0.00000000    -0.00010080    -0.00000000     0.00000000    -0.00004639    -0.00000303     0.00000000     0.00000380
+   |3,1-;3,A,3>    -0.00000000    -0.00003654    -0.00000000     0.00000000     0.00013084     0.00000324    -0.00000000     0.00000300
+   |3,0+;3,A,4>     0.00000007     0.00000000    -0.00040920     0.00002180     0.00000000     0.00000000     0.00000084    -0.00000000
+   |3,1+;3,A,4>     0.00000000    -0.00027683    -0.00000000     0.00000000    -0.00034500     0.00000040     0.00000000     0.00000093
+   |3,1-;3,A,4>    -0.00000000    -0.00030213    -0.00000000     0.00000000     0.00031248     0.00000078    -0.00000000    -0.00000051
+
+                      A  9         A 10         A 11         A 12         A 13         A 14         A 15         A 16
+
+            energy  -285.86555030  -285.86555026  -285.86555026  -285.85045812  -285.85045812  -285.85045812  -285.84883980  -285.84518933
+          
+   |1,0+;1,A,1>     0.00000000    -0.00000011    -0.00000000    -0.00000000     0.00000009     0.00000000     0.00000000     0.00000000
+   |1,0+;1,A,2>     0.00012232     0.00000000    -0.00006563    -0.00008655    -0.00000000     0.00045736     0.00000000     0.00000001
+   |1,0+;1,A,3>    -0.00000000     0.00000017     0.00000000    -0.00000000    -0.00001269    -0.00000000    -1.00000000     0.00000000
+   |1,0+;1,A,4>    -0.00140298     0.00000000     0.00000437    -0.00043963    -0.00000000     0.00009036     0.00000000     0.99999890
+   |3,0+;3,A,1>    -0.00005003     0.00000000    -0.00009483    -0.00040219    -0.00000000    -0.00007850    -0.00000000     0.00000289
+   |3,1+;3,A,1>    -0.00000000    -0.00010080    -0.00000000    -0.00000000     0.00027684     0.00000000     0.00003299    -0.00000000
+   |3,1-;3,A,1>    -0.00000000    -0.00003654    -0.00000000    -0.00000000     0.00030213     0.00000000     0.00002692     0.00000000
+   |3,0+;3,A,2>     0.00000000    -0.00000039    -0.00000000    -0.00000000     0.00000059     0.00000000    -0.00000092    -0.00000000
+   |3,1+;3,A,2>    -0.00000221    -0.00000000     0.00000382     0.00000057    -0.00000000     0.00000045     0.00000000    -0.00014444
+   |3,1-;3,A,2>    -0.00000375     0.00000000    -0.00000296     0.00000042     0.00000000    -0.00000056     0.00000000    -0.00004172
+   |3,0+;3,A,3>    -0.00000008    -0.99999999    -0.00000302     0.00000000     0.00000017     0.00000000    -0.00000018     0.00000000
+   |3,1+;3,A,3>     0.74009787    -0.00000209     0.67249837    -0.00000269    -0.00000000     0.00000160    -0.00000000     0.00103540
+   |3,1-;3,A,3>    -0.67249770    -0.00000218     0.74009860     0.00000203    -0.00000000     0.00000191     0.00000000    -0.00094673
+   |3,0+;3,A,4>     0.00000000     0.00000021     0.00000000    -0.00000049     0.99999992     0.00000055    -0.00001271     0.00000000
+   |3,1+;3,A,4>     0.00000157     0.00000000    -0.00000197     0.52181802    -0.00000021     0.85305670     0.00000000     0.00015233
+   |3,1-;3,A,4>     0.00000224    -0.00000000     0.00000151     0.85305661     0.00000071    -0.52181802    -0.00000000     0.00042218
+rescaling new expansion vector ... old norm=   5355.3045140074
+
+Sorted Energies:
+1  -286.02681087 
+2  -285.92994273 
+3  -285.92994273 
+4  -285.92994263 
+5  -285.91914631 
+6  -285.87382455 
+7  -285.87382455 
+8  -285.87382455 
+9  -285.86555030 
+10  -285.86555026 
+11  -285.86555026 
+12  -285.85045812 
+13  -285.85045812 
+14  -285.85045812 
+15  -285.84883980 
+16  -285.84518933 
+Not computing transition moment with identical bra and ket.
+ Calculating transition moment for (1,1) => (1,2)
+ starting transci.x -m 200000 at Sun May 22 03:40:02 EDT 2022
+
+ -------------------- transci.x ------------------------
+
+                          State No. 1            State No. 2
+
+   Space symmetry:           a                      a   
+   No. of CSFs:          ********               ********
+   State energies:      -286.02681080          -285.91914627  a.u.
+
+   Transition energy:     0.10766453  a.u.
+   Transition energy:     2.93        eV
+
+       Transition moment components:
+
+                 x            y            z
+
+electron         -0.000000     0.000000     0.038374  e*bohr
+frozen core       0.000000     0.000000     0.000000  e*bohr
+total (elec)     -0.000000     0.000000     0.038374  e*bohr
+
+
+   Tr.dipole length:     0.038374    e*bohr
+   Oscillator strength :  0.000106
+   Einstein A coef.:     0.3936E+05  1/sec
+   Einstein B coef.:     0.5976E+06  sec/g
+
+                 x            y            z
+
+<L> electron     0.427185    -0.219728     0.000000  e*bohr
+
+
+   <L> value length:     0.480383    e*bohr
+ --------------------------------------------------- 
+  Calculating transition moment for (1,1) => (1,3)
+ starting transci.x -m 200000 at Sun May 22 03:42:20 EDT 2022
+
+ -------------------- transci.x ------------------------
+
+                          State No. 1            State No. 2
+
+   Space symmetry:           a                      a   
+   No. of CSFs:          ********               ********
+   State energies:      -286.02681080          -285.84883980  a.u.
+
+   Transition energy:     0.17797100  a.u.
+   Transition energy:     4.84        eV
+
+       Transition moment components:
+
+                 x            y            z
+
+electron         -0.522687     0.020074     0.000000  e*bohr
+frozen core       0.000000     0.000000     0.000000  e*bohr
+total (elec)     -0.522687     0.020074     0.000000  e*bohr
+
+
+   Tr.dipole length:     0.523072    e*bohr
+   Oscillator strength :  0.032462
+   Einstein A coef.:     0.3303E+08  1/sec
+   Einstein B coef.:     0.1110E+09  sec/g
+
+                 x            y            z
+
+<L> electron    -0.000000     0.000000     0.710140  e*bohr
+
+
+   <L> value length:     0.710140    e*bohr
+ --------------------------------------------------- 
+  Calculating transition moment for (1,1) => (1,4)
+ starting transci.x -m 200000 at Sun May 22 03:44:36 EDT 2022
+
+ -------------------- transci.x ------------------------
+
+                          State No. 1            State No. 2
+
+   Space symmetry:           a                      a   
+   No. of CSFs:          ********               ********
+   State energies:      -286.02681080          -285.84518938  a.u.
+
+   Transition energy:     0.18162143  a.u.
+   Transition energy:     4.94        eV
+
+       Transition moment components:
+
+                 x            y            z
+
+electron          0.000000     0.000000    -0.015828  e*bohr
+frozen core       0.000000     0.000000     0.000000  e*bohr
+total (elec)      0.000000     0.000000    -0.015828  e*bohr
+
+
+   Tr.dipole length:     0.015828    e*bohr
+   Oscillator strength :  0.000030
+   Einstein A coef.:     0.3215E+05  1/sec
+   Einstein B coef.:     0.1017E+06  sec/g
+
+                 x            y            z
+
+<L> electron    -0.001624    -0.148039    -0.000000  e*bohr
+
+
+   <L> value length:     0.148048    e*bohr
+ --------------------------------------------------- 
+ Not computing transition moment with identical bra and ket.
+ Calculating transition moment for (1,2) => (1,3)
+ starting transci.x -m 200000 at Sun May 22 03:46:55 EDT 2022
+
+ -------------------- transci.x ------------------------
+
+                          State No. 1            State No. 2
+
+   Space symmetry:           a                      a   
+   No. of CSFs:          ********               ********
+   State energies:      -285.91914627          -285.84883980  a.u.
+
+   Transition energy:     0.07030647  a.u.
+   Transition energy:     1.91        eV
+
+       Transition moment components:
+
+                 x            y            z
+
+electron          0.000000     0.000000     0.015515  e*bohr
+frozen core       0.000000     0.000000     0.000000  e*bohr
+total (elec)      0.000000     0.000000     0.015515  e*bohr
+
+
+   Tr.dipole length:     0.015515    e*bohr
+   Oscillator strength :  0.000011
+   Einstein A coef.:     0.1792E+04  1/sec
+   Einstein B coef.:     0.9769E+05  sec/g
+
+                 x            y            z
+
+<L> electron    -0.002150    -0.046785     0.000000  e*bohr
+
+
+   <L> value length:     0.046834    e*bohr
+ --------------------------------------------------- 
+  Calculating transition moment for (1,2) => (1,4)
+ starting transci.x -m 200000 at Sun May 22 03:49:08 EDT 2022
+
+ -------------------- transci.x ------------------------
+
+                          State No. 1            State No. 2
+
+   Space symmetry:           a                      a   
+   No. of CSFs:          ********               ********
+   State energies:      -285.91914627          -285.84518938  a.u.
+
+   Transition energy:     0.07395689  a.u.
+   Transition energy:     2.01        eV
+
+       Transition moment components:
+
+                 x            y            z
+
+electron         -0.252348     0.016226    -0.000000  e*bohr
+frozen core       0.000000     0.000000     0.000000  e*bohr
+total (elec)     -0.252348     0.016226    -0.000000  e*bohr
+
+
+   Tr.dipole length:     0.252869    e*bohr
+   Oscillator strength :  0.003153
+   Einstein A coef.:     0.5540E+06  1/sec
+   Einstein B coef.:     0.2595E+08  sec/g
+
+                 x            y            z
+
+<L> electron    -0.000000     0.000000     0.440820  e*bohr
+
+
+   <L> value length:     0.440820    e*bohr
+ --------------------------------------------------- 
+ Not computing transition moment with identical bra and ket.
+ Calculating transition moment for (1,3) => (1,4)
+ starting transci.x -m 200000 at Sun May 22 03:51:21 EDT 2022
+
+ -------------------- transci.x ------------------------
+
+                          State No. 1            State No. 2
+
+   Space symmetry:           a                      a   
+   No. of CSFs:          ********               ********
+   State energies:      -285.84883980          -285.84518938  a.u.
+
+   Transition energy:     0.00365043  a.u.
+   Transition energy:     0.10        eV
+
+       Transition moment components:
+
+                 x            y            z
+
+electron         -0.000000    -0.000000    -0.034608  e*bohr
+frozen core       0.000000     0.000000     0.000000  e*bohr
+total (elec)     -0.000000    -0.000000    -0.034608  e*bohr
+
+
+   Tr.dipole length:     0.034608    e*bohr
+   Oscillator strength :  0.000003
+   Einstein A coef.:     0.1248E+01  1/sec
+   Einstein B coef.:     0.4861E+06  sec/g
+
+                 x            y            z
+
+<L> electron    -0.212750     0.098817     0.000000  e*bohr
+
+
+   <L> value length:     0.234579    e*bohr
+ --------------------------------------------------- 
+ Not computing transition moment with identical bra and ket.
+Not computing transition moment with identical bra and ket.
+ Calculating transition moment for (2,1) => (2,2)
+ starting transci.x -m 200000 at Sun May 22 03:53:34 EDT 2022
+
+ -------------------- transci.x ------------------------
+
+                          State No. 1            State No. 2
+
+   Space symmetry:           a                      a   
+   No. of CSFs:          ********               ********
+   State energies:      -285.92994270          -285.87382457  a.u.
+
+   Transition energy:     0.05611812  a.u.
+   Transition energy:     1.53        eV
+
+       Transition moment components:
+
+                 x            y            z
+
+electron          0.000000    -0.000000    -0.019187  e*bohr
+frozen core       0.000000     0.000000     0.000000  e*bohr
+total (elec)      0.000000    -0.000000    -0.019187  e*bohr
+
+
+   Tr.dipole length:     0.019187    e*bohr
+   Oscillator strength :  0.000014
+   Einstein A coef.:     0.1393E+04  1/sec
+   Einstein B coef.:     0.1494E+06  sec/g
+
+                 x            y            z
+
+<L> electron     0.161403    -0.079135     0.000000  e*bohr
+
+
+   <L> value length:     0.179759    e*bohr
+ --------------------------------------------------- 
+  Calculating transition moment for (2,1) => (2,3)
+ starting transci.x -m 200000 at Sun May 22 03:57:50 EDT 2022
+
+ -------------------- transci.x ------------------------
+
+                          State No. 1            State No. 2
+
+   Space symmetry:           a                      a   
+   No. of CSFs:          ********               ********
+   State energies:      -285.92994270          -285.86555026  a.u.
+
+   Transition energy:     0.06439244  a.u.
+   Transition energy:     1.75        eV
+
+       Transition moment components:
+
+                 x            y            z
+
+electron         -0.000000     0.000000    -0.020560  e*bohr
+frozen core       0.000000     0.000000     0.000000  e*bohr
+total (elec)     -0.000000     0.000000    -0.020560  e*bohr
+
+
+   Tr.dipole length:     0.020560    e*bohr
+   Oscillator strength :  0.000018
+   Einstein A coef.:     0.2417E+04  1/sec
+   Einstein B coef.:     0.1715E+06  sec/g
+
+                 x            y            z
+
+<L> electron     0.033581     0.016898    -0.000000  e*bohr
+
+
+   <L> value length:     0.037593    e*bohr
+ --------------------------------------------------- 
+  Calculating transition moment for (2,1) => (2,4)
+ starting transci.x -m 200000 at Sun May 22 04:02:05 EDT 2022
+
+ -------------------- transci.x ------------------------
+
+                          State No. 1            State No. 2
+
+   Space symmetry:           a                      a   
+   No. of CSFs:          ********               ********
+   State energies:      -285.92994270          -285.85045813  a.u.
+
+   Transition energy:     0.07948456  a.u.
+   Transition energy:     2.16        eV
+
+       Transition moment components:
+
+                 x            y            z
+
+electron         -0.000000    -0.000000    -0.011136  e*bohr
+frozen core       0.000000     0.000000     0.000000  e*bohr
+total (elec)     -0.000000    -0.000000    -0.011136  e*bohr
+
+
+   Tr.dipole length:     0.011136    e*bohr
+   Oscillator strength :  0.000007
+   Einstein A coef.:     0.1334E+04  1/sec
+   Einstein B coef.:     0.5033E+05  sec/g
+
+                 x            y            z
+
+<L> electron     0.149570    -0.070115     0.000000  e*bohr
+
+
+   <L> value length:     0.165189    e*bohr
+ --------------------------------------------------- 
+ Not computing transition moment with identical bra and ket.
+ Calculating transition moment for (2,2) => (2,3)
+ starting transci.x -m 200000 at Sun May 22 04:06:20 EDT 2022
+
+ -------------------- transci.x ------------------------
+
+                          State No. 1            State No. 2
+
+   Space symmetry:           a                      a   
+   No. of CSFs:          ********               ********
+   State energies:      -285.87382457          -285.86555026  a.u.
+
+   Transition energy:     0.00827431  a.u.
+   Transition energy:     0.23        eV
+
+       Transition moment components:
+
+                 x            y            z
+
+electron         -0.339910    -0.114875     0.000000  e*bohr
+frozen core       0.000000     0.000000     0.000000  e*bohr
+total (elec)     -0.339910    -0.114875     0.000000  e*bohr
+
+
+   Tr.dipole length:     0.358797    e*bohr
+   Oscillator strength :  0.000710
+   Einstein A coef.:     0.1562E+04  1/sec
+   Einstein B coef.:     0.5224E+08  sec/g
+
+                 x            y            z
+
+<L> electron     0.000000     0.000000    -0.987263  e*bohr
+
+
+   <L> value length:     0.987263    e*bohr
+ --------------------------------------------------- 
+  Calculating transition moment for (2,2) => (2,4)
+ starting transci.x -m 200000 at Sun May 22 04:10:23 EDT 2022
+
+ -------------------- transci.x ------------------------
+
+                          State No. 1            State No. 2
+
+   Space symmetry:           a                      a   
+   No. of CSFs:          ********               ********
+   State energies:      -285.87382457          -285.85045813  a.u.
+
+   Transition energy:     0.02336644  a.u.
+   Transition energy:     0.64        eV
+
+       Transition moment components:
+
+                 x            y            z
+
+electron         -0.010504     0.070262    -0.000000  e*bohr
+frozen core       0.000000     0.000000     0.000000  e*bohr
+total (elec)     -0.010504     0.070262    -0.000000  e*bohr
+
+
+   Tr.dipole length:     0.071043    e*bohr
+   Oscillator strength :  0.000079
+   Einstein A coef.:     0.1379E+04  1/sec
+   Einstein B coef.:     0.2048E+07  sec/g
+
+                 x            y            z
+
+<L> electron    -0.000000    -0.000000    -0.079201  e*bohr
+
+
+   <L> value length:     0.079201    e*bohr
+ --------------------------------------------------- 
+ Not computing transition moment with identical bra and ket.
+ Calculating transition moment for (2,3) => (2,4)
+ starting transci.x -m 200000 at Sun May 22 04:14:26 EDT 2022
+
+ -------------------- transci.x ------------------------
+
+                          State No. 1            State No. 2
+
+   Space symmetry:           a                      a   
+   No. of CSFs:          ********               ********
+   State energies:      -285.86555026          -285.85045813  a.u.
+
+   Transition energy:     0.01509213  a.u.
+   Transition energy:     0.41        eV
+
+       Transition moment components:
+
+                 x            y            z
+
+electron          0.041094    -0.003827    -0.000000  e*bohr
+frozen core       0.000000     0.000000     0.000000  e*bohr
+total (elec)      0.041094    -0.003827    -0.000000  e*bohr
+
+
+   Tr.dipole length:     0.041272    e*bohr
+   Oscillator strength :  0.000017
+   Einstein A coef.:     0.1254E+03  1/sec
+   Einstein B coef.:     0.6913E+06  sec/g
+
+                 x            y            z
+
+<L> electron    -0.000000    -0.000000     0.715108  e*bohr
+
+
+   <L> value length:     0.715108    e*bohr
+ --------------------------------------------------- 
+ Not computing transition moment with identical bra and ket.
+ --- ci properties for state 1 of  DRT 1 ----
+starting exptvl.x -m 200000  at Sun May 22 04:18:30 EDT 2022
+
+ -------------------- exptvl.x ------------------------
+  === dipole moment === 
+                     X               Y               Z   
+   orign x       0.00000000      0.00000000      0.00000000
+   orign y       0.00000000      0.00000000      0.00000000
+   orign z       0.00000000      0.00000000      0.00000000
+   nuclear      -0.00950594     -2.05435773      0.00000000
+   electronic   -0.14478311      0.95552094     -0.00000000
+   total        -0.15428905     -1.09883679     -0.00000000
+   total Dipole moment =   2.82036507    Debye
+ !timer: exptvl required                 cpu_time=     0.196 walltime=     0.522
+ --------------------------------------------------- 
+  --- ci properties for state 2 of  DRT 1 ----
+starting exptvl.x -m 200000  at Sun May 22 04:18:30 EDT 2022
+
+ -------------------- exptvl.x ------------------------
+  === dipole moment === 
+                     X               Y               Z   
+   orign x       0.00000000      0.00000000      0.00000000
+   orign y       0.00000000      0.00000000      0.00000000
+   orign z       0.00000000      0.00000000      0.00000000
+   nuclear      -0.00950594     -2.05435773      0.00000000
+   electronic    1.02728027      3.81259786     -0.00000000
+   total         1.01777433      1.75824013     -0.00000000
+   total Dipole moment =   5.16373869    Debye
+ --------------------------------------------------- 
+  --- ci properties for state 3 of  DRT 1 ----
+starting exptvl.x -m 200000  at Sun May 22 04:18:31 EDT 2022
+
+ -------------------- exptvl.x ------------------------
+  === dipole moment === 
+                     X               Y               Z   
+   orign x       0.00000000      0.00000000      0.00000000
+   orign y       0.00000000      0.00000000      0.00000000
+   orign z       0.00000000      0.00000000      0.00000000
+   nuclear      -0.00950594     -2.05435773      0.00000000
+   electronic   -0.13482046      0.54036079     -0.00000000
+   total        -0.14432640     -1.51399694     -0.00000000
+   total Dipole moment =   3.86564582    Debye
+ --------------------------------------------------- 
+  --- ci properties for state 4 of  DRT 1 ----
+starting exptvl.x -m 200000  at Sun May 22 04:18:31 EDT 2022
+
+ -------------------- exptvl.x ------------------------
+  === dipole moment === 
+                     X               Y               Z   
+   orign x       0.00000000      0.00000000      0.00000000
+   orign y       0.00000000      0.00000000      0.00000000
+   orign z       0.00000000      0.00000000      0.00000000
+   nuclear      -0.00950594     -2.05435773      0.00000000
+   electronic    0.99825805      4.77878579     -0.00000000
+   total         0.98875211      2.72442806     -0.00000000
+   total Dipole moment =   7.36674942    Debye
+ --------------------------------------------------- 
+  --- ci properties for state 1 of  DRT 2 ----
+starting exptvl.x -m 200000  at Sun May 22 04:18:31 EDT 2022
+
+ -------------------- exptvl.x ------------------------
+  === dipole moment === 
+                     X               Y               Z   
+   orign x       0.00000000      0.00000000      0.00000000
+   orign y       0.00000000      0.00000000      0.00000000
+   orign z       0.00000000      0.00000000      0.00000000
+   nuclear      -0.00950594     -2.05435773      0.00000000
+   electronic    1.05871924      3.74227218     -0.00000000
+   total         1.04921330      1.68791445     -0.00000000
+   total Dipole moment =   5.05156467    Debye
+ --------------------------------------------------- 
+  --- ci properties for state 2 of  DRT 2 ----
+starting exptvl.x -m 200000  at Sun May 22 04:18:31 EDT 2022
+
+ -------------------- exptvl.x ------------------------
+  === dipole moment === 
+                     X               Y               Z   
+   orign x       0.00000000      0.00000000      0.00000000
+   orign y       0.00000000      0.00000000      0.00000000
+   orign z       0.00000000      0.00000000      0.00000000
+   nuclear      -0.00950594     -2.05435773      0.00000000
+   electronic   -0.20548607      0.99715266     -0.00000000
+   total        -0.21499201     -1.05720507     -0.00000000
+   total Dipole moment =   2.74215037    Debye
+ --------------------------------------------------- 
+  --- ci properties for state 3 of  DRT 2 ----
+starting exptvl.x -m 200000  at Sun May 22 04:18:32 EDT 2022
+
+ -------------------- exptvl.x ------------------------
+  === dipole moment === 
+                     X               Y               Z   
+   orign x       0.00000000      0.00000000      0.00000000
+   orign y       0.00000000      0.00000000      0.00000000
+   orign z       0.00000000      0.00000000      0.00000000
+   nuclear      -0.00950594     -2.05435773      0.00000000
+   electronic   -0.08048667      0.14638224     -0.00000000
+   total        -0.08999261     -1.90797549     -0.00000000
+   total Dipole moment =   4.85498620    Debye
+ --------------------------------------------------- 
+  --- ci properties for state 4 of  DRT 2 ----
+starting exptvl.x -m 200000  at Sun May 22 04:18:32 EDT 2022
+
+ -------------------- exptvl.x ------------------------
+  === dipole moment === 
+                     X               Y               Z   
+   orign x       0.00000000      0.00000000      0.00000000
+   orign y       0.00000000      0.00000000      0.00000000
+   orign z       0.00000000      0.00000000      0.00000000
+   nuclear      -0.00950594     -2.05435773      0.00000000
+   electronic   -0.14987887      0.57160169     -0.00000000
+   total        -0.15938481     -1.48275604     -0.00000000
+   total Dipole moment =   3.79050457    Debye
+ --------------------------------------------------- 
+ starting mo_convert.x at Sun May 22 04:18:32 EDT 2022
+
+ -------------------- mo_convert.x ------------------------
+ --------------------------------------------------- 
+ starting pymolcas molcas.input.molden > molcas.output.molden at Sun May 22 04:18:33 EDT 2022
+
+Generating link ln -s ./molcas.OrdInt ORDINT 
+ -------------------- molden ------------------------
+ --------------------------------------------------- 
+ starting mo_convert.x at Sun May 22 04:18:57 EDT 2022
+
+ -------------------- mo_convert.x ------------------------
+ --------------------------------------------------- 
+ starting pymolcas molcas.input.molden > molcas.output.molden at Sun May 22 04:18:57 EDT 2022
+
+Generating link ln -s ./molcas.OrdInt ORDINT 
+ -------------------- molden ------------------------
+ --------------------------------------------------- 
+ starting mo_convert.x at Sun May 22 04:19:13 EDT 2022
+
+ -------------------- mo_convert.x ------------------------
+ --------------------------------------------------- 
+ starting pymolcas molcas.input.molden > molcas.output.molden at Sun May 22 04:19:13 EDT 2022
+
+Generating link ln -s ./molcas.OrdInt ORDINT 
+ -------------------- molden ------------------------
+ --------------------------------------------------- 
+ starting mo_convert.x at Sun May 22 04:19:28 EDT 2022
+
+ -------------------- mo_convert.x ------------------------
+ --------------------------------------------------- 
+ starting pymolcas molcas.input.molden > molcas.output.molden at Sun May 22 04:19:28 EDT 2022
+
+Generating link ln -s ./molcas.OrdInt ORDINT 
+ -------------------- molden ------------------------
+ --------------------------------------------------- 
+ starting mo_convert.x at Sun May 22 04:19:42 EDT 2022
+
+ -------------------- mo_convert.x ------------------------
+ --------------------------------------------------- 
+ starting pymolcas molcas.input.molden > molcas.output.molden at Sun May 22 04:19:42 EDT 2022
+
+Generating link ln -s ./molcas.OrdInt ORDINT 
+ -------------------- molden ------------------------
+ --------------------------------------------------- 
+ starting mo_convert.x at Sun May 22 04:19:57 EDT 2022
+
+ -------------------- mo_convert.x ------------------------
+ --------------------------------------------------- 
+ starting pymolcas molcas.input.molden > molcas.output.molden at Sun May 22 04:19:57 EDT 2022
+
+Generating link ln -s ./molcas.OrdInt ORDINT 
+ -------------------- molden ------------------------
+ --------------------------------------------------- 
+ starting mo_convert.x at Sun May 22 04:20:12 EDT 2022
+
+ -------------------- mo_convert.x ------------------------
+ --------------------------------------------------- 
+ starting pymolcas molcas.input.molden > molcas.output.molden at Sun May 22 04:20:12 EDT 2022
+
+Generating link ln -s ./molcas.OrdInt ORDINT 
+ -------------------- molden ------------------------
+ --------------------------------------------------- 
+ starting mo_convert.x at Sun May 22 04:20:26 EDT 2022
+
+ -------------------- mo_convert.x ------------------------
+ --------------------------------------------------- 
+ starting pymolcas molcas.input.molden > molcas.output.molden at Sun May 22 04:20:27 EDT 2022
+
+Generating link ln -s ./molcas.OrdInt ORDINT 
+ -------------------- molden ------------------------
+ --------------------------------------------------- 
+ starting mo_convert.x at Sun May 22 04:20:41 EDT 2022
+
+ -------------------- mo_convert.x ------------------------
+ --------------------------------------------------- 
+ starting pymolcas molcas.input.molden > molcas.output.molden at Sun May 22 04:20:42 EDT 2022
+
+Generating link ln -s ./molcas.OrdInt ORDINT 
+ -------------------- molden ------------------------
+ --------------------------------------------------- 
+ starting mo_convert.x at Sun May 22 04:20:56 EDT 2022
+
+ -------------------- mo_convert.x ------------------------
+ --------------------------------------------------- 
+ starting pymolcas molcas.input.molden > molcas.output.molden at Sun May 22 04:20:56 EDT 2022
+
+Generating link ln -s ./molcas.OrdInt ORDINT 
+ -------------------- molden ------------------------
+ --------------------------------------------------- 
+ starting mo_convert.x at Sun May 22 04:21:11 EDT 2022
+
+ -------------------- mo_convert.x ------------------------
+ --------------------------------------------------- 
+ starting pymolcas molcas.input.molden > molcas.output.molden at Sun May 22 04:21:11 EDT 2022
+
+Generating link ln -s ./molcas.OrdInt ORDINT 
+ -------------------- molden ------------------------
+ --------------------------------------------------- 
+ starting mo_convert.x at Sun May 22 04:21:25 EDT 2022
+
+ -------------------- mo_convert.x ------------------------
+ --------------------------------------------------- 
+ starting pymolcas molcas.input.molden > molcas.output.molden at Sun May 22 04:21:26 EDT 2022
+
+Generating link ln -s ./molcas.OrdInt ORDINT 
+ -------------------- molden ------------------------
+ --------------------------------------------------- 
+ starting mo_convert.x at Sun May 22 04:21:40 EDT 2022
+
+ -------------------- mo_convert.x ------------------------
+ --------------------------------------------------- 
+ starting pymolcas molcas.input.molden > molcas.output.molden at Sun May 22 04:21:40 EDT 2022
+
+Generating link ln -s ./molcas.OrdInt ORDINT 
+ -------------------- molden ------------------------
+ --------------------------------------------------- 
+ starting mo_convert.x at Sun May 22 04:21:54 EDT 2022
+
+ -------------------- mo_convert.x ------------------------
+ --------------------------------------------------- 
+ starting pymolcas molcas.input.molden > molcas.output.molden at Sun May 22 04:21:55 EDT 2022
+
+Generating link ln -s ./molcas.OrdInt ORDINT 
+ -------------------- molden ------------------------
+ --------------------------------------------------- 
+ 
+
+ +++++++++++ STARTING GRADIENTS AND NAD. COUPLINGS CALCULATION +++++++++++ 
+
+ Using new transition density code ... 
+INFO: this is a frozen core gradient calculation
+starting cidrt.x  -m 200000 < cidrtin.cigrd > cidrtls.cigrd at Sun May 22 04:22:09 EDT 2022
+
+ -------------------- cidrt.x ------------------------
+ total number of orbitals            :   246
+ number of frozen core orbitals      :    18
+ number of frozen virtual orbitals   :     0
+ number of internal orbitals         :    14
+ number of external orbitals         :   214
+ spatial symmetry:   a  
+ 
+ total number of configurations  282461366
+ number of reference configurations  1666
+ --------------------------------------------------- 
+ starting tran.x -m 200000  at Sun May 22 04:22:17 EDT 2022
+
+ -------------------- tran.x ------------------------
+ --------------------------------------------------- 
+ ---- Computing 8 gradient(s)  ----
+
+ --- Computing gradient for DRT:1, State; 1
+
+starting cigrd.x -m 200000 at Sun May 22 04:28:08 EDT 2022
+
+ -------------------- cigrd.x ------------------------
+ Total energy (ciudg) :  -286.026810802382 
+  Effective energy     :  -286.026810816827 
+  Delta E              :     0.000000014445 
+  --------------------------------------------------- 
+ starting tran.x -m 200000  at Sun May 22 04:35:28 EDT 2022
+
+ -------------------- tran.x ------------------------
+ --------------------------------------------------- 
+ starting pymolcas molcas.input.alaska > molcas.output.alaska  at Sun May 22 04:40:47 EDT 2022
+
+Generating link ln -s ./molcas.OrdInt ORDINT 
+ -------------------- alaska ------------------------
+ --------------------------------------------------- 
+ cartesian gradient by alaska (MOLCAS)
+
+ === Gradient of DRT 1, state 1 === 
+   0.579059D-01   0.100275D+00  -0.606194D-08
+   0.221005D-01  -0.105295D+00   0.194246D-08
+  -0.182740D-01  -0.257348D-01  -0.124100D-07
+   0.125352D-01  -0.102870D-01   0.551407D-08
+   0.773193D-02   0.345788D-01   0.104254D-07
+  -0.651118D-02   0.363091D-01   0.801963D-08
+   0.248835D-02   0.119214D-01  -0.868050D-08
+  -0.997213D-01  -0.494564D-01   0.358623D-09
+   0.207147D-01   0.744125D-02   0.209684D-08
+   0.469018D-02   0.277727D-03   0.134082D-08
+  -0.337580D-02   0.890858D-03  -0.146177D-08
+   0.921588D-03  -0.252979D-03   0.228993D-09
+  -0.126789D-02   0.759216D-03  -0.283177D-09
+   0.618444D-04  -0.142681D-02  -0.102939D-08
+===================================
+ --- Computing gradient for DRT:1, State; 2
+
+starting cigrd.x -m 200000 at Sun May 22 04:42:04 EDT 2022
+
+ -------------------- cigrd.x ------------------------
+ Total energy (ciudg) :  -285.919146268497 
+  Effective energy     :  -285.919146280504 
+  Delta E              :     0.000000012007 
+  --------------------------------------------------- 
+ starting tran.x -m 200000  at Sun May 22 04:49:53 EDT 2022
+
+ -------------------- tran.x ------------------------
+ --------------------------------------------------- 
+ starting pymolcas molcas.input.alaska > molcas.output.alaska  at Sun May 22 04:55:18 EDT 2022
+
+Generating link ln -s ./molcas.OrdInt ORDINT 
+ -------------------- alaska ------------------------
+ --------------------------------------------------- 
+ cartesian gradient by alaska (MOLCAS)
+
+ === Gradient of DRT 1, state 2 === 
+  -0.222355D-01  -0.133078D-01   0.156517D-05
+  -0.471196D-02  -0.203269D-01  -0.102175D-06
+   0.134850D-01  -0.448695D-01  -0.119650D-06
+  -0.100249D-01  -0.463205D-01  -0.495564D-06
+   0.164960D-01   0.482870D-01   0.227922D-06
+  -0.223924D-01   0.525279D-01  -0.165122D-06
+   0.515370D-02   0.950846D-02  -0.285643D-07
+   0.290966D-01   0.154723D-01  -0.333491D-06
+  -0.405336D-02  -0.169334D-02  -0.807889D-06
+   0.615419D-03   0.123679D-03   0.119074D-07
+  -0.109312D-02   0.664571D-03   0.945137D-07
+   0.243035D-03   0.481092D-03   0.486803D-07
+  -0.507026D-03   0.593493D-03   0.703837D-07
+  -0.715671D-04  -0.114052D-02   0.338817D-07
+===================================
+ --- Computing gradient for DRT:1, State; 3
+
+starting cigrd.x -m 200000 at Sun May 22 04:56:39 EDT 2022
+
+ -------------------- cigrd.x ------------------------
+ Total energy (ciudg) :  -285.848839803356 
+  Effective energy     :  -285.848839818948 
+  Delta E              :     0.000000015592 
+  --------------------------------------------------- 
+ starting tran.x -m 200000  at Sun May 22 05:04:01 EDT 2022
+
+ -------------------- tran.x ------------------------
+ --------------------------------------------------- 
+ starting pymolcas molcas.input.alaska > molcas.output.alaska  at Sun May 22 05:09:19 EDT 2022
+
+Generating link ln -s ./molcas.OrdInt ORDINT 
+ -------------------- alaska ------------------------
+ --------------------------------------------------- 
+ cartesian gradient by alaska (MOLCAS)
+
+ === Gradient of DRT 1, state 3 === 
+   0.627832D-01   0.893385D-01  -0.638710D-08
+   0.248460D-01  -0.884436D-01   0.570179D-08
+   0.739844D-02   0.976834D-02  -0.163735D-07
+  -0.155543D-01   0.168464D-01   0.404561D-08
+   0.299342D-01   0.347740D-02   0.381925D-08
+  -0.332245D-01   0.115096D-01   0.177369D-07
+   0.700886D-02   0.175362D-02  -0.722723D-08
+  -0.102742D+00  -0.521209D-01   0.474942D-09
+   0.186799D-01   0.726812D-02   0.238663D-08
+   0.376721D-02   0.162971D-03   0.355737D-09
+  -0.248364D-02   0.721609D-03  -0.408962D-08
+  -0.362165D-03  -0.181861D-03   0.232913D-09
+  -0.108396D-03   0.112722D-02   0.376033D-09
+   0.569846D-04  -0.122740D-02  -0.105240D-08
+===================================
+ --- Computing gradient for DRT:1, State; 4
+
+starting cigrd.x -m 200000 at Sun May 22 05:10:39 EDT 2022
+
+ -------------------- cigrd.x ------------------------
+ Total energy (ciudg) :  -285.845189375693 
+  Effective energy     :  -285.845189387306 
+  Delta E              :     0.000000011613 
+  --------------------------------------------------- 
+ starting tran.x -m 200000  at Sun May 22 05:17:29 EDT 2022
+
+ -------------------- tran.x ------------------------
+ --------------------------------------------------- 
+ starting pymolcas molcas.input.alaska > molcas.output.alaska  at Sun May 22 05:22:41 EDT 2022
+
+Generating link ln -s ./molcas.OrdInt ORDINT 
+ -------------------- alaska ------------------------
+ --------------------------------------------------- 
+ cartesian gradient by alaska (MOLCAS)
+
+ === Gradient of DRT 1, state 4 === 
+  -0.915020D-04  -0.112721D-03   0.122074D-07
+   0.208929D-04   0.599410D-04  -0.216847D-07
+   0.298440D-04  -0.101346D-04  -0.132586D-07
+  -0.377730D-05   0.290572D-05   0.760585D-08
+   0.676859D-05   0.325859D-04   0.142999D-07
+   0.213975D-04  -0.172736D-04   0.248595D-08
+  -0.478581D-04  -0.373854D-04   0.308868D-08
+   0.465554D-04   0.459047D-04   0.213278D-08
+   0.252885D-04   0.229407D-04  -0.349063D-09
+  -0.114456D-04   0.181460D-05   0.990931D-09
+  -0.109821D-04   0.781408D-05  -0.127566D-08
+   0.119047D-04  -0.765816D-05  -0.197207D-08
+   0.237927D-05   0.316038D-05  -0.442577D-08
+   0.534404D-06   0.810542D-05   0.154379D-09
+===================================
+ --- Computing gradient for DRT:2, State; 1
+
+starting cigrd.x -m 200000 at Sun May 22 05:24:02 EDT 2022
+
+ -------------------- cigrd.x ------------------------
+ Total energy (ciudg) :  -285.929942695573 
+  Effective energy     :  -285.929942707928 
+  Delta E              :     0.000000012355 
+  --------------------------------------------------- 
+ starting tran.x -m 200000  at Sun May 22 05:31:49 EDT 2022
+
+ -------------------- tran.x ------------------------
+ --------------------------------------------------- 
+ starting pymolcas molcas.input.alaska > molcas.output.alaska  at Sun May 22 05:37:08 EDT 2022
+
+Generating link ln -s ./molcas.OrdInt ORDINT 
+ -------------------- alaska ------------------------
+ --------------------------------------------------- 
+ cartesian gradient by alaska (MOLCAS)
+
+ === Gradient of DRT 2, state 1 === 
+  -0.231496D-01  -0.162563D-02  -0.460374D-08
+  -0.535813D-02  -0.409381D-01   0.275644D-09
+   0.837674D-02  -0.392260D-01  -0.847082D-09
+  -0.445523D-02  -0.398333D-01   0.149360D-07
+   0.146066D-01   0.449638D-01   0.785119D-08
+  -0.202135D-01   0.485353D-01  -0.793610D-08
+   0.459751D-02   0.122870D-01  -0.169070D-07
+   0.323220D-01   0.172323D-01   0.541836D-08
+  -0.550652D-02  -0.203696D-02   0.321772D-08
+   0.589413D-03   0.210573D-03   0.503451D-10
+  -0.142318D-02   0.710419D-03  -0.220843D-08
+   0.260628D-03   0.427812D-03   0.278786D-08
+  -0.557194D-03   0.511207D-03  -0.370437D-08
+  -0.896037D-04  -0.121859D-02   0.166959D-08
+===================================
+ --- Computing gradient for DRT:2, State; 2
+
+starting cigrd.x -m 200000 at Sun May 22 05:38:29 EDT 2022
+
+ -------------------- cigrd.x ------------------------
+ Total energy (ciudg) :  -285.873824571632 
+  Effective energy     :  -285.873824585832 
+  Delta E              :     0.000000014200 
+  --------------------------------------------------- 
+ starting tran.x -m 200000  at Sun May 22 05:45:47 EDT 2022
+
+ -------------------- tran.x ------------------------
+ --------------------------------------------------- 
+ starting pymolcas molcas.input.alaska > molcas.output.alaska  at Sun May 22 05:50:57 EDT 2022
+
+Generating link ln -s ./molcas.OrdInt ORDINT 
+ -------------------- alaska ------------------------
+ --------------------------------------------------- 
+ cartesian gradient by alaska (MOLCAS)
+
+ === Gradient of DRT 2, state 2 === 
+   0.650488D-01   0.111049D+00  -0.520806D-08
+  -0.162034D-02  -0.947089D-01   0.439533D-08
+   0.593854D-02   0.831709D-02  -0.126216D-07
+   0.737051D-02   0.236669D-01  -0.326158D-09
+   0.160641D-01  -0.119952D-01   0.795640D-08
+  -0.359277D-01   0.116488D-01   0.120399D-07
+   0.240232D-01  -0.348031D-02  -0.528557D-08
+  -0.104720D+00  -0.517065D-01  -0.583482D-10
+   0.222363D-01   0.720984D-02   0.306549D-08
+   0.422237D-02  -0.293186D-03  -0.776575D-09
+  -0.284096D-02   0.534168D-03  -0.259222D-08
+  -0.755240D-04  -0.347867D-03  -0.532825D-09
+  -0.212552D-03   0.932478D-03   0.104443D-08
+   0.493677D-03  -0.826429D-03  -0.110015D-08
+===================================
+ --- Computing gradient for DRT:2, State; 3
+
+starting cigrd.x -m 200000 at Sun May 22 05:52:11 EDT 2022
+
+ -------------------- cigrd.x ------------------------
+ Total energy (ciudg) :  -285.865550259376 
+  Effective energy     :  -285.865550274610 
+  Delta E              :     0.000000015234 
+  --------------------------------------------------- 
+ starting tran.x -m 200000  at Sun May 22 06:00:07 EDT 2022
+
+ -------------------- tran.x ------------------------
+ --------------------------------------------------- 
+ starting pymolcas molcas.input.alaska > molcas.output.alaska  at Sun May 22 06:05:17 EDT 2022
+
+Generating link ln -s ./molcas.OrdInt ORDINT 
+ -------------------- alaska ------------------------
+ --------------------------------------------------- 
+ cartesian gradient by alaska (MOLCAS)
+
+ === Gradient of DRT 2, state 3 === 
+   0.616009D-01   0.686923D-01  -0.624206D-08
+   0.511622D-01  -0.719488D-01   0.123253D-07
+  -0.305784D-02   0.106374D-01  -0.147367D-07
+  -0.282109D-01   0.152880D-01  -0.565696D-08
+   0.372702D-01   0.491525D-02   0.552652D-08
+  -0.183156D-01  -0.719754D-02   0.847629D-08
+  -0.138279D-01   0.239671D-01   0.260178D-08
+  -0.104128D+00  -0.536845D-01   0.102084D-08
+   0.169056D-01   0.750468D-02   0.162718D-08
+   0.326429D-02   0.103259D-02   0.642663D-09
+  -0.174088D-02   0.135278D-02  -0.488190D-08
+  -0.680376D-03   0.175848D-03   0.588230D-09
+   0.114983D-03   0.125414D-02   0.465472D-09
+  -0.356655D-03  -0.198935D-02  -0.175669D-08
+===================================
+ --- Computing gradient for DRT:2, State; 4
+
+starting cigrd.x -m 200000 at Sun May 22 06:06:34 EDT 2022
+
+ -------------------- cigrd.x ------------------------
+ Total energy (ciudg) :  -285.850458130947 
+  Effective energy     :  -285.850458145697 
+  Delta E              :     0.000000014750 
+  --------------------------------------------------- 
+ starting tran.x -m 200000  at Sun May 22 06:13:28 EDT 2022
+
+ -------------------- tran.x ------------------------
+ --------------------------------------------------- 
+ starting pymolcas molcas.input.alaska > molcas.output.alaska  at Sun May 22 06:18:34 EDT 2022
+
+Generating link ln -s ./molcas.OrdInt ORDINT 
+ -------------------- alaska ------------------------
+ --------------------------------------------------- 
+ cartesian gradient by alaska (MOLCAS)
+
+ === Gradient of DRT 2, state 4 === 
+   0.621301D-01   0.105526D+00   0.328147D-08
+   0.217542D-01  -0.809608D-01  -0.647037D-09
+   0.519725D-02  -0.202581D-01  -0.210371D-07
+  -0.116195D-01  -0.113692D-01   0.638645D-08
+   0.341733D-01   0.317678D-01   0.489057D-08
+  -0.336723D-01   0.373279D-01   0.107741D-07
+   0.327013D-02  -0.206152D-01  -0.972874D-09
+  -0.103338D+00  -0.512574D-01  -0.101034D-09
+   0.210229D-01   0.749793D-02   0.118292D-08
+   0.452136D-02  -0.161965D-03   0.436720D-09
+  -0.312830D-02   0.417627D-03  -0.166523D-08
+   0.397517D-03   0.612036D-03  -0.224697D-09
+  -0.797633D-03   0.171146D-02  -0.216184D-10
+   0.885758D-04  -0.238241D-03  -0.228262D-08
+===================================
+
+---- Computing 12 couplings ---- 
+
+
+ -------- NAD. COUPLING for DRT:1 STATE:1 AND DRT:1 STATE:2 --------
+opening file =ciudgls.drt1.sp
+opening file =ciudgls.drt1.sp
+extracted: energy1= -286.0268108023   energy2=-285.9191462684   deltae=-0.107664533899992
+starting cigrd.x -m 200000 at Sun May 22 06:19:52 EDT 2022
+
+ -------------------- cigrd.x ------------------------
+ Total energy (ciudg) :     0.000000000205 
+  Effective energy     :    -0.000000000624 
+  Delta E              :     0.000000000829 
+  --------------------------------------------------- 
+ starting tran.x -m 200000  at Sun May 22 06:26:55 EDT 2022
+
+ -------------------- tran.x ------------------------
+ --------------------------------------------------- 
+  adding keyword NONUC to alaska input
+starting pymolcas molcas.input.alaska > molcas.output.alaska  at Sun May 22 06:32:04 EDT 2022
+
+Generating link ln -s ./molcas.OrdInt ORDINT 
+ -------------------- alaska ------------------------
+ --------------------------------------------------- 
+ cartesian gradient by alaska (MOLCAS)
+
+ Calculating the Dx(r,s) term of D[CSF] nonadiabatic coupling term.
+dxcalc: INPUT LINE SEPARATOR 
+ 
+starting tran.x -m 200000  at Sun May 22 06:33:09 EDT 2022
+
+ -------------------- tran.x ------------------------
+ --------------------------------------------------- 
+ starting tdmrunfile.x > tdmrunfilels at Sun May 22 06:33:09 EDT 2022
+
+ -------------------- tdmrunfile.x ------------------------
+ --------------------------------------------------- 
+ starting pymolcas molcas.input.alaska > molcas.output.alaska  at Sun May 22 06:33:10 EDT 2022
+
+Generating link ln -s ./molcas.OrdInt ORDINT 
+ -------------------- alaska ------------------------
+ --------------------------------------------------- 
+ 
+ === Non-adiabatic coupling for DRT 1 STATE 1 and DRT 1 STATE 2 === 
+  -1.315105E-08  -5.142560E-09   4.182346E-01
+   4.019525E-08  -1.217387E-09  -9.594181E-02
+  -1.561100E-09  -1.636046E-08   7.699424E-02
+  -7.622610E-09   7.150725E-09  -6.459909E-02
+   7.227292E-09   6.777857E-09   2.358906E-02
+  -1.764459E-08   4.788909E-09   4.423786E-02
+  -9.974113E-10   7.073668E-10  -1.031926E-02
+   5.348446E-09  -5.961758E-11  -2.429719E-01
+  -1.174359E-08  -3.381801E-09  -1.083470E-01
+  -3.435550E-09   2.880203E-09  -4.173389E-02
+   5.344310E-09   1.483558E-09  -2.024018E-02
+  -6.410310E-10  -7.386741E-11  -1.420455E-03
+  -2.701205E-10   9.704654E-10   6.474062E-03
+  -1.074222E-09   1.474199E-09  -1.325886E-02
+===================================
+
+ Norm of the nonadiabatic coupling vector: 
+ |h(drt1.state1,drt1.state2)|= 0.519607143662022 
+
+ Cross-check of the non-adiabatic coupling term:
+  DeltaE= -0.107664533899992
+
+  <L>*dE form CIGRD   :    0.0000000000     0.0000000000    -0.0769917695
+  <L>*dE form NADCOUPL:   -0.0460011446     0.0236563272    -0.0000000069
+ -------------------------------------------------------------------------
+  Difference          :    0.0460011446    -0.0236563272    -0.0769917626
+
+ NOTE: This test is meaningless at a point of conical intersection!
+
+
+ -------- NAD. COUPLING for DRT:1 STATE:1 AND DRT:1 STATE:3 --------
+opening file =ciudgls.drt1.sp
+opening file =ciudgls.drt1.sp
+extracted: energy1= -286.0268108023   energy2=-285.8488398032   deltae=-0.177970999100012
+starting cigrd.x -m 200000 at Sun May 22 06:34:19 EDT 2022
+
+ -------------------- cigrd.x ------------------------
+ Total energy (ciudg) :    -0.000000001321 
+  Effective energy     :    -0.000000006774 
+  Delta E              :     0.000000005453 
+  --------------------------------------------------- 
+ starting tran.x -m 200000  at Sun May 22 06:41:11 EDT 2022
+
+ -------------------- tran.x ------------------------
+ --------------------------------------------------- 
+  adding keyword NONUC to alaska input
+starting pymolcas molcas.input.alaska > molcas.output.alaska  at Sun May 22 06:46:22 EDT 2022
+
+Generating link ln -s ./molcas.OrdInt ORDINT 
+ -------------------- alaska ------------------------
+ --------------------------------------------------- 
+ cartesian gradient by alaska (MOLCAS)
+
+ Calculating the Dx(r,s) term of D[CSF] nonadiabatic coupling term.
+dxcalc: INPUT LINE SEPARATOR 
+ 
+starting tran.x -m 200000  at Sun May 22 06:47:29 EDT 2022
+
+ -------------------- tran.x ------------------------
+ --------------------------------------------------- 
+ starting tdmrunfile.x > tdmrunfilels at Sun May 22 06:47:29 EDT 2022
+
+ -------------------- tdmrunfile.x ------------------------
+ --------------------------------------------------- 
+ starting pymolcas molcas.input.alaska > molcas.output.alaska  at Sun May 22 06:47:30 EDT 2022
+
+Generating link ln -s ./molcas.OrdInt ORDINT 
+ -------------------- alaska ------------------------
+ --------------------------------------------------- 
+ 
+ === Non-adiabatic coupling for DRT 1 STATE 1 and DRT 1 STATE 3 === 
+   1.287525E-01  -9.267573E-03  -1.444027E-08
+  -5.830834E-01  -7.038508E-03  -2.252490E-08
+   2.153728E-01  -4.539522E-01   9.567963E-09
+   2.064051E-01   4.746532E-01   2.895501E-09
+   2.646032E-01   4.449176E-01   3.545779E-08
+   2.690765E-01  -4.458490E-01   6.731731E-10
+  -6.074370E-01  -4.219203E-03  -1.098309E-08
+   3.191142E-03   7.271306E-03  -2.455058E-12
+  -1.021831E-03  -3.332065E-03   4.829641E-09
+   8.401928E-03  -6.064365E-03  -6.820669E-09
+   8.239196E-03   7.165128E-03   5.309773E-09
+   5.888770E-03   1.080791E-02   5.679275E-09
+   6.459548E-03  -1.062748E-02  -3.987270E-09
+  -2.843867E-03  -2.482011E-04  -5.648596E-09
+===================================
+
+ Norm of the nonadiabatic coupling vector: 
+ |h(drt1.state1,drt1.state3)|= 1.33634548870453 
+
+ Cross-check of the non-adiabatic coupling term:
+  DeltaE= -0.177970999100012
+
+  <L>*dE form CIGRD   :    0.0000000000     0.0000000000    -0.1272684852
+  <L>*dE form NADCOUPL:   -0.0000000164    -0.0000000131    -0.1263837506
+ -------------------------------------------------------------------------
+  Difference          :    0.0000000164     0.0000000131    -0.0008847346
+
+ NOTE: This test is meaningless at a point of conical intersection!
+
+
+ -------- NAD. COUPLING for DRT:1 STATE:1 AND DRT:1 STATE:4 --------
+opening file =ciudgls.drt1.sp
+opening file =ciudgls.drt1.sp
+extracted: energy1= -286.0268108023   energy2=-285.8451893756   deltae=-0.181621426700019
+starting cigrd.x -m 200000 at Sun May 22 06:48:39 EDT 2022
+
+ -------------------- cigrd.x ------------------------
+ Total energy (ciudg) :     0.000000000206 
+  Effective energy     :     0.000000001965 
+  Delta E              :    -0.000000001759 
+  --------------------------------------------------- 
+ starting tran.x -m 200000  at Sun May 22 06:55:15 EDT 2022
+
+ -------------------- tran.x ------------------------
+ --------------------------------------------------- 
+  adding keyword NONUC to alaska input
+starting pymolcas molcas.input.alaska > molcas.output.alaska  at Sun May 22 07:00:16 EDT 2022
+
+Generating link ln -s ./molcas.OrdInt ORDINT 
+ -------------------- alaska ------------------------
+ --------------------------------------------------- 
+ cartesian gradient by alaska (MOLCAS)
+
+ Calculating the Dx(r,s) term of D[CSF] nonadiabatic coupling term.
+dxcalc: INPUT LINE SEPARATOR 
+ 
+starting tran.x -m 200000  at Sun May 22 07:01:21 EDT 2022
+
+ -------------------- tran.x ------------------------
+ --------------------------------------------------- 
+ starting tdmrunfile.x > tdmrunfilels at Sun May 22 07:01:21 EDT 2022
+
+ -------------------- tdmrunfile.x ------------------------
+ --------------------------------------------------- 
+ starting pymolcas molcas.input.alaska > molcas.output.alaska  at Sun May 22 07:01:21 EDT 2022
+
+Generating link ln -s ./molcas.OrdInt ORDINT 
+ -------------------- alaska ------------------------
+ --------------------------------------------------- 
+ 
+ === Non-adiabatic coupling for DRT 1 STATE 1 and DRT 1 STATE 4 === 
+   5.976561E-08   1.473981E-08   1.864299E-02
+  -2.816151E-08   8.583725E-09  -2.031554E-02
+   8.372912E-09  -9.950967E-09  -3.594407E-02
+   7.857873E-09   3.782737E-09   1.940341E-02
+  -4.678127E-09   1.778298E-09  -3.238439E-02
+  -3.894838E-09   2.314725E-09   5.054709E-02
+   7.644049E-09  -7.861885E-09   1.166265E-02
+  -3.594393E-08  -1.505122E-08  -1.250501E-02
+  -2.904638E-09  -1.194838E-10   5.449682E-03
+  -4.517567E-09   2.552277E-09   2.703090E-02
+  -3.440857E-09   2.007967E-09  -1.373561E-02
+   2.408812E-09  -1.796595E-09  -6.566524E-03
+  -3.073200E-09  -8.062527E-10  -1.488028E-02
+   5.900085E-10  -1.524800E-10  -7.369423E-04
+===================================
+
+ Norm of the nonadiabatic coupling vector: 
+ |h(drt1.state1,drt1.state4)|= 0.086827535933272 
+
+ Cross-check of the non-adiabatic coupling term:
+  DeltaE= -0.181621426700019
+
+  <L>*dE form CIGRD   :    0.0000000000     0.0000000000    -0.1298789352
+  <L>*dE form NADCOUPL:    0.0003034762     0.0268846409    -0.0000000087
+ -------------------------------------------------------------------------
+  Difference          :   -0.0003034762    -0.0268846409    -0.1298789265
+
+ NOTE: This test is meaningless at a point of conical intersection!
+
+
+ -------- NAD. COUPLING for DRT:1 STATE:2 AND DRT:1 STATE:3 --------
+opening file =ciudgls.drt1.sp
+opening file =ciudgls.drt1.sp
+extracted: energy1= -285.9191462684   energy2=-285.8488398032   deltae=-0.0703064652000194
+starting cigrd.x -m 200000 at Sun May 22 07:02:26 EDT 2022
+
+ -------------------- cigrd.x ------------------------
+ Total energy (ciudg) :     0.000000000262 
+  Effective energy     :    -0.000000000169 
+  Delta E              :     0.000000000431 
+  --------------------------------------------------- 
+ starting tran.x -m 200000  at Sun May 22 07:10:01 EDT 2022
+
+ -------------------- tran.x ------------------------
+ --------------------------------------------------- 
+  adding keyword NONUC to alaska input
+starting pymolcas molcas.input.alaska > molcas.output.alaska  at Sun May 22 07:15:05 EDT 2022
+
+Generating link ln -s ./molcas.OrdInt ORDINT 
+ -------------------- alaska ------------------------
+ --------------------------------------------------- 
+ cartesian gradient by alaska (MOLCAS)
+
+ Calculating the Dx(r,s) term of D[CSF] nonadiabatic coupling term.
+dxcalc: INPUT LINE SEPARATOR 
+ 
+starting tran.x -m 200000  at Sun May 22 07:16:09 EDT 2022
+
+ -------------------- tran.x ------------------------
+ --------------------------------------------------- 
+ starting tdmrunfile.x > tdmrunfilels at Sun May 22 07:16:10 EDT 2022
+
+ -------------------- tdmrunfile.x ------------------------
+ --------------------------------------------------- 
+ starting pymolcas molcas.input.alaska > molcas.output.alaska  at Sun May 22 07:16:10 EDT 2022
+
+Generating link ln -s ./molcas.OrdInt ORDINT 
+ -------------------- alaska ------------------------
+ --------------------------------------------------- 
+ 
+ === Non-adiabatic coupling for DRT 1 STATE 2 and DRT 1 STATE 3 === 
+   6.502434E-08  -1.272436E-08  -1.236519E-01
+   1.333267E-09   6.764365E-08   5.949270E-02
+  -9.513647E-09  -3.888925E-08   3.711627E-02
+  -2.624580E-09  -9.782345E-09   5.546618E-02
+   2.206593E-09  -1.221334E-09   2.039334E-03
+  -1.063109E-08   2.030602E-08  -3.987447E-02
+   1.263781E-08  -2.602436E-10   1.802784E-02
+  -3.797490E-08  -1.517566E-08   7.941993E-02
+  -1.544359E-08  -7.653551E-09  -2.645032E-02
+  -5.694039E-10  -3.404174E-09  -6.000443E-02
+  -3.205145E-09   6.649549E-09   3.088037E-02
+   1.364721E-09   4.107231E-12  -1.134738E-02
+  -1.494948E-09  -2.487147E-09  -2.336390E-02
+  -1.112282E-09  -3.026744E-09   6.870937E-05
+===================================
+
+ Norm of the nonadiabatic coupling vector: 
+ |h(drt1.state2,drt1.state3)|= 0.193489889954895 
+
+ Cross-check of the non-adiabatic coupling term:
+  DeltaE= -0.0703064652000194
+
+  <L>*dE form CIGRD   :    0.0000000000     0.0000000000    -0.0502767157
+  <L>*dE form NADCOUPL:    0.0001546756     0.0032868582    -0.0000000094
+ -------------------------------------------------------------------------
+  Difference          :   -0.0001546756    -0.0032868582    -0.0502767063
+
+ NOTE: This test is meaningless at a point of conical intersection!
+
+
+ -------- NAD. COUPLING for DRT:1 STATE:2 AND DRT:1 STATE:4 --------
+opening file =ciudgls.drt1.sp
+opening file =ciudgls.drt1.sp
+extracted: energy1= -285.9191462684   energy2=-285.8451893756   deltae=-0.0739568928000267
+starting cigrd.x -m 200000 at Sun May 22 07:17:19 EDT 2022
+
+ -------------------- cigrd.x ------------------------
+ Total energy (ciudg) :     0.000000000102 
+  Effective energy     :    -0.000000000774 
+  Delta E              :     0.000000000876 
+  --------------------------------------------------- 
+ starting tran.x -m 200000  at Sun May 22 07:25:19 EDT 2022
+
+ -------------------- tran.x ------------------------
+ --------------------------------------------------- 
+  adding keyword NONUC to alaska input
+starting pymolcas molcas.input.alaska > molcas.output.alaska  at Sun May 22 07:30:39 EDT 2022
+
+Generating link ln -s ./molcas.OrdInt ORDINT 
+ -------------------- alaska ------------------------
+ --------------------------------------------------- 
+ cartesian gradient by alaska (MOLCAS)
+
+ Calculating the Dx(r,s) term of D[CSF] nonadiabatic coupling term.
+dxcalc: INPUT LINE SEPARATOR 
+ 
+starting tran.x -m 200000  at Sun May 22 07:31:50 EDT 2022
+
+ -------------------- tran.x ------------------------
+ --------------------------------------------------- 
+ starting tdmrunfile.x > tdmrunfilels at Sun May 22 07:31:50 EDT 2022
+
+ -------------------- tdmrunfile.x ------------------------
+ --------------------------------------------------- 
+ starting pymolcas molcas.input.alaska > molcas.output.alaska  at Sun May 22 07:31:50 EDT 2022
+
+Generating link ln -s ./molcas.OrdInt ORDINT 
+ -------------------- alaska ------------------------
+ --------------------------------------------------- 
+ 
+ === Non-adiabatic coupling for DRT 1 STATE 2 and DRT 1 STATE 4 === 
+   3.452600E-02   2.237798E-03  -9.326184E-07
+  -1.349713E-01  -9.496031E-03   3.400053E-07
+  -2.117321E-02   3.961743E-01   1.648180E-07
+  -2.425523E-03  -3.634227E-01  -7.436807E-08
+  -4.008505E-01  -8.167010E-01   1.230463E-07
+  -3.964285E-01   7.952293E-01   1.655642E-08
+   8.638876E-01   3.989625E-03  -3.743980E-08
+   1.602073E-02   2.581726E-03   2.811865E-07
+   6.796573E-03  -1.138769E-02   1.845192E-07
+   2.584107E-03   6.644808E-03  -3.730426E-08
+   6.191380E-04  -3.348926E-03  -2.715946E-08
+  -5.012554E-03  -3.991421E-03   1.770718E-08
+  -5.248432E-03   2.595753E-03  -2.711142E-08
+   1.606028E-02   5.468276E-04   8.164123E-09
+===================================
+
+ Norm of the nonadiabatic coupling vector: 
+ |h(drt1.state2,drt1.state4)|= 1.63504389540111 
+
+ Cross-check of the non-adiabatic coupling term:
+  DeltaE= -0.0739568928000267
+
+  <L>*dE form CIGRD   :    0.0000000000     0.0000000000    -0.0528871657
+  <L>*dE form NADCOUPL:   -0.0000000830    -0.0000000902    -0.0326021975
+ -------------------------------------------------------------------------
+  Difference          :    0.0000000830     0.0000000902    -0.0202849682
+
+ NOTE: This test is meaningless at a point of conical intersection!
+
+
+ -------- NAD. COUPLING for DRT:1 STATE:3 AND DRT:1 STATE:4 --------
+opening file =ciudgls.drt1.sp
+opening file =ciudgls.drt1.sp
+extracted: energy1= -285.8488398032   energy2=-285.8451893756   deltae=-0.00365042760000733
+starting cigrd.x -m 200000 at Sun May 22 07:32:57 EDT 2022
+
+ -------------------- cigrd.x ------------------------
+ Total energy (ciudg) :    -0.000000000002 
+  Effective energy     :    -0.000000000362 
+  Delta E              :     0.000000000360 
+  --------------------------------------------------- 
+ starting tran.x -m 200000  at Sun May 22 07:40:07 EDT 2022
+
+ -------------------- tran.x ------------------------
+ --------------------------------------------------- 
+  adding keyword NONUC to alaska input
+starting pymolcas molcas.input.alaska > molcas.output.alaska  at Sun May 22 07:45:12 EDT 2022
+
+Generating link ln -s ./molcas.OrdInt ORDINT 
+ -------------------- alaska ------------------------
+ --------------------------------------------------- 
+ cartesian gradient by alaska (MOLCAS)
+
+ Calculating the Dx(r,s) term of D[CSF] nonadiabatic coupling term.
+dxcalc: INPUT LINE SEPARATOR 
+ 
+starting tran.x -m 200000  at Sun May 22 07:46:20 EDT 2022
+
+ -------------------- tran.x ------------------------
+ --------------------------------------------------- 
+ starting tdmrunfile.x > tdmrunfilels at Sun May 22 07:46:20 EDT 2022
+
+ -------------------- tdmrunfile.x ------------------------
+ --------------------------------------------------- 
+ starting pymolcas molcas.input.alaska > molcas.output.alaska  at Sun May 22 07:46:20 EDT 2022
+
+Generating link ln -s ./molcas.OrdInt ORDINT 
+ -------------------- alaska ------------------------
+ --------------------------------------------------- 
+ 
+ === Non-adiabatic coupling for DRT 1 STATE 3 and DRT 1 STATE 4 === 
+   9.804069E-07  -1.313935E-07  -6.309664E+00
+  -8.998302E-07   5.103683E-07  -4.342942E-02
+   2.574573E-07  -1.282027E-07  -9.986949E-01
+  -1.638855E-07  -1.897092E-07   2.010655E+00
+   2.683700E-07   1.966793E-07   3.137720E-01
+   3.476568E-07   8.560518E-08   3.309489E-01
+  -2.823079E-07  -2.230426E-08  -2.897315E-01
+  -4.654616E-07  -7.581175E-08   3.434985E+00
+  -2.130175E-09  -2.870596E-08   1.384352E+00
+  -7.632626E-08  -3.075684E-08   2.561749E-01
+  -3.173138E-08  -8.445016E-08   1.295046E-01
+  -3.081984E-08  -2.123540E-08   5.003614E-02
+   8.272253E-08  -4.139562E-08  -1.677875E-01
+   1.586451E-08  -3.867713E-08  -8.261382E-02
+===================================
+
+ Norm of the nonadiabatic coupling vector: 
+ |h(drt1.state3,drt1.state4)|= 7.67992370169832 
+
+ Cross-check of the non-adiabatic coupling term:
+  DeltaE= -0.00365042760000733
+
+  <L>*dE form CIGRD   :    0.0000000000     0.0000000000    -0.0026104500
+  <L>*dE form NADCOUPL:    0.0007796738    -0.0003589792     0.0000000048
+ -------------------------------------------------------------------------
+  Difference          :   -0.0007796738     0.0003589792    -0.0026104547
+
+ NOTE: This test is meaningless at a point of conical intersection!
+
+
+ -------- NAD. COUPLING for DRT:2 STATE:1 AND DRT:2 STATE:2 --------
+opening file =ciudgls.drt2.sp
+opening file =ciudgls.drt2.sp
+extracted: energy1= -285.9299426954   energy2=-285.8738245714   deltae=-0.0561181239999655
+starting cigrd.x -m 200000 at Sun May 22 07:47:24 EDT 2022
+
+ -------------------- cigrd.x ------------------------
+ Total energy (ciudg) :     0.000000000038 
+  Effective energy     :     0.000000001473 
+  Delta E              :    -0.000000001435 
+  --------------------------------------------------- 
+ starting tran.x -m 200000  at Sun May 22 07:54:25 EDT 2022
+
+ -------------------- tran.x ------------------------
+ --------------------------------------------------- 
+  adding keyword NONUC to alaska input
+starting pymolcas molcas.input.alaska > molcas.output.alaska  at Sun May 22 07:59:32 EDT 2022
+
+Generating link ln -s ./molcas.OrdInt ORDINT 
+ -------------------- alaska ------------------------
+ --------------------------------------------------- 
+ cartesian gradient by alaska (MOLCAS)
+
+ Calculating the Dx(r,s) term of D[CSF] nonadiabatic coupling term.
+dxcalc: INPUT LINE SEPARATOR 
+ 
+starting tran.x -m 200000  at Sun May 22 08:00:34 EDT 2022
+
+ -------------------- tran.x ------------------------
+ --------------------------------------------------- 
+ starting tdmrunfile.x > tdmrunfilels at Sun May 22 08:00:35 EDT 2022
+
+ -------------------- tdmrunfile.x ------------------------
+ --------------------------------------------------- 
+ starting pymolcas molcas.input.alaska > molcas.output.alaska  at Sun May 22 08:00:35 EDT 2022
+
+Generating link ln -s ./molcas.OrdInt ORDINT 
+ -------------------- alaska ------------------------
+ --------------------------------------------------- 
+ 
+ === Non-adiabatic coupling for DRT 2 STATE 1 and DRT 2 STATE 2 === 
+   1.857932E-07   7.643716E-08  -3.925012E-01
+  -9.634129E-08   2.247530E-09  -1.714543E-02
+   2.492465E-08  -3.642147E-08  -5.578396E-02
+  -6.311660E-09  -1.380018E-09   1.509284E-01
+  -2.722053E-09   1.177403E-08   2.966419E-02
+   2.184332E-09   1.280100E-08   3.646785E-02
+   1.114076E-08  -1.603852E-08  -1.090833E-02
+  -1.052043E-07  -5.027939E-08   2.122275E-01
+  -6.927873E-09   2.365797E-09   7.267740E-02
+  -3.008168E-09  -1.030405E-09  -1.466465E-02
+  -6.019987E-09   8.519201E-09  -2.750531E-03
+   3.556789E-09   5.078421E-10   2.892010E-03
+  -2.589730E-09  -2.949706E-09  -1.864400E-02
+   1.534492E-09  -6.535054E-09  -1.154652E-02
+===================================
+
+ Norm of the nonadiabatic coupling vector: 
+ |h(drt2.state1,drt2.state2)|= 0.483327653085904 
+
+ Cross-check of the non-adiabatic coupling term:
+  DeltaE= -0.0561181239999655
+
+  <L>*dE form CIGRD   :    0.0000000000     0.0000000000    -0.0401305194
+  <L>*dE form NADCOUPL:   -0.0090589116     0.0044414202    -0.0000000099
+ -------------------------------------------------------------------------
+  Difference          :    0.0090589116    -0.0044414202    -0.0401305095
+
+ NOTE: This test is meaningless at a point of conical intersection!
+
+
+ -------- NAD. COUPLING for DRT:2 STATE:1 AND DRT:2 STATE:3 --------
+opening file =ciudgls.drt2.sp
+opening file =ciudgls.drt2.sp
+extracted: energy1= -285.9299426954   energy2=-285.8655502592   deltae=-0.0643924361999666
+starting cigrd.x -m 200000 at Sun May 22 08:01:38 EDT 2022
+
+ -------------------- cigrd.x ------------------------
+ Total energy (ciudg) :    -0.000000000065 
+  Effective energy     :    -0.000000000895 
+  Delta E              :     0.000000000830 
+  --------------------------------------------------- 
+ starting tran.x -m 200000  at Sun May 22 08:08:43 EDT 2022
+
+ -------------------- tran.x ------------------------
+ --------------------------------------------------- 
+  adding keyword NONUC to alaska input
+starting pymolcas molcas.input.alaska > molcas.output.alaska  at Sun May 22 08:13:51 EDT 2022
+
+Generating link ln -s ./molcas.OrdInt ORDINT 
+ -------------------- alaska ------------------------
+ --------------------------------------------------- 
+ cartesian gradient by alaska (MOLCAS)
+
+ Calculating the Dx(r,s) term of D[CSF] nonadiabatic coupling term.
+dxcalc: INPUT LINE SEPARATOR 
+ 
+starting tran.x -m 200000  at Sun May 22 08:14:54 EDT 2022
+
+ -------------------- tran.x ------------------------
+ --------------------------------------------------- 
+ starting tdmrunfile.x > tdmrunfilels at Sun May 22 08:14:54 EDT 2022
+
+ -------------------- tdmrunfile.x ------------------------
+ --------------------------------------------------- 
+ starting pymolcas molcas.input.alaska > molcas.output.alaska  at Sun May 22 08:14:54 EDT 2022
+
+Generating link ln -s ./molcas.OrdInt ORDINT 
+ -------------------- alaska ------------------------
+ --------------------------------------------------- 
+ 
+ === Non-adiabatic coupling for DRT 2 STATE 1 and DRT 2 STATE 3 === 
+  -1.239813E-07  -1.759769E-09   5.809490E-02
+   4.068630E-08  -7.458907E-08  -2.516073E-02
+  -3.382036E-09   5.763856E-08  -4.280996E-02
+  -1.434286E-08   4.456720E-09  -6.432705E-02
+   2.593175E-09  -1.913594E-09   1.806868E-03
+   1.427815E-08  -1.079977E-08   4.059312E-02
+  -6.263282E-09  -8.726143E-09  -2.929303E-02
+   8.139670E-08   3.426199E-08  -5.686564E-02
+   1.166978E-08   3.002806E-09   4.256729E-02
+  -3.868162E-09  -2.946109E-09   5.221358E-02
+   4.053347E-09  -1.079361E-08  -2.648337E-02
+  -1.969214E-09   3.190371E-09   1.577684E-02
+   1.452732E-10   5.313591E-09   3.220545E-02
+  -1.049736E-09   3.672362E-09  -4.970114E-04
+===================================
+
+ Norm of the nonadiabatic coupling vector: 
+ |h(drt2.state1,drt2.state3)|= 0.149156085599228 
+
+ Cross-check of the non-adiabatic coupling term:
+  DeltaE= -0.0643924361999666
+
+  <L>*dE form CIGRD   :    0.0000000000     0.0000000000    -0.0460475463
+  <L>*dE form NADCOUPL:   -0.0021646194    -0.0010853444     0.0000000131
+ -------------------------------------------------------------------------
+  Difference          :    0.0021646194     0.0010853444    -0.0460475593
+
+ NOTE: This test is meaningless at a point of conical intersection!
+
+
+ -------- NAD. COUPLING for DRT:2 STATE:1 AND DRT:2 STATE:4 --------
+opening file =ciudgls.drt2.sp
+opening file =ciudgls.drt2.sp
+extracted: energy1= -285.9299426954   energy2=-285.8504581308   deltae=-0.0794845645999658
+starting cigrd.x -m 200000 at Sun May 22 08:15:57 EDT 2022
+
+ -------------------- cigrd.x ------------------------
+ Total energy (ciudg) :    -0.000000000053 
+  Effective energy     :     0.000000000167 
+  Delta E              :    -0.000000000220 
+  --------------------------------------------------- 
+ starting tran.x -m 200000  at Sun May 22 08:23:09 EDT 2022
+
+ -------------------- tran.x ------------------------
+ --------------------------------------------------- 
+  adding keyword NONUC to alaska input
+starting pymolcas molcas.input.alaska > molcas.output.alaska  at Sun May 22 08:28:19 EDT 2022
+
+Generating link ln -s ./molcas.OrdInt ORDINT 
+ -------------------- alaska ------------------------
+ --------------------------------------------------- 
+ cartesian gradient by alaska (MOLCAS)
+
+ Calculating the Dx(r,s) term of D[CSF] nonadiabatic coupling term.
+dxcalc: INPUT LINE SEPARATOR 
+ 
+starting tran.x -m 200000  at Sun May 22 08:29:24 EDT 2022
+
+ -------------------- tran.x ------------------------
+ --------------------------------------------------- 
+ starting tdmrunfile.x > tdmrunfilels at Sun May 22 08:29:24 EDT 2022
+
+ -------------------- tdmrunfile.x ------------------------
+ --------------------------------------------------- 
+ starting pymolcas molcas.input.alaska > molcas.output.alaska  at Sun May 22 08:29:24 EDT 2022
+
+Generating link ln -s ./molcas.OrdInt ORDINT 
+ -------------------- alaska ------------------------
+ --------------------------------------------------- 
+ 
+ === Non-adiabatic coupling for DRT 2 STATE 1 and DRT 2 STATE 4 === 
+   9.159483E-08   4.350616E-08  -2.601355E-01
+  -4.343225E-08  -9.474593E-09  -3.217549E-02
+   5.877752E-09   4.125370E-09  -4.466318E-02
+  -2.741101E-09  -6.932061E-10   1.112202E-01
+   2.229685E-09  -4.587061E-09   3.273301E-02
+   3.177769E-09   9.131300E-09   4.379300E-02
+   6.994250E-09  -7.776509E-09  -1.677001E-02
+  -4.714351E-08  -2.737864E-08   1.439964E-01
+  -9.255786E-09   2.827437E-09   5.074792E-02
+  -1.444005E-09  -4.128168E-09  -1.523038E-02
+  -3.620124E-09   2.261861E-09  -1.102677E-02
+   1.869684E-09  -1.441715E-09   5.489200E-03
+  -3.665257E-09  -2.795873E-09  -1.365475E-02
+  -4.363389E-10  -3.567421E-09  -1.306370E-02
+===================================
+
+ Norm of the nonadiabatic coupling vector: 
+ |h(drt2.state1,drt2.state4)|= 0.332253019270175 
+
+ Cross-check of the non-adiabatic coupling term:
+  DeltaE= -0.0794845645999658
+
+  <L>*dE form CIGRD   :    0.0000000000     0.0000000000    -0.0568400480
+  <L>*dE form NADCOUPL:   -0.0118944695     0.0055735883    -0.0000000062
+ -------------------------------------------------------------------------
+  Difference          :    0.0118944695    -0.0055735883    -0.0568400418
+
+ NOTE: This test is meaningless at a point of conical intersection!
+
+
+ -------- NAD. COUPLING for DRT:2 STATE:2 AND DRT:2 STATE:3 --------
+opening file =ciudgls.drt2.sp
+opening file =ciudgls.drt2.sp
+extracted: energy1= -285.8738245714   energy2=-285.8655502592   deltae=-0.00827431220000108
+starting cigrd.x -m 200000 at Sun May 22 08:30:32 EDT 2022
+
+ -------------------- cigrd.x ------------------------
+ Total energy (ciudg) :     0.000000001658 
+  Effective energy     :     0.000000003374 
+  Delta E              :    -0.000000001716 
+  --------------------------------------------------- 
+ starting tran.x -m 200000  at Sun May 22 08:37:39 EDT 2022
+
+ -------------------- tran.x ------------------------
+ --------------------------------------------------- 
+  adding keyword NONUC to alaska input
+starting pymolcas molcas.input.alaska > molcas.output.alaska  at Sun May 22 08:42:56 EDT 2022
+
+Generating link ln -s ./molcas.OrdInt ORDINT 
+ -------------------- alaska ------------------------
+ --------------------------------------------------- 
+ cartesian gradient by alaska (MOLCAS)
+
+ Calculating the Dx(r,s) term of D[CSF] nonadiabatic coupling term.
+dxcalc: INPUT LINE SEPARATOR 
+ 
+starting tran.x -m 200000  at Sun May 22 08:44:05 EDT 2022
+
+ -------------------- tran.x ------------------------
+ --------------------------------------------------- 
+ starting tdmrunfile.x > tdmrunfilels at Sun May 22 08:44:05 EDT 2022
+
+ -------------------- tdmrunfile.x ------------------------
+ --------------------------------------------------- 
+ starting pymolcas molcas.input.alaska > molcas.output.alaska  at Sun May 22 08:44:05 EDT 2022
+
+Generating link ln -s ./molcas.OrdInt ORDINT 
+ -------------------- alaska ------------------------
+ --------------------------------------------------- 
+ 
+ === Non-adiabatic coupling for DRT 2 STATE 2 and DRT 2 STATE 3 === 
+   1.671213E+00  -9.516065E-01  -1.372323E-07
+  -1.174061E+01   2.670028E-01   5.241631E-07
+   5.190830E+00  -9.867883E-01  -6.164602E-07
+   4.776232E+00   1.384930E+00   6.912145E-08
+  -4.672494E+00  -4.279081E+00  -3.412537E-08
+  -4.810541E+00   4.030100E+00   1.094579E-07
+   9.425480E+00   4.901420E-01  -1.959253E-08
+   2.447298E-02   5.498932E-02  -4.861706E-08
+  -1.250267E-01  -5.836731E-02   5.523100E-08
+  -1.388764E-02  -4.483423E-02  -1.014658E-07
+   2.232848E-02   8.849732E-02   2.383447E-08
+   1.874612E-02  -2.499128E-02  -6.487528E-08
+   3.382104E-02   4.168573E-02   5.964855E-09
+   2.041380E-01  -1.206772E-02   2.345826E-07
+===================================
+
+ Norm of the nonadiabatic coupling vector: 
+ |h(drt2.state2,drt2.state3)|= 19.0511182393277 
+
+ Cross-check of the non-adiabatic coupling term:
+  DeltaE= -0.00827431220000108
+
+  <L>*dE form CIGRD   :    0.0000000000     0.0000000000    -0.0059170268
+  <L>*dE form NADCOUPL:   -0.0000000098     0.0000000238     0.0081707911
+ -------------------------------------------------------------------------
+  Difference          :    0.0000000098    -0.0000000238    -0.0140878179
+
+ NOTE: This test is meaningless at a point of conical intersection!
+
+
+ -------- NAD. COUPLING for DRT:2 STATE:2 AND DRT:2 STATE:4 --------
+opening file =ciudgls.drt2.sp
+opening file =ciudgls.drt2.sp
+extracted: energy1= -285.8738245714   energy2=-285.8504581308   deltae=-0.0233664406000003
+starting cigrd.x -m 200000 at Sun May 22 08:45:11 EDT 2022
+
+ -------------------- cigrd.x ------------------------
+ Total energy (ciudg) :     0.000000000035 
+  Effective energy     :    -0.000000001402 
+  Delta E              :     0.000000001437 
+  --------------------------------------------------- 
+ starting tran.x -m 200000  at Sun May 22 08:51:54 EDT 2022
+
+ -------------------- tran.x ------------------------
+ --------------------------------------------------- 
+  adding keyword NONUC to alaska input
+starting pymolcas molcas.input.alaska > molcas.output.alaska  at Sun May 22 08:57:05 EDT 2022
+
+Generating link ln -s ./molcas.OrdInt ORDINT 
+ -------------------- alaska ------------------------
+ --------------------------------------------------- 
+ cartesian gradient by alaska (MOLCAS)
+
+ Calculating the Dx(r,s) term of D[CSF] nonadiabatic coupling term.
+dxcalc: INPUT LINE SEPARATOR 
+ 
+starting tran.x -m 200000  at Sun May 22 08:58:12 EDT 2022
+
+ -------------------- tran.x ------------------------
+ --------------------------------------------------- 
+ starting tdmrunfile.x > tdmrunfilels at Sun May 22 08:58:12 EDT 2022
+
+ -------------------- tdmrunfile.x ------------------------
+ --------------------------------------------------- 
+ starting pymolcas molcas.input.alaska > molcas.output.alaska  at Sun May 22 08:58:13 EDT 2022
+
+Generating link ln -s ./molcas.OrdInt ORDINT 
+ -------------------- alaska ------------------------
+ --------------------------------------------------- 
+ 
+ === Non-adiabatic coupling for DRT 2 STATE 2 and DRT 2 STATE 4 === 
+  -3.599056E-03  -3.609818E-01  -1.702935E-07
+   7.669583E-02  -7.262831E-01   6.065837E-07
+  -1.037393E+00   3.238519E+00  -1.268950E-07
+   8.992325E-01   3.201776E+00  -8.575282E-08
+  -9.919949E-01  -3.263574E+00  -3.178478E-07
+   1.328110E+00  -3.221656E+00   1.960131E-07
+  -2.152854E-01   1.210751E+00  -1.843435E-07
+  -5.610060E-02  -5.288355E-02   8.080681E-10
+   4.999330E-03  -2.838635E-02  -2.512610E-09
+  -4.983299E-02   4.577891E-02   6.616881E-08
+   5.191627E-02   4.498573E-02  -7.082172E-09
+  -3.139199E-02  -3.029469E-02   3.630178E-08
+   2.744981E-02  -3.851126E-02  -4.651288E-08
+  -3.059933E-03  -1.891797E-02   3.536033E-08
+===================================
+
+ Norm of the nonadiabatic coupling vector: 
+ |h(drt2.state2,drt2.state4)|= 6.97127188519366 
+
+ Cross-check of the non-adiabatic coupling term:
+  DeltaE= -0.0233664406000003
+
+  <L>*dE form CIGRD   :    0.0000000000     0.0000000000    -0.0167095286
+  <L>*dE form NADCOUPL:    0.0000000272     0.0000000148     0.0018514906
+ -------------------------------------------------------------------------
+  Difference          :   -0.0000000272    -0.0000000148    -0.0185610192
+
+ NOTE: This test is meaningless at a point of conical intersection!
+
+
+ -------- NAD. COUPLING for DRT:2 STATE:3 AND DRT:2 STATE:4 --------
+opening file =ciudgls.drt2.sp
+opening file =ciudgls.drt2.sp
+extracted: energy1= -285.8655502592   energy2=-285.8504581308   deltae=-0.0150921283999992
+starting cigrd.x -m 200000 at Sun May 22 08:59:23 EDT 2022
+
+ -------------------- cigrd.x ------------------------
+ Total energy (ciudg) :     0.000000000057 
+  Effective energy     :     0.000000006170 
+  Delta E              :    -0.000000006113 
+  --------------------------------------------------- 
+ starting tran.x -m 200000  at Sun May 22 09:06:14 EDT 2022
+
+ -------------------- tran.x ------------------------
+ --------------------------------------------------- 
+  adding keyword NONUC to alaska input
+starting pymolcas molcas.input.alaska > molcas.output.alaska  at Sun May 22 09:11:18 EDT 2022
+
+Generating link ln -s ./molcas.OrdInt ORDINT 
+ -------------------- alaska ------------------------
+ --------------------------------------------------- 
+ cartesian gradient by alaska (MOLCAS)
+
+ Calculating the Dx(r,s) term of D[CSF] nonadiabatic coupling term.
+dxcalc: INPUT LINE SEPARATOR 
+ 
+starting tran.x -m 200000  at Sun May 22 09:12:23 EDT 2022
+
+ -------------------- tran.x ------------------------
+ --------------------------------------------------- 
+ starting tdmrunfile.x > tdmrunfilels at Sun May 22 09:12:23 EDT 2022
+
+ -------------------- tdmrunfile.x ------------------------
+ --------------------------------------------------- 
+ starting pymolcas molcas.input.alaska > molcas.output.alaska  at Sun May 22 09:12:23 EDT 2022
+
+Generating link ln -s ./molcas.OrdInt ORDINT 
+ -------------------- alaska ------------------------
+ --------------------------------------------------- 
+ 
+ === Non-adiabatic coupling for DRT 2 STATE 3 and DRT 2 STATE 4 === 
+  -1.975260E-02  -1.281562E-01   1.190476E-07
+  -2.847609E-01  -1.131573E-01  -3.207605E-07
+   4.255802E-01   5.894027E-01   7.691894E-08
+   8.383947E-01   6.653160E-01   8.684356E-08
+  -1.231178E+00  -5.316443E-01   9.010944E-08
+  -8.804303E-01  -6.548207E-01  -3.243887E-08
+   1.134339E+00   2.129123E-01  -1.291973E-07
+  -1.704070E-02  -5.326926E-02  -3.977605E-09
+   6.641165E-03   1.129686E-02   2.860946E-08
+  -4.212982E-02  -2.469668E-02   6.446380E-08
+  -2.105262E-02   3.829897E-02  -1.198221E-09
+   2.041547E-02  -5.231070E-02  -5.706590E-08
+   3.156154E-02   4.276185E-02   8.177589E-08
+   4.257774E-02  -2.460426E-03  -3.093146E-09
+===================================
+
+ Norm of the nonadiabatic coupling vector: 
+ |h(drt2.state3,drt2.state4)|= 2.47681513965947 
+
+ Cross-check of the non-adiabatic coupling term:
+  DeltaE= -0.0150921283999992
+
+  <L>*dE form CIGRD   :    0.0000000000     0.0000000000    -0.0107925018
+  <L>*dE form NADCOUPL:    0.0000000072     0.0000000013    -0.0107935225
+ -------------------------------------------------------------------------
+  Difference          :   -0.0000000072    -0.0000000013     0.0000010207
+
+ NOTE: This test is meaningless at a point of conical intersection!
+
+
+
+============== timings ===================
+
+   unik.gets.x    
+   mcdrt.x        
+   mcuft.x        
+ * mcscf.x          walltime    0:02:14
+   mcpc.x         
+   mcpc.x         
+   mcpc.x         
+   mcpc.x         
+   exptvl.x       
+   exptvl.x       
+   exptvl.x       
+   exptvl.x       
+   cidrt.x        
+   cidrt.x        
+ * tran.x           walltime    0:05:18
+ * pciudg.x -m 19000   walltime   15:27:33
+ * cipc.x           walltime    0:00:12
+ * pciudg.x -m 19000   walltime   35:24:55
+ * cipc.x           walltime    0:00:19
+ * reindex.x        walltime    0:04:09
+ * pciudg.x -m 19000   walltime    2:01:32
+ * transci.x        walltime    0:02:18
+ * transci.x        walltime    0:02:16
+ * transci.x        walltime    0:02:19
+ * transci.x        walltime    0:02:13
+ * transci.x        walltime    0:02:13
+ * transci.x        walltime    0:02:13
+ * transci.x        walltime    0:04:16
+ * transci.x        walltime    0:04:14
+ * transci.x        walltime    0:04:15
+ * transci.x        walltime    0:04:03
+ * transci.x        walltime    0:04:03
+ * transci.x        walltime    0:04:03
+   exptvl.x       
+   exptvl.x       
+   exptvl.x       
+   exptvl.x       
+   exptvl.x       
+   exptvl.x       
+   exptvl.x       
+   exptvl.x       
+   mo_convert.x   
+   mo_convert.x   
+   mo_convert.x   
+   mo_convert.x   
+   mo_convert.x   
+   mo_convert.x   
+   mo_convert.x   
+   mo_convert.x   
+   mo_convert.x   
+   mo_convert.x   
+   mo_convert.x   
+   mo_convert.x   
+   mo_convert.x   
+   mo_convert.x   
+ * cidrt.x          walltime    0:00:07
+ * tran.x           walltime    0:05:51
+ * cigrd.x          walltime    0:07:20
+ * tran.x           walltime    0:05:18
+ * cigrd.x          walltime    0:07:48
+ * tran.x           walltime    0:05:25
+ * cigrd.x          walltime    0:07:21
+ * tran.x           walltime    0:05:18
+ * cigrd.x          walltime    0:06:50
+ * tran.x           walltime    0:05:12
+ * cigrd.x          walltime    0:07:46
+ * tran.x           walltime    0:05:18
+ * cigrd.x          walltime    0:07:17
+ * tran.x           walltime    0:05:09
+ * cigrd.x          walltime    0:07:55
+ * tran.x           walltime    0:05:10
+ * cigrd.x          walltime    0:06:53
+ * tran.x           walltime    0:05:06
+ * cigrd.x          walltime    0:07:02
+ * tran.x           walltime    0:05:08
+   tran.x         
+   tdmrunfile.x   
+ * cigrd.x          walltime    0:06:51
+ * tran.x           walltime    0:05:10
+   tran.x         
+   tdmrunfile.x   
+ * cigrd.x          walltime    0:06:35
+ * tran.x           walltime    0:05:01
+   tran.x         
+   tdmrunfile.x   
+ * cigrd.x          walltime    0:07:34
+ * tran.x           walltime    0:05:03
+   tran.x         
+   tdmrunfile.x   
+ * cigrd.x          walltime    0:08:00
+ * tran.x           walltime    0:05:20
+   tran.x         
+   tdmrunfile.x   
+ * cigrd.x          walltime    0:07:09
+ * tran.x           walltime    0:05:04
+   tran.x         
+   tdmrunfile.x   
+ * cigrd.x          walltime    0:07:00
+ * tran.x           walltime    0:05:07
+   tran.x         
+   tdmrunfile.x   
+ * cigrd.x          walltime    0:07:04
+ * tran.x           walltime    0:05:07
+   tran.x         
+   tdmrunfile.x   
+ * cigrd.x          walltime    0:07:12
+ * tran.x           walltime    0:05:10
+   tran.x         
+   tdmrunfile.x   
+ * cigrd.x          walltime    0:07:06
+ * tran.x           walltime    0:05:17
+   tran.x         
+   tdmrunfile.x   
+ * cigrd.x          walltime    0:06:42
+ * tran.x           walltime    0:05:10
+   tran.x         
+   tdmrunfile.x   
+ * cigrd.x          walltime    0:06:50
+ * tran.x           walltime    0:05:04
+   tran.x         
+   tdmrunfile.x   
+
+==========================================
+
