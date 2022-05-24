@@ -6,13 +6,13 @@ Symmetry (irreducible) of matrix elements:
     3    4    1    7
     4    3    7    1
 Dimensions of each network: (O11, O12, ..., O1N, O22, ...)
-  513    1
+  516    1
   177    2    1
   217    2    1
   167    2    1
-  522    1
+  525    1
   167    2    1
   217    2    1
-  513    1
+  516    1
   177    2    1
-  522    1
+  525    1

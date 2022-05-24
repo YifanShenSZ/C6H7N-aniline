@@ -1,1 +1,0 @@
-../../../disso-pretrain/txt2bin/parameters_3-3_1.txt
