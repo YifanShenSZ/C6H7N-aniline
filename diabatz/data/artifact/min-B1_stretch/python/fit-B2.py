@@ -79,19 +79,29 @@ if __name__ == "__main__":
     ycritical = np.matmul(Xcritical, coeffs)
     for i in range(ycritical.shape[0]): print("%25.15f" % ycritical[i])
 
-    ''' make sure about the fit quality '''
-    # R^2
+    # make sure about the fit quality
     prediction = np.matmul(X, coeffs)
     print("R^2 =", sklearn.metrics.r2_score(y, prediction))
-    # plot
-    NH1plot = np.linspace(0.7, 3.0, 30)
-    NH2plot = np.linspace(0.7, 3.0, 30)
-    NH1plot, NH2plot = np.meshgrid(NH1plot, NH2plot)
-    NH1plot = NH1plot.ravel()
-    NH2plot = NH2plot.ravel()
-    Xplot = bl2features(NH1plot, NH2plot)
-    yplot = np.matmul(Xplot, coeffs)
+    # 1d plot
+    NH1plot1d = np.linspace(0.7, 6.0, 100)
+    NH2plot1d = np.empty(NH1plot1d.shape)
+    NH2plot1d[:] = 1.027670912265692
+    Xplot1d = bl2features(NH1plot1d, NH2plot1d)
+    yplot1d = np.matmul(Xplot1d, coeffs)
+    plt.plot(NH1plot1d, yplot1d)
+    for i in range(y.shape[0]):
+        if NH2[i] == 1.027670912265692:
+            plt.scatter(NH1[i], y[i])
+    plt.show()
+    # 2d plot
+    NH1plot2d = np.linspace(0.7, 3.0, 30)
+    NH2plot2d = np.linspace(0.7, 3.0, 30)
+    NH1plot2d, NH2plot2d = np.meshgrid(NH1plot2d, NH2plot2d)
+    NH1plot2d = NH1plot2d.ravel()
+    NH2plot2d = NH2plot2d.ravel()
+    Xplot2d = bl2features(NH1plot2d, NH2plot2d)
+    yplot2d = np.matmul(Xplot2d, coeffs)
     ax = plt.subplot(111, projection='3d')
-    ax.plot_trisurf(NH1plot, NH2plot, yplot)
+    ax.plot_trisurf(NH1plot2d, NH2plot2d, yplot2d)
     ax.scatter(NH1, NH2, y, color="red")
     plt.show()
