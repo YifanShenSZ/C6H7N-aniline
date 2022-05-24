@@ -16,8 +16,10 @@ def bl2features(NH1: np.ndarray, NH2: np.ndarray) -> np.ndarray:
     morse2 = np.exp(-1.5 * dimless2)
     s1 = np.exp(-3.0 * dimless1) * (1.0 + dimless1)**3.0
     s2 = np.exp(-3.0 * dimless2) * (1.0 + dimless2)**3.0
-    p1 = np.exp(-8.5 * dimless1) * (1.0 + dimless1)**14.88532
-    p2 = np.exp(-8.5 * dimless2) * (1.0 + dimless2)**14.88532
+    p1 = np.exp(-8.5 * dimless1) * (1.0 + dimless1)**14.88532 / (np.exp(8.5 - 14.88532) * pow(14.88532 / 8.5, 14.88532))
+    p2 = np.exp(-8.5 * dimless2) * (1.0 + dimless2)**14.88532 / (np.exp(8.5 - 14.88532) * pow(14.88532 / 8.5, 14.88532))
+    tanh1 = np.tanh(dimless1 / 0.4)
+    tanh2 = np.tanh(dimless2 / 0.4)
     # SDIC to symmetry adapted SDIC (SASDIC)
     morse_plus  = 0.7071067811865475 * (morse1 + morse2)
     morse_minus = 0.7071067811865475 * (morse1 - morse2)
@@ -25,10 +27,10 @@ def bl2features(NH1: np.ndarray, NH2: np.ndarray) -> np.ndarray:
     s_minus = 0.7071067811865475 * (s1 - s2)
     p_plus  = 0.7071067811865475 * (p1 + p2)
     p_minus = 0.7071067811865475 * (p1 - p2)
+    tanh_plus  = 0.7071067811865475 * (tanh1 + tanh2)
+    tanh_minus = 0.7071067811865475 * (tanh1 - tanh2)
     # SASDIC to features
-    # features = np.empty((NH1.shape[0], 9))
-    # features = np.empty((NH1.shape[0], 12))
-    features = np.empty((NH1.shape[0], 15))
+    features = np.empty((NH1.shape[0], 18))
     # bias
     features[:, 0] = 1.0
     # Morse
@@ -41,13 +43,17 @@ def bl2features(NH1: np.ndarray, NH2: np.ndarray) -> np.ndarray:
     features[:, 7] = morse_minus * morse_minus * morse_plus  * morse_plus
     features[:, 8] = morse_minus * morse_minus * morse_minus * morse_minus
     # s
-    features[:, 9]  = s_plus
+    features[:,  9] = s_plus
     features[:, 10] = s_plus  * s_plus
     features[:, 11] = s_minus * s_minus
     # p
     features[:, 12] = p_plus
     features[:, 13] = p_plus  * p_plus
     features[:, 14] = p_minus * p_minus
+    # tanh
+    features[:, 15] = tanh_plus
+    features[:, 16] = tanh_plus  * tanh_plus
+    features[:, 17] = tanh_minus * tanh_minus
     return features
 
 if __name__ == "__main__":
@@ -59,10 +65,8 @@ if __name__ == "__main__":
     X = bl2features(NH1, NH2)
     XT = X.T
     Hessian = np.matmul(XT, X)
-    for i in [1, 2]:
+    for i in [1, 2, 3, 6, 7, 8]:
         Hessian[i, i] += 0.0001
-    for i in [6, 7, 8]:
-        Hessian[i, i] += 0.001
     Hessian_inv = np.linalg.inv(Hessian)
     coeffs = np.matmul(Hessian_inv, np.matmul(XT, y))
 
@@ -84,19 +88,29 @@ if __name__ == "__main__":
     ycritical = np.matmul(Xcritical, coeffs)
     for i in range(ycritical.shape[0]): print("%25.15f" % ycritical[i])
 
-    ''' make sure about the fit quality '''
-    # R^2
+    # make sure about the fit quality
     prediction = np.matmul(X, coeffs)
     print("R^2 =", sklearn.metrics.r2_score(y, prediction))
-    # plot
-    NH1plot = np.linspace(0.7, 3.0, 30)
-    NH2plot = np.linspace(0.7, 3.0, 30)
-    NH1plot, NH2plot = np.meshgrid(NH1plot, NH2plot)
-    NH1plot = NH1plot.ravel()
-    NH2plot = NH2plot.ravel()
-    Xplot = bl2features(NH1plot, NH2plot)
-    yplot = np.matmul(Xplot, coeffs)
+    # 1d plot
+    NH1plot1d = np.linspace(0.7, 6.0, 100)
+    NH2plot1d = np.empty(NH1plot1d.shape)
+    NH2plot1d[:] = 1.027670912265692
+    Xplot1d = bl2features(NH1plot1d, NH2plot1d)
+    yplot1d = np.matmul(Xplot1d, coeffs)
+    plt.plot(NH1plot1d, yplot1d)
+    for i in range(y.shape[0]):
+        if NH2[i] == 1.027670912265692:
+            plt.scatter(NH1[i], y[i])
+    plt.show()
+    # 2d plot
+    NH1plot2d = np.linspace(0.7, 3.0, 30)
+    NH2plot2d = np.linspace(0.7, 3.0, 30)
+    NH1plot2d, NH2plot2d = np.meshgrid(NH1plot2d, NH2plot2d)
+    NH1plot2d = NH1plot2d.ravel()
+    NH2plot2d = NH2plot2d.ravel()
+    Xplot2d = bl2features(NH1plot2d, NH2plot2d)
+    yplot2d = np.matmul(Xplot2d, coeffs)
     ax = plt.subplot(111, projection='3d')
-    ax.plot_trisurf(NH1plot, NH2plot, yplot)
+    ax.plot_trisurf(NH1plot2d, NH2plot2d, yplot2d)
     ax.scatter(NH1, NH2, y, color="red")
     plt.show()

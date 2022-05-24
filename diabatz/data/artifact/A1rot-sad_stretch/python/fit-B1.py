@@ -16,8 +16,10 @@ def bl2features(NH1: np.ndarray, NH2: np.ndarray) -> np.ndarray:
     morse2 = np.exp(-1.5 * dimless2)
     s1 = np.exp(-3.0 * dimless1) * (1.0 + dimless1)**3.0
     s2 = np.exp(-3.0 * dimless2) * (1.0 + dimless2)**3.0
-    p1 = np.exp(-8.5 * dimless1) * (1.0 + dimless1)**14.88532
-    p2 = np.exp(-8.5 * dimless2) * (1.0 + dimless2)**14.88532
+    p1 = np.exp(-8.5 * dimless1) * (1.0 + dimless1)**14.88532 / (np.exp(8.5 - 14.88532) * pow(14.88532 / 8.5, 14.88532))
+    p2 = np.exp(-8.5 * dimless2) * (1.0 + dimless2)**14.88532 / (np.exp(8.5 - 14.88532) * pow(14.88532 / 8.5, 14.88532))
+    tanh1 = np.tanh(dimless1 / 0.4)
+    tanh2 = np.tanh(dimless2 / 0.4)
     # SDIC to symmetry adapted SDIC (SASDIC)
     morse_plus  = 0.7071067811865475 * (morse1 + morse2)
     morse_minus = 0.7071067811865475 * (morse1 - morse2)
@@ -25,10 +27,10 @@ def bl2features(NH1: np.ndarray, NH2: np.ndarray) -> np.ndarray:
     s_minus = 0.7071067811865475 * (s1 - s2)
     p_plus  = 0.7071067811865475 * (p1 + p2)
     p_minus = 0.7071067811865475 * (p1 - p2)
+    tanh_plus  = 0.7071067811865475 * (tanh1 + tanh2)
+    tanh_minus = 0.7071067811865475 * (tanh1 - tanh2)
     # SASDIC to features
-    # features = np.empty((NH1.shape[0], 9))
-    # features = np.empty((NH1.shape[0], 12))
-    features = np.empty((NH1.shape[0], 15))
+    features = np.empty((NH1.shape[0], 18))
     # bias
     features[:, 0] = 1.0
     # Morse
@@ -41,13 +43,17 @@ def bl2features(NH1: np.ndarray, NH2: np.ndarray) -> np.ndarray:
     features[:, 7] = morse_minus * morse_minus * morse_plus  * morse_plus
     features[:, 8] = morse_minus * morse_minus * morse_minus * morse_minus
     # s
-    features[:, 9]  = s_plus
+    features[:,  9] = s_plus
     features[:, 10] = s_plus  * s_plus
     features[:, 11] = s_minus * s_minus
     # p
     features[:, 12] = p_plus
     features[:, 13] = p_plus  * p_plus
     features[:, 14] = p_minus * p_minus
+    # tanh
+    features[:, 15] = tanh_plus
+    features[:, 16] = tanh_plus  * tanh_plus
+    features[:, 17] = tanh_minus * tanh_minus
     return features
 
 # N-H1 and N-H2 bond lengthes to scales
@@ -72,8 +78,8 @@ if __name__ == "__main__":
     X = bl2features(NH1, NH2)
     XT = X.T
     Hessian = np.matmul(XT, X)
-    for i in [2, 6, 7, 8]:
-        Hessian[i, i] += 0.001
+    for i in [1, 2, 3, 6, 7, 8]:
+        Hessian[i, i] += 0.0001
     Hessian_inv = np.linalg.inv(Hessian)
     coeffs = np.matmul(Hessian_inv, np.matmul(XT, y))
 
