@@ -12,7 +12,8 @@ switch_table = {
 }
 
 no_switch_table = {
-    (1, 14) : 0, (1, 23) : 0
+    (1, 14) : 0, (1, 23) : 0,
+    (6,  1) : 0
 }
 
 # Command line input
