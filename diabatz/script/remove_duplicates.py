@@ -22,13 +22,13 @@ def hash_polynomial(line: str) -> int:
     # sort coordinates so that all permutations become the same
     strs.sort()
     # hash coordinates
-    hash = 0
+    hash_value = 0
     weight = 100
     for irred_index in strs:
         irred, index = irred_index.split(',')
-        hash += int(irred) * weight + int(index) * weight * 100
+        hash_value += int(irred) * weight + int(index) * weight * 100
         weight *= 10000
-    return hash
+    return hash_value
 
 if __name__ == "__main__":
     args = parse_args()

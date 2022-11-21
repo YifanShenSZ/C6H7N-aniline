@@ -10,7 +10,7 @@ def parse_args() -> argparse.Namespace:
     return args
 
 # assume less than 100 irreducibles and less than 100 coordinates per irreducible
-def hash(line: str) -> int:
+def hash_polynomial(line: str) -> int:
     strs = line.split()
     # remove comment
     i = 0
@@ -21,20 +21,20 @@ def hash(line: str) -> int:
     # sort coordinates so that all permutations become the same
     strs.sort()
     # hash coordinates
-    hash = 0
+    hash_value = 0
     weight = 100
     for irred_index in strs:
         irred, index = irred_index.split(',')
-        hash += int(irred) * weight + int(index) * weight * 100
+        hash_value += int(irred) * weight + int(index) * weight * 100
         weight *= 10000
-    return hash
+    return hash_value
 
 if __name__ == "__main__":
     args = parse_args()
     hash_set = {}
     with open(args.file, 'r') as f: lines = f.readlines()
     for line in lines:
-        hash_value = hash(line)
+        hash_value = hash_polynomial(line)
         if hash_value in hash_set:
             print("duplicate line:")
             print(line)
