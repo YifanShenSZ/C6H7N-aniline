@@ -2,6 +2,8 @@
 build/
 *.exe
 __pycache__/
+hop/*/v0/
+hop/*/v1/
 
 # slurm output
 slurm*
