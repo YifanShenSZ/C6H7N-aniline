@@ -2,50 +2,42 @@ Diabatz version 0.3.0
 Yifan Shen 2021
 
 Echo of user command line input:
-/home/yshen/Software/Mine/diabatz/v0.3.0/diabatz.exe -f default -i IntCoordDef -s SAS.in -n Hd.in -l 11.in 12.in 13.in 14.in 22.in 23.in 24.in 33.in 34.in 44.in -d data/critical/min-A1/ data/critical/sad-A1/ data/critical/min-B1/ data/critical/min-B2/ data/critical/sad-B2/ data/critical/min-A2/ data/linear-path/min-B1_min-B2/ data/other/NH2-angles/list.txt data/other/benzene/list.txt data/other/in-benzene/list.txt data/other/out-of-benzene/list.txt -z -286.1075216397 -r reg-continue/reg -p reg-continue/prior -c replace-diag.net -m 5
+/home/yshen/Software/Mine/diabatz/v0.3.0/diabatz.exe -f default -i IntCoordDef -s SAS.in -n Hd.in -l 11.in 12.in 13.in 14.in 22.in 23.in 24.in 33.in 34.in 44.in -d data/critical/min-A1/ data/critical/sad-A1/ data/critical/min-B1/ data/critical/min-B2/ data/critical/sad-B2/ data/critical/min-A2/ data/linear-path/min-B1_min-B2/ data/NH2-rotation-A1/list.txt data/NH2-rotation-B1/list.txt data/other/NH2-angles/list.txt data/other/benzene/list.txt data/other/in-benzene/list.txt data/other/out-of-benzene/list.txt -z -286.1075216397 -r reg-continue/reg -p reg-continue/prior -c replace-diag.net -m 5
 
-Fri Apr 22 16:16:07 2022
+Wed Nov 23 23:21:08 2022
 
 The data set will be read from: 
     data/critical/min-A1/, data/critical/sad-A1/, data/critical/min-B1/, 
     data/critical/min-B2/, data/critical/sad-B2/, data/critical/min-A2/, 
-    data/linear-path/min-B1_min-B2/, data/other/NH2-angles/H-N-H_from_min-B1/0-18_4-states/, 
-    data/other/NH2-angles/H-N-H_from_min-B1/19_3-states/, data/other/NH2-angles/H-N-H_from_min-A1/, 
-    data/other/NH2-angles/C-N-avgH_from_min-B1/0-11_4-states/, data/other/NH2-angles/C-N-avgH_from_min-B1/12-13_5to4-states/, 
-    data/other/NH2-angles/C-out-of-NH2/0-9_4-states/, data/other/NH2-angles/C-out-of-NH2/10-14_5to4-states/, 
-    data/other/NH2-angles/NH2-rotation_from_min-B1/0.1/, data/other/NH2-angles/NH2-rotation_from_min-B1/0.2/, 
-    data/other/NH2-angles/NH2-rotation_from_min-B1/0.3/, data/other/NH2-angles/NH2-rotation_from_min-B1/0.4/, 
-    data/other/NH2-angles/NH2-rotation_from_min-B1/0.5/, data/other/NH2-angles/NH2-rotation_from_min-B1/0.6/, 
-    data/other/NH2-angles/NH2-rotation_from_min-B1/0.7/, data/other/NH2-angles/NH2-rotation_from_min-B1/0.8/, 
-    data/other/NH2-angles/NH2-rotation_from_min-B1/0.9/, data/other/NH2-angles/NH2-rotation_from_min-B1/1.0/, 
-    data/other/NH2-angles/NH2-rotation_from_min-B1/1.1/, data/other/NH2-angles/NH2-rotation_from_min-B1/1.2/, 
-    data/other/NH2-angles/NH2-rotation_from_min-B1/1.3/, data/other/NH2-angles/NH2-rotation_from_min-B1/1.4/, 
-    data/other/NH2-angles/NH2-rotation_from_min-B1/1.5/, data/other/NH2-angles/NH2-rotation_from_min-B1/1.6/, 
-    data/other/NH2-angles/NH2-rotation_from_min-B1/1.7/, data/other/NH2-angles/NH2-rotation_from_min-B1/1.8/, 
-    data/other/NH2-angles/NH2-rotation_from_min-B1/1.9/, data/other/NH2-angles/NH2-rotation_from_min-B1/2.0/, 
-    data/other/NH2-angles/NH2-rotation_from_min-B1/2.1/, data/other/NH2-angles/NH2-rotation_from_min-B1/2.2/, 
-    data/other/NH2-angles/NH2-rotation_from_min-A1/0.1/, data/other/NH2-angles/NH2-rotation_from_min-A1/0.2/, 
-    data/other/NH2-angles/NH2-rotation_from_min-A1/0.3/, data/other/NH2-angles/NH2-rotation_from_min-A1/0.4/, 
-    data/other/NH2-angles/NH2-rotation_from_min-A1/0.5/, data/other/NH2-angles/NH2-rotation_from_min-A1/0.6/, 
-    data/other/NH2-angles/NH2-rotation_from_min-A1/0.7/, data/other/NH2-angles/NH2-rotation_from_min-A1/0.8/, 
-    data/other/NH2-angles/NH2-rotation_from_min-A1/0.9/, data/other/NH2-angles/NH2-rotation_from_min-A1/1.0/, 
-    data/other/NH2-angles/NH2-rotation_from_min-A1/1.1/, data/other/NH2-angles/NH2-rotation_from_min-A1/1.2/, 
-    data/other/NH2-angles/NH2-rotation_from_min-A1/1.3/, data/other/NH2-angles/NH2-rotation_from_min-A1/1.4/, 
-    data/other/NH2-angles/NH2-rotation_from_min-A1/1.5/, data/other/NH2-angles/NH2-rotation_from_min-A1/1.6/, 
-    data/other/NH2-angles/NH2-rotation_from_min-A1/1.7/, data/other/NH2-angles/NH2-rotation_from_min-A1/1.8/, 
-    data/other/NH2-angles/NH2-rotation_from_min-A1/1.9/, data/other/NH2-angles/NH2-rotation_from_min-A1/2.0/, 
-    data/other/NH2-angles/NH2-rotation_from_min-A1/2.1/, data/other/NH2-angles/NH2-rotation_from_min-A1/2.2/, 
-    data/other/benzene/A1-9/0-13_4-states/, data/other/benzene/A1-9/14-19_4-states/, data/other/benzene/A1-10/, 
-    data/other/benzene/B1-14/0-5_4-states/, data/other/benzene/B1-14/6-9_4-states/, data/other/benzene/B1-15/, 
-    data/other/benzene/B2-27/, data/other/benzene/A2-33/, data/other/in-benzene/A1-11/, 
-    data/other/in-benzene/A1-12/, data/other/in-benzene/B2-28/, data/other/in-benzene/B2-29/, 
-    data/other/in-benzene/B2-30/, data/other/out-of-benzene/B1-16_H/0-5_4-states/, 
-    data/other/out-of-benzene/B1-16_H/6-10_4-states/, data/other/out-of-benzene/B1-17_H/0-9_4-states/, 
-    data/other/out-of-benzene/B1-17_H/10-12_4-states/, data/other/out-of-benzene/B1-18_H/, 
-    data/other/out-of-benzene/B1-19_N/0-2_4-states/, data/other/out-of-benzene/B1-19_N/3-4_4-states/, 
-    data/other/out-of-benzene/A2-34_H/0-6_4-states/, data/other/out-of-benzene/A2-34_H/7_3-states/, 
-    data/other/out-of-benzene/A2-34_H/8-10_4-states/, data/other/out-of-benzene/A2-35_H/0-2_4-states/, 
-    data/other/out-of-benzene/A2-35_H/3-7_3-states/, 
+    data/linear-path/min-B1_min-B2/, data/NH2-rotation-A1/0.1/, data/NH2-rotation-A1/0.2/, 
+    data/NH2-rotation-A1/0.3/, data/NH2-rotation-A1/0.4/, data/NH2-rotation-A1/0.5/, 
+    data/NH2-rotation-A1/0.6/, data/NH2-rotation-A1/0.7/, data/NH2-rotation-A1/0.8/, 
+    data/NH2-rotation-A1/0.9/, data/NH2-rotation-A1/1.0/, data/NH2-rotation-A1/1.1/, 
+    data/NH2-rotation-A1/1.2/, data/NH2-rotation-A1/1.3/, data/NH2-rotation-A1/1.4/, 
+    data/NH2-rotation-A1/1.5/, data/NH2-rotation-A1/1.6/, data/NH2-rotation-A1/1.7/, 
+    data/NH2-rotation-A1/1.8/, data/NH2-rotation-A1/1.9/, data/NH2-rotation-A1/2.0/, 
+    data/NH2-rotation-A1/2.1/, data/NH2-rotation-A1/2.2/, data/NH2-rotation-B1/0.1/, 
+    data/NH2-rotation-B1/0.2/, data/NH2-rotation-B1/0.3/, data/NH2-rotation-B1/0.4/, 
+    data/NH2-rotation-B1/0.5/, data/NH2-rotation-B1/0.6/, data/NH2-rotation-B1/0.7/, 
+    data/NH2-rotation-B1/0.8/, data/NH2-rotation-B1/0.9/, data/NH2-rotation-B1/1.0/, 
+    data/NH2-rotation-B1/1.1/, data/NH2-rotation-B1/1.2/, data/NH2-rotation-B1/1.3/, 
+    data/NH2-rotation-B1/1.4/, data/NH2-rotation-B1/1.5/, data/NH2-rotation-B1/1.6/, 
+    data/NH2-rotation-B1/1.7/, data/NH2-rotation-B1/1.8/, data/NH2-rotation-B1/1.9/, 
+    data/NH2-rotation-B1/2.0/, data/NH2-rotation-B1/2.1/, data/NH2-rotation-B1/2.2/, 
+    data/other/NH2-angles/H-N-H_from_min-B1/0-18_4-states/, data/other/NH2-angles/H-N-H_from_min-B1/19_3-states/, 
+    data/other/NH2-angles/H-N-H_from_min-A1/, data/other/NH2-angles/C-N-avgH_from_min-B1/0-11_4-states/, 
+    data/other/NH2-angles/C-N-avgH_from_min-B1/12-13_5to4-states/, data/other/NH2-angles/C-out-of-NH2/0-9_4-states/, 
+    data/other/NH2-angles/C-out-of-NH2/10-14_5to4-states/, data/other/benzene/A1-9/0-13_4-states/, 
+    data/other/benzene/A1-9/14-19_4-states/, data/other/benzene/A1-10/, data/other/benzene/B1-14/0-5_4-states/, 
+    data/other/benzene/B1-14/6-9_4-states/, data/other/benzene/B1-15/, data/other/benzene/B2-27/, 
+    data/other/benzene/A2-33/, data/other/in-benzene/A1-11/, data/other/in-benzene/A1-12/, 
+    data/other/in-benzene/B2-28/, data/other/in-benzene/B2-29/, data/other/in-benzene/B2-30/, 
+    data/other/out-of-benzene/B1-16_H/0-5_4-states/, data/other/out-of-benzene/B1-16_H/6-10_4-states/, 
+    data/other/out-of-benzene/B1-17_H/0-9_4-states/, data/other/out-of-benzene/B1-17_H/10-12_4-states/, 
+    data/other/out-of-benzene/B1-18_H/, data/other/out-of-benzene/B1-19_N/0-2_4-states/, 
+    data/other/out-of-benzene/B1-19_N/3-4_4-states/, data/other/out-of-benzene/A2-34_H/0-6_4-states/, 
+    data/other/out-of-benzene/A2-34_H/7_3-states/, data/other/out-of-benzene/A2-34_H/8-10_4-states/, 
+    data/other/out-of-benzene/A2-35_H/0-2_4-states/, data/other/out-of-benzene/A2-35_H/3-7_3-states/, 
 There are 731 data points in adiabatic representation
           1 data points in composite representation
 
@@ -71,7 +63,7 @@ Thread 3:
 * owns 183 adiabatic data points
 * owns 0 composite data points
 * owns 0 energy-only data points
-* starts with Jacobian row 64049
+* starts with Jacobian row 69630
 Thread 4:
 * owns 182 adiabatic data points
 * owns 0 composite data points
@@ -81,34 +73,34 @@ Thread 4:
 The data set corresponds to 128361 least square equations
 There are 4292 parameters to train
 
-The initial residue = 1.79493
+The initial residue = 1.80664
  
-2022 year  4 month 22 day 16:23:21
- Iteration           1 , residue   1.38660925793932     
+2022 year 11 month 23 day 23:28:27
+ Iteration           1 , residue   1.38972102246167     
  
-2022 year  4 month 22 day 16:26:26
- Iteration           2 , residue   1.38211079001415     
+2022 year 11 month 23 day 23:31:31
+ Iteration           2 , residue   1.38373334782333     
  
-2022 year  4 month 22 day 16:29:32
- Iteration           3 , residue   1.37905415418001     
+2022 year 11 month 23 day 23:34:34
+ Iteration           3 , residue   1.38312494595449     
  
-2022 year  4 month 22 day 16:32:38
- Iteration           4 , residue   1.37905415418001     
+2022 year 11 month 23 day 23:37:38
+ Iteration           4 , residue   1.38253894011361     
  
-2022 year  4 month 22 day 16:33:28
- Iteration           5 , residue   1.37783165989573     
+2022 year 11 month 23 day 23:40:41
+ Iteration           5 , residue   1.38253894011361     
  
-2022 year  4 month 22 day 16:36:34
- Iteration           6 , residue   1.37783165989573     
+2022 year 11 month 23 day 23:41:31
+ Iteration           6 , residue   1.38253894011361     
  
-2022 year  4 month 22 day 16:37:25
- Iteration           7 , residue   1.37783165989573     
+2022 year 11 month 23 day 23:42:22
+ Iteration           7 , residue   1.38253894011361     
  
-2022 year  4 month 22 day 16:38:16
- Iteration           8 , residue   1.37724630384924     
+2022 year 11 month 23 day 23:43:12
+ Iteration           8 , residue   1.38173940851120     
  Failed trust region: max iteration exceeded!
- Final residual =    1.37724630384924     
-The final residue = 1.22281
+ Final residual =    1.38173940851120     
+The final residue = 1.22458
 
-Fri Apr 22 16:38:19 2022
+Wed Nov 23 23:43:16 2022
 Mission success

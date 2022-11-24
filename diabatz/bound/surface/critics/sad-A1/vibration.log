@@ -4,9 +4,9 @@ Yifan Shen 2021
 Echo of user command line input:
 /home/yshen/Software/Mine/diabatz/tools/vibration/v0/vibration.exe -f default -i opt.IntCoordDef -t 1 -x sad.xyz -m mass.txt -d default IntCoordDef SAS.in Hd.in Hd.net 11.in 12.in 13.in 14.in 22.in 23.in 24.in 33.in 34.in 44.in -o sad.log -a
 
-Fri Apr 22 16:49:13 2022
+Wed Nov 23 23:46:07 2022
 
 The target electronic state is 1
 
-Fri Apr 22 16:49:39 2022
+Wed Nov 23 23:46:15 2022
 Mission success
