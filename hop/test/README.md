@@ -4,7 +4,7 @@ Run FSSH based on *diabatz* diabatic Hamiltonian
 This intends to test whether the coupled surfaces have hole
 
 Initial condition:
-* nuclei: coordinate is from user input; momemtum is Boltzmann random, then scaled to have total energy = 0.5 Hartree
+* nuclei: coordinate is user input; momemtum is Boltzmann random (or Wigner sampling from harmonic oscillator if given Hessian), then scaled to have total energy = 0.5 Hartree
 * electrons: diabatically, the B2 state
 * active state: random from adiabatic electronic population
 

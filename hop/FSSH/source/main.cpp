@@ -83,7 +83,7 @@ int main(size_t argc, const char ** argv) {
         // output every `output_freq` steps
         if (step_count % output_freq == 0) {
             trajwriter(hopper.x(), traj_ofs);
-            state_ofs << hopper.active_state() << std::endl;
+            state_ofs << hopper.active_state() << '\n';
         }
         // stop when one of the N-H bonds > 3 A
         const at::Tensor & r = hopper.x();

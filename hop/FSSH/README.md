@@ -2,7 +2,7 @@
 Run FSSH based on *diabatz* diabatic Hamiltonian
 
 Initial condition:
-* nuclei: Wigner sampling from harmonic oscillator at min-A1
+* nuclei: Wigner sampling from harmonic oscillator at initial geometry (you should input min-A1)
 * electrons: diabatically, the B2 state
 * active state: random from adiabatic electronic population
 

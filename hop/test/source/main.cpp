@@ -23,6 +23,7 @@ argparse::ArgumentParser parse_args(const size_t & argc, const char ** & argv) {
     parser.add_argument("-m","--mass",      1, false, "the masses of atoms");
 
     // optional arguments
+    parser.add_argument("-H","--Hessian",     1, true, "the Hessian at initial geometry, default = identity");
     parser.add_argument("-t","--time_step",   1, true, "time step in fs, default = 0.1");
     parser.add_argument("-o","--output_step", 1, true, "output step in fs, default = 1");
 
@@ -46,8 +47,14 @@ int main(size_t argc, const char ** argv) {
     auto mass = geom.masses();
     std::vector<double> coords = geom.coords();
     at::Tensor r = at::from_blob(coords.data(), coords.size(), at::TensorOptions().dtype(torch::kFloat64));
-    // identity Hessian gives Boltzmann random momentum
-    at::Tensor Hessian = at::eye(r.size(0), {torch::kFloat64});
+    at::Tensor Hessian;
+    if (args.gotArgument("Hessian")) {
+        Hessian = tchem::utility::read_vector(args.retrieve<std::string>("Hessian")).reshape({r.size(0), r.size(0)});
+    }
+    else {
+        // identity Hessian gives Boltzmann random momentum
+        Hessian = at::eye(r.size(0), {torch::kFloat64});
+    }
     Initer initer(r, mass, Hessian);
 
     at::Tensor mass_vector = r.new_empty(r.sizes());
