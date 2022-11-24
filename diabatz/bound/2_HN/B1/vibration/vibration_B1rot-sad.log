@@ -4,9 +4,9 @@ Yifan Shen 2021
 Echo of user command line input:
 /home/yshen/Software/Mine/diabatz/tools/vibration/v1/vibration.exe -f default -i vibration/opt.IntCoordDef -t 1 -x /home/yshen/C6H7N-aniline/Columbus/NH2-rotation-B1/2.2/B1rot-2.2.xyz -m vibration/mass.txt -d default IntCoordDef SAS.in pretrain/C2v_Hd.in pretrain/C2v_Hd.net pretrain/C2v_11.in default IntCoordDef SAS.in single.in Hd.net HN-C2v.in -o vibration/B1rot-sad.log
 
-Wed Nov 23 11:58:31 2022
+Wed Nov 23 22:09:20 2022
 
 The target electronic state is 1
 
-Wed Nov 23 11:58:33 2022
+Wed Nov 23 22:09:22 2022
 Mission success
