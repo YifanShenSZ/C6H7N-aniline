@@ -15,5 +15,3 @@ Finally we combine everything into a single network in `surface`
 `hole` contains some typical holes I encountered
 
 `test-geoms` contains other typical dissociative pathes (who are not energy-optimized, though)
-
-`script` contains useful scripts

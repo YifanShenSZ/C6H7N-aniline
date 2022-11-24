@@ -4,13 +4,13 @@ Yifan Shen 2021
 Echo of user command line input:
 /home/yshen/Software/Mine/diabatz/tools/eval/v1/eval.exe -d default pretrain-IntCoordDef pretrain-SAS.in pretrain-Hd.in pretrain-Hd.net pretrain-11.in pretrain-12.in pretrain-13.in pretrain-14.in pretrain-22.in pretrain-23.in pretrain-24.in pretrain-33.in pretrain-34.in pretrain-44.in default IntCoordDef SAS.in Hd.in Hd.net 11.in 12.in 13.in 14.in 22.in 23.in 24.in 33.in 34.in 44.in -x /home/yshen/C6H7N-aniline/diabatz/disso/test-geoms/slow-extend/2.1.xyz
 
-Thu May 26 10:39:01 2022
+Thu Nov 24 14:54:39 2022
 
 Hd =
-    1.326700e-01   -8.465371e-03   -2.313643e-03    3.126366e-03
-                    2.168046e-01    2.167132e-03   -4.385931e-05
-                                    2.922189e-01   -2.788711e-03
-                                                    3.251248e-01
+    1.318772e-01   -1.037805e-03    3.025131e-03    1.602100e-03
+                    1.032513e-01    4.058558e-03   -1.284432e-03
+                                    2.898024e-01   -3.087856e-03
+                                                    3.266892e-01
 
-Thu May 26 10:39:02 2022
+Thu Nov 24 14:54:39 2022
 Mission success

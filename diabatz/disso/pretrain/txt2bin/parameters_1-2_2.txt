@@ -1,3 +1,1 @@
-transposed transformation matrix
-   -2.668433389639788e-02
-   -4.624804100577404e-03
+../../bound-pretrain/bin2txt/parameters_1-2_2.txt
