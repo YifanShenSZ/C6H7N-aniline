@@ -21,7 +21,6 @@ argparse::ArgumentParser parse_args(const size_t & argc, const char ** & argv) {
     parser.add_argument("-d","--diabatz", '+', false, "diabatz definition files");
     parser.add_argument("-x","--xyz",       1, false, "initial xyz geometry");
     parser.add_argument("-m","--mass",      1, false, "the masses of atoms");
-    parser.add_argument("-H","--Hessian",   1, false, "the Hessian at initial geometry");
 
     // optional arguments
     parser.add_argument("-t","--time_step",   1, true, "time step in fs, default = 0.1");
@@ -47,7 +46,8 @@ int main(size_t argc, const char ** argv) {
     auto mass = geom.masses();
     std::vector<double> coords = geom.coords();
     at::Tensor r = at::from_blob(coords.data(), coords.size(), at::TensorOptions().dtype(torch::kFloat64));
-    at::Tensor Hessian = tchem::utility::read_vector(args.retrieve<std::string>("Hessian")).reshape({r.size(0), r.size(0)});
+    // identity Hessian gives Boltzmann random momentum
+    at::Tensor Hessian = at::eye(r.size(0), {torch::kFloat64});
     Initer initer(r, mass, Hessian);
 
     at::Tensor mass_vector = r.new_empty(r.sizes());
@@ -64,6 +64,18 @@ int main(size_t argc, const char ** argv) {
     size_t active_state;
     at::Tensor x, p;
     std::tie(active_state, x, p) = initer();
+    // reset x to deterministic user input 
+    x = r.clone();
+    // scale momentum to have total energy = 0.5 Hartree
+    {
+        at::Tensor Hd = (*HdKernel)(x);
+        at::Tensor eigval, eigvec;
+        std::tie(eigval, eigvec) = Hd.symeig();
+        at::Tensor scale_square = (0.5 - eigval[active_state]) / (0.5 * p.dot(p / mass_vector));
+        p *= scale_square.sqrt();
+        std::cout << "initial potential energy = " << eigval[active_state].item<double>() << " Hartree\n"
+                  << "initial   kinetic energy = " << 0.5 * p.dot(p / mass_vector).item<double>() << " Hartree\n";
+    }
     hopper.initialize(active_state, x, p, at::tensor({0.0, 0.0, 1.0, 0.0}));
 
     // output preparation
@@ -76,7 +88,7 @@ int main(size_t argc, const char ** argv) {
     state_ofs << active_state << '\n';
 
     // main loop
-    for (size_t itime = 0; itime < 1000 * 1000; itime++) {
+    for (size_t itime = 0; itime < 10 * 1000; itime++) {
         // propagate
         hopper.step(dt);
         step_count++;

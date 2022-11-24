@@ -80,6 +80,7 @@ int main(size_t argc, const char ** argv) {
         std::cout << "initial potential energy = " << eigval[active_state].item<double>() << " Hartree\n"
                   << "initial   kinetic energy = " << 0.5 * p.dot(p / mass_vector).item<double>() << " Hartree\n";
     }
+
     // output preparation
     size_t step_count = 0;
     TrajWriter trajwriter(geom.symbols());
@@ -87,6 +88,7 @@ int main(size_t argc, const char ** argv) {
     traj_ofs.open("trajectory.xyz");
     trajwriter(x, traj_ofs);
     state_ofs << active_state << '\n';
+
     // main loop
     for (size_t itime = 0; itime < 10 * 1000; itime++) {
         // propagate

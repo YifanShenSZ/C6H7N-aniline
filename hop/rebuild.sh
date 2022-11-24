@@ -1,4 +1,4 @@
-for method in FSSH MD; do
+for method in FSSH MD test; do
     cd $method
     for version in v0 v1; do
         echo
