@@ -25,6 +25,7 @@ argparse::ArgumentParser parse_args(const size_t & argc, const char ** & argv) {
     parser.add_argument("--target",         1, false, "target adiabatic electronic state");
 
     // optional arguments
+    parser.add_argument("-e","--energy",      1, true, "total energy, default = whatever Wigner sampling gives");
     parser.add_argument("-t","--time_step",   1, true, "time step in fs, default = 0.1");
     parser.add_argument("-o","--output_step", 1, true, "output step in fs, default = 1");
 
@@ -69,17 +70,26 @@ int main(size_t argc, const char ** argv) {
     // so electronic wave function does not really matter
     at::Tensor c = x.new_zeros(HdKernel->NStates());
     c[0].fill_(1.0);
-    hopper.initialize(active_state, x, p, c);
-    // scale momentum to have total energy = 0.5 Hartree
-    {
+    // if given total energy
+    if (args.gotArgument("energy")) {
+        // potential energy
         at::Tensor Hd = (*HdKernel)(x);
         at::Tensor eigval, eigvec;
         std::tie(eigval, eigvec) = Hd.symeig();
-        at::Tensor scale_square = (0.5 - eigval[active_state]) / (0.5 * p.dot(p / mass_vector));
-        p *= scale_square.sqrt();
-        std::cout << "initial potential energy = " << eigval[active_state].item<double>() << " Hartree\n"
-                  << "initial   kinetic energy = " << 0.5 * p.dot(p / mass_vector).item<double>() << " Hartree\n";
+        double potential_energy = eigval[active_state].item<double>();
+        std::cout << "initial potential energy = " << potential_energy << " Hartree\n";
+        // kinetic energy
+        double kinetic_energy = 0.5 * p.dot(p / mass_vector).item<double>();
+        std::cout << "initial   kinetic energy = " << kinetic_energy << " Hartree\n";
+        // given total energy
+        double total_energy = args.retrieve<double>("energy");
+        // scale momentum according to given total energy
+        if (total_energy < potential_energy + kinetic_energy) throw
+        std::invalid_argument("given total energy < initial potential energy + kinetic energy");
+        p *= sqrt((total_energy - potential_energy) / (kinetic_energy));
+        std::cout << "initial kinetic energy is scaled to " << total_energy - potential_energy << " Hartree\n";
     }
+    hopper.initialize(active_state, x, p, c);
 
     // output preparation
     size_t step_count = 0;
