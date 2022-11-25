@@ -2,12 +2,13 @@ C6H7N-aniline: aniline photodissociation
 Yifan Shen 2021
 
 Echo of user command line input:
-/home/yshen/C6H7N-aniline/hop/MD/v0/MD.exe -d default IntCoordDef SAS.in single.in single.net 11.in -x /home/yshen/C6H7N-aniline/Columbus/min-A1/min-A1.xyz -m /home/yshen/C6H7N-aniline/Columbus/input/mass.txt -H ../../Hessian/adiabatic-Hessian-1-1.txt --target 1
+/home/yshen/C6H7N-aniline/hop/MD/v0/MD.exe -d default IntCoordDef SAS.in single.in single.net 11.in -x /home/yshen/C6H7N-aniline/Columbus/min-A1/min-A1.xyz -m /home/yshen/C6H7N-aniline/Columbus/input/mass.txt -H ../../Hessian/adiabatic-Hessian-1-1.txt --target 1 -e 0.43
 
-Thu Nov 24 11:35:20 2022
+Fri Nov 25 00:44:53 2022
 
-initial potential energy = 0.276219 Hartree
-initial   kinetic energy = 0.223781 Hartree
+initial potential energy = 0.280602 Hartree
+initial   kinetic energy = 0.0383815 Hartree
+initial kinetic energy is scaled to 0.149398 Hartree
 
-Thu Nov 24 11:58:13 2022
+Fri Nov 25 01:33:28 2022
 Mission success
