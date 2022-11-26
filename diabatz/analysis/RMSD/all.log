@@ -4,27 +4,27 @@ Yifan Shen 2021
 Echo of user command line input:
 /home/yshen/Software/Mine/diabatz/tools/RMSD/v0/RMSD.exe -d default IntCoordDef SAS.in Hd.in Hd.net 11.in 12.in 13.in 14.in 22.in 23.in 24.in 33.in 34.in 44.in -s data/critical/min-A1/ data/critical/sad-A1/ data/critical/min-B1/ data/critical/sad-B1/ data/critical/min-B2/ data/critical/sad-B2/ data/critical/min-A2/ data/linear-path/min-B1_min-B2/ data/fast/list.txt -z -286.1075216397
 
-Tue Apr 26 12:08:26 2022
+Sun Nov 20 19:50:11 2022
 
 Root mean square deviation of energy:
-State 1 = 0.00127979
-State 2 = 0.000895236
-State 3 = 0.00117196
-State 4 = 0.000350969
+State 1 = 0.000692019
+State 2 = 0.00100265
+State 3 = 0.00064305
+State 4 = 0.000749861
 Root mean square deviation of energy gradient:
-State 1 = 0.00114697
-State 2 = 0.0018026
-State 3 = 0.00120782
-State 4 = 0.00127256
+State 1 = 0.00126437
+State 2 = 0.00192167
+State 3 = 0.00121767
+State 4 = 0.00161243
 Root mean square deviation of interstate coupling:
-State 1-2 = 0.00357909
-State 1-3 = 0.00175429
-State 1-4 = 0.00167095
-State 2-3 = 0.00171001
-State 2-4 = 0.00163385
-State 3-4 = 0.00201175
+State 1-2 = 0.00240614
+State 1-3 = 0.00151879
+State 1-4 = 0.00173595
+State 2-3 = 0.00113951
+State 2-4 = 0.00120777
+State 3-4 = 0.00156727
 
-Tue Apr 26 12:15:25 2022
+Sun Nov 20 19:57:13 2022
 Mission success
 
-217.711157633885 cm^-1 = 0.0009919651481222766 Hartree = sqrt((0.00127979**2 + 0.000895236**2 + 0.00117196**2 + 0.000350969**2) / 4)
+172.11630738745112 cm^-1 = 0.0007842196982800801 Hartree = sqrt((0.000692019**2 + 0.00100265**2 + 0.00064305**2 + 0.000749861**2) / 4))
