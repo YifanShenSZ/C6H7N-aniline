@@ -1,0 +1,16 @@
+{
+    "configurations": [
+        {
+            "name": "Linux",
+            "includePath": [
+                "~/Software/Programming/libtorch/include/**",
+                "~/Library/Torch-Chemistry/include",
+                "~/Software/Mine/diabatz/library/SASDIC/include",
+                "~/Software/Mine/diabatz/library/obnet/include",
+                "~/Software/Mine/diabatz/tools/v0/libHd/include"
+            ],
+            "cppStandard": "c++14"
+        }
+    ],
+    "version": 4
+}
