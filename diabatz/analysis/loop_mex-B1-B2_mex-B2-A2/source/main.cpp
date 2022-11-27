@@ -18,22 +18,22 @@ argparse::ArgumentParser parse_args(const size_t & argc, const char ** & argv) {
 }
 
 double loop_mexB1B2(const Hd::kernel& Hdkernel,
-const size_t& NCNH2 = 40, const double& dCNH2 = 0.05,
-const size_t& Nh = 20, const double& dh = 0.05);
+const size_t& NCNH2 = 200, const double& dCNH2 = 0.01,
+const size_t& Nh = 100, const double& dh = 0.01);
 
 double loop_mexB2A2(const Hd::kernel& Hdkernel,
-const size_t& NNH = 40, const double& dNH = 0.005 * 1.8897261339212517,
-const size_t& NCNH2 = 20, const double& dCNH2 = 0.05);
+const size_t& NNH = 200, const double& dNH = 0.001 * 1.8897261339212517,
+const size_t& NCNH2 = 100, const double& dCNH2 = 0.01);
 
 double loop_mexB1B2_mexB2A2_12(const Hd::kernel& Hdkernel,
-const size_t& NCNH2 = 40, const double& dCNH2 = 0.05,
-const size_t& NNH = 40, const double& dNH = 0.005 * 1.8897261339212517,
-const size_t& Nh = 20, const double& dh = 0.05);
+const size_t& NCNH2 = 200, const double& dCNH2 = 0.01,
+const size_t& NNH = 200, const double& dNH = 0.001 * 1.8897261339212517,
+const size_t& Nh = 100, const double& dh = 0.01);
 
 double loop_mexB1B2_mexB2A2_23(const Hd::kernel& Hdkernel,
-const size_t& NCNH2 = 40, const double& dCNH2 = 0.05,
-const size_t& NNH = 40, const double& dNH = 0.005 * 1.8897261339212517,
-const size_t& Nh = 20, const double& dh = 0.05);
+const size_t& NCNH2 = 200, const double& dCNH2 = 0.01,
+const size_t& NNH = 200, const double& dNH = 0.001 * 1.8897261339212517,
+const size_t& Nh = 100, const double& dh = 0.01);
 
 int main(size_t argc, const char ** argv) {
     std::cout << "loop integral based on diabatz\n"

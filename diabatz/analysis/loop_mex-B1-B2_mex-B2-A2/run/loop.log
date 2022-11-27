@@ -4,12 +4,12 @@ Yifan Shen 2022
 Echo of user command line input:
 ../v0/loop.exe -d default IntCoordDef SAS.in Hd.in Hd.net 11.in 12.in 13.in 14.in 22.in 23.in 24.in 33.in 34.in 44.in
 
-Sat Nov 26 18:05:03 2022
+Sat Nov 26 20:24:40 2022
 
 loop around mex-B1-B2 = 3.14177
-loop around mex-B2-A2 = -3.14076
+loop around mex-B2-A2 = -3.1417
 loop 12 around mex-B1-B2 and mex-B2-A2 = 3.14415
-loop 23 around mex-B1-B2 and mex-B2-A2 = -3.15242
+loop 23 around mex-B1-B2 and mex-B2-A2 = -3.15247
 
-Sat Nov 26 18:17:49 2022
+Sat Nov 26 21:28:16 2022
 Mission success
