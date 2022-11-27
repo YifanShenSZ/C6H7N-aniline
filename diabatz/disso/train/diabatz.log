@@ -2,9 +2,9 @@ Diabatz version 1.3.0
 Yifan Shen 2021
 
 Echo of user command line input:
-/home/yshen57/Software/Mine/diabatz/v1.3.0/diabatz.exe --pretrained default IntCoordDef SAS.in pretrain-Hd.in pretrain-Hd.net pretrain-11.in pretrain-12.in pretrain-13.in pretrain-14.in pretrain-22.in pretrain-23.in pretrain-24.in pretrain-33.in pretrain-34.in pretrain-44.in -f default -i IntCoordDef -s SAS.in -n Hd.in -l 11.in 12.in 13.in 14.in 22.in 23.in 24.in 33.in 34.in 44.in -d data/critical/no-deg_list.txt data/linear-path/min-B1_min-B2/ data/NH2-rotation-A1/list.txt data/NH2-rotation-B1/list.txt data/other/NH2-angles/list.txt data/other/benzene/list.txt data/other/in-benzene/list.txt data/other/out-of-benzene/list.txt data/fast/list.txt data/other/fast_bound_N-H/list.txt data/slow/list.txt data/other/slow_bound_N-H/list.txt data/linear-path/fast-slow/list.txt data/linear-path/min-B1_stretch/list.txt data/linear-path/min-A1_stretch/list.txt data/linear-path/A1rot-sad_stretch/list.txt data/artifact/asymptote/ --energy_data data/artifact/fast-B2/ data/artifact/min-B1_stretch/ data/artifact/min-A1_stretch/ data/artifact/B1rot-sad_stretch/ data/artifact/A1rot-sad_stretch/ data/artifact/asymptote_C-N-H/ data/artifact/asymptote-B2/ -z -286.1075216397 -c init/Hd.net -r reg-continue/reg -p reg-continue/prior -m 20
+/home/yshen57/Software/Mine/diabatz/v1.3.0/diabatz.exe --pretrained default IntCoordDef SAS.in pretrain-Hd.in pretrain-Hd.net pretrain-11.in pretrain-12.in pretrain-13.in pretrain-14.in pretrain-22.in pretrain-23.in pretrain-24.in pretrain-33.in pretrain-34.in pretrain-44.in -f default -i IntCoordDef -s SAS.in -n Hd.in -l 11.in 12.in 13.in 14.in 22.in 23.in 24.in 33.in 34.in 44.in -d data/critical/no-deg_list.txt data/linear-path/min-B1_min-B2/ data/NH2-rotation-A1/list.txt data/NH2-rotation-B1/list.txt data/other/NH2-angles/list.txt data/other/benzene/list.txt data/other/in-benzene/list.txt data/other/out-of-benzene/list.txt data/fast/list.txt data/other/fast_bound_N-H/list.txt data/slow/list.txt data/other/slow_bound_N-H/list.txt data/linear-path/fast-slow/list.txt data/linear-path/min-B1_stretch/list.txt data/linear-path/min-A1_stretch/list.txt data/linear-path/A1rot-sad_stretch/list.txt data/artifact/asymptote/ --energy_data data/artifact/fast-B2/ data/artifact/min-B1_stretch/ data/artifact/min-A1_stretch/ data/artifact/B1rot-sad_stretch/ data/artifact/A1rot-sad_stretch/ data/artifact/asymptote_C-N-H/ data/artifact/asymptote-B2/ -z -286.1075216397 -c txt2bin/replace-B1.net -r reg-continue/reg -p reg-continue/prior -m 0
 
-Tue Nov 22 11:47:26 2022
+Sat Nov 26 22:01:51 2022
 
 The data set will be read from: 
     data/critical/min-A1/, data/critical/sad-A1/, data/critical/min-B1/, 
@@ -115,186 +115,50 @@ so we suggest to set gradient / energy scaling to around 2.97233
 
 Got regularization strength, enable regularization
 
-The number of threads = 16
+The number of threads = 8
 
 Thread 1:
-* owns 131 adiabatic data points
+* owns 261 adiabatic data points
 * owns 1 composite data points
-* owns 103 energy-only data points
+* owns 206 energy-only data points
 * starts with Jacobian row 0
 Thread 2:
-* owns 131 adiabatic data points
+* owns 261 adiabatic data points
 * owns 0 composite data points
-* owns 103 energy-only data points
-* starts with Jacobian row 23756
+* owns 206 energy-only data points
+* starts with Jacobian row 45750
 Thread 3:
-* owns 131 adiabatic data points
+* owns 261 adiabatic data points
 * owns 0 composite data points
-* owns 103 energy-only data points
-* starts with Jacobian row 46114
+* owns 206 energy-only data points
+* starts with Jacobian row 101948
 Thread 4:
-* owns 131 adiabatic data points
+* owns 261 adiabatic data points
 * owns 0 composite data points
-* owns 103 energy-only data points
-* starts with Jacobian row 69336
+* owns 206 energy-only data points
+* starts with Jacobian row 140635
 Thread 5:
-* owns 131 adiabatic data points
+* owns 261 adiabatic data points
 * owns 0 composite data points
-* owns 103 energy-only data points
-* starts with Jacobian row 102676
+* owns 206 energy-only data points
+* starts with Jacobian row 197443
 Thread 6:
-* owns 131 adiabatic data points
+* owns 261 adiabatic data points
 * owns 0 composite data points
-* owns 103 energy-only data points
-* starts with Jacobian row 121767
+* owns 206 energy-only data points
+* starts with Jacobian row 255524
 Thread 7:
-* owns 131 adiabatic data points
+* owns 261 adiabatic data points
 * owns 0 composite data points
-* owns 103 energy-only data points
-* starts with Jacobian row 141229
+* owns 205 energy-only data points
+* starts with Jacobian row 351352
 Thread 8:
-* owns 130 adiabatic data points
+* owns 260 adiabatic data points
 * owns 0 composite data points
-* owns 103 energy-only data points
-* starts with Jacobian row 167735
-Thread 9:
-* owns 130 adiabatic data points
-* owns 0 composite data points
-* owns 103 energy-only data points
-* starts with Jacobian row 198037
-Thread 10:
-* owns 130 adiabatic data points
-* owns 0 composite data points
-* owns 103 energy-only data points
-* starts with Jacobian row 227841
-Thread 11:
-* owns 130 adiabatic data points
-* owns 0 composite data points
-* owns 103 energy-only data points
-* starts with Jacobian row 256252
-Thread 12:
-* owns 130 adiabatic data points
-* owns 0 composite data points
-* owns 103 energy-only data points
-* starts with Jacobian row 303984
-Thread 13:
-* owns 130 adiabatic data points
-* owns 0 composite data points
-* owns 103 energy-only data points
-* starts with Jacobian row 351716
-Thread 14:
-* owns 130 adiabatic data points
-* owns 0 composite data points
-* owns 103 energy-only data points
-* starts with Jacobian row 399448
-Thread 15:
-* owns 130 adiabatic data points
-* owns 0 composite data points
-* owns 102 energy-only data points
-* starts with Jacobian row 447180
-Thread 16:
-* owns 130 adiabatic data points
-* owns 0 composite data points
-* owns 102 energy-only data points
-* starts with Jacobian row 481897
+* owns 205 energy-only data points
+* starts with Jacobian row 447176
 
 The data set corresponds to 513780 least square equations
 There are 2962 parameters to train
 
-The initial residue = 5.06981
- 
-2022 year 11 month 22 day 12: 8: 1
- Iteration           1 , residue   6.13984809942996     
- 
-2022 year 11 month 22 day 12: 8:13
- Iteration           2 , residue   5.32232405489543     
- 
-2022 year 11 month 22 day 12:10:36
- Iteration           3 , residue   5.32232405489543     
- 
-2022 year 11 month 22 day 12:10:48
- Iteration           4 , residue   5.32232405489543     
- 
-2022 year 11 month 22 day 12:11: 1
- Iteration           5 , residue   5.32232405489543     
- 
-2022 year 11 month 22 day 12:11:14
- Iteration           6 , residue   5.32232405489543     
- 
-2022 year 11 month 22 day 12:11:26
- Iteration           7 , residue   5.32232405489543     
- 
-2022 year 11 month 22 day 12:11:39
- Iteration           8 , residue   5.30998580815715     
- 
-2022 year 11 month 22 day 12:13:49
- Iteration           9 , residue   5.30998580815715     
- 
-2022 year 11 month 22 day 12:14: 2
- Iteration          10 , residue   5.30998580815715     
- 
-2022 year 11 month 22 day 12:14:15
- Iteration          11 , residue   5.26631486851529     
- 
-2022 year 11 month 22 day 12:16:26
- Iteration          12 , residue   5.26631486851529     
- 
-2022 year 11 month 22 day 12:16:39
- Iteration          13 , residue   5.25588338692315     
- 
-2022 year 11 month 22 day 12:18:37
- Iteration          14 , residue   5.24980854803980     
- 
-2022 year 11 month 22 day 12:20:34
- Iteration          15 , residue   5.24849950274466     
- 
-2022 year 11 month 22 day 12:22:51
- Iteration          16 , residue   5.23990649858937     
- 
-2022 year 11 month 22 day 12:25:17
- Iteration          17 , residue   5.23592398490697     
- 
-2022 year 11 month 22 day 12:27:57
- Iteration          18 , residue   5.23257121107075     
- 
-2022 year 11 month 22 day 12:30:18
- Iteration          19 , residue   5.22961540436732     
- 
-2022 year 11 month 22 day 12:32:21
- Iteration          20 , residue   5.22766344656734     
- 
-2022 year 11 month 22 day 12:34:26
- Iteration          21 , residue   5.22766344656734     
- 
-2022 year 11 month 22 day 12:34:39
- Iteration          22 , residue   5.22651128209458     
- 
-2022 year 11 month 22 day 12:36:38
- Iteration          23 , residue   5.22558079609680     
- 
-2022 year 11 month 22 day 12:38:36
- Iteration          24 , residue   5.22474164019692     
- 
-2022 year 11 month 22 day 12:40:34
- Iteration          25 , residue   5.22395438106944     
- 
-2022 year 11 month 22 day 12:42:41
- Iteration          26 , residue   5.22321820036716     
- 
-2022 year 11 month 22 day 12:44:56
- Iteration          27 , residue   5.22251829428581     
- 
-2022 year 11 month 22 day 12:46:56
- Iteration          28 , residue   5.22185348253817     
- 
-2022 year 11 month 22 day 12:49: 1
- Iteration          29 , residue   5.22122098158893     
- 
-2022 year 11 month 22 day 12:51:29
- Iteration          30 , residue   5.22061548974972     
- Failed trust region: max iteration exceeded!
- Final residual =    5.22061548974972     
-The final residue = 5.05313
-
-Tue Nov 22 12:51:33 2022
-Mission success
+The initial residue = 5.10681
