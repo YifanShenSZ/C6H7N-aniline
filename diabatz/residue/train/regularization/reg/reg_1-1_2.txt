@@ -5,4 +5,4 @@ transposed transformation matrix
     0.0413
     0.0413
 bias
-    0.0
+    1.0
