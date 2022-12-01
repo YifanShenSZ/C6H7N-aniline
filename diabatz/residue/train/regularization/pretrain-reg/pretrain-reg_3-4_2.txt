@@ -1,4 +1,1 @@
-transposed transformation matrix
-    0.0324
-    0.0324
-    0.0324
+pretrain-reg_1-2_2.txt
