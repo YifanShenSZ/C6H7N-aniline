@@ -1,0 +1,11 @@
+Convert binary fitting parameters to text for diabatz version 0
+Yifan Shen 2021
+
+Echo of user command line input:
+/home/yshen/Software/Mine/diabatz/tools/v0/bin2txt/bin2txt.exe -n Hd.in -c Hd.net -l 11.in 12.in 13.in 14.in 22.in 23.in 24.in 33.in 34.in 44.in
+
+Fri Dec  2 12:31:39 2022
+
+
+Fri Dec  2 12:31:39 2022
+Mission success
