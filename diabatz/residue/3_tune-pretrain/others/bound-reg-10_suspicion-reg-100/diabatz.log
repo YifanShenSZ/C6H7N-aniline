@@ -4,7 +4,7 @@ Yifan Shen 2022
 Echo of user command line input:
 /home/yshen57/Software/Mine/diabatz/v1.3.3/diabatz.exe -f default -i IntCoordDef -s SAS.in --net1 pretrain-Hd.in --input_layers1 pretrain-11.in pretrain-12.in pretrain-13.in pretrain-14.in pretrain-22.in pretrain-23.in pretrain-24.in pretrain-33.in pretrain-34.in pretrain-44.in --net2 Hd.in --input_layers2 11.in 12.in 13.in 14.in 22.in 23.in 24.in 33.in 34.in 44.in -d data/critical/no-deg_list.txt data/linear-path/min-B1_min-B2/ data/NH2-rotation-A1/list.txt data/NH2-rotation-B1/list.txt data/other/NH2-angles/list.txt data/other/benzene/list.txt data/other/in-benzene/list.txt data/other/out-of-benzene/list.txt data/fast/list.txt data/other/fast_bound_N-H/list.txt data/slow/list.txt data/other/slow_bound_N-H/list.txt data/linear-path/fast-slow/list.txt data/linear-path/min-B1_stretch/list.txt data/linear-path/min-A1_stretch/list.txt data/linear-path/A1rot-sad_stretch/list.txt data/artifact/asymptote/ --energy_data data/artifact/fast-B2/ data/artifact/min-B1_stretch/ data/artifact/min-A1_stretch/ data/artifact/B1rot-sad_stretch/ data/artifact/A1rot-sad_stretch/ data/artifact/asymptote_C-N-H/ data/artifact/asymptote-B2/ -z -286.1075216397 --regularization1 regularization/pretrain-reg/pretrain-reg --prior1 regularization/pretrain-prior/pretrain-prior --regularization2 regularization/reg/reg --checkpoint1 pretrain/pretrain-Hd.net --checkpoint2 ../2_prune-pretrain/Hd.net
 
-Tue Dec  6 11:12:42 2022
+Mon Dec  5 21:47:21 2022
 
 The data set will be read from: 
     data/critical/min-A1/, data/critical/sad-A1/, data/critical/min-B1/, 
@@ -361,92 +361,89 @@ There are 25214 parameters to train
 
 The initial residue = 7.73345
  
-2022 year 12 month  6 day 11:44: 7
- Iteration           1 , residue   14.9333595882149     
+2022 year 12 month  5 day 22:18:17
+ Iteration           1 , residue   12.7866640029922     
  
-2022 year 12 month  6 day 11:48:50
- Iteration           2 , residue   10.1495066816176     
+2022 year 12 month  5 day 22:23: 0
+ Iteration           2 , residue   8.43569555047845     
  
-2022 year 12 month  6 day 11:58:36
- Iteration           3 , residue   10.1495066816176     
+2022 year 12 month  5 day 22:32:58
+ Iteration           3 , residue   8.43569555047845     
  
-2022 year 12 month  6 day 12: 3:15
- Iteration           4 , residue   6.97521114980959     
+2022 year 12 month  5 day 22:37:41
+ Iteration           4 , residue   6.92981159470771     
  
-2022 year 12 month  6 day 12:11:42
- Iteration           5 , residue   6.07756128663548     
+2022 year 12 month  5 day 22:47:33
+ Iteration           5 , residue   5.76794783293115     
  
-2022 year 12 month  6 day 12:20: 9
- Iteration           6 , residue   6.07756128663548     
+2022 year 12 month  5 day 22:57:14
+ Iteration           6 , residue   5.76794783293115     
  
-2022 year 12 month  6 day 12:24:48
- Iteration           7 , residue   5.44602254674676     
+2022 year 12 month  5 day 23: 1:56
+ Iteration           7 , residue   5.09793832990555     
  
-2022 year 12 month  6 day 12:33:12
- Iteration           8 , residue   5.31916868531807     
+2022 year 12 month  5 day 23:11:34
+ Iteration           8 , residue   5.01103987459119     
  
-2022 year 12 month  6 day 12:41:38
- Iteration           9 , residue   5.10091301890098     
+2022 year 12 month  5 day 23:21:19
+ Iteration           9 , residue   4.93916550591555     
  
-2022 year 12 month  6 day 12:50:16
- Iteration          10 , residue   5.08200013430063     
+2022 year 12 month  5 day 23:30:59
+ Iteration          10 , residue   4.85457592454595     
  
-2022 year 12 month  6 day 12:58:45
- Iteration          11 , residue   4.90151132967290     
+2022 year 12 month  5 day 23:40:21
+ Iteration          11 , residue   4.85457592454595     
  
-2022 year 12 month  6 day 13: 7:12
- Iteration          12 , residue   4.90151132967290     
+2022 year 12 month  5 day 23:45: 6
+ Iteration          12 , residue   4.74818252235021     
  
-2022 year 12 month  6 day 13:12: 1
- Iteration          13 , residue   4.82006191475006     
+2022 year 12 month  5 day 23:54:31
+ Iteration          13 , residue   4.63101983506420     
  
-2022 year 12 month  6 day 13:20:36
- Iteration          14 , residue   4.59449836638205     
+2022 year 12 month  6 day  0: 3:55
+ Iteration          14 , residue   4.41766947998761     
  
-2022 year 12 month  6 day 13:29:16
- Iteration          15 , residue   4.59449836638205     
+2022 year 12 month  6 day  0:13:12
+ Iteration          15 , residue   4.41766947998761     
  
-2022 year 12 month  6 day 13:34: 2
- Iteration          16 , residue   4.36506025814771     
+2022 year 12 month  6 day  0:17:56
+ Iteration          16 , residue   4.34033749678092     
  
-2022 year 12 month  6 day 13:42:36
- Iteration          17 , residue   4.36506025814771     
+2022 year 12 month  6 day  0:26:48
+ Iteration          17 , residue   4.34033749678092     
  
-2022 year 12 month  6 day 13:47:20
- Iteration          18 , residue   4.33280506415783     
+2022 year 12 month  6 day  0:31:32
+ Iteration          18 , residue   4.30436671248758     
  
-2022 year 12 month  6 day 13:55:52
- Iteration          19 , residue   4.32314971756850     
+2022 year 12 month  6 day  0:39:57
+ Iteration          19 , residue   4.30436671248758     
  
-2022 year 12 month  6 day 14: 4:24
- Iteration          20 , residue   4.30122332744915     
+2022 year 12 month  6 day  0:44:34
+ Iteration          20 , residue   4.29909601335312     
  
-2022 year 12 month  6 day 14:12:55
- Iteration          21 , residue   4.30122332744915     
+2022 year 12 month  6 day  0:52:53
+ Iteration          21 , residue   4.29524648239471     
  
-2022 year 12 month  6 day 14:17:35
- Iteration          22 , residue   4.29615702231097     
+2022 year 12 month  6 day  1: 1:10
+ Iteration          22 , residue   4.29377766841111     
  
-2022 year 12 month  6 day 14:26: 5
- Iteration          23 , residue   4.29302075661186     
+2022 year 12 month  6 day  1: 9:28
+ Iteration          23 , residue   4.29096546003372     
  
-2022 year 12 month  6 day 14:34:32
- Iteration          24 , residue   4.29020059197810     
+2022 year 12 month  6 day  1:17:45
+ Iteration          24 , residue   4.28922971320111     
  
-2022 year 12 month  6 day 14:42:59
- Iteration          25 , residue   4.28601647153791     
+2022 year 12 month  6 day  1:25:58
+ Iteration          25 , residue   4.28775066339159     
  
-2022 year 12 month  6 day 14:51:27
- Iteration          26 , residue   4.28136040511591     
+2022 year 12 month  6 day  1:34:13
+ Iteration          26 , residue   4.28626199495637     
  
-2022 year 12 month  6 day 14:59:54
- Iteration          27 , residue   4.28136040511591     
- 
-2022 year 12 month  6 day 15: 4:34
- Iteration          28 , residue   4.27982784903539     
+2022 year 12 month  6 day  1:42:24
+ Iteration          27 , residue   4.28483562689522     
  Failed trust region: max iteration exceeded!
- Final residual =    4.27982784903539     
-The final residue = 4.09485
+ Final residual =    4.28483562689521     
+The final residue = 4.07852
 
-Tue Dec  6 15:04:36 2022
+Tue Dec  6 01:42:26 2022
 Mission success
