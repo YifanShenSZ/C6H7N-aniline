@@ -1,0 +1,16 @@
+Evaluation for diabatz
+Yifan Shen 2021
+
+Echo of user command line input:
+/home/yshen57/Software/Mine/diabatz/tools/eval/v0/eval.exe -d default pretrain-IntCoordDef pretrain-SAS.in pretrain-Hd.in pretrain-Hd.net pretrain-11.in pretrain-12.in pretrain-13.in pretrain-14.in pretrain-22.in pretrain-23.in pretrain-24.in pretrain-33.in pretrain-34.in pretrain-44.in -x /home/yshen57/C6H7N-aniline/diabatz/bound/hole/invert-planar.xyz
+
+Wed Dec  7 10:09:08 2022
+
+Hd =
+    4.743869e-01    7.048376e-02    1.782108e-02    2.012098e-02
+                    7.397823e-01    6.573124e-03    5.294202e-04
+                                    7.812574e-01    7.543551e-03
+                                                    1.028524e+00
+
+Wed Dec  7 10:09:08 2022
+Mission success

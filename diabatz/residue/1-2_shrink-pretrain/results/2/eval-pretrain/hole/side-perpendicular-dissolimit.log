@@ -1,0 +1,16 @@
+Evaluation for diabatz
+Yifan Shen 2021
+
+Echo of user command line input:
+/home/yshen57/Software/Mine/diabatz/tools/eval/v0/eval.exe -d default pretrain-IntCoordDef pretrain-SAS.in pretrain-Hd.in pretrain-Hd.net pretrain-11.in pretrain-12.in pretrain-13.in pretrain-14.in pretrain-22.in pretrain-23.in pretrain-24.in pretrain-33.in pretrain-34.in pretrain-44.in -x /home/yshen57/C6H7N-aniline/diabatz/disso/hole/side-perpendicular-dissolimit.xyz
+
+Wed Dec  7 10:09:15 2022
+
+Hd =
+    1.742100e-01   -1.383621e-02   -2.106638e-02    1.963204e-02
+                    2.590119e-01    4.058118e-03    1.595426e-04
+                                    3.768057e-01    4.643397e-03
+                                                    3.603532e-01
+
+Wed Dec  7 10:09:16 2022
+Mission success

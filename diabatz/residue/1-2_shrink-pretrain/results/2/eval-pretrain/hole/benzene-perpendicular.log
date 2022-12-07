@@ -1,0 +1,16 @@
+Evaluation for diabatz
+Yifan Shen 2021
+
+Echo of user command line input:
+/home/yshen57/Software/Mine/diabatz/tools/eval/v0/eval.exe -d default pretrain-IntCoordDef pretrain-SAS.in pretrain-Hd.in pretrain-Hd.net pretrain-11.in pretrain-12.in pretrain-13.in pretrain-14.in pretrain-22.in pretrain-23.in pretrain-24.in pretrain-33.in pretrain-34.in pretrain-44.in -x /home/yshen57/C6H7N-aniline/diabatz/bound/hole/benzene-perpendicular.xyz
+
+Wed Dec  7 10:09:07 2022
+
+Hd =
+    6.688934e-01    1.396979e-02    1.169978e-02    6.476287e-03
+                    1.129193e+00    4.868229e-03   -3.552471e-03
+                                    1.045066e+00   -3.762149e-03
+                                                    1.008082e+00
+
+Wed Dec  7 10:09:08 2022
+Mission success

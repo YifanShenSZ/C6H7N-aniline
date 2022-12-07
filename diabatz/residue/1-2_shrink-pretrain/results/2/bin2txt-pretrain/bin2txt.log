@@ -1,0 +1,11 @@
+Convert binary fitting parameters to text for diabatz version 0
+Yifan Shen 2021
+
+Echo of user command line input:
+/home/yshen57/Software/Mine/diabatz/tools/v0/bin2txt/bin2txt.exe -n pretrain-Hd.in -c pretrain-Hd.net -l pretrain-11.in pretrain-12.in pretrain-13.in pretrain-14.in pretrain-22.in pretrain-23.in pretrain-24.in pretrain-33.in pretrain-34.in pretrain-44.in
+
+Wed Dec  7 10:53:04 2022
+
+
+Wed Dec  7 10:53:04 2022
+Mission success
