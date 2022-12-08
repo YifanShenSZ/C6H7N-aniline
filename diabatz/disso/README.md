@@ -15,3 +15,6 @@ Finally we combine everything into a single network in `surface`
 `hole` contains some typical holes I encountered
 
 `test-geoms` contains other typical dissociative pathes (who are not energy-optimized, though)
+
+## issue
+Although sorted out in bound pretraining, `side-planar` becomes a hole again for the B1 state, see `train/FSSH/slow/459.xyz`
