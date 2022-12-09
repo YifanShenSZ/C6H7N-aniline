@@ -18,3 +18,5 @@ Finally we combine everything into a single network in `surface`
 
 ## issue
 Although sorted out in bound pretraining, `side-planar` becomes a hole again for the B1 state, see `train/FSSH/slow/459.xyz`
+
+`alphaC` is a new hole found on the A2 state during MD, but it should be fine, since it is in the dissociation limit and SH should only stay on B1 state there
