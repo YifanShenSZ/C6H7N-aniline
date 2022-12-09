@@ -1,0 +1,154 @@
+ Trust region warning: step length has converged, but residual has not met accur
+ acy goal
+ Final residual =   7.751276584910762E-011
+ Trust region warning: step length has converged, but residual has not met accur
+ acy goal
+ Final residual =   1.496238987742122E-010
+ Trust region warning: step length has converged, but residual has not met accur
+ acy goal
+ Final residual =   1.320733645437766E-010
+ Trust region warning: step length has converged, but residual has not met accur
+ acy goal
+ Final residual =   1.176013677804827E-010
+ Trust region warning: step length has converged, but residual has not met accur
+ acy goal
+ Final residual =   1.265825530610843E-010
+ Trust region warning: step length has converged, but residual has not met accur
+ acy goal
+ Final residual =   1.153869876000646E-010
+ Trust region warning: step length has converged, but residual has not met accur
+ acy goal
+ Final residual =   9.634564795294523E-011
+ Trust region warning: step length has converged, but residual has not met accur
+ acy goal
+ Final residual =   1.170271295462439E-010
+ Trust region warning: step length has converged, but residual has not met accur
+ acy goal
+ Final residual =   1.139028000848224E-010
+ Trust region warning: step length has converged, but residual has not met accur
+ acy goal
+ Final residual =   1.105452814809545E-010
+ Trust region warning: step length has converged, but residual has not met accur
+ acy goal
+ Final residual =   1.253212450609639E-010
+ Trust region warning: step length has converged, but residual has not met accur
+ acy goal
+ Final residual =   1.427657425918606E-010
+ Trust region warning: step length has converged, but residual has not met accur
+ acy goal
+ Final residual =   1.542749256271674E-010
+ Trust region warning: step length has converged, but residual has not met accur
+ acy goal
+ Final residual =   4.431653997198835E-011
+ Trust region warning: step length has converged, but residual has not met accur
+ acy goal
+ Final residual =   1.563487578314096E-010
+ Trust region warning: step length has converged, but residual has not met accur
+ acy goal
+ Final residual =   1.173703202781444E-010
+ Trust region warning: step length has converged, but residual has not met accur
+ acy goal
+ Final residual =   8.608713767365190E-011
+ Trust region warning: step length has converged, but residual has not met accur
+ acy goal
+ Final residual =   1.441446672674249E-010
+ Trust region warning: step length has converged, but residual has not met accur
+ acy goal
+ Final residual =   1.954936535118054E-010
+ Trust region warning: step length has converged, but residual has not met accur
+ acy goal
+ Final residual =   1.053025793528436E-010
+ Trust region warning: step length has converged, but residual has not met accur
+ acy goal
+ Final residual =   1.187439669117393E-010
+ Trust region warning: step length has converged, but residual has not met accur
+ acy goal
+ Final residual =   1.508785235949263E-010
+ Trust region warning: step length has converged, but residual has not met accur
+ acy goal
+ Final residual =   1.091637927370338E-010
+ Trust region warning: step length has converged, but residual has not met accur
+ acy goal
+ Final residual =   1.271272919086337E-010
+ Trust region warning: step length has converged, but residual has not met accur
+ acy goal
+ Final residual =   1.150358322569163E-010
+ Trust region warning: step length has converged, but residual has not met accur
+ acy goal
+ Final residual =   1.176882173447531E-010
+ Trust region warning: step length has converged, but residual has not met accur
+ acy goal
+ Final residual =   8.855947283323367E-011
+ Trust region warning: step length has converged, but residual has not met accur
+ acy goal
+ Final residual =   1.984422768504501E-010
+ Trust region warning: step length has converged, but residual has not met accur
+ acy goal
+ Final residual =   4.996022046038926E-010
+ Trust region warning: step length has converged, but residual has not met accur
+ acy goal
+ Final residual =   1.122633148430800E-010
+ Trust region warning: step length has converged, but residual has not met accur
+ acy goal
+ Final residual =   1.670169035768821E-010
+ Trust region warning: step length has converged, but residual has not met accur
+ acy goal
+ Final residual =   8.526285882629458E-011
+ Trust region warning: step length has converged, but residual has not met accur
+ acy goal
+ Final residual =   2.994212618580617E-010
+ Trust region warning: step length has converged, but residual has not met accur
+ acy goal
+ Final residual =   1.066264447886115E-010
+ Trust region warning: step length has converged, but residual has not met accur
+ acy goal
+ Final residual =   1.404483478175078E-010
+ Trust region warning: step length has converged, but residual has not met accur
+ acy goal
+ Final residual =   1.272763356044723E-010
+ Trust region warning: step length has converged, but residual has not met accur
+ acy goal
+ Final residual =   1.880133729751751E-010
+ Trust region warning: step length has converged, but residual has not met accur
+ acy goal
+ Final residual =   8.051951000630204E-011
+ Trust region warning: step length has converged, but residual has not met accur
+ acy goal
+ Final residual =   1.650037835748156E-010
+ Trust region warning: step length has converged, but residual has not met accur
+ acy goal
+ Final residual =   1.146384574910691E-010
+ Trust region warning: step length has converged, but residual has not met accur
+ acy goal
+ Final residual =   9.841056921604980E-011
+ Trust region warning: step length has converged, but residual has not met accur
+ acy goal
+ Final residual =   9.518997675946736E-011
+ Trust region warning: step length has converged, but residual has not met accur
+ acy goal
+ Final residual =   1.513922544726767E-010
+ Trust region warning: step length has converged, but residual has not met accur
+ acy goal
+ Final residual =   1.086529855949742E-010
+ Trust region warning: step length has converged, but residual has not met accur
+ acy goal
+ Final residual =   1.130277195892069E-010
+ Trust region warning: step length has converged, but residual has not met accur
+ acy goal
+ Final residual =   1.456642031747807E-010
+ Trust region warning: step length has converged, but residual has not met accur
+ acy goal
+ Final residual =   1.456642031747807E-010
+Critics: a critical geometry searcher
+Yifan Shen 2021
+
+Echo of user command line input:
+/home/yshen/Software/Mine/diabatz/tools/critics/v1/critics.exe -j min -f default -i opt.IntCoordDef -t 1 -d default IntCoordDef SAS.in pretrain-Hd.in pretrain-Hd.net pretrain-11.in pretrain-12.in pretrain-13.in pretrain-14.in pretrain-22.in pretrain-23.in pretrain-24.in pretrain-33.in pretrain-34.in pretrain-44.in default IntCoordDef SAS.in Hd.in Hd.net 11.in 12.in 13.in 14.in 22.in 23.in 24.in 33.in 34.in 44.in -x A1rot-sad.xyz -c 25 26 27 28 29 30 31 32 33 34 35 36 -o sad.xyz
+
+Wed Dec  7 22:59:56 2022
+
+Job type: min
+The target electronic state is 1
+
+Wed Dec  7 23:03:48 2022
+Mission success
