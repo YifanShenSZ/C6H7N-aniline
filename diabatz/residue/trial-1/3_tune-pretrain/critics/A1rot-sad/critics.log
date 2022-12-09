@@ -1,0 +1,94 @@
+ Trust region warning: step length has converged, but residual has not met accur
+ acy goal
+ Final residual =   8.194240218875106E-011
+ Trust region warning: step length has converged, but residual has not met accur
+ acy goal
+ Final residual =   1.078717892268024E-010
+ Trust region warning: step length has converged, but residual has not met accur
+ acy goal
+ Final residual =   1.652620963880367E-010
+ Trust region warning: step length has converged, but residual has not met accur
+ acy goal
+ Final residual =   1.104122068834170E-010
+ Trust region warning: step length has converged, but residual has not met accur
+ acy goal
+ Final residual =   1.447405643151323E-010
+ Trust region warning: step length has converged, but residual has not met accur
+ acy goal
+ Final residual =   1.343440459292222E-010
+ Trust region warning: step length has converged, but residual has not met accur
+ acy goal
+ Final residual =   1.343440459292222E-010
+ Trust region warning: step length has converged, but residual has not met accur
+ acy goal
+ Final residual =   1.661773802320450E-010
+ Trust region warning: step length has converged, but residual has not met accur
+ acy goal
+ Final residual =   1.712573089250418E-010
+ Trust region warning: step length has converged, but residual has not met accur
+ acy goal
+ Final residual =   7.235773470661150E-011
+ Trust region warning: step length has converged, but residual has not met accur
+ acy goal
+ Final residual =   7.229439694426278E-011
+ Trust region warning: step length has converged, but residual has not met accur
+ acy goal
+ Final residual =   1.198029890463192E-010
+ Trust region warning: step length has converged, but residual has not met accur
+ acy goal
+ Final residual =   1.358078218938305E-010
+ Trust region warning: step length has converged, but residual has not met accur
+ acy goal
+ Final residual =   1.054525596187959E-010
+ Trust region warning: step length has converged, but residual has not met accur
+ acy goal
+ Final residual =   2.826195832850420E-010
+ Trust region warning: step length has converged, but residual has not met accur
+ acy goal
+ Final residual =   1.989463892000042E-010
+ Trust region warning: step length has converged, but residual has not met accur
+ acy goal
+ Final residual =   6.218120167285357E-011
+ Trust region warning: step length has converged, but residual has not met accur
+ acy goal
+ Final residual =   1.381329612779064E-010
+ Trust region warning: step length has converged, but residual has not met accur
+ acy goal
+ Final residual =   2.592158174115377E-010
+ Trust region warning: step length has converged, but residual has not met accur
+ acy goal
+ Final residual =   6.710209478306167E-011
+ Trust region warning: step length has converged, but residual has not met accur
+ acy goal
+ Final residual =   1.708164082618321E-010
+ Trust region warning: step length has converged, but residual has not met accur
+ acy goal
+ Final residual =   7.411469765758113E-011
+ Trust region warning: step length has converged, but residual has not met accur
+ acy goal
+ Final residual =   1.318654818816097E-010
+ Trust region warning: step length has converged, but residual has not met accur
+ acy goal
+ Final residual =   7.029530559922865E-011
+ Trust region warning: step length has converged, but residual has not met accur
+ acy goal
+ Final residual =   2.918070967705488E-010
+ Trust region warning: step length has converged, but residual has not met accur
+ acy goal
+ Final residual =   8.897508598750590E-011
+ Trust region warning: step length has converged, but residual has not met accur
+ acy goal
+ Final residual =   8.897508598750590E-011
+Critics: a critical geometry searcher
+Yifan Shen 2021
+
+Echo of user command line input:
+/home/yshen/Software/Mine/diabatz/tools/critics/v1/critics.exe -j min -f default -i opt.IntCoordDef -t 1 -d default IntCoordDef SAS.in pretrain-Hd.in pretrain-Hd.net pretrain-11.in pretrain-12.in pretrain-13.in pretrain-14.in pretrain-22.in pretrain-23.in pretrain-24.in pretrain-33.in pretrain-34.in pretrain-44.in default IntCoordDef SAS.in Hd.in Hd.net 11.in 12.in 13.in 14.in 22.in 23.in 24.in 33.in 34.in 44.in -x A1rot-sad.xyz -c 25 26 27 28 29 30 31 32 33 34 35 36 -o sad.xyz
+
+Wed Dec  7 22:23:55 2022
+
+Job type: min
+The target electronic state is 1
+
+Wed Dec  7 22:27:44 2022
+Mission success

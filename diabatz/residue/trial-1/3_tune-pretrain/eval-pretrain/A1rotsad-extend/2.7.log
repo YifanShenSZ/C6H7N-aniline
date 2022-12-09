@@ -1,0 +1,16 @@
+Evaluation for diabatz
+Yifan Shen 2021
+
+Echo of user command line input:
+/home/yshen/Software/Mine/diabatz/tools/eval/v0/eval.exe -d default pretrain-IntCoordDef pretrain-SAS.in pretrain-Hd.in pretrain-Hd.net pretrain-11.in pretrain-12.in pretrain-13.in pretrain-14.in pretrain-22.in pretrain-23.in pretrain-24.in pretrain-33.in pretrain-34.in pretrain-44.in -x /home/yshen/C6H7N-aniline/diabatz/disso/test-geoms/A1rotsad-extend/2.7.xyz
+
+Thu Dec  8 20:08:56 2022
+
+Hd =
+    1.393494e-01    1.037596e-03   -1.035473e-02   -5.495563e-03
+                    2.620738e-01   -9.466841e-02    1.434372e-03
+                                    2.678434e-01   -1.035314e-03
+                                                    2.928662e-01
+
+Thu Dec  8 20:08:56 2022
+Mission success
