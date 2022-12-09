@@ -18,8 +18,9 @@ A1 - not useful:
 B1 - diabatic is useful:
 * imaginary H out of benzene plane at `asym`, although diabatic vibration is fine
 
-B2 - still useful:
+B2 - not perfect but still useful:
 * cannot find adiabatic `min-B2`, due to hitting `mex-B1-B2`
+* invert well when one N-H ~ 1.8 A and the other ~ 1.0 A, although it is a 0.3 Hartree well rather than a hole
 
 A2 - still useful:
 * cannot find adiabatic `sad-A2`, due to hitting `mex-B2-A2`
