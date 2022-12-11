@@ -1,6 +1,0 @@
-transposed transformation matrix
-    0.0383
-    0.0383
-    0.0383
-    0.0383
-    0.0383

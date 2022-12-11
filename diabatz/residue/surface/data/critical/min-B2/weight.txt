@@ -1,0 +1,1 @@
+../min-A1/weight.txt
