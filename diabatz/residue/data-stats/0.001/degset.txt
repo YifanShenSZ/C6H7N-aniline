@@ -1,0 +1,6 @@
+data/critical/min-A1/:     1.824e-02    2.660e-02    6.887e-02    7.418e-02
+data/other/NH2-angles/H-N-H_from_min-A1/:     2.052e-02    2.545e-02    7.172e-02    7.808e-02
+data/other/out-of-benzene/A2-34_H/8-10_4-states/:     3.113e-02    4.553e-02    7.237e-02    7.823e-02
+data/slow/1.1/:     2.105e-02    2.132e-02    7.438e-02    8.751e-02
+data/linear-path/min-B1_stretch/1.4-1.4/:     2.915e-02    4.300e-02    1.261e-01    1.278e-01
+data/linear-path/min-B1_stretch/1.5-1.0/:     2.441e-02    3.689e-02    1.001e-01    1.039e-01
