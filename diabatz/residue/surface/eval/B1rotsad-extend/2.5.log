@@ -2,15 +2,15 @@ Evaluation for diabatz
 Yifan Shen 2021
 
 Echo of user command line input:
-/home/yshen/Software/Mine/diabatz/tools/eval/v1/eval.exe -d default pretrain-IntCoordDef pretrain-SAS.in pretrain-Hd.in pretrain-Hd.net pretrain-11.in pretrain-12.in pretrain-13.in pretrain-14.in pretrain-22.in pretrain-23.in pretrain-24.in pretrain-33.in pretrain-34.in pretrain-44.in default IntCoordDef SAS.in Hd.in Hd.net 11.in 12.in 13.in 14.in 22.in 23.in 24.in 33.in 34.in 44.in -x /home/yshen/C6H7N-aniline/diabatz/disso/test-geoms/B1rotsad-extend/2.5.xyz
+/home/yshen57/Software/Mine/diabatz/tools/eval/v1/eval.exe -d default pretrain-IntCoordDef pretrain-SAS.in pretrain-Hd.in pretrain-Hd.net pretrain-11.in pretrain-12.in pretrain-13.in pretrain-14.in pretrain-22.in pretrain-23.in pretrain-24.in pretrain-33.in pretrain-34.in pretrain-44.in default IntCoordDef SAS.in Hd.in Hd.net 11.in 12.in 13.in 14.in 22.in 23.in 24.in 33.in 34.in 44.in -x /home/yshen57/C6H7N-aniline/diabatz/disso/test-geoms/B1rotsad-extend/2.5.xyz
 
-Mon Dec 12 14:21:43 2022
+Mon Dec 12 17:45:18 2022
 
 Hd =
-    1.936671e-01   -7.454293e-03    0.000000e+00    0.000000e+00
-                    1.969748e-01    0.000000e+00    0.000000e+00
-                                    3.566358e-01    3.076699e-04
-                                                    3.606129e-01
+    1.931176e-01   -4.832297e-03    0.000000e+00    0.000000e+00
+                    1.979182e-01    0.000000e+00    0.000000e+00
+                                    3.511191e-01   -4.544573e-04
+                                                    3.537587e-01
 
-Mon Dec 12 14:21:44 2022
+Mon Dec 12 17:45:18 2022
 Mission success
