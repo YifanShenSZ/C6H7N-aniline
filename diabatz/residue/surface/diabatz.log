@@ -2,9 +2,9 @@ Diabatz version 1.3.0
 Yifan Shen 2021
 
 Echo of user command line input:
-/home/yshen57/Software/Mine/diabatz/v1.3.0/diabatz.exe --pretrained default pretrain-IntCoordDef pretrain-SAS.in pretrain-Hd.in pretrain-Hd.net pretrain-11.in pretrain-12.in pretrain-13.in pretrain-14.in pretrain-22.in pretrain-23.in pretrain-24.in pretrain-33.in pretrain-34.in pretrain-44.in -f default -i IntCoordDef -s SAS.in -n Hd.in -l 11.in 12.in 13.in 14.in 22.in 23.in 24.in 33.in 34.in 44.in -d data/critical/no-deg_list.txt data/linear-path/min-B1_min-B2/ data/NH2-rotation-A1/list.txt data/NH2-rotation-B1/list.txt data/other/NH2-angles/list.txt data/fast/list.txt data/other/fast_bound_N-H/list.txt data/slow/list.txt data/other/slow_bound_N-H/list.txt data/linear-path/fast-slow/list.txt data/linear-path/min-B1_stretch/list.txt data/linear-path/min-A1_stretch/list.txt data/linear-path/A1rot-sad_stretch/list.txt data/artifact/asymptote/ --energy_data data/artifact/fast-B2/ data/artifact/min-B1_stretch/ data/artifact/min-A1_stretch/ data/artifact/B1rot-sad_stretch/ data/artifact/A1rot-sad_stretch/ data/artifact/asymptote_C-N-H/ data/artifact/asymptote-B2/ -z -286.1075216397 --deg_thresh 0.005 -r regularization/reg -c Hd.net
+/home/yshen57/Software/Mine/diabatz/v1.3.0/diabatz.exe --pretrained default pretrain-IntCoordDef pretrain-SAS.in pretrain-Hd.in pretrain-Hd.net pretrain-11.in pretrain-12.in pretrain-13.in pretrain-14.in pretrain-22.in pretrain-23.in pretrain-24.in pretrain-33.in pretrain-34.in pretrain-44.in -f default -i IntCoordDef -s SAS.in -n Hd.in -l 11.in 12.in 13.in 14.in 22.in 23.in 24.in 33.in 34.in 44.in -d data/critical/no-deg_list.txt data/linear-path/min-B1_min-B2/ data/NH2-rotation-A1/list.txt data/NH2-rotation-B1/list.txt data/other/NH2-angles/list.txt data/other/benzene/list.txt data/other/in-benzene/list.txt data/other/out-of-benzene/list.txt data/fast/list.txt data/other/fast_bound_N-H/list.txt data/slow/list.txt data/other/slow_bound_N-H/list.txt data/linear-path/fast-slow/list.txt data/linear-path/min-B1_stretch/list.txt data/linear-path/min-A1_stretch/list.txt data/linear-path/A1rot-sad_stretch/list.txt data/artifact/asymptote/ --energy_data data/artifact/fast-B2/ data/artifact/min-B1_stretch/ data/artifact/min-A1_stretch/ data/artifact/B1rot-sad_stretch/ data/artifact/A1rot-sad_stretch/ data/artifact/asymptote_C-N-H/ data/artifact/asymptote-B2/ -z -286.1075216397 --deg_thresh 0.005 -r regularization/reg -c 2train-0.005.net -m 10
 
-Sun Dec 11 11:39:59 2022
+Mon Dec 12 00:36:01 2022
 
 The data set will be read from: 
     data/critical/min-A1/, data/critical/sad-A1/, data/critical/min-B1/, 
@@ -27,24 +27,34 @@ The data set will be read from:
     data/NH2-rotation-B1/2.2/, data/other/NH2-angles/H-N-H_from_min-B1/0-18_4-states/, 
     data/other/NH2-angles/H-N-H_from_min-B1/19_3-states/, data/other/NH2-angles/H-N-H_from_min-A1/, 
     data/other/NH2-angles/C-N-avgH_from_min-B1/0-11_4-states/, data/other/NH2-angles/C-N-avgH_from_min-B1/12-13_5to4-states/, 
-    data/other/NH2-angles/C-out-of-NH2/0-9_4-states/, data/other/NH2-angles/C-out-of-NH2/10-14_5to4-states/, data/fast/0.7/, 
-    data/fast/0.8/, data/fast/0.9/, data/fast/1.1/, data/fast/1.2/, data/fast/1.4/, 
-    data/fast/1.5/, data/fast/1.6/, data/fast/1.7/, data/fast/1.9/, data/fast/2.0/, 
-    data/fast/2.1/, data/fast/2.2/, data/fast/2.3/, data/fast/2.4/, data/fast/2.5/, 
-    data/fast/2.6/, data/fast/2.7/, data/fast/2.8/, data/fast/2.9/, data/fast/3/, 
-    data/fast/4/, data/fast/5/, data/fast/6/, data/fast/6_partial-loop/, 
-    data/other/fast_bound_N-H/1.1/0.8-0.9-1.1-1.2_4-states/, data/other/fast_bound_N-H/1.1/1.3_3-states/, 
-    data/other/fast_bound_N-H/1.2/0.8-0.9-1.1-1.2_4-states/, data/other/fast_bound_N-H/1.2/1.3_3-states/, 
-    data/other/fast_bound_N-H/1.3/0.8-0.9-1.1_3-states/, data/other/fast_bound_N-H/1.3/1.2_4-states/, 
-    data/other/fast_bound_N-H/1.3/1.3_3-states/, data/other/fast_bound_N-H/1.4/0.8-0.9-1.1-1.2-1.3_4-states/, 
-    data/other/fast_bound_N-H/1.4/1.4_2-states/, data/other/fast_bound_N-H/1.5/0.8-0.9-1.1-1.2-1.3_4-states/, 
-    data/other/fast_bound_N-H/1.5/1.4-1.5_2-states/, data/slow/0.7/, data/slow/0.8/, data/slow/0.9/, data/slow/1.1/, 
-    data/slow/1.2/, data/slow/1.3/, data/slow/1.4/, data/slow/1.5/, data/slow/1.6/, 
-    data/slow/1.7/, data/slow/1.79/, data/other/slow_bound_N-H/1.1/, 
-    data/other/slow_bound_N-H/1.2/, data/other/slow_bound_N-H/1.3/, data/other/slow_bound_N-H/1.4/, 
-    data/other/slow_bound_N-H/1.5/, data/linear-path/fast-slow/1.1/, data/linear-path/fast-slow/1.2/, 
-    data/linear-path/fast-slow/1.3/, data/linear-path/fast-slow/1.4/, data/linear-path/fast-slow/1.5/, 
-    data/linear-path/fast-slow/1.6/, data/linear-path/fast-slow/1.7/, 
+    data/other/NH2-angles/C-out-of-NH2/0-9_4-states/, data/other/NH2-angles/C-out-of-NH2/10-14_5to4-states/, 
+    data/other/benzene/A1-9/0-13_4-states/, data/other/benzene/A1-9/14-19_4-states/, data/other/benzene/A1-10/, 
+    data/other/benzene/B1-14/0-5_4-states/, data/other/benzene/B1-14/6-9_4-states/, data/other/benzene/B1-15/, 
+    data/other/benzene/B2-27/, data/other/benzene/A2-33/, data/other/in-benzene/A1-11/, 
+    data/other/in-benzene/A1-12/, data/other/in-benzene/B2-28/, data/other/in-benzene/B2-29/, 
+    data/other/in-benzene/B2-30/, data/other/out-of-benzene/B1-16_H/0-5_4-states/, 
+    data/other/out-of-benzene/B1-16_H/6-10_4-states/, data/other/out-of-benzene/B1-17_H/0-9_4-states/, 
+    data/other/out-of-benzene/B1-17_H/10-12_4-states/, data/other/out-of-benzene/B1-18_H/, 
+    data/other/out-of-benzene/B1-19_N/0-2_4-states/, data/other/out-of-benzene/B1-19_N/3-4_4-states/, 
+    data/other/out-of-benzene/A2-34_H/0-6_4-states/, data/other/out-of-benzene/A2-34_H/7_3-states/, 
+    data/other/out-of-benzene/A2-34_H/8-10_4-states/, data/other/out-of-benzene/A2-35_H/0-2_4-states/, 
+    data/other/out-of-benzene/A2-35_H/3-7_3-states/, data/fast/0.7/, data/fast/0.8/, data/fast/0.9/, data/fast/1.1/, 
+    data/fast/1.2/, data/fast/1.4/, data/fast/1.5/, data/fast/1.6/, data/fast/1.7/, 
+    data/fast/1.9/, data/fast/2.0/, data/fast/2.1/, data/fast/2.2/, data/fast/2.3/, 
+    data/fast/2.4/, data/fast/2.5/, data/fast/2.6/, data/fast/2.7/, data/fast/2.8/, 
+    data/fast/2.9/, data/fast/3/, data/fast/4/, data/fast/5/, data/fast/6/, 
+    data/fast/6_partial-loop/, data/other/fast_bound_N-H/1.1/0.8-0.9-1.1-1.2_4-states/, 
+    data/other/fast_bound_N-H/1.1/1.3_3-states/, data/other/fast_bound_N-H/1.2/0.8-0.9-1.1-1.2_4-states/, 
+    data/other/fast_bound_N-H/1.2/1.3_3-states/, data/other/fast_bound_N-H/1.3/0.8-0.9-1.1_3-states/, 
+    data/other/fast_bound_N-H/1.3/1.2_4-states/, data/other/fast_bound_N-H/1.3/1.3_3-states/, 
+    data/other/fast_bound_N-H/1.4/0.8-0.9-1.1-1.2-1.3_4-states/, data/other/fast_bound_N-H/1.4/1.4_2-states/, 
+    data/other/fast_bound_N-H/1.5/0.8-0.9-1.1-1.2-1.3_4-states/, data/other/fast_bound_N-H/1.5/1.4-1.5_2-states/, data/slow/0.7/, 
+    data/slow/0.8/, data/slow/0.9/, data/slow/1.1/, data/slow/1.2/, data/slow/1.3/, 
+    data/slow/1.4/, data/slow/1.5/, data/slow/1.6/, data/slow/1.7/, data/slow/1.79/, 
+    data/other/slow_bound_N-H/1.1/, data/other/slow_bound_N-H/1.2/, data/other/slow_bound_N-H/1.3/, 
+    data/other/slow_bound_N-H/1.4/, data/other/slow_bound_N-H/1.5/, data/linear-path/fast-slow/1.1/, 
+    data/linear-path/fast-slow/1.2/, data/linear-path/fast-slow/1.3/, data/linear-path/fast-slow/1.4/, 
+    data/linear-path/fast-slow/1.5/, data/linear-path/fast-slow/1.6/, data/linear-path/fast-slow/1.7/, 
     data/linear-path/min-B1_stretch/0.7-0.8/, data/linear-path/min-B1_stretch/0.7-0.9/, 
     data/linear-path/min-B1_stretch/0.7-1.0/, data/linear-path/min-B1_stretch/0.8-0.8/, 
     data/linear-path/min-B1_stretch/0.8-0.9/, data/linear-path/min-B1_stretch/0.8-1.0/, 
@@ -90,8 +100,8 @@ The data set will be read from:
     data/linear-path/A1rot-sad_stretch/1.4-1.0/, data/linear-path/A1rot-sad_stretch/1.4-1.1/, 
     data/linear-path/A1rot-sad_stretch/1.4-1.2/, data/linear-path/A1rot-sad_stretch/1.4-1.3/, 
     data/linear-path/A1rot-sad_stretch/1.4-1.4/, data/artifact/asymptote/, 
-There are 1528 data points in adiabatic representation
-          348 data points in composite representation
+There are 1733 data points in adiabatic representation
+          355 data points in composite representation
 
 The data set will be read from: 
     data/artifact/fast-B2/, data/artifact/min-B1_stretch/, 
@@ -108,334 +118,310 @@ Got regularization strength, enable regularization
 The number of threads = 48
 
 Thread 1:
-* owns 32 adiabatic data points
+* owns 37 adiabatic data points
 * owns 8 composite data points
 * owns 35 energy-only data points
 * starts with Jacobian row 0
 Thread 2:
-* owns 32 adiabatic data points
+* owns 37 adiabatic data points
 * owns 8 composite data points
 * owns 35 energy-only data points
-* starts with Jacobian row 5354
+* starts with Jacobian row 6324
 Thread 3:
-* owns 32 adiabatic data points
+* owns 37 adiabatic data points
 * owns 8 composite data points
 * owns 35 energy-only data points
-* starts with Jacobian row 11922
+* starts with Jacobian row 12942
 Thread 4:
-* owns 32 adiabatic data points
+* owns 37 adiabatic data points
 * owns 8 composite data points
 * owns 35 energy-only data points
-* starts with Jacobian row 18600
+* starts with Jacobian row 20703
 Thread 5:
-* owns 32 adiabatic data points
+* owns 37 adiabatic data points
 * owns 8 composite data points
 * owns 35 energy-only data points
-* starts with Jacobian row 24488
+* starts with Jacobian row 26988
 Thread 6:
-* owns 32 adiabatic data points
+* owns 36 adiabatic data points
 * owns 8 composite data points
 * owns 35 energy-only data points
-* starts with Jacobian row 30994
+* starts with Jacobian row 33778
 Thread 7:
-* owns 32 adiabatic data points
+* owns 36 adiabatic data points
 * owns 8 composite data points
 * owns 35 energy-only data points
-* starts with Jacobian row 37670
+* starts with Jacobian row 42444
 Thread 8:
-* owns 32 adiabatic data points
+* owns 36 adiabatic data points
 * owns 8 composite data points
 * owns 35 energy-only data points
-* starts with Jacobian row 45850
+* starts with Jacobian row 50874
 Thread 9:
-* owns 32 adiabatic data points
+* owns 36 adiabatic data points
 * owns 8 composite data points
 * owns 35 energy-only data points
-* starts with Jacobian row 52516
+* starts with Jacobian row 62036
 Thread 10:
-* owns 32 adiabatic data points
+* owns 36 adiabatic data points
 * owns 8 composite data points
 * owns 35 energy-only data points
-* starts with Jacobian row 62716
+* starts with Jacobian row 70752
 Thread 11:
-* owns 32 adiabatic data points
+* owns 36 adiabatic data points
 * owns 8 composite data points
 * owns 35 energy-only data points
-* starts with Jacobian row 70648
+* starts with Jacobian row 80489
 Thread 12:
-* owns 32 adiabatic data points
+* owns 36 adiabatic data points
 * owns 8 composite data points
 * owns 35 energy-only data points
-* starts with Jacobian row 80512
+* starts with Jacobian row 85774
 Thread 13:
-* owns 32 adiabatic data points
-* owns 7 composite data points
+* owns 36 adiabatic data points
+* owns 8 composite data points
 * owns 35 energy-only data points
-* starts with Jacobian row 85700
+* starts with Jacobian row 93061
 Thread 14:
-* owns 32 adiabatic data points
-* owns 7 composite data points
+* owns 36 adiabatic data points
+* owns 8 composite data points
 * owns 35 energy-only data points
-* starts with Jacobian row 91383
+* starts with Jacobian row 100975
 Thread 15:
-* owns 32 adiabatic data points
-* owns 7 composite data points
+* owns 36 adiabatic data points
+* owns 8 composite data points
 * owns 34 energy-only data points
-* starts with Jacobian row 100269
+* starts with Jacobian row 109037
 Thread 16:
-* owns 32 adiabatic data points
-* owns 7 composite data points
+* owns 36 adiabatic data points
+* owns 8 composite data points
 * owns 34 energy-only data points
-* starts with Jacobian row 108761
+* starts with Jacobian row 116879
 Thread 17:
-* owns 32 adiabatic data points
-* owns 7 composite data points
+* owns 36 adiabatic data points
+* owns 8 composite data points
 * owns 34 energy-only data points
-* starts with Jacobian row 117297
+* starts with Jacobian row 123055
 Thread 18:
-* owns 32 adiabatic data points
-* owns 7 composite data points
+* owns 36 adiabatic data points
+* owns 8 composite data points
 * owns 34 energy-only data points
-* starts with Jacobian row 126331
+* starts with Jacobian row 131779
 Thread 19:
-* owns 32 adiabatic data points
-* owns 7 composite data points
+* owns 36 adiabatic data points
+* owns 8 composite data points
 * owns 34 energy-only data points
-* starts with Jacobian row 135199
+* starts with Jacobian row 140144
 Thread 20:
-* owns 32 adiabatic data points
+* owns 36 adiabatic data points
 * owns 7 composite data points
 * owns 34 energy-only data points
-* starts with Jacobian row 143901
+* starts with Jacobian row 148547
 Thread 21:
-* owns 32 adiabatic data points
+* owns 36 adiabatic data points
 * owns 7 composite data points
 * owns 34 energy-only data points
-* starts with Jacobian row 153101
+* starts with Jacobian row 159037
 Thread 22:
-* owns 32 adiabatic data points
+* owns 36 adiabatic data points
 * owns 7 composite data points
 * owns 34 energy-only data points
-* starts with Jacobian row 161471
+* starts with Jacobian row 168551
 Thread 23:
-* owns 32 adiabatic data points
+* owns 36 adiabatic data points
 * owns 7 composite data points
 * owns 34 energy-only data points
-* starts with Jacobian row 171853
+* starts with Jacobian row 180231
 Thread 24:
-* owns 32 adiabatic data points
+* owns 36 adiabatic data points
 * owns 7 composite data points
 * owns 34 energy-only data points
-* starts with Jacobian row 181081
+* starts with Jacobian row 189899
 Thread 25:
-* owns 32 adiabatic data points
+* owns 36 adiabatic data points
 * owns 7 composite data points
 * owns 34 energy-only data points
-* starts with Jacobian row 191783
+* starts with Jacobian row 200319
 Thread 26:
-* owns 32 adiabatic data points
+* owns 36 adiabatic data points
 * owns 7 composite data points
 * owns 34 energy-only data points
-* starts with Jacobian row 199585
+* starts with Jacobian row 209919
 Thread 27:
-* owns 32 adiabatic data points
+* owns 36 adiabatic data points
 * owns 7 composite data points
 * owns 34 energy-only data points
-* starts with Jacobian row 209617
+* starts with Jacobian row 219881
 Thread 28:
-* owns 32 adiabatic data points
+* owns 36 adiabatic data points
 * owns 7 composite data points
 * owns 34 energy-only data points
-* starts with Jacobian row 216708
+* starts with Jacobian row 231561
 Thread 29:
-* owns 32 adiabatic data points
+* owns 36 adiabatic data points
 * owns 7 composite data points
 * owns 34 energy-only data points
-* starts with Jacobian row 226826
+* starts with Jacobian row 241415
 Thread 30:
-* owns 32 adiabatic data points
+* owns 36 adiabatic data points
 * owns 7 composite data points
 * owns 34 energy-only data points
-* starts with Jacobian row 241200
+* starts with Jacobian row 252073
 Thread 31:
-* owns 32 adiabatic data points
+* owns 36 adiabatic data points
 * owns 7 composite data points
 * owns 34 energy-only data points
-* starts with Jacobian row 255574
+* starts with Jacobian row 260332
 Thread 32:
-* owns 32 adiabatic data points
+* owns 36 adiabatic data points
 * owns 7 composite data points
 * owns 34 energy-only data points
-* starts with Jacobian row 269948
+* starts with Jacobian row 275062
 Thread 33:
-* owns 32 adiabatic data points
+* owns 36 adiabatic data points
 * owns 7 composite data points
 * owns 34 energy-only data points
-* starts with Jacobian row 284322
+* starts with Jacobian row 290892
 Thread 34:
-* owns 32 adiabatic data points
+* owns 36 adiabatic data points
 * owns 7 composite data points
 * owns 34 energy-only data points
-* starts with Jacobian row 298696
+* starts with Jacobian row 306722
 Thread 35:
-* owns 32 adiabatic data points
+* owns 36 adiabatic data points
 * owns 7 composite data points
 * owns 34 energy-only data points
-* starts with Jacobian row 313070
+* starts with Jacobian row 322552
 Thread 36:
-* owns 32 adiabatic data points
+* owns 36 adiabatic data points
 * owns 7 composite data points
 * owns 34 energy-only data points
-* starts with Jacobian row 327444
+* starts with Jacobian row 338382
 Thread 37:
-* owns 32 adiabatic data points
+* owns 36 adiabatic data points
 * owns 7 composite data points
 * owns 34 energy-only data points
-* starts with Jacobian row 341818
+* starts with Jacobian row 354212
 Thread 38:
-* owns 32 adiabatic data points
+* owns 36 adiabatic data points
 * owns 7 composite data points
 * owns 34 energy-only data points
-* starts with Jacobian row 356192
+* starts with Jacobian row 370042
 Thread 39:
-* owns 32 adiabatic data points
+* owns 36 adiabatic data points
 * owns 7 composite data points
 * owns 34 energy-only data points
-* starts with Jacobian row 370566
+* starts with Jacobian row 385872
 Thread 40:
-* owns 32 adiabatic data points
+* owns 36 adiabatic data points
 * owns 7 composite data points
 * owns 34 energy-only data points
-* starts with Jacobian row 384940
+* starts with Jacobian row 401702
 Thread 41:
-* owns 31 adiabatic data points
+* owns 36 adiabatic data points
 * owns 7 composite data points
 * owns 34 energy-only data points
-* starts with Jacobian row 399314
+* starts with Jacobian row 417532
 Thread 42:
-* owns 31 adiabatic data points
+* owns 36 adiabatic data points
 * owns 7 composite data points
 * owns 34 energy-only data points
-* starts with Jacobian row 411874
+* starts with Jacobian row 433362
 Thread 43:
-* owns 31 adiabatic data points
+* owns 36 adiabatic data points
 * owns 7 composite data points
 * owns 34 energy-only data points
-* starts with Jacobian row 425884
+* starts with Jacobian row 447742
 Thread 44:
-* owns 31 adiabatic data points
+* owns 36 adiabatic data points
 * owns 7 composite data points
 * owns 34 energy-only data points
-* starts with Jacobian row 434527
+* starts with Jacobian row 462812
 Thread 45:
-* owns 31 adiabatic data points
+* owns 36 adiabatic data points
 * owns 7 composite data points
 * owns 34 energy-only data points
-* starts with Jacobian row 442751
+* starts with Jacobian row 472113
 Thread 46:
-* owns 31 adiabatic data points
+* owns 36 adiabatic data points
 * owns 7 composite data points
 * owns 34 energy-only data points
-* starts with Jacobian row 454753
+* starts with Jacobian row 483422
 Thread 47:
-* owns 31 adiabatic data points
+* owns 36 adiabatic data points
 * owns 7 composite data points
 * owns 34 energy-only data points
-* starts with Jacobian row 464268
+* starts with Jacobian row 494856
 Thread 48:
-* owns 31 adiabatic data points
+* owns 36 adiabatic data points
 * owns 7 composite data points
 * owns 34 energy-only data points
-* starts with Jacobian row 473783
+* starts with Jacobian row 505466
 
-The data set corresponds to 482520 least square equations
+The data set corresponds to 515298 least square equations
 There are 26834 parameters to train
 
-The initial residue = 4.79125
+The initial residue = 5.11043
  
-2022 year 12 month 11 day 12: 8:49
- Iteration           1 , residue   4.80819579378090     
+2022 year 12 month 12 day  1: 7:41
+ Iteration           1 , residue   5.11536890883456     
  
-2022 year 12 month 11 day 12:13:44
- Iteration           2 , residue   4.80819579378090     
+2022 year 12 month 12 day  1:12:57
+ Iteration           2 , residue   5.11536890883456     
  
-2022 year 12 month 11 day 12:18:39
- Iteration           3 , residue   4.73552404218366     
+2022 year 12 month 12 day  1:18:14
+ Iteration           3 , residue   5.07486960124920     
  
-2022 year 12 month 11 day 12:26:46
- Iteration           4 , residue   4.73552404218366     
+2022 year 12 month 12 day  1:27:17
+ Iteration           4 , residue   5.07486960124920     
  
-2022 year 12 month 11 day 12:31:34
- Iteration           5 , residue   4.73552404218366     
+2022 year 12 month 12 day  1:32:36
+ Iteration           5 , residue   5.07486960124920     
  
-2022 year 12 month 11 day 12:36:24
- Iteration           6 , residue   4.71504753866885     
+2022 year 12 month 12 day  1:37:52
+ Iteration           6 , residue   5.07486960124920     
  
-2022 year 12 month 11 day 12:46: 4
- Iteration           7 , residue   4.71504753866885     
+2022 year 12 month 12 day  1:43:14
+ Iteration           7 , residue   5.07486960124920     
  
-2022 year 12 month 11 day 12:50:53
- Iteration           8 , residue   4.70099735024077     
+2022 year 12 month 12 day  1:48:38
+ Iteration           8 , residue   5.06915359918346     
  
-2022 year 12 month 11 day 13: 0:21
- Iteration           9 , residue   4.69535935381437     
+2022 year 12 month 12 day  1:57:30
+ Iteration           9 , residue   5.06915359918346     
  
-2022 year 12 month 11 day 13: 9:50
- Iteration          10 , residue   4.68754156853015     
+2022 year 12 month 12 day  2: 2:46
+ Iteration          10 , residue   5.06456960148277     
  
-2022 year 12 month 11 day 13:19:18
- Iteration          11 , residue   4.68563502189442     
+2022 year 12 month 12 day  2:11:42
+ Iteration          11 , residue   5.06456960148277     
  
-2022 year 12 month 11 day 13:28:44
- Iteration          12 , residue   4.68302642665650     
+2022 year 12 month 12 day  2:17: 0
+ Iteration          12 , residue   5.06456960148277     
  
-2022 year 12 month 11 day 13:37:51
- Iteration          13 , residue   4.68219008073577     
+2022 year 12 month 12 day  2:22:17
+ Iteration          13 , residue   5.06440880561499     
  
-2022 year 12 month 11 day 13:46:49
- Iteration          14 , residue   4.68219008073577     
+2022 year 12 month 12 day  2:31:21
+ Iteration          14 , residue   5.06422513125561     
  
-2022 year 12 month 11 day 13:51:46
- Iteration          15 , residue   4.68151539600601     
+2022 year 12 month 12 day  2:40:14
+ Iteration          15 , residue   5.06398490135410     
  
-2022 year 12 month 11 day 14: 0:30
- Iteration          16 , residue   4.67999350578237     
+2022 year 12 month 12 day  2:48:59
+ Iteration          16 , residue   5.06367587485457     
  
-2022 year 12 month 11 day 14: 8:54
- Iteration          17 , residue   4.67999350578237     
+2022 year 12 month 12 day  2:57:36
+ Iteration          17 , residue   5.06356559499754     
  
-2022 year 12 month 11 day 14:13:54
- Iteration          18 , residue   4.67984262851302     
+2022 year 12 month 12 day  3: 6:21
+ Iteration          18 , residue   5.06347446124761     
  
-2022 year 12 month 11 day 14:22:28
- Iteration          19 , residue   4.67965698763672     
- 
-2022 year 12 month 11 day 14:30:53
- Iteration          20 , residue   4.67962762088496     
- 
-2022 year 12 month 11 day 14:39:16
- Iteration          21 , residue   4.67960506412740     
- 
-2022 year 12 month 11 day 14:47:38
- Iteration          22 , residue   4.67958462745866     
- 
-2022 year 12 month 11 day 14:55:59
- Iteration          23 , residue   4.67956441188978     
- 
-2022 year 12 month 11 day 15: 4:23
- Iteration          24 , residue   4.67954536382988     
- 
-2022 year 12 month 11 day 15:12:48
- Iteration          25 , residue   4.67952629892768     
- 
-2022 year 12 month 11 day 15:21: 7
- Iteration          26 , residue   4.67950801614875     
- 
-2022 year 12 month 11 day 15:29:23
- Iteration          27 , residue   4.67948966448262     
+2022 year 12 month 12 day  3:16:24
+ Iteration          19 , residue   5.06338667114684     
  Failed trust region: max iteration exceeded!
- Final residual =    4.67948966448262     
-The final residue = 4.66205
+ Final residual =    5.06338667114686     
+The final residue = 5.0584
 
-Sun Dec 11 15:29:24 2022
+Mon Dec 12 03:16:26 2022
 Mission success
