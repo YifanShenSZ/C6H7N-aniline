@@ -1,0 +1,1 @@
+../../trial-2/1_shrink-pretrain/txt2bin/parameters_4-4_2.txt

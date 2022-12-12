@@ -1,0 +1,1 @@
+../init/2_weight/bin2txt/parameters_3-3_1.txt
