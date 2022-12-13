@@ -1,0 +1,11 @@
+Convert text fitting parameters to binary for diabatz version 0
+Yifan Shen 2021
+
+Echo of user command line input:
+/home/yshen/Software/Mine/diabatz/tools/v0/txt2bin/txt2bin.exe -n single.in -p txt2bin/parameters -o single.net
+
+Mon Dec 12 18:03:04 2022
+
+
+Mon Dec 12 18:03:04 2022
+Mission success
