@@ -1,9 +1,9 @@
 #ifndef Hd_hpp
 #define Hd_hpp
 
-#include <Hd/kernel.hpp>
+#include <Hd/Kernel.hpp>
 
-extern std::shared_ptr<Hd::kernel> HdKernel;
+extern std::shared_ptr<Hd::Kernel> HdKernel;
 
 at::Tensor compute_Hd(const at::Tensor & x);
 
