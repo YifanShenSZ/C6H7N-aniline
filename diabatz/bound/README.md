@@ -1,4 +1,4 @@
-# Bound region pretraining
+# bound region pretraining
 In order to eliminate holes (over fitting), we grow the surface terms by terms. We first partition the terms by bound or dissociative, then this section focuses on the bound terms 
 
 For bound terms, we further partition them into:
