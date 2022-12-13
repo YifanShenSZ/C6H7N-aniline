@@ -2,27 +2,27 @@ Root mean square deviation analyzer for diabatz
 Yifan Shen 2021
 
 Echo of user command line input:
-/home/yshen/Software/Mine/diabatz/tools/RMSD/v0/RMSD.exe -d default IntCoordDef SAS.in Hd.in Hd.net 11.in 12.in 13.in 14.in 22.in 23.in 24.in 33.in 34.in 44.in -s data/fast/1.7/ -z -286.1075216397
+/home/yshen/Software/Mine/diabatz/tools/RMSD/v1/RMSD.exe -d default pretrain-IntCoordDef pretrain-SAS.in pretrain-Hd.in pretrain-Hd.net pretrain-11.in pretrain-12.in pretrain-13.in pretrain-14.in pretrain-22.in pretrain-23.in pretrain-24.in pretrain-33.in pretrain-34.in pretrain-44.in default IntCoordDef SAS.in Hd.in Hd.net 11.in 12.in 13.in 14.in 22.in 23.in 24.in 33.in 34.in 44.in -s ../data/fast/1.7/ -z -286.1075216397
 
-Sat Nov 26 19:35:46 2022
+Mon Dec 12 21:39:16 2022
 
 Root mean square deviation of energy:
-State 1 = 0.000702136
-State 2 = 0.000223066
-State 3 = 0.00038008
-State 4 = 0.000629095
+State 1 = 0.00111845
+State 2 = 0.000739705
+State 3 = 0.000321147
+State 4 = 0.00126093
 Root mean square deviation of energy gradient:
-State 1 = 0.00244977
-State 2 = 0.00229161
-State 3 = 0.001766
-State 4 = 0.00199663
+State 1 = 0.00257292
+State 2 = 0.00240006
+State 3 = 0.00193195
+State 4 = 0.00279938
 Root mean square deviation of interstate coupling:
-State 1-2 = 0.00409651
-State 1-3 = 0.00106733
-State 1-4 = 0.0023873
-State 2-3 = 0.00128944
-State 2-4 = 0.00114451
-State 3-4 = 0.00205709
+State 1-2 = 0.00361811
+State 1-3 = 0.000936644
+State 1-4 = 0.00335558
+State 2-3 = 0.00153911
+State 2-4 = 0.0010972
+State 3-4 = 0.00161058
 
-Sat Nov 26 19:36:18 2022
+Mon Dec 12 21:41:13 2022
 Mission success
