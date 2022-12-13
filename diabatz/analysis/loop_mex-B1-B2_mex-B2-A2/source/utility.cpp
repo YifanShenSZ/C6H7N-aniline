@@ -1,12 +1,12 @@
 #include <tchem/linalg.hpp>
 
-#include <Hd/kernel.hpp>
+#include <Hd/Kernel.hpp>
 
 void update_nac_(at::Tensor& nac,
 const int64_t& istate, const int64_t& jstate,
-const at::Tensor& r, const Hd::kernel& Hdkernel) {
+const at::Tensor& r, const Hd::Kernel& HdKernel) {
     at::Tensor Hd, dHd;
-    std::tie(Hd, dHd) = Hdkernel.compute_Hd_dHd(r);
+    std::tie(Hd, dHd) = HdKernel.compute_Hd_dHd(r);
     at::Tensor energy, states;
     std::tie(energy, states) = Hd.symeig(true);
     at::Tensor dHa = tchem::linalg::UT_sy_U(dHd, states);

@@ -2,7 +2,7 @@
 
 #include <tchem/linalg.hpp>
 
-#include <Hd/kernel.hpp>
+#include <Hd/Kernel.hpp>
 
 #include "utility.hpp"
 
@@ -18,7 +18,7 @@
 //          |                           |
 //          v                           |
 //     r0 - Nh * dh   ->  r0  ->   r0 + Nh * dh
-double loop_mexB2A2(const Hd::kernel& Hdkernel,
+double loop_mexB2A2(const Hd::Kernel& HdKernel,
 const size_t& NNH, const double& dNH,
 const size_t& NCNH2, const double& dCNH2) {
     CL::chem::xyz<double> mex("mex-B1-B2.xyz", true);
@@ -51,7 +51,7 @@ const size_t& NCNH2, const double& dCNH2) {
     at::Tensor nac;
     {
         at::Tensor Hd, dHd;
-        std::tie(Hd, dHd) = Hdkernel.compute_Hd_dHd(r);
+        std::tie(Hd, dHd) = HdKernel.compute_Hd_dHd(r);
         at::Tensor energy, states;
         std::tie(energy, states) = Hd.symeig(true);
         at::Tensor dHa = tchem::linalg::UT_sy_U(dHd, states);
@@ -64,7 +64,7 @@ const size_t& NCNH2, const double& dCNH2) {
         // update geometry
         r += CNH2 * dCNH2;
         // update nonadiabatic couping
-        update_nac_(nac, 2, 3, r, Hdkernel);
+        update_nac_(nac, 2, 3, r, HdKernel);
     }
     // r0 + Nh * dh -> r0 + Nh * dh + Ng * dg
     for (size_t i = 0; i < NNH; i++) {
@@ -73,7 +73,7 @@ const size_t& NCNH2, const double& dCNH2) {
         // update geometry
         r += NH * dNH;
         // update nonadiabatic couping
-        update_nac_(nac, 2, 3, r, Hdkernel);
+        update_nac_(nac, 2, 3, r, HdKernel);
     }
     // r0 + Nh * dh + Ng * dg -> r0 - Nh * dh + Ng * dg
     for (size_t i = 0; i < 2 * NCNH2; i++) {
@@ -82,7 +82,7 @@ const size_t& NCNH2, const double& dCNH2) {
         // update geometry
         r -= CNH2 * dCNH2;
         // update nonadiabatic couping
-        update_nac_(nac, 2, 3, r, Hdkernel);
+        update_nac_(nac, 2, 3, r, HdKernel);
     }
     // r0 - Nh * dh + Ng * dg -> r0 - Nh * dh
     for (size_t i = 0; i < NNH; i++) {
@@ -91,7 +91,7 @@ const size_t& NCNH2, const double& dCNH2) {
         // update geometry
         r -= NH * dNH;
         // update nonadiabatic couping
-        update_nac_(nac, 2, 3, r, Hdkernel);
+        update_nac_(nac, 2, 3, r, HdKernel);
     }
     // r0 - Nh * dh -> r0
     for (size_t i = 0; i < NCNH2; i++) {
@@ -100,7 +100,7 @@ const size_t& NCNH2, const double& dCNH2) {
         // update geometry
         r += CNH2 * dCNH2;
         // update nonadiabatic couping
-        update_nac_(nac, 2, 3, r, Hdkernel);
+        update_nac_(nac, 2, 3, r, HdKernel);
     }
     return integral;
 }

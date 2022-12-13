@@ -4,10 +4,12 @@
             "name": "Linux",
             "includePath": [
                 "~/Software/Programming/libtorch/include/**",
+                "~/Library/Foptim/include",
+                "~/Library/Cpp-Library/include",
                 "~/Library/Torch-Chemistry/include",
                 "~/Software/Mine/diabatz/library/SASDIC/include",
                 "~/Software/Mine/diabatz/library/obnet/include",
-                "~/Software/Mine/diabatz/tools/v0/libHd/include"
+                "~/Software/Mine/diabatz/tools/v1/libHd/include"
             ],
             "cppStandard": "c++14"
         }

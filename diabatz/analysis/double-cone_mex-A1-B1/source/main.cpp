@@ -4,7 +4,7 @@
 #include <tchem/utility.hpp>
 #include <tchem/linalg.hpp>
 
-#include <Hd/kernel.hpp>
+#include <Hd/Kernel.hpp>
 
 at::Tensor int2cart(const at::Tensor & q, const at::Tensor & init_guess,
 const std::shared_ptr<tchem::IC::IntCoordSet> & _intcoordset);
@@ -29,7 +29,7 @@ int main(size_t argc, const char ** argv) {
     std::cout << '\n';
 
     std::vector<std::string> diabatz_inputs = args.retrieve<std::vector<std::string>>("diabatz");
-    Hd::kernel Hdkernel(diabatz_inputs);
+    Hd::Kernel HdKernel(diabatz_inputs);
 
     auto intcoordset      = std::make_shared<tchem::IC::IntCoordSet>("default",  "opt.IntCoordDef");
     auto intcoordset_plot = std::make_shared<tchem::IC::IntCoordSet>("default", "plot.IntCoordDef");
@@ -59,7 +59,7 @@ int main(size_t argc, const char ** argv) {
         at::Tensor r = int2cart(q, r_mex, intcoordset);
         at::Tensor q_plot = (*intcoordset_plot)(r);
         at::Tensor Hd, dHd;
-        std::tie(Hd, dHd) = Hdkernel.compute_Hd_dHd(r);
+        std::tie(Hd, dHd) = HdKernel.compute_Hd_dHd(r);
         at::Tensor energy, states;
         std::tie(energy, states) = Hd.symeig();
         ofs_m << std::setw(25) << std::scientific << std::setprecision(15) << i * dg
