@@ -11,8 +11,8 @@ argparse::ArgumentParser parse_args(const size_t & argc, const char ** & argv) {
     argparse::ArgumentParser parser("Surface hopping footprint on adiabatic surfaces");
 
     // required arguments
-    parser.add_argument("-d","--diabatz",    '+', false, "diabatz definition files");
-    parser.add_argument("-x","--xyz",          1, false, "xyz trajectory");
+    parser.add_argument("-d","--diabatz", '+', false, "diabatz definition files");
+    parser.add_argument("-x","--xyz",       1, false, "xyz trajectory");
 
     parser.parse_args(argc, argv);
     return parser;
