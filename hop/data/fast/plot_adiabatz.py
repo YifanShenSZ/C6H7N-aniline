@@ -45,8 +45,8 @@ if __name__ == "__main__":
     ax.scatter(time[::5], energy_active[::5], color="black")
 
     ax2 = ax.twinx()
-    ax2.plot(time, nac01, linestyle="dashed", color="red"   , label="nac 12")
-    ax2.plot(time, nac12, linestyle="dashed", color="purple", label="nac 23")
+    ax2.plot(time, nac01, linestyle="dashed", color="red"   , label="||nac|| 12")
+    ax2.plot(time, nac12, linestyle="dashed", color="purple", label="||nac|| 23")
 
     ax .set_xlabel("time / fs"     , fontsize=24)
     ax .set_ylabel("energy / eV"   , fontsize=24)
@@ -56,15 +56,15 @@ if __name__ == "__main__":
     ax .set_ylim(-0.5, 11.5)
     ax2.set_ylim(-1  , 37  )
 
-    for side in ("top", "bottom", "left", "right"): ax.spines[side].set_linewidth(2)
+    for side in ("top", "bottom", "left", "right"): ax.spines[side].set_linewidth(1.5)
 
-    ax .tick_params(direction="in", length=8, width=2, labelsize=18)
-    ax2.tick_params(direction="in", length=8, width=2, labelsize=18)
+    ax .tick_params(direction="in", length=8, width=1.5, labelsize=18)
+    ax2.tick_params(direction="in", length=8, width=1.5, labelsize=18)
 
     ax .minorticks_on()
     ax2.minorticks_on()
-    ax .tick_params(direction="in", length=4, width=2, which="minor")
-    ax2.tick_params(direction="in", length=4, width=2, which="minor")
+    ax .tick_params(direction="in", length=4, width=1.5, which="minor")
+    ax2.tick_params(direction="in", length=4, width=1.5, which="minor")
 
     ax .legend(loc="upper center", ncol=2, fontsize=18, frameon=False)
     ax2.legend(loc="center", bbox_to_anchor=(0.5, 0.4), fontsize=18, frameon=False)
