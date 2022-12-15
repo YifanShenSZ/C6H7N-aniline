@@ -1,0 +1,19 @@
+Evaluation for diabatz
+Yifan Shen 2021
+
+Echo of user command line input:
+/home/yshen/Software/Mine/diabatz/tools/eval/v1/eval.exe -d default pretrain-IntCoordDef pretrain-SAS.in pretrain-Hd.in pretrain-Hd.net pretrain-11.in pretrain-12.in pretrain-13.in pretrain-14.in pretrain-22.in pretrain-23.in pretrain-24.in pretrain-33.in pretrain-34.in pretrain-44.in default IntCoordDef SAS.in Hd.in Hd.net 11.in 12.in 13.in 14.in 22.in 23.in 24.in 33.in 34.in 44.in -x /home/yshen/C6H7N-aniline/Columbus/sad-B1/sad-B1.xyz -a
+
+Thu Dec 15 10:31:33 2022
+
+energy =
+    5.798653e-02    1.790837e-01    2.362457e-01    2.690678e-01
+
+states are:
+    9.999290e-01    8.514366e-18   -1.191336e-02   -6.279667e-20
+   -2.730489e-18    9.999728e-01    4.854529e-16    7.381557e-03
+   -1.191336e-02    4.854452e-16   -9.999290e-01   -6.241358e-18
+    8.592173e-21   -7.381557e-03   -9.825329e-18    9.999728e-01
+
+Thu Dec 15 10:31:33 2022
+Mission success
