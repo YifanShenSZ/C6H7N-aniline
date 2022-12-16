@@ -52,14 +52,15 @@ int main(size_t argc, const char ** argv) {
 
     std::cout << "internal coordinates can be found in intcoord-footprint.csv\n";
     ofs.open("intcoord-footprint.csv");
-        ofs << "time-step,C-out-of-NH2,max(N-H)\n";
+        ofs << "time-step,C-out-of-NH2,N-H1,N-H2\n";
         for (size_t time = 0; time < rs.size(); time++) {
             ofs << time << ',';
             // compute
             at::Tensor q = intcoordset(rs[time]);
             // print
             ofs << q[0].item<double>() << ',';
-            ofs << std::max(q[1].item<double>(), q[2].item<double>()) << '\n';
+            ofs << q[1].item<double>() << ',';
+            ofs << q[2].item<double>() << '\n';
         }
     ofs.close();
 
