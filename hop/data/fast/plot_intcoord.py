@@ -55,11 +55,15 @@ if __name__ == "__main__":
     cb.set_ticks(cbticks)
     cb.set_ticklabels(cbticklabels)
     cb.ax.tick_params(labelsize=18, length=4, width=1.5)
-    
-    xs = np.array((1, 1, 1, 1, 1.3, 1.4, 1.8, 2.95))
-    ys = np.array((-50, -20, 20, 0, 0, 0, 0, 0))
-    assert xs.shape[0] == ys.shape[0]
+
+    # min-A1, min-B1, sad-B1, asymptote
+    xs = np.array((  1, 1, 1.3, 2.95))
+    ys = np.array((-50, 0,   0, 0   ))
     ax.scatter(xs, ys, s=1000, facecolors="none", edgecolors="black", linewidth=1.5)
+    # dual mex-B1-B2, mex-B2-A2, mex-A1-B1
+    xs = np.array((  1,  1, 1.4, 1.8))
+    ys = np.array((-20, 20,   0,   0))
+    ax.scatter(xs, ys, s=1000, marker='x', facecolors="black", linewidth=1.5)
 
     plt.subplots_adjust(wspace=0.05, hspace=0)
 
