@@ -11,10 +11,10 @@ g-h plane double cone analysis based on diabatz
 Yifan Shen 2021
 
 Echo of user command line input:
-../v0/double-cone.exe -d default IntCoordDef SAS.in Hd.in Hd.net 11.in 12.in 13.in 14.in 22.in 23.in 24.in 33.in 34.in 44.in
+../v1/double-cone.exe -d default pretrain-IntCoordDef pretrain-SAS.in pretrain-Hd.in pretrain-Hd.net pretrain-11.in pretrain-12.in pretrain-13.in pretrain-14.in pretrain-22.in pretrain-23.in pretrain-24.in pretrain-33.in pretrain-34.in pretrain-44.in default IntCoordDef SAS.in Hd.in Hd.net 11.in 12.in 13.in 14.in 22.in 23.in 24.in 33.in 34.in 44.in
 
-Fri Nov 25 20:54:38 2022
+Thu Dec 15 23:56:59 2022
 
 
-Fri Nov 25 21:06:01 2022
+Fri Dec 16 00:19:19 2022
 Mission success

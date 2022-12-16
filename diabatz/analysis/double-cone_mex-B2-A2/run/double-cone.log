@@ -1,62 +1,60 @@
  Trust region warning: step length has converged, but residual has not met accur
  acy goal
- Final residual =   3.844113654111126E-009
+ Final residual =   1.799195329562378E-008
  Trust region warning: step length has converged, but residual has not met accur
  acy goal
- Final residual =   3.486315052600252E-009
+ Final residual =   2.976443070509354E-008
  Trust region warning: step length has converged, but residual has not met accur
  acy goal
- Final residual =   1.301704754727230E-009
+ Final residual =   1.441534306263118E-008
  Trust region warning: step length has converged, but residual has not met accur
  acy goal
- Final residual =   1.647563767993758E-008
+ Final residual =   1.492423451808616E-008
  Trust region warning: step length has converged, but residual has not met accur
  acy goal
- Final residual =   8.301685568563684E-009
+ Final residual =   3.394016031369427E-009
  Trust region warning: step length has converged, but residual has not met accur
  acy goal
- Final residual =   6.691401399366843E-009
+ Final residual =   2.260839003340008E-008
  Trust region warning: step length has converged, but residual has not met accur
  acy goal
- Final residual =   1.515291790014425E-008
+ Final residual =   6.768285379059693E-009
  Trust region warning: step length has converged, but residual has not met accur
  acy goal
- Final residual =   1.367060776859785E-008
+ Final residual =   1.248721090178603E-009
+ Failed trust region: max iteration exceeded!
+ Final residual =   1.681213037566622E-008
  Trust region warning: step length has converged, but residual has not met accur
  acy goal
- Final residual =   3.323106507528548E-009
+ Final residual =   1.719611963694515E-009
  Trust region warning: step length has converged, but residual has not met accur
  acy goal
- Final residual =   2.923848596365541E-009
+ Final residual =   1.712447144359848E-008
  Trust region warning: step length has converged, but residual has not met accur
  acy goal
- Final residual =   1.684248364661813E-008
+ Final residual =   5.299380115308445E-009
  Trust region warning: step length has converged, but residual has not met accur
  acy goal
- Final residual =   6.942285452750346E-009
+ Final residual =   8.061212934437774E-009
  Trust region warning: step length has converged, but residual has not met accur
  acy goal
- Final residual =   9.877458590329900E-009
+ Final residual =   1.755260957719850E-008
  Trust region warning: step length has converged, but residual has not met accur
  acy goal
- Final residual =   4.568609984231408E-008
+ Final residual =   1.016079548273290E-008
  Trust region warning: step length has converged, but residual has not met accur
  acy goal
- Final residual =   1.641184001099468E-008
- Trust region warning: step length has converged, but residual has not met accur
- acy goal
- Final residual =   1.141519541900175E-008
- Trust region warning: step length has converged, but residual has not met accur
- acy goal
- Final residual =   1.920383041265261E-008
+ Final residual =   1.609972107014668E-008
+ Failed trust region: max iteration exceeded!
+ Final residual =   7.912882164384438E-010
 g-h plane double cone analysis based on diabatz
-Yifan Shen 2021
+Yifan Shen 2022
 
 Echo of user command line input:
 ../v1/double-cone.exe -d default pretrain-IntCoordDef pretrain-SAS.in pretrain-Hd.in pretrain-Hd.net pretrain-11.in pretrain-12.in pretrain-13.in pretrain-14.in pretrain-22.in pretrain-23.in pretrain-24.in pretrain-33.in pretrain-34.in pretrain-44.in default IntCoordDef SAS.in Hd.in Hd.net 11.in 12.in 13.in 14.in 22.in 23.in 24.in 33.in 34.in 44.in
 
-Thu Dec 15 23:57:10 2022
+Fri Dec 16 11:02:25 2022
 
 
-Fri Dec 16 00:37:02 2022
+Fri Dec 16 11:30:46 2022
 Mission success
