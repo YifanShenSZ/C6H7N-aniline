@@ -18,7 +18,7 @@ if __name__ == "__main__":
 
     time = np.array(file["time-step"])
     q1   = np.array(file["C-out-of-NH2"]) / np.pi * 180.0
-    q2   = np.array(file["max(N-H)"]) / 1.8897261339212517
+    q2   = np.array(file["N-H2"]) / 1.8897261339212517
 
     N = time.shape[0]
     color = np.empty((N // 5, 3))
@@ -33,10 +33,10 @@ if __name__ == "__main__":
     for i in range(0, N // 5):
         ax.plot(q2[5 * i : 5 * i + 6], q1[5 * i : 5 * i + 6], color=color[i, :])
 
-    ax.set_xlabel("max(N-H1, N-H2) / Å"        , fontsize=24)
-    ax.set_ylabel("C1 out of N-H1-H2 plane / °", fontsize=24)
+    ax.set_xlabel("N-H / Å", fontsize=24)
+    ax.set_ylabel("θ / °"  , fontsize=24)
 
-    ax.set_xlim( 0.9 , 3.05)
+    ax.set_xlim( 0.85, 3.05)
     ax.set_ylim(-58.0, 26.0)
 
     for side in ("top", "bottom", "left", "right"): ax.spines[side].set_linewidth(1.5)
@@ -48,12 +48,18 @@ if __name__ == "__main__":
 
     cmap = mpl.colors.LinearSegmentedColormap.from_list("mycmap", color)
     cb = mpl.colorbar.ColorbarBase(axes[1], cmap=cmap, orientation="vertical")
+    cb.set_label("time / fs", fontsize=24)
     cb.outline.set_linewidth(1.5)
     cbticks = np.linspace(0, 1.0, 6)
     cbticklabels = time[(cbticks * (N - 1)).astype(int)]
     cb.set_ticks(cbticks)
     cb.set_ticklabels(cbticklabels)
     cb.ax.tick_params(labelsize=18, length=4, width=1.5)
+    
+    xs = np.array((1, 1, 1, 1, 1.3, 1.4, 1.8, 2.95))
+    ys = np.array((-50, -20, 20, 0, 0, 0, 0, 0))
+    assert xs.shape[0] == ys.shape[0]
+    ax.scatter(xs, ys, s=1000, facecolors="none", edgecolors="black", linewidth=1.5)
 
     plt.subplots_adjust(wspace=0.05, hspace=0)
 
