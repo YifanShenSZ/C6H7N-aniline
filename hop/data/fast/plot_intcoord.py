@@ -34,7 +34,7 @@ if __name__ == "__main__":
         ax.plot(q2[5 * i : 5 * i + 6], q1[5 * i : 5 * i + 6], color=color[i, :])
 
     ax.set_xlabel("N-H / Å", fontsize=24)
-    ax.set_ylabel("θ / °"  , fontsize=24)
+    ax.set_ylabel("C1 out of NH$_2$ plane / °"  , fontsize=24)
 
     ax.set_xlim( 0.85, 3.05)
     ax.set_ylim(-58.0, 26.0)
