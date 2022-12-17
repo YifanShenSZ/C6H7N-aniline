@@ -1,0 +1,19 @@
+Evaluation for diabatz
+Yifan Shen 2021
+
+Echo of user command line input:
+/home/yshen/Software/Mine/diabatz/tools/eval/v1/eval.exe -d default pretrain-IntCoordDef pretrain-SAS.in pretrain-Hd.in pretrain-Hd.net pretrain-11.in pretrain-12.in pretrain-13.in pretrain-14.in pretrain-22.in pretrain-23.in pretrain-24.in pretrain-33.in pretrain-34.in pretrain-44.in default IntCoordDef SAS.in Hd.in Hd.net 11.in 12.in 13.in 14.in 22.in 23.in 24.in 33.in 34.in 44.in -x /home/yshen/C6H7N-aniline/Columbus/other/plot/C-NH2_oop/mex-B1-B2_somewhat-min-A1/5/geom.xyz -a
+
+Fri Dec 16 21:05:12 2022
+
+energy =
+    1.038065e-02    1.845926e-01    1.916813e-01    2.420729e-01
+
+states are:
+    9.999463e-01    3.306775e-07   -1.036353e-02    1.428088e-08
+    1.036353e-02    1.534650e-06    9.999463e-01    1.520458e-06
+   -3.470749e-07    9.998173e-01   -1.559917e-06    1.911288e-02
+   -2.340809e-08   -1.911288e-02   -1.490686e-06    9.998173e-01
+
+Fri Dec 16 21:05:13 2022
+Mission success
