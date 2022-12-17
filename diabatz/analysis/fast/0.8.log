@@ -4,7 +4,7 @@ Yifan Shen 2021
 Echo of user command line input:
 /home/yshen/Software/Mine/diabatz/tools/eval/v1/eval.exe -d default pretrain-IntCoordDef pretrain-SAS.in pretrain-Hd.in pretrain-Hd.net pretrain-11.in pretrain-12.in pretrain-13.in pretrain-14.in pretrain-22.in pretrain-23.in pretrain-24.in pretrain-33.in pretrain-34.in pretrain-44.in default IntCoordDef SAS.in Hd.in Hd.net 11.in 12.in 13.in 14.in 22.in 23.in 24.in 33.in 34.in 44.in -x /home/yshen/C6H7N-aniline/Columbus/fast/0.8/fast-0.8.xyz -a
 
-Thu Dec 15 10:34:15 2022
+Fri Dec 16 20:28:42 2022
 
 energy =
     7.201947e-02    2.272376e-01    2.517760e-01    3.044752e-01
@@ -15,5 +15,5 @@ states are:
    -5.792571e-03   -1.130954e-15   -9.999832e-01    7.256070e-18
    -4.741249e-21   -1.377737e-02    2.283736e-17    9.999051e-01
 
-Thu Dec 15 10:34:15 2022
+Fri Dec 16 20:28:42 2022
 Mission success
