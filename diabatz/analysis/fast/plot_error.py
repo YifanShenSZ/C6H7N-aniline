@@ -20,22 +20,29 @@ fig, ax = plt.subplots()
 
 colors = ["black", "red", "blue", "green"]
 labels = ["$^1$A$_1$", "$^1$B$_1$", "$^1$B$_2$", "$^1$A$_2$"]
+lines = []
 for i in range(4):
-    ax.plot(NH, error[:, i], color=colors[i], label=labels[i])
+    line, = ax.plot(NH, error[:, i], color=colors[i], label=labels[i], linewidth=2)
+    lines.append(line)
 
-ax.set_xlabel("N-H / Å"             , fontsize=24)
-ax.set_ylabel("energy error / cm^-1", fontsize=24)
+ax.set_xlabel("N-H / Å"             , fontsize=32, labelpad=8)
+ax.set_ylabel("energy error / cm^-1", fontsize=32, labelpad=8)
 
 ax.set_xlim( 0.6, 3.1)
 ax.set_ylim(-280, 340)
 
-for side in ("top", "bottom", "left", "right"): ax.spines[side].set_linewidth(1.5)
+ax.set_xticks((0.8, 1.2, 1.6, 2.0, 2.4, 2.8))
 
-ax.tick_params(direction="in", length=8, width=1.5, labelsize=18)
+for side in ("top", "bottom", "left", "right"): ax.spines[side].set_linewidth(2)
+
+ax.tick_params(direction="in", length=8, width=2, labelsize=24)
 
 ax.minorticks_on()
-ax.tick_params(direction="in", length=4, width=1.5, which="minor")
+ax.tick_params(direction="in", length=4, width=2, which="minor")
 
-plt.legend(ncol=2, loc="upper right", fontsize=18, frameon=False)
+legend_01 = plt.legend(handles=lines[1: :-1], ncol=1, loc="center", bbox_to_anchor=(0.2, 0.85), fontsize=24, frameon=False)
+legend_23 = plt.legend(handles=lines[3:1:-1], ncol=1, loc="center", bbox_to_anchor=(0.8, 0.85), fontsize=24, frameon=False)
+ax.add_artist(legend_01)
+ax.add_artist(legend_23)
 
 plt.show()

@@ -23,26 +23,29 @@ labels = ["$^1$A$_1$", "$^1$B$_1$", "$^1$B$_2$", "$^1$A$_2$"]
 scatters = []
 lines = []
 for i in range(4):
-    scatter = ax.scatter(NH, energy_abinitio[:, i], color=colors[i], label="$\it{ab}$ " + labels[i], s=100, facecolors="none")
-    line,   = ax.plot   (NH, energy_diabatz [:, i], color=colors[i], label="model "     + labels[i])
+    scatter = ax.scatter(NH, energy_abinitio[:, i], color=colors[i], label="$\it{ab}$ " + labels[i], s=300, linewidth=2, facecolors="none")
+    line,   = ax.plot   (NH, energy_diabatz [:, i], color=colors[i], label="model "     + labels[i], linewidth=2)
     scatters.append(scatter)
     lines   .append(line   )
 
-ax.set_xlabel("N-H / Å"    , fontsize=24)
-ax.set_ylabel("energy / eV", fontsize=24)
+ax.set_xlabel("N-H / Å"    , fontsize=32, labelpad=8)
+ax.set_ylabel("energy / eV", fontsize=32, labelpad=8)
 
-ax.set_xlim( 0.6,  3.1)
-ax.set_ylim(-0.5, 10.5)
+ax.set_xlim( 0.6, 3.1)
+ax.set_ylim(-0.5, 8.5)
 
-for side in ("top", "bottom", "left", "right"): ax.spines[side].set_linewidth(1.5)
+ax.set_xticks((0.8, 1.2, 1.6, 2.0, 2.4, 2.8))
+ax.set_yticks((0, 2, 4, 6, 8))
 
-ax.tick_params(direction="in", length=8, width=1.5, labelsize=18)
+for side in ("top", "bottom", "left", "right"): ax.spines[side].set_linewidth(2)
+
+ax.tick_params(direction="in", length=8, width=2, labelsize=24)
 
 ax.minorticks_on()
-ax.tick_params(direction="in", length=4, width=1.5, which="minor")
+ax.tick_params(direction="in", length=4, width=2, which="minor")
 
-legend_ab    = plt.legend(handles=scatters, ncol=2, loc="center", bbox_to_anchor=(0.75, 0.85), fontsize=18, frameon=False)
-legend_model = plt.legend(handles=lines   , ncol=2, loc="center", bbox_to_anchor=(0.75, 0.15), fontsize=18, frameon=False)
+legend_ab    = plt.legend(handles=scatters[::-1], ncol=1, loc="center", bbox_to_anchor=(0.86, 0.25), fontsize=24, frameon=False)
+legend_model = plt.legend(handles=lines   [::-1], ncol=1, loc="center", bbox_to_anchor=(0.60, 0.25), fontsize=24, frameon=False)
 ax.add_artist(legend_ab   )
 ax.add_artist(legend_model)
 
