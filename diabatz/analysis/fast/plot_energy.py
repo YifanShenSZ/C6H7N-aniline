@@ -21,7 +21,7 @@ fig, ax = plt.subplots()
 colors = ["black", "red", "blue", "green"]
 labels = ["$^1$A$_1$", "$^1$B$_1$", "$^1$B$_2$", "$^1$A$_2$"]
 scatters = []
-lines = []
+lines    = []
 for i in range(4):
     scatter = ax.scatter(NH, energy_abinitio[:, i], color=colors[i], label="$\it{ab}$ " + labels[i], s=300, linewidth=2, facecolors="none")
     line,   = ax.plot   (NH, energy_diabatz [:, i], color=colors[i], label="model "     + labels[i], linewidth=2)

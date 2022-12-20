@@ -74,3 +74,11 @@ for i in (1.9, 2.0, 2.1, 2.2, 2.3, 2.4, 2.5, 2.6, 2.7, 2.8, 2.9, 3, 4, 5, 6):
     position += 1
 # ab initio no longer has B2 starting from 2.0
 energy_diabatz[13:, 2] = np.nan
+
+if __name__ == "__main__":
+    import matplotlib.pyplot as plt
+    colors = ["black", "red", "blue", "green"]
+    for i in range(4):
+        plt.scatter(NH, energy_abinitio[:, i], color=colors[i])
+        plt.plot   (NH, energy_diabatz [:, i], color=colors[i])
+    plt.show()

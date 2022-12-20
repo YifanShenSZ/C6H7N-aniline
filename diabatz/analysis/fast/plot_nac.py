@@ -23,7 +23,7 @@ norm34_diabatz  = norm34_diabatz [:24]
 fig, ax = plt.subplots()
 
 scatters = []
-lines = []
+lines    = []
 scatter = ax.scatter(NH, norm12_abinitio, color="red"   , label="$\it{ab}$ " + "$^1$A$_1$-$^1$B$_1$", s=300, linewidth=2, facecolors="none")
 line,   = ax.plot   (NH, norm12_diabatz , color="red"   , label="model "     + "$^1$A$_1$-$^1$B$_1$", linewidth=2)
 scatters.append(scatter)

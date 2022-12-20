@@ -425,3 +425,12 @@ for i in range(len(NH)):
         nac12_diabatz[i, 3 * j + 0] = float(strs[0])
         nac12_diabatz[i, 3 * j + 1] = float(strs[1])
         nac12_diabatz[i, 3 * j + 2] = float(strs[2])
+
+if __name__ == "__main__":
+    import matplotlib.pyplot as plt
+    norm12_abinitio = np.linalg.norm(nac12_abinitio, axis=-1)
+    norm12_diabatz  = np.linalg.norm(nac12_diabatz , axis=-1)
+    plt.scatter(NH, norm12_abinitio)
+    plt.plot   (NH, norm12_diabatz )
+    plt.yscale("log")
+    plt.show()

@@ -267,3 +267,12 @@ for j in range(14):
     nac34_diabatz[7, 3 * j + 0] = float(strs[0])
     nac34_diabatz[7, 3 * j + 1] = float(strs[1])
     nac34_diabatz[7, 3 * j + 2] = float(strs[2])
+
+if __name__ == "__main__":
+    import matplotlib.pyplot as plt
+    norm34_abinitio = np.linalg.norm(nac34_abinitio, axis=-1)
+    norm34_diabatz  = np.linalg.norm(nac34_diabatz , axis=-1)
+    plt.scatter(NH, norm34_abinitio)
+    plt.plot   (NH, norm34_diabatz )
+    plt.yscale("log")
+    plt.show()
