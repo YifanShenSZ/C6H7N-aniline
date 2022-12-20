@@ -29,7 +29,7 @@ for i in range(4):
     lines   .append(line   )
 
 ax.set_xlabel("N-H / Å"    , fontsize=32, labelpad=8)
-ax.set_ylabel("energy / eV", fontsize=32, labelpad=8)
+ax.set_ylabel("energy / eV", fontsize=32, labelpad=32)
 
 ax.set_xlim( 0.6, 3.1)
 ax.set_ylim(-0.5, 8.5)
