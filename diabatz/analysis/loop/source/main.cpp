@@ -14,8 +14,8 @@ argparse::ArgumentParser parse_args(const size_t & argc, const char ** & argv) {
     // optional arguments
     parser.add_argument("--shift_NH"  , 1, true, "shift initial geometry in N-H direction, default = 0 A");
     parser.add_argument("--shift_CNH2", 1, true, "shift initial geometry in C out of NH2 direction, default = 0");
-    parser.add_argument("--NNH"       , 1, true, "number of grids along N-H, default = 20");
-    parser.add_argument("--dNH"       , 1, true, "grid spacing along N-H, default = 0.01 A");
+    parser.add_argument("--NNH"       , 1, true, "number of grids along N-H, default = 200");
+    parser.add_argument("--dNH"       , 1, true, "grid spacing along N-H, default = 0.001 A");
     parser.add_argument("--NCNH2"     , 1, true, "number of grids along C out of NH2, default = 200");
     parser.add_argument("--dCNH2"     , 1, true, "grid spacing along C out of NH2, default = 0.01");
 
@@ -38,8 +38,8 @@ int main(size_t argc, const char ** argv) {
               << "         r0      ->      r0 + Ng * dg      \n"
               << "r0: flatten mex-B1-B2, i.e., N-H = 0.948978 A and C out of NH2 angle = 0\n"
               << "    can be shifted\n"
-              << "g: N-H\n"
-              << "h: C out of NH2 angle\n\n";
+              << "g: N-H, unit vector\n"
+              << "h: C out of NH2 angle, by h = mex-B1-B2 - flatten mex-B1-B2\n\n";
     argparse::ArgumentParser args = parse_args(argc, argv);
     CL::utility::show_time(std::cout);
     std::cout << '\n';
@@ -51,9 +51,9 @@ int main(size_t argc, const char ** argv) {
     if (args.gotArgument("shift_NH")) shift_NH = args.retrieve<double>("shift_NH") * 1.8897261339212517;
     double shift_CNH2 = 0.0;
     if (args.gotArgument("shift_CNH2")) shift_CNH2 = args.retrieve<double>("shift_CNH2");
-    size_t NNH = 20;
+    size_t NNH = 200;
     if (args.gotArgument("NNH"  )) NNH = args.retrieve<size_t>("NNH");
-    double dNH = 0.01 * 1.8897261339212517;
+    double dNH = 0.001 * 1.8897261339212517;
     if (args.gotArgument("dNH"  )) dNH = args.retrieve<double>("dNH") * 1.8897261339212517;
     size_t NCNH2 = 200;
     if (args.gotArgument("NCNH2")) NCNH2 = args.retrieve<size_t>("NCNH2");
@@ -64,8 +64,21 @@ int main(size_t argc, const char ** argv) {
               << "NNH   = " << NNH   << ", dNNH  = " << dNH / 1.8897261339212517 << " A\n"
               << "NCNH2 = " << NCNH2 << ", dCNH2 = " << dCNH2 << '\n' << std::endl;
 
-    std::cout << "integral =\n"
-              << integrate_loop(HdKernel, shift_NH, shift_CNH2, NNH, dNH, NCNH2, dCNH2) << '\n';
+    at::Tensor integral = integrate_loop(HdKernel, shift_NH, shift_CNH2, NNH, dNH, NCNH2, dCNH2);
+    std::cout << "integral =\n";
+    for (size_t i = 0; i < integral.size(0); i++) {
+        for (size_t j = 0; j <= i; j++) {
+            std::cout << std::setw(16)
+                      << std::scientific << std::setprecision(6)
+                      << 0.0;
+        }
+        for (size_t j = i + 1; j < integral.size(1); j++) {
+            std::cout << std::setw(16)
+                      << std::scientific << std::setprecision(6)
+                      << integral[i][j].item<double>();
+        }
+        std::cout << '\n';
+    }
 
     std::cout << '\n';
     CL::utility::show_time(std::cout);
