@@ -25,8 +25,8 @@ for i in range(4):
     line, = ax.plot(NH, error[:, i], color=colors[i], label=labels[i], linewidth=2)
     lines.append(line)
 
-ax.set_xlabel("N-H / Å"             , fontsize=32, labelpad=8)
-ax.set_ylabel("energy error / cm^-1", fontsize=32, labelpad=8)
+ax.set_xlabel("N-H / Å"                  , fontsize=32, labelpad=8)
+ax.set_ylabel("energy error / cm$^-$$^1$", fontsize=32, labelpad=8)
 
 ax.set_xlim( 0.6, 3.1)
 ax.set_ylim(-280, 340)
