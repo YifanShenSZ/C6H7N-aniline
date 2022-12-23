@@ -19,6 +19,8 @@ where
 * g: actually N-H
 * h: actually C out of NH2
 
+The starting point r0 is at the loop corner, so this analysis is called `loop-corner`. Although the sketch shows r0 at lower left corner, we can assign negative dg and/or dh to inverse the loop, thus r0 can also be the lower right, upper right, upper left corners
+
 Conical intersection locations
 |   X   |    N-H     | C out of NH2 |
 |-------|------------|--------------|
