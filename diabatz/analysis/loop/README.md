@@ -62,12 +62,10 @@ mex-B2-A2 and mex-A1-B1 is shifted in N-H, probably because the flat mex-B1-B2 i
 |     |               |               |               |  2.790631e-01|
 
 ## loops
-individual-x: loop around each crossing, just to make sure we get pi for the corresponding nac
-
-B2A2-A1B1: loop around B2A2 and A1B1 crossings, just to make sure we get pi for both nacs, since B2A2 and A1B1 crossings are unlinked
+individual-x: loop around each crossing, just to make sure we get pi for the corresponding nac; loop around B2A2 and A1B1 crossings, just to make sure we get pi for both nacs, since B2A2 and A1B1 crossings are unlinked
 
 single-B1B2: loop around single B1B2 crossing, then include others by gradually increasing N-H
 
 double-B1B2: loop around double B1B2 crossings, then include others by gradually increasing N-H
 
-The induced geometric phase is found for the double B1B2 + B2A2 loop, where nac23 integral deviates greatly from 2pi, and gives different values when starting from upper left, lower left, lower right, upper right corners
+The induced geometric phase is found for the double B1B2 + B2A2 loop,  where nac23 integral deviates greatly from 2pi. `double-B1B2/1.6/` further confirms the starting point dependency by starting from upper left, lower left, lower right, upper right corners
