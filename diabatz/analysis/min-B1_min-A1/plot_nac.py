@@ -12,8 +12,8 @@ norm_diabatz [np.where(norm_diabatz  > 20.0)] = 20.0
 
 fig, ax = plt.subplots(1, 1)
 
-scatter = ax.scatter(COONH2, norm_abinitio, color="orange", label="$\it{ab}$ " + "$^1$B$_1$-$^1$B$_2$", s=300, linewidth=2, facecolors="none")
-line,   = ax.plot   (COONH2, norm_diabatz , color="orange", label="model "     + "$^1$B$_1$-$^1$B$_2$", linewidth=2)
+scatter = ax.scatter(COONH2, norm_abinitio, color="purple", label="$\it{ab}$ " + "$^1$B$_1$-$^1$B$_2$", s=300, linewidth=2, facecolors="none")
+line,   = ax.plot   (COONH2, norm_diabatz , color="purple", label="model "     + "$^1$B$_1$-$^1$B$_2$", linewidth=2)
 
 ax.set_yscale("log")
 

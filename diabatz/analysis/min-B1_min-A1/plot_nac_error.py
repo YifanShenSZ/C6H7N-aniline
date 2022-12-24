@@ -14,7 +14,7 @@ norm_error = norm_diabatz - norm_abinitio
 
 fig, ax = plt.subplots()
 
-line, = ax.plot(COONH2, norm_error, color="orange", label="$^1$B$_1$-$^1$B$_2$", linewidth=2)
+line, = ax.plot(COONH2, norm_error, color="purple", label="$^1$B$_1$-$^1$B$_2$", linewidth=2)
 
 ax.set_xlabel("C1 out of NH$_2$ plane / °", fontsize=32, labelpad=8 )
 ax.set_ylabel("||nac|| error / a.u."      , fontsize=32, labelpad=8)

@@ -28,8 +28,8 @@ scatter = ax.scatter(NH, norm12_abinitio, color="red"   , label="$\it{ab}$ " + "
 line,   = ax.plot   (NH, norm12_diabatz , color="red"   , label="model "     + "$^1$A$_1$-$^1$B$_1$", linewidth=2)
 scatters.append(scatter)
 lines   .append(line   )
-scatter = ax.scatter(NH, norm34_abinitio, color="purple", label="$\it{ab}$ " + "$^1$B$_2$-$^1$A$_2$", s=300, linewidth=2, facecolors="none")
-line,   = ax.plot   (NH, norm34_diabatz , color="purple", label="model "     + "$^1$B$_2$-$^1$A$_2$", linewidth=2)
+scatter = ax.scatter(NH, norm34_abinitio, color="cyan", label="$\it{ab}$ " + "$^1$B$_2$-$^1$A$_2$", s=300, linewidth=2, facecolors="none")
+line,   = ax.plot   (NH, norm34_diabatz , color="cyan", label="model "     + "$^1$B$_2$-$^1$A$_2$", linewidth=2)
 scatters.append(scatter)
 lines   .append(line   )
 

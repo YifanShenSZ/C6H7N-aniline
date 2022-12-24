@@ -26,7 +26,7 @@ fig, ax = plt.subplots()
 lines = []
 line, = ax.plot(NH, norm12_error, color="red"   , label="$^1$A$_1$-$^1$B$_1$", linewidth=2)
 lines.append(line)
-line, = ax.plot(NH, norm34_error, color="purple", label="$^1$B$_2$-$^1$A$_2$", linewidth=2)
+line, = ax.plot(NH, norm34_error, color="cyan", label="$^1$B$_2$-$^1$A$_2$", linewidth=2)
 lines.append(line)
 
 ax.set_xlabel("N-H / Å"       , fontsize=32, labelpad=8)
