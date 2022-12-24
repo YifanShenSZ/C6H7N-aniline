@@ -2,12 +2,8 @@
 build/
 *.exe
 __pycache__/
-hop/*/v0/
-hop/*/v1/
-hop/analysis/*/v0/
-hop/analysis/*/v1/
-diabatz/analysis/**/v0/
-diabatz/analysis/**/v1/
+v0/
+v1/
 
 # slurm output
 slurm*
