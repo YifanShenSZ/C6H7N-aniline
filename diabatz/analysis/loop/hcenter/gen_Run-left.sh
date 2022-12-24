@@ -27,7 +27,7 @@ for ((i=0; i<10; i++)); do
 done
 
 # -0.1 to -0.9
-for ((i=0; i<10; i++)); do
+for ((i=1; i<10; i++)); do
     echo "#!/bin/bash -l" > Run-left--0.$i
     echo "#SBATCH --job-name=left--0."$i >> Run-left--0.$i
     echo "#SBATCH --time=72:00:00" >> Run-left--0.$i
