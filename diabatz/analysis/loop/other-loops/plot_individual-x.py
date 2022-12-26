@@ -40,8 +40,10 @@ ax.vlines(1.9 + dx, -20 - dy,  20 + dy, colors="black", linewidth=2)
 ax.set_xlabel("N-H / Å"                   , fontsize=32)
 ax.set_ylabel("C1 out of NH$_2$ plane / °", fontsize=32)
 
-ax.set_xlim(0.8, 2.0)
+ax.set_xlim(0.85, 1.95)
 ax.set_ylim(-70, 70)
+
+ax.set_xticks((0.9, 1.1, 1.3, 1.5, 1.7, 1.9))
 
 ax.minorticks_on()
 
